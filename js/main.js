@@ -199,3 +199,28 @@ $(window).scroll(function(){
   });
 
 
+document.addEventListener('mousewheel', event => {
+
+}, { passive: true });
+
+document.addEventListener('wheel', event => {
+
+}, { passive: true });
+
+document.addEventListener('scroll', event => {
+
+}, { passive: true });
+
+
+document.addEventListener('touchstart', event => {
+
+}, { passive: true });
+
+document.addEventListener('touchend', event => {
+
+}, { passive: true });
+
+document.addEventListener('touchmove', event => {
+
+}, { passive: true });
+
