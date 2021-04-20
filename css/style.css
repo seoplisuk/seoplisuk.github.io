@@ -262,6 +262,16 @@ header.header.new .search {
     display: flex;
   }
 }
+.mobile {
+  visibility: hidden;
+  display: none;
+}
+@media (max-width: 992px) {
+  .mobile {
+    display: block;
+    visibility: visible;
+  }
+}
 .section1 {
   background: url(../img/header__bg__min.jpg) no-repeat;
   background-size: cover;
@@ -762,6 +772,9 @@ p.main__txt {
   height: 200px;
   outline: none;
 }
+.cli__slide img {
+  min-width: 131px;
+}
 .clients__title {
   font-family: gm;
   font-size: 40px;
@@ -834,10 +847,13 @@ button.slick-next.slick-arrow.slick-disabled {
   text-align: center;
   display: flex;
   justify-content: center;
+  outline: none;
 }
 .sert__slider {
   width: 90%;
   margin: 0 auto;
+  position: relative;
+  z-index: 500;
 }
 .sertificate__title {
   font-family: gm;

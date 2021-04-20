@@ -1,0 +1,150 @@
+@font-face {
+	font-family: 'gm';
+	src: url('../fonts/GothamPro-Medium.eot');
+	src: local('../fonts/Gotham Pro Medium'), local('../fonts/GothamPro-Medium'),
+		url('../fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro-Medium.woff') format('woff'),
+		url('../fonts/GothamPro-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'gb';
+	src: url('../fonts/GothamPro-Bold.eot');
+	src: local('../fonts/Gotham Pro Bold'), local('../fonts/GothamPro-Bold'),
+		url('../fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro-Bold.woff') format('woff'),
+		url('../fonts/GothamPro-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'gn';
+	src: url('../fonts/GothamProNarrow-Bold.eot');
+	src: local('../fonts/Gotham Pro Narrow Bold'), local('../fonts/GothamProNarrow-Bold'),
+		url('../fonts/GothamProNarrow-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamProNarrow-Bold.woff') format('woff'),
+		url('../fonts/GothamProNarrow-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'gnm';
+	src: url('../fonts/GothamProNarrow-Medium.eot');
+	src: local('../fonts/Gotham Pro Narrow Medium'), local('../fonts/GothamProNarrow-Medium'),
+		url('../fonts/GothamProNarrow-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamProNarrow-Medium.woff') format('woff'),
+		url('../fonts/GothamProNarrow-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'gl';
+	src: url('../fonts/GothamPro-Light.eot');
+	src: local('../fonts/Gotham Pro Light'), local('../fonts/GothamPro-Light'),
+		url('../fonts/GothamPro-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro-Light.woff') format('woff'),
+		url('../fonts/GothamPro-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'gbl';
+	src: url('../fonts/GothamPro-Black.eot');
+	src: local('../fonts/Gotham Pro Black'), local('../fonts/GothamPro-Black'),
+		url('../fonts/GothamPro-Black.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro-Black.woff') format('woff'),
+		url('../fonts/GothamPro-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'gr';
+	src: url('../fonts/GothamPro.eot');
+	src: local('../fonts/Gotham Pro'), local('../fonts/GothamPro'),
+		url('../fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro.woff') format('woff'),
+		url('../fonts/GothamPro.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: gr;
+	font-size: 16px;
+}
+
+.container {
+	max-width: 1240px;
+	width: 100%;
+	margin: auto;
+
+	@media (max-width: 1240px) {
+		padding-left: 30px;
+		padding-right: 30px;
+		width: auto;
+	}
+	@media (max-width: 768px) {
+		padding-left: 10px;
+		padding-right: 10px;
+		
+	}
+}
+
+.order__button {
+	background: #da231b;
+    font-family: gm;
+    color: #ffffff;
+    font-size: 13px;
+    padding: 11px 17px;
+    border-radius: 3px;
+    transition: 0.5s;
+    display: flex;
+
+    &:hover {
+    	background: #000000;
+    }
+}
+
+.readmore {
+	background: #da231b;
+	font-family: gm;
+	font-size: 13px;
+	text-decoration: none;
+	color: #ffffff;
+	border-radius: 3px;
+	transition: 0.5s;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 185px;
+	height: 47px;
+	box-sizing: border-box;
+	padding: 0px 20px;
+
+	&:hover {
+		background: #000000;
+	}
+
+	.svg {
+		width: 20px;
+		
+		object-fit: cover;
+		display: flex;
+		path {
+			fill: #ffffff;
+		}
+	}
+}
+
+
+
+@import "header.less";
+@import "section1.less";
+@import "section2.less";
+@import "projects.less";
+@import "services.less";
+@import "clients.less";
+@import "sertificate.less";

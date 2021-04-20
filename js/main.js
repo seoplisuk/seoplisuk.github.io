@@ -1,8 +1,8 @@
 // Mobile menu
 $(document).ready(function() {
-	    $('.mobile__menu').hide();
+	    $('.mobile').hide();
 	    $('.burger').click(function(event) {
-	    $('.mobile__menu').slideToggle();
+	    $('.mobile').slideToggle();
 	    $('.burger').toggleClass('active');  
 	    });
 });
