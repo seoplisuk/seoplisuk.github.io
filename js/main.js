@@ -197,3 +197,5 @@ jQuery('img.svg').each(function(){
 $(window).scroll(function(){
     $('.header').toggleClass('new', $(this).scrollTop() > 90);
   });
+
+
