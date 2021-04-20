@@ -10,56 +10,129 @@ $(document).ready(function() {
 
 // ____________
 
+$('.projects__slider').slick({
+   slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  dots: true,
+  autoplay: true,
+  appendDots: $('.appendDots'),
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+
+});
 
 
-// Slider main
-$(document).ready(function() {
-		  var $slider = $('.slider');
-		  var $progressBar = $('.progress');
-		  var $progressBarLabel = $( '.slider__label' );
-		  
-		  $slider.on('beforeChange', function(event, slick, currentSlide, nextSlide) {   
-		    var calc = ( (nextSlide) / (slick.slideCount -1) ) * 100;
-		    
-		    $progressBar
-		      .css('background-size', calc + '% 100%')
-		      .attr('aria-valuenow', calc );
-		    
-		    $progressBarLabel.text( calc + '% completed' );
-		  });
-		  
-		  $slider.slick({
-		    slidesToShow: 1,
-	    	slidesToScroll: 1,
-	    	fade: true,
-	    	autoplay: true,
-	    	appendArrows: $('.appendArrows'),
-	    	appendDots: $('.appendDots'),
-	    	infinite: true,
-	        dots: true,
-	        customPaging : function(slider, i) {
-	            var thumb = jQuery(slider.$slides[i]).data();
-	            // return '<a>'+(i+1)+'</a>'; // <-- old
-	            return '<a>'+('0'+(i+1)).slice(-2)+'</a>'; // <-- new
-	        }
+$('.clients__slider').slick({
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  fade: false,
+  dots: false,
+  arrows: true,
+  infinite: false,
+  autoplay: false,
+  appendArrows: $('.appendArrows'),
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
 
-    	});
-		  });
-
-// ____________
+});
 
 
-// Footer menu
+$('.sert__slider').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  fade: false,
+  dots: false,
+  arrows: true,
+  infinite: true,
+  autoplay: false,
+  appendArrows: $('.appendArrows1'),
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
 
-if(window.innerWidth < 768) {
-	$('.footer__sub__menu').hide();
-	$('.mob__footer').click(function () {
-		$(this).siblings('.footer__sub__menu').slideToggle(300);
-		$(this).find('.mob__footer').toggleClass('minus');
-	});
-}
+});
 
-// ____________
+
+
 
 
 
