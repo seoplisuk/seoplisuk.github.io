@@ -110,6 +110,7 @@ body {
     border-radius: 3px;
     transition: 0.5s;
     display: flex;
+    text-decoration: none;
 
     &:hover {
     	background: #000000;
@@ -147,6 +148,15 @@ body {
 	}
 }
 
+#hidden-content {
+	.main__form {
+		margin-top: 0;
+		width: 100%;
+		padding: 0;
+		box-shadow: none;
+	}
+}	
+
 
 
 @import "header.less";
@@ -156,3 +166,6 @@ body {
 @import "services.less";
 @import "clients.less";
 @import "sertificate.less";
+@import "partners.less";
+@import "section__form.less";
+@import "footer.less";

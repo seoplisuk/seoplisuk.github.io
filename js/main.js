@@ -111,9 +111,49 @@ $('.sert__slider').slick({
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 768,
       settings: {
         slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+
+});
+
+$('.partners__slider').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  fade: false,
+  dots: false,
+  arrows: true,
+  infinite: true,
+  autoplay: false,
+  appendArrows: $('.appendArrows2'),
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
         slidesToScroll: 1
       }
     },
@@ -224,3 +264,7 @@ document.addEventListener('touchmove', event => {
 
 }, { passive: true });
 
+$(function(){
+  //2. Получить элемент, к которому необходимо добавить маску
+  $("#phone").mask("+7(999) 999-9999");
+});
