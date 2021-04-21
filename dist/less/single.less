@@ -1,0 +1,151 @@
+
+.single	{
+	overflow: hidden;
+	min-height: auto;
+	padding-bottom: 60px;
+
+
+	.s2__title {
+    font-family: gm;
+    font-size: 40px;
+    margin-bottom: 60px;
+    text-align: center;
+
+    @media (max-width: 600px) {
+    	font-size: 30px;
+    	margin-bottom: 30px;
+    }
+	}	
+}
+
+.content__row {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+
+	@media (max-width: 768px) {
+		.with__txt {
+			order: 2;
+		}
+	}
+}
+
+.cont__block {
+	width: 50%;
+
+	img {
+		width: 100%;
+		object-fit: cover;
+		display: flex;
+	}
+
+	@media (max-width: 768px) {
+		width: 100%;
+	}
+}
+
+.with__txt {
+    font-size: 14px;
+    color: #393939;
+    box-sizing: border-box;
+    padding: 0px 60px;
+
+    @media (max-width: 768px) {
+    	padding: 0;
+    }
+}
+
+.single__content {
+	padding: 60px 0;
+
+	@media (max-width: 600px) {
+		padding-bottom: 0px;
+	}
+}
+
+
+.step {
+
+	.svg {
+		width: 49px;
+		height: auto;
+		object-fit: cover;
+		margin-bottom: 15px;
+
+		path {
+			fill: #da231b;
+		}
+	}
+
+	.step__number {
+		font-family: gbl;
+		font-size: 30px;
+		color: #f5c5c3;
+		border-bottom: 3px solid #da231b;
+		padding-bottom: 15px;
+		width: fit-content;
+		z-index: 2;
+		position: relative;
+	}
+
+	.step__title {
+		font-size: 15px;
+		margin-top: 15px;
+	}
+}
+
+.steps__main__title {
+    font-family: gm;
+    font-size: 40px;
+    margin-bottom: 60px;
+    text-align: left;
+
+    @media (max-width: 600px) {
+    	font-size: 30px;
+    	margin-bottom: 30px;
+    }
+	}	
+
+.steps {
+	margin: 60px 0;
+}
+
+.steps__row {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+
+	@media (max-width: 992px) {
+		flex-wrap: wrap;
+	}
+}
+
+.step {
+	width: calc(100% / 6);
+	box-sizing: border-box;
+	padding-right: 10px;
+
+	@media (max-width: 992px) {
+		width: calc(100% / 3);
+		margin-bottom: 20px;
+	}
+
+	@media (max-width: 600px) {
+		width: calc(100% / 2);
+	}
+
+}
+
+.line1 {
+    width: 100%;
+    height: 3px;
+    background: #eaeaea;
+    position: absolute;
+    top: 116px;
+    z-index: 1;
+
+    @media (max-width: 992px) {
+    	display: none;
+    }
+}
