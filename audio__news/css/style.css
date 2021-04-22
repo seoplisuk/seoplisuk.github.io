@@ -448,6 +448,41 @@ header {
   outline: none;
   border: 0;
 }
+.main__container__title {
+  font-family: hm;
+  font-size: 30px;
+  margin: 50px 0;
+}
+.main__img {
+  float: left;
+  margin-right: 25px;
+  margin-bottom: 30px;
+}
+.text__block p {
+  font-size: 15px;
+  line-height: 30px;
+  color: #515151;
+  margin: 0;
+  margin-bottom: 50px;
+}
+.text__block__buttons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.text__block__buttons a {
+  background: #cf5249;
+  font-size: 10px;
+  color: #ffffff;
+  border-radius: 15px;
+  padding: 10px 10px;
+  text-decoration: none;
+  margin-right: 10px;
+  transition: 0.5s;
+}
+.text__block__buttons a:hover {
+  background: #da231b;
+}
 footer {
   background: #171717;
   padding: 35px 0;
