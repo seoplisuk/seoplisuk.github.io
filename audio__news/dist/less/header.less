@@ -1,0 +1,160 @@
+header {
+	padding: 36px 0px;
+	border-bottom: 1px solid #ededed;
+}
+
+.top__line {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.search {
+	cursor: pointer;
+	.svg {
+		
+		width: 21px;
+		height: 21px;
+	}
+
+
+	&:hover {
+		.svg {
+			path {
+				fill: #cf5249;
+			}
+		}
+	}
+
+}
+
+.logo {
+	font-size: 25px;
+}
+
+.menu {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+
+	.menu__item {
+		list-style-type: none;
+		margin-right: 50px;
+
+		&:nth-last-child(1) {
+			margin-right: 0px;
+		}
+
+		.active {
+			color: #cf5249;
+			text-decoration: none;
+		}
+
+		.menu__link {
+			text-decoration: none;
+			color: #212121;
+			transition: 0.5s;
+
+			&:hover {
+				color: #cf5249;
+			}
+		}
+	}
+
+
+	.submenu {
+		
+	    background: #f6f6f6;
+	    position: absolute;
+	    width: max-content;
+	    padding: 10px 10px;
+	    top: 20px;
+	    transition: 0.5s;
+	    visibility: hidden;
+	    opacity: 0;
+	    z-index: 3;
+
+	    .sub__item {
+	    	list-style-type: none;
+	    	margin-bottom: 10px;
+
+	    	.sub__link {
+	    		text-decoration: none;
+	    		font-size: 15px;
+	    		color: #212121;
+	    		transition: 0.5s;
+
+	    		&:hover {
+	    			color: #cf5249;
+	    		}
+	    	}
+	    }
+	}
+
+
+	.has-children {
+		position: relative;
+		&:hover {
+
+			.submenu {
+				
+				visibility: visible;
+				opacity: 1;
+			}
+
+			.menu__link {
+				&:after {
+					transform: rotate(180deg);
+				}
+			}
+
+		}
+		.menu__link {
+			display: flex;
+			align-items: center;
+			&:after {
+				content: "";
+				display: flex;
+				background: url("../icons/arrow-down-sign-to-navigate.svg");
+				width: 9px;
+				height: 9px;
+				background-size: cover;
+				margin-left: 5px;
+				transition: 0.5s;
+			}
+		}
+	}
+}
+
+.burger {
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+
+	span {
+		width: 30px;
+		height: 2px;
+		margin-bottom: 6px;
+		background: #212121;
+		transition: 0.5s;
+
+
+		&:nth-last-child(1) {
+			margin-bottom: 0;
+		}
+	}
+
+	&:hover {
+		span {
+			background: #cf5249;
+
+			&:nth-child(2) {
+				width: 20px;
+			}
+
+			&:nth-child(3) {
+				width: 10px;
+			}
+		}
+	}
+}

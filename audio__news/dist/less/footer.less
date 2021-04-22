@@ -1,0 +1,169 @@
+footer {
+    background: #171717;
+    padding: 35px 0;
+}
+.footer__row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.copy {
+	flex-grow: 1;
+	font-size: 14px;
+	color: #bebebe;
+	font-family: 'Open Sans';
+}
+
+.footer__menu {
+	ul {
+		margin: 0;
+		padding: 0;
+		display: flex;
+
+		li {
+			list-style-type: none;
+			margin-right: 25px;
+
+			&:nth-last-child(1) {
+				margin-right: 0px;
+			}
+
+			a {
+				font-size: 14px;
+				color: #bebebe;
+				font-family: 'Open Sans';
+				text-decoration: none;
+
+				&:hover {
+					color: #ffffff;
+				}
+			}
+		}
+	}
+}
+
+.open {
+    width: 100%;
+    height: -webkit-fill-available;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    background: #fff;
+    transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+}
+.opened {
+	visibility: visible;
+	opacity: 1;
+}
+
+.close {
+	width: 35px;
+	height: 35px;
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 35px;
+	right: 0;
+	background: #cf5249;
+	cursor: pointer;
+	.svg {
+		width: 16px;
+		height: 16px;
+
+		path {
+			fill: #ffffff;
+		}
+	}
+}
+
+.hid {
+	display: flex;
+	
+	justify-content: center;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.hidden__row {
+	display: flex;
+	justify-content: center;
+	
+}
+
+.hiiden__menu {
+	width: 600px;
+	margin: 0 auto;
+
+	ul {
+		padding: 0;
+		margin: 0;
+		margin-right: 50px;
+
+		&:nth-last-child(1) {
+			margin-right: 0;
+		}
+
+		.hidden__active {
+
+			a {
+				color: #cf5249;
+			}
+		}
+
+		li {
+			list-style-type: none;
+			margin-bottom: 25px;
+
+			a {
+				font-family: hb;
+				color: #212121;
+				text-decoration: none;
+				transition: 0.5s;
+
+				&:hover {
+					color: #cf5249;
+				}
+			}
+		}
+	}
+}
+
+.item__search {
+	width: 800px;
+	margin: 0 auto;
+
+	button {
+		border: none;
+	    outline: none;
+	    background: #e6e6e6;
+	    padding: 10px 10px;
+	    cursor: pointer;
+	    border-radius: 0px 15px 15px 0px;
+
+		.svg {
+			width: 17px;
+			height: 17px;
+			object-fit: cover;
+
+			path {
+				fill: #000000;
+			}
+		}
+	}
+}
+input.sear {
+    width: 90%;
+    border: none;
+    outline: none;
+    background: #e6e6e6;
+    border-radius: 15px 0px 0px 15px;
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+form.item__search {
+	display: flex;
+}
