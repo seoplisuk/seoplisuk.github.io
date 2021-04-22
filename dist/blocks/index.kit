@@ -6,6 +6,8 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
   	<!-- <link rel="preload" href="css/fonts.css" as="style" onload="this.rel='stylesheet'"> -->
   	<!-- <link rel="stylesheet" href="css/animate.css"/> -->
+  	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   	<link rel="preload" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" as="style" onload="this.rel='stylesheet'">
   	<link rel="preload" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" as="style" onload="this.rel='stylesheet'">
   	<link rel="stylesheet" href="css/style.css">
@@ -15,98 +17,402 @@
 
 <!-- @import "header.html" -->
 
-<section class="section1">
+<section class="content">
 	<div class="container">
 		
-		<div class="categories">
-			<ul class="category">
-				<li class="cat__item"><a href="#" class="cat__link">Проектирование</a></li>
-				<li class="cat__item"><a href="#" class="cat__link">Монтаж и строительство</a></li>
-				<li class="cat__item"><a href="#" class="cat__link">Сервисное обслуживание</a></li>
-				<li class="cat__item"><a href="#" class="cat__link">Образовательные услуги</a></li>
-			</ul>
-			<div class="cat__search"><img class="svg" src="icons/search-interface-symbol.svg"></div>	
-		</div>
-
-		<div class="main__block">
+		<div class="content__row">
 			
-			<h1 class="main__title">Монтаж<br />и строительство</h1>
-			<p class="main__txt">Сотрудничество с нашей компанией - это выгодный прайс<br />и достижение желаемого результата.</p>
-			<div class="button__readmore"><a href="#" class="readmore">Подробнее <img class="svg" src="icons/right-arrow.svg"></a></div>
+			<div class="content__main">
+				
+				<div class="menu__content">
+					<ul>
+						<li><a href="#">Политика</a></li>
+						<li><a href="#">Бизнес</a></li>
+						<li><a href="#">Экономика</a></li>
+						<li><a href="#">Технологии</a></li>
+						<li><a href="#">Биржа</a></li>
+						<li><a href="#">Россия</a></li>
+						<li><a href="#">США</a></li>
+						<li><a href="#">Донбас</a></li>
+						<li><a href="#">Финансы</a></li>
+						<li><a href="#">Путин</a></li>
+						<li><a href="#">Наука</a></li>
+						<li><a href="#">Туризм</a></li>
+					</ul>
+				</div>
 
-			<!-- @import "services.html" -->
+				<div class="news__block">
+					<h2 class="news__main__title">НОВЫЕ НА СЕГОДНЯ</h2>
+					<div class="news__row">
 
+						<div class="news">
+							<div class="news__main">
+								<div class="news__top">
+									<div class="news__img"><img src="img/news1.jpg"></div>
+									<div class="news__buttons">
+										<a href="#" class="play"><img class="svg" src="icons/play-button.svg"></a>
+										<a href="#" class="record"><img src="img/record.png"></a>
+										<a href="#" class="favorite"><img class="svg" src="icons/starred.svg"></a>
+									</div>
+								</div>
+								<h3 class="news__title"><a href="#">Запрет на покупки госдолга и высылка дипломатов: США объявили новые санкции</a></h3>
+							</div>
+						</div>
+
+						<div class="news">
+							<div class="news__main">
+								<div class="news__top">
+									<div class="news__img"><img src="img/news2.jpg"></div>
+									<div class="news__buttons">
+										<a href="#" class="play"><img class="svg" src="icons/play-button.svg"></a>
+										<a href="#" class="record"><img src="img/record.png"></a>
+										<a href="#" class="favorite"><img class="svg" src="icons/starred.svg"></a>
+									</div>
+								</div>
+								<h3 class="news__title"><a href="#">Что важно знать туристам о приостановке полетов в Турцию</a></h3>
+							</div>
+						</div>
+
+						<div class="news">
+							<div class="news__main">
+								<div class="news__top">
+									<div class="news__img"><img src="img/news3.jpg"></div>
+									<div class="news__buttons">
+										<a href="#" class="play"><img class="svg" src="icons/play-button.svg"></a>
+										<a href="#" class="record"><img src="img/record.png"></a>
+										<a href="#" class="favorite"><img class="svg" src="icons/starred.svg"></a>
+									</div>
+								</div>
+								<h3 class="news__title"><a href="#">Белый дом предупредил Россию о «последствиях» в случае смерти Навального</a></h3>
+							</div>
+						</div>
+
+						<div class="news">
+							<div class="news__main">
+								<div class="news__top">
+									<div class="news__img"><img src="img/news4.jpg"></div>
+									<div class="news__buttons">
+										<a href="#" class="play"><img class="svg" src="icons/play-button.svg"></a>
+										<a href="#" class="record"><img src="img/record.png"></a>
+										<a href="#" class="favorite"><img class="svg" src="icons/starred.svg"></a>
+									</div>
+								</div>
+								<h3 class="news__title"><a href="#">Что важно знать туристам о приостановке полетов в Турцию</a></h3>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+				<div class="news__block">
+					<h2 class="news__main__title">ПОЛИТИКА</h2>
+					<div class="news__main__img"><img src="img/main1.jpg"></div>
+					<div class="news__row">
+
+						<div class="news">
+							<div class="news__main">
+								<div class="news__top">
+									<div class="news__img"><img src="img/news5.jpg"></div>
+									<div class="news__buttons">
+										<a href="#" class="play"><img class="svg" src="icons/play-button.svg"></a>
+										<a href="#" class="record"><img src="img/record.png"></a>
+										<a href="#" class="favorite"><img class="svg" src="icons/starred.svg"></a>
+									</div>
+								</div>
+								<h3 class="news__title"><a href="#">Трамп раскритиковал план Байдена по выводу войск из Афганистана</a></h3>
+							</div>
+						</div>
+
+						<div class="news">
+							<div class="news__main">
+								<div class="news__top">
+									<div class="news__img"><img src="img/news6.jpg"></div>
+									<div class="news__buttons">
+										<a href="#" class="play"><img class="svg" src="icons/play-button.svg"></a>
+										<a href="#" class="record"><img src="img/record.png"></a>
+										<a href="#" class="favorite"><img class="svg" src="icons/starred.svg"></a>
+									</div>
+								</div>
+								<h3 class="news__title"><a href="#">В Госдуме назвали идею закрыть россиянам въезд в Европу попыткой обрадовать США</a></h3>
+							</div>
+						</div>
+
+						
+
+					</div>
+				</div>
+
+
+				<div class="news__block">
+					<h2 class="news__main__title">ЭКОНОМИКА</h2>
+					<div class="news__main__img"><img src="img/main2.jpg"></div>
+					<div class="news__row">
+
+						<div class="news">
+							<div class="news__main">
+								<div class="news__top">
+									<div class="news__img"><img src="img/news7.jpg"></div>
+									<div class="news__buttons">
+										<a href="#" class="play"><img class="svg" src="icons/play-button.svg"></a>
+										<a href="#" class="record"><img src="img/record.png"></a>
+										<a href="#" class="favorite"><img class="svg" src="icons/starred.svg"></a>
+									</div>
+								</div>
+								<h3 class="news__title"><a href="#">Россиянам разрешат заработать на нефти и золоте по-новому</a></h3>
+							</div>
+						</div>
+
+						<div class="news">
+							<div class="news__main">
+								<div class="news__top">
+									<div class="news__img"><img src="img/news8.jpg"></div>
+									<div class="news__buttons">
+										<a href="#" class="play"><img class="svg" src="icons/play-button.svg"></a>
+										<a href="#" class="record"><img src="img/record.png"></a>
+										<a href="#" class="favorite"><img class="svg" src="icons/starred.svg"></a>
+									</div>
+								</div>
+								<h3 class="news__title"><a href="#">Центробанк поддержал идею пенсионного налогового вычета для россиян</a></h3>
+							</div>
+						</div>
+
+						
+
+					</div>
+				</div>
+
+				<div class="news__block">
+					<h2 class="news__main__title">Бизнес</h2>
+					<div class="news__main__img"><img src="img/main3.jpg"></div>
+					<div class="news__row">
+
+						<div class="news">
+							<div class="news__main">
+								<div class="news__top">
+									<div class="news__img"><img src="img/news9.jpg"></div>
+									<div class="news__buttons">
+										<a href="#" class="play"><img class="svg" src="icons/play-button.svg"></a>
+										<a href="#" class="record"><img src="img/record.png"></a>
+										<a href="#" class="favorite"><img class="svg" src="icons/starred.svg"></a>
+									</div>
+								</div>
+								<h3 class="news__title"><a href="#">В России задумали обязать банки давать возможность ограничения онлайн-оплаты</a></h3>
+							</div>
+						</div>
+
+						<div class="news">
+							<div class="news__main">
+								<div class="news__top">
+									<div class="news__img"><img src="img/news10.jpg"></div>
+									<div class="news__buttons">
+										<a href="#" class="play"><img class="svg" src="icons/play-button.svg"></a>
+										<a href="#" class="record"><img src="img/record.png"></a>
+										<a href="#" class="favorite"><img class="svg" src="icons/starred.svg"></a>
+									</div>
+								</div>
+								<h3 class="news__title"><a href="#">Россияне перечислили сферы работы для быстрого карьерного роста</a></h3>
+							</div>
+						</div>
+
+						
+
+					</div>
+				</div>
+
+
+				<div class="active__news">
+					<img src="img/main4.jpg">
+					<div class="active__title">Встреча Зеленского и Макрона<br />пошла не по плану.</div>
+				</div>
+
+
+			</div>
+
+			<div class="sidebar">
+				
+				<div class="sidebar__block first">
+					<!-- <div class="hidden__block"></div> -->
+					<div class="sidebar__title">ПОПУЛЯРНЫЕ</div>
+					<div class="news">
+						<div class="news__main">
+							<div class="news__top">
+								<div class="news__img"><img src="img/side1.jpg"></div>
+								<div class="news__buttons">
+									<a href="#" class="play"><img class="svg" src="icons/play-button.svg"></a>
+									<a href="#" class="record"><img src="img/record.png"></a>
+									<a href="#" class="favorite"><img class="svg" src="icons/starred.svg"></a>
+								</div>
+							</div>
+							<h3 class="news__title"><a href="#">Названы регионы России с самым высоким уровнем жизни</a></h3>
+						</div>
+					</div>
+
+					<div class="news">
+						<div class="news__main">
+							<div class="news__top">
+								<div class="news__img"><img src="img/side2.jpg"></div>
+								<div class="news__buttons">
+									<a href="#" class="play"><img class="svg" src="icons/play-button.svg"></a>
+									<a href="#" class="record"><img src="img/record.png"></a>
+									<a href="#" class="favorite"><img class="svg" src="icons/starred.svg"></a>
+								</div>
+							</div>
+							<h3 class="news__title"><a href="#">«Роскосмос» выбрал место посадки пилотируемого корабля после полетов к Луне</a></h3>
+						</div>
+					</div>
+
+					<div class="news">
+						<div class="news__main">
+							<div class="news__top">
+								<div class="news__img"><img src="img/side3.jpg"></div>
+								<div class="news__buttons">
+									<a href="#" class="play"><img class="svg" src="icons/play-button.svg"></a>
+									<a href="#" class="record"><img src="img/record.png"></a>
+									<a href="#" class="favorite"><img class="svg" src="icons/starred.svg"></a>
+								</div>
+							</div>
+							<h3 class="news__title"><a href="#">Facebook представит аналог Clubhouse и займется подкастами</a></h3>
+						</div>
+					</div>
+
+					<div class="news">
+						<div class="news__main">
+							<div class="news__top">
+								<div class="news__img"><img src="img/side4.jpg"></div>
+								<div class="news__buttons">
+									<a href="#" class="play"><img class="svg" src="icons/play-button.svg"></a>
+									<a href="#" class="record"><img src="img/record.png"></a>
+									<a href="#" class="favorite"><img class="svg" src="icons/starred.svg"></a>
+								</div>
+							</div>
+							<h3 class="news__title"><a href="#">Производитель промышленных дронов и разработчик игр про полицию: кому дали денег на этой неделе</a></h3>
+						</div>
+					</div>
+
+				</div>
+
+
+
+				<div class="sidebar__block">
+					<div class="sidebar__title">Туризм</div>
+					<div class="news">
+						<div class="news__main">
+							<div class="news__top">
+								<div class="news__img"><img src="img/side1.jpg"></div>
+								<div class="news__buttons">
+									<a href="#" class="play"><img class="svg" src="icons/play-button.svg"></a>
+									<a href="#" class="record"><img src="img/record.png"></a>
+									<a href="#" class="favorite"><img class="svg" src="icons/starred.svg"></a>
+								</div>
+							</div>
+							<h3 class="news__title"><a href="#">Названы регионы России с самым высоким уровнем жизни</a></h3>
+						</div>
+					</div>
+
+					<div class="news">
+						<div class="news__main">
+							<div class="news__top">
+								<div class="news__img"><img src="img/side2.jpg"></div>
+								<div class="news__buttons">
+									<a href="#" class="play"><img class="svg" src="icons/play-button.svg"></a>
+									<a href="#" class="record"><img src="img/record.png"></a>
+									<a href="#" class="favorite"><img class="svg" src="icons/starred.svg"></a>
+								</div>
+							</div>
+							<h3 class="news__title"><a href="#">«Роскосмос» выбрал место посадки пилотируемого корабля после полетов к Луне</a></h3>
+						</div>
+					</div>
+
+					
+
+				</div>
+
+
+				<div class="sidebar__block">
+					<div class="sidebar__title">Спорт</div>
+					<div class="news">
+						<div class="news__main">
+							<div class="news__top">
+								<div class="news__img"><img src="img/side1.jpg"></div>
+								<div class="news__buttons">
+									<a href="#" class="play"><img class="svg" src="icons/play-button.svg"></a>
+									<a href="#" class="record"><img src="img/record.png"></a>
+									<a href="#" class="favorite"><img class="svg" src="icons/starred.svg"></a>
+								</div>
+							</div>
+							<h3 class="news__title"><a href="#">Названы регионы России с самым высоким уровнем жизни</a></h3>
+						</div>
+					</div>
+
+					<div class="news">
+						<div class="news__main">
+							<div class="news__top">
+								<div class="news__img"><img src="img/side2.jpg"></div>
+								<div class="news__buttons">
+									<a href="#" class="play"><img class="svg" src="icons/play-button.svg"></a>
+									<a href="#" class="record"><img src="img/record.png"></a>
+									<a href="#" class="favorite"><img class="svg" src="icons/starred.svg"></a>
+								</div>
+							</div>
+							<h3 class="news__title"><a href="#">«Роскосмос» выбрал место посадки пилотируемого корабля после полетов к Луне</a></h3>
+						</div>
+					</div>
+
+					
+
+				</div>
+
+
+				<div class="sidebar__block">
+					<div class="sidebar__title">Наука и техника</div>
+					<div class="news">
+						<div class="news__main">
+							<div class="news__top">
+								<div class="news__img"><img src="img/side1.jpg"></div>
+								<div class="news__buttons">
+									<a href="#" class="play"><img class="svg" src="icons/play-button.svg"></a>
+									<a href="#" class="record"><img src="img/record.png"></a>
+									<a href="#" class="favorite"><img class="svg" src="icons/starred.svg"></a>
+								</div>
+							</div>
+							<h3 class="news__title"><a href="#">Названы регионы России с самым высоким уровнем жизни</a></h3>
+						</div>
+					</div>
+
+					<div class="news">
+						<div class="news__main">
+							<div class="news__top">
+								<div class="news__img"><img src="img/side2.jpg"></div>
+								<div class="news__buttons">
+									<a href="#" class="play"><img class="svg" src="icons/play-button.svg"></a>
+									<a href="#" class="record"><img src="img/record.png"></a>
+									<a href="#" class="favorite"><img class="svg" src="icons/starred.svg"></a>
+								</div>
+							</div>
+							<h3 class="news__title"><a href="#">«Роскосмос» выбрал место посадки пилотируемого корабля после полетов к Луне</a></h3>
+						</div>
+					</div>
+
+					
+
+				</div>
+
+
+
+
+
+
+			</div>
 
 		</div>
 
 	</div>
 </section>
 
-
-<section class="section2">
-	<div class="container">
-		
-		<div class="section2__title">«Center expertise group»</div>
-		<div class="section2__txt">Проектирование и строительство инженерных систем в Санкт-Петербурге</div>
-
-		<div class="section2__row">
-			<div class="s2__block">
-				Основным направлением деятельности компании является
-				строительство и техническое обслуживание инженерных систем.
-				Мы выполняем весь комплекс работ: проектирование, согласование,
-				поставка материалов, монтаж, пуско-наладка, сдача контролирующему
-				органу и последующее сервисное обслуживание. Наши постоянные
-				клиенты – государственные организации, международные
-				производственные предприятия и торговые сети, а также крупные
-				отечественные компании.
-			</div>
-			<div class="s2__block">
-				Качество выполненных работ достигается благодаря большому опыту
-				и профессионализму наших сотрудников, соблюдению технологических
-				процессов, применением современного оборудования и качественных
-				материалов. Минимальные финансовые и трудовые затраты заказчика
-				достигаются за счёт комплексного подхода к выполнению проекта
-				любой сложности. В кратчайшие сроки, самые разнообразные задачи
-				позволяет решить индивидуальный подход к каждому клиенту и опыт
-				сотрудников компании.
-
-			</div>
-		</div>
-
-		<div class="section2__row2">
-
-			<div class="s2__row2__block">
-				<div class="s2__ico"><img class="svg" src="icons/about-main-1.svg"></div>
-				<p class="s2__block__txt">Инжиниринговая компания полного цикла</p>
-			</div>
-
-			<div class="s2__row2__block">
-				<div class="s2__ico"><img class="svg" src="icons/about-main-2.svg"></div>
-				<p class="s2__block__txt">Качество производимых работ</p>
-			</div>
-
-			<div class="s2__row2__block">
-				<div class="s2__ico"><img class="svg" src="icons/about-main-3.svg"></div>
-				<p class="s2__block__txt">Современные технологии</p>
-			</div>
-
-			<div class="s2__row2__block">
-				<div class="s2__ico"><img class="svg" src="icons/about-main-4.svg"></div>
-				<p class="s2__block__txt">Индивидуальный подход</p>
-			</div>
-
-		</div>
-
-	</div>
-</section>
+<!-- @import "section__slider.html" -->
 
 
-<!-- @import "projects.html" -->
-
-<!-- @import "clients.html" -->
-<!-- @import "sertificate.html" -->
-<!-- @import "partners.html" -->
-<!-- @import "section__form.html" -->
 <!-- @import "footer.html" -->
     
     
@@ -116,12 +422,12 @@
  createPopup().show( 0, 0, 0, 0, 0 );
  </script><![endif]-->
  <!-- <body oncontextmenu="return false;"> -->	
-	<script src="js/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
-	<script src="js/slick.min.js"></script>
-	<script src="js/jquery.fancybox.min.js"></script>
-	<script src="js/wow.js"></script>
-	<script src="js/jquery.maskedinput.min.js"></script>
-	<script defer="defer" src="js/main.js"></script>
+	<script src="/js/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+	<script src="/js/slick.min.js"></script>
+	<script src="/js/jquery.fancybox.min.js"></script>
+	<script src="/js/wow.js"></script>
+	<script src="/js/jquery.maskedinput.min.js"></script>
+	<script defer="defer" src="/js/main.js"></script>
 	
 
 

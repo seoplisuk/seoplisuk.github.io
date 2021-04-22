@@ -1,0 +1,12 @@
+.slider__block .news {
+  width: 100%;
+}
+.slider__title {
+  display: flex;
+  align-items: center;
+}
+.slider__title .line {
+  height: 1px;
+  width: ;
+  background: #e4e4e4;
+}

@@ -1,20 +1,25 @@
 // Mobile menu
 $(document).ready(function() {
-	    $('.mobile').hide();
+	    
 	    $('.burger').click(function(event) {
-	    $('.mobile').slideToggle();
-	    $('.burger').toggleClass('active');  
+	    $('.open').toggleClass('opened');  
+
 	    });
+
+      $('.close').click(function(event) {
+      $('.open').removeClass('opened');  
+      
+      });
 });
 
 
 // ____________
 
-$('.projects__slider').slick({
-   slidesToShow: 1,
+$('.main__slider').slick({
+  slidesToShow: 3,
   slidesToScroll: 1,
   arrows: false,
-  fade: true,
+  fade: false,
   dots: true,
   autoplay: true,
   appendDots: $('.appendDots'),
