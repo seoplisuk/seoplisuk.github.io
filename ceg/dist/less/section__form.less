@@ -1,0 +1,144 @@
+.section__form {
+	background: url(../img/section__form.jpg) no-repeat center;
+	background-size: cover;
+	min-height: 742px;
+
+	@media (max-width: 600px) {
+		height: auto;
+		min-height: inherit;
+		padding-bottom: 30px;
+	}
+}
+.form__row {
+    display: flex;
+    justify-content: space-between;
+    min-height: 742px;
+
+    @media (max-width: 600px) {
+    	min-height: auto;
+    }
+}
+.form__left {
+    width: 50%;
+    position: relative;
+
+    @media (max-width: 768px) {
+    	display: none;
+    }
+}
+
+.form__right {
+    width: 50%;
+	@media (max-width: 768px) {
+		width: 100%;
+	}
+}
+
+form.main__form {
+    background: #ffffff;
+    padding: 50px;
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 85px;
+    box-shadow: 15px -15px 0px 0px rgba(103, 107, 110, 50%);
+
+    @media (max-width: 600px) {
+    	width: 100%;
+    	padding: 25px;
+    }
+}
+.form__title {
+    font-family: 'gm';
+    font-size: 27px;
+    text-align: center;
+    color: #272727;
+    margin-bottom: 30px;
+}
+.form__input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+
+    label {
+    	font-family: gb;
+    	font-size: 13px;
+    	color: #272727;
+    	margin-bottom: 10px;
+    }
+
+    input {
+    	background: #f5f5f5;
+	    color: #ababab;
+	    font-size: 15px;
+	    border: none;
+	    outline: none;
+	    border-radius: 5px;
+	    padding: 21.5px 24px;
+	    box-sizing: border-box;
+
+    }
+}
+::placeholder {
+	color: #ababab;
+   	font-size: 15px;
+}
+.form__policy {
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #999999;
+}
+
+.form__button {
+
+	button {
+		background: #da231b;
+	    font-family: gb;
+	    font-size: 15px;
+	    text-transform: uppercase;
+	    text-decoration: none;
+	    color: #ffffff;
+	    border-radius: 5px;
+	    transition: 0.5s;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    width: 100%;
+	    border: none;
+	    outline: none;
+	    box-sizing: border-box;
+	    padding: 21.5px 0px;
+	    cursor: pointer;
+
+	    &:hover {
+	    	background: #000000;
+	    }
+
+		}
+}
+.form__left img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+
+.form2 {
+    background: #ffffff;
+
+    .main__form {
+        box-shadow: none;
+    }
+}
+.form__txt2 {
+    text-align: center;
+    font-size: 15px;
+    color: #5c5c5c;
+    margin-bottom: 15px;
+}
