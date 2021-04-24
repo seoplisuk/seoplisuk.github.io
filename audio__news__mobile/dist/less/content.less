@@ -1,0 +1,292 @@
+.content__row {
+	display: flex;
+	justify-content: space-between;
+}
+.content__main {
+    width: 100%;
+}
+
+
+
+
+
+.menu__content {
+	overflow: hidden;
+	padding-left: 20px;
+	ul {
+		    margin: 0;
+		    padding: 0;
+		    margin-top: 20px;
+		    margin-bottom: 20px;
+		    width: max-content;
+		    overflow: auto;
+		    white-space: nowrap;
+
+		li {
+			    list-style-type: none;
+			    background: #ffe2e0;
+			    border-radius: 10px;
+			    padding: 0px 0px;
+			    box-sizing: border-box;
+			    transition: 0.5s;
+			    display: inline-block;
+
+			a {
+				color: #cf5249;
+			    text-decoration: none;
+			    font-family: 'Open Sans';
+			    font-weight: 700;
+			    font-size: 11px;
+			    padding: 5px 10px;
+			    display: flex;
+			    transition: 0.5s;
+
+
+			}
+
+			&:hover {
+				background: #cf5249;
+
+				a {
+					color: #ffffff;
+				}
+			}
+
+		}
+	}
+}
+
+.news__main__title {
+	
+	font-size: 15px;
+	font-family: hm;
+	text-transform: uppercase;
+	margin: 0;
+	
+}
+.news__title {
+	margin: 0;
+	padding-right: 20px;
+	padding-left: 20px;
+
+	a {
+		transition: 0.5s;
+		color: #212121;
+		text-decoration: none;
+		font-size: 14px;
+		font-family: hm;
+		line-height: 23px;
+	}
+}
+
+.news__img {
+	overflow: hidden;
+	height: 139px;
+	
+	
+
+	img {
+		width: 100%;
+		object-fit: cover;
+		transition: 0.5s;
+		display: flex;
+	}
+}
+
+.news__top {
+	display: flex;
+	margin-bottom: 15px;
+	padding-right: 20px;
+}
+
+.news__buttons {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	box-sizing: border-box;
+	align-items: center;
+	padding-left: 15px;
+}
+
+.play {
+	.svg {
+		width: 36px;
+		height: 36px;
+
+		path {
+			fill: #cf5249;
+			transition: 0.5s;
+		}
+	}
+
+	&:hover {
+
+		.svg {
+			path {
+				fill: #da231b;
+			}
+		}
+	}
+}
+
+.favorite {
+	width: 30px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #ffffff;
+	border-radius: 50px;
+	box-shadow: 0px 0px 10px #ccc;
+
+	.svg {
+		width: 17px;
+		height: 17px;
+
+		path {
+			fill: #cf5249;
+		}
+	}
+}
+
+.record {
+	width: 30px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #ffffff;
+	border-radius: 50px;
+	box-shadow: 0px 0px 10px #ccc;
+
+	img {
+		width: initial;
+	}
+}
+
+.news__row {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.news {
+	width: 100%;
+	display: flex;
+	margin-bottom: 25px;
+
+	&:hover {
+		.news__title {
+
+			a {
+				color: #cf5249;
+			}
+		}
+
+		.news__img {
+			img {
+				transition: 0.5s;
+				transform: scale(1.1);
+			}
+		}
+	}
+}
+
+.news__block {
+	margin-bottom: 50px;
+}
+.news__main__img {
+	margin-bottom: 30px;
+}
+
+.sidebar__block {
+
+	.news {
+		width: 100%;
+	    padding-left: 30px;
+	    padding-right: 10px;
+	    box-sizing: border-box;
+	    z-index: 2;
+	    position: relative;
+
+		.news__top {
+			justify-content: space-between;
+		}
+
+		.news__buttons {
+			padding-left: 0px;
+		}
+	}
+
+	.news__title {
+
+		a {
+			font-size: 14px;
+		}
+	}
+}
+
+.first {
+	background: #f6f6f6;
+	position: relative;
+
+}
+.sidebar__title {
+    font-size: 17px;
+    font-family: 'hm';
+    padding-top: 40px;
+    margin-bottom: 35px;
+    padding-left: 30px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+}
+.hidden__block {
+    background: #f6f6f6;
+    width: 1000%;
+    height: -webkit-fill-available;
+    position: absolute;
+    display: flex;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.active__news {
+	position: relative;
+
+	.active__title {
+		font-family: hm;
+		font-size: 25px;
+		color: #ffffff;
+		position: absolute;
+		top: 35px;
+		left: 35px;
+	}
+}
+
+.news__line {
+	width: 100%;
+	height: 1px;
+	background: #d8d8d8;
+	padding: 0px 20px;
+	box-sizing: border-box;
+	margin-top: 15px;
+}
+
+.news__block__top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 30px;
+	padding: 0 20px;
+}
+.news__all {
+    font-size: 12px;
+    color: #7f7d7d;
+    text-decoration: none;
+    display: flex;
+    border: 1px solid #7f7d7d;
+    border-radius: 25px;
+    padding: 7px 14px;
+}

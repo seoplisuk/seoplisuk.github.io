@@ -1,13 +1,14 @@
 // Mobile menu
 $(document).ready(function() {
-	    
-	    $('.burger').click(function(event) {
-	    $('.open').toggleClass('opened');  
+      $('.mobile__menu').hide();
+      $('.burger').click(function(event) {
+      $('.mobile__menu').slideToggle();
+      
+      });
 
-	    });
 
       $('.close').click(function(event) {
-      $('.open').removeClass('opened');  
+      $('.mobile__menu').slideToggle();
       
       });
 });
