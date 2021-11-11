@@ -41,7 +41,7 @@ body {
   height: 100%;
 }
 .main {
-  max-width: 1240px;
+  max-width: 1274px;
   width: 100%;
   border-radius: 5px;
   -webkit-box-shadow: 0px 0px 25px #d0d0d0;
@@ -52,7 +52,7 @@ body {
   padding-bottom: 0px;
 }
 .container {
-  max-width: 1130px;
+  max-width: 1125px;
   width: 100%;
   margin: 0 auto;
 }
@@ -62,7 +62,7 @@ start header
 ==================================
  */
 .header {
-  height: 125px;
+  height: 94px;
   border-bottom: 1px solid #dbdbdb;
 }
 .header__row {
@@ -94,7 +94,9 @@ start header
   color: #ff4f16;
 }
 .burger {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -261,8 +263,8 @@ start header
   border-radius: 5px 0px 0px 5px;
   width: calc(100% - 145px);
   padding-left: 55px;
-  background: #ffffff url(../icons/ico-search-orange.svg) no-repeat 20px center;
-  background-size: 21px 21px;
+  background: #ffffff url(../icons/ico-search-orange.svg) no-repeat 18px center;
+  background-size: 26px 26px;
   color: #79839c;
   font-size: 16px;
   font-family: SF Pro Display Medium;
@@ -271,32 +273,37 @@ start header
   color: #79839c;
   font-size: 16px;
   font-family: SF Pro Display Medium;
+  opacity: 0.6;
 }
 .search__item::-moz-placeholder {
   color: #79839c;
   font-size: 16px;
   font-family: SF Pro Display Medium;
+  opacity: 0.6;
 }
 .search__item:-ms-input-placeholder {
   color: #79839c;
   font-size: 16px;
   font-family: SF Pro Display Medium;
+  opacity: 0.6;
 }
 .search__item::-ms-input-placeholder {
   color: #79839c;
   font-size: 16px;
   font-family: SF Pro Display Medium;
+  opacity: 0.6;
 }
 .search__item::placeholder {
   color: #79839c;
   font-size: 16px;
   font-family: SF Pro Display Medium;
+  opacity: 0.6;
 }
 .search__button {
   width: 145px;
   height: 55px;
   border-radius: 0px 5px 5px 0px;
-  background: #ff4f16;
+  background: #ff5d1a;
   font-family: SF Pro Display Bold;
   font-size: 14px;
   text-transform: uppercase;
@@ -327,12 +334,13 @@ start header
 }
 .services .services__item .services__link {
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
   color: #ff4f16;
   font-family: SF Pro Display Medium;
 }
 .services .services__item .services__link .number {
   color: #79839c;
+  opacity: 0.75;
 }
 .mobile__menu {
   position: fixed;
@@ -419,7 +427,7 @@ start main__content
 }
 .reset__password {
   width: 100%;
-  max-width: 555px;
+  max-width: 549px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -428,23 +436,25 @@ start main__content
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 50px;
+  margin-top: 25px;
 }
 .form__title {
   text-align: center;
   font-size: 24px;
   font-family: SF Pro Display Bold;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 .form__txt {
   font-size: 16px;
   line-height: 24px;
   color: #79839c;
+  margin: 0;
   margin-bottom: 20px;
+  letter-spacing: 0.45px;
 }
 .mail {
-  padding: 15px 24px;
+  padding: 12px 20px;
   border: 1px solid #e4e4e5;
   border-radius: 5px;
   width: 100%;
@@ -473,11 +483,11 @@ start main__content
   color: #999999;
 }
 .reset {
-  background: #ff4f16;
+  background: #ff5d1a;
   border: 1px solid #fac4ae;
   outline: none;
   font-family: SF Pro Display Medium;
-  height: 42px;
+  height: 46px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -492,6 +502,7 @@ start main__content
   cursor: pointer;
   -webkit-transition: 0.5s ease 0s;
   transition: 0.5s ease 0s;
+  font-size: 16px;
 }
 .reset:hover {
   background: #000000;
@@ -533,6 +544,7 @@ start footer
   font-size: 16px;
   line-height: 24px;
   color: #777777;
+  margin: 0;
 }
 .orange {
   color: #ff4f16;
@@ -579,19 +591,19 @@ start footer
 .facebook {
   -webkit-mask-image: url(../icons/ico-socials-facebook.svg);
           mask-image: url(../icons/ico-socials-facebook.svg);
-  -webkit-mask-size: 40px 40px;
-          mask-size: 40px 40px;
-  width: 40px;
-  height: 40px;
+  -webkit-mask-size: 50px 50px;
+          mask-size: 50px 50px;
+  width: 50px;
+  height: 50px;
   background: #bdbdbd;
 }
 .twiter {
   -webkit-mask-image: url(../icons/ico-socials-twitter.svg);
           mask-image: url(../icons/ico-socials-twitter.svg);
-  -webkit-mask-size: 45px 35px;
-          mask-size: 45px 35px;
-  width: 45px;
-  height: 35px;
+  -webkit-mask-size: 50px 50px;
+          mask-size: 50px 50px;
+  width: 50px;
+  height: 50px;
   background: #bdbdbd;
 }
 .youtube {
@@ -606,10 +618,10 @@ start footer
 .up {
   -webkit-mask-image: url(../icons/ico-arrow-up.svg);
           mask-image: url(../icons/ico-arrow-up.svg);
-  -webkit-mask-size: 40px 30px;
-          mask-size: 40px 30px;
-  width: 40px;
-  height: 30px;
+  -webkit-mask-size: 25px 25px;
+          mask-size: 25px 25px;
+  width: 25px;
+  height: 25px;
   background: #bdbdbd;
 }
 .footer__bottom {
@@ -622,7 +634,7 @@ start footer
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30px 0;
+  padding: 16px 0;
   border-top: 1px solid #f2f2f2;
 }
 .footer__logo {
@@ -656,6 +668,15 @@ start footer
     width: 100%;
     white-space: nowrap;
     overflow-x: scroll;
+  }
+  .services::-webkit-scrollbar {
+    width: 0;
+  }
+  .services {
+    -ms-overflow-style: none;
+  }
+  .services {
+    overflow: -moz-scrollbars-none;
   }
   .header {
     height: 80px;
@@ -691,35 +712,40 @@ start footer
   }
   .search__item::-webkit-input-placeholder {
     color: #79839c;
-    font-size: 14px;
+    font-size: 16px;
     font-family: SF Pro Display Regular;
+    opacity: 0.6;
   }
   .search__item::-moz-placeholder {
     color: #79839c;
-    font-size: 14px;
+    font-size: 16px;
     font-family: SF Pro Display Regular;
+    opacity: 0.6;
   }
   .search__item:-ms-input-placeholder {
     color: #79839c;
-    font-size: 14px;
+    font-size: 16px;
     font-family: SF Pro Display Regular;
+    opacity: 0.6;
   }
   .search__item::-ms-input-placeholder {
     color: #79839c;
-    font-size: 14px;
+    font-size: 16px;
     font-family: SF Pro Display Regular;
+    opacity: 0.6;
   }
   .search__item::placeholder {
     color: #79839c;
-    font-size: 14px;
+    font-size: 16px;
     font-family: SF Pro Display Regular;
+    opacity: 0.6;
   }
   .search__button {
     width: 50px;
     height: 55px;
     border-radius: 0;
     background: transparent url(../icons/ico-search-orange.svg) no-repeat center center;
-    background-size: 21px;
+    background-size: 30px;
     font-family: SF Pro Display Bold;
     font-size: 0px;
     text-transform: uppercase;
@@ -751,13 +777,13 @@ start footer
     border-right: 1px solid #e4e4e5;
     border-bottom: 1px solid #e4e4e5;
     border-radius: 0px;
-    padding: 15px 15px;
+    padding: 15px 21px;
     margin-right: 0px;
     background: #ffffff;
   }
   .services .services__item .services__link {
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
     color: #ff4f16;
     font-family: SF Pro Display Medium;
   }
@@ -765,13 +791,17 @@ start footer
     color: #79839c;
   }
   .main__content {
-    padding-bottom: 80px;
+    padding-bottom: 120px;
+  }
+  .form__txt {
+    margin-bottom: 15px;
   }
   .reset__password {
-    padding-top: 50px;
+    padding-top: 25px;
   }
   .form__title {
     text-align: left;
+    margin-bottom: 15px;
   }
   .footer-top__block:nth-child(1) {
     display: none;
@@ -779,13 +809,19 @@ start footer
   .reset__password {
     margin-top: 0;
   }
+  .top__menu {
+    display: none;
+  }
+  .lang {
+    display: none;
+  }
 }
 @media (max-width: 600px) {
   .container {
     padding: 0 15px;
   }
   .logo__item {
-    font-size: 24px;
+    font-size: 30px;
   }
   .burger {
     display: -webkit-box;
@@ -868,7 +904,7 @@ start footer
     padding-top: 0px;
   }
   .footer__logo {
-    font-size: 24px;
+    font-size: 30px;
   }
   .about {
     display: none;

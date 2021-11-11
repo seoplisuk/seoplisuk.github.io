@@ -37,6 +37,7 @@
     
 @black: #000000;
 @orange: #ff4f16;
+@orange1: #ff5d1a;
 
 
 *,
@@ -58,7 +59,7 @@ body {
 }
 
 .main {
-    max-width: 1240px;
+    max-width: 1274px;
     width: 100%;
     border-radius: 5px;
     box-shadow: 0px 0px 25px #d0d0d0;
@@ -70,7 +71,7 @@ body {
 }
 
 .container  {
-    max-width: 1130px;
+    max-width: 1125px;
     width: 100%;
     margin: 0 auto;
 }
@@ -83,7 +84,7 @@ start header
  */
 
 .header {
-    height: 125px;
+    height: 94px;
     border-bottom: 1px solid #dbdbdb;
 }
 
@@ -112,7 +113,7 @@ start header
 
 
 .burger {
-    display: none;
+    display: flex;
     flex-direction: column;
     span {
         height: 5px;
@@ -272,8 +273,8 @@ start header
     border-radius: 5px 0px 0px 5px;
     width: calc(100% - 145px);
     padding-left: 55px;
-    background: #ffffff url(../icons/ico-search-orange.svg) no-repeat 20px center;
-    background-size: 21px 21px;
+    background: #ffffff url(../icons/ico-search-orange.svg) no-repeat 18px center;
+    background-size: 26px 26px;
     color: #79839c;
     font-size: 16px;
     font-family: SF Pro Display Medium;
@@ -283,6 +284,7 @@ start header
         color: #79839c;
         font-size: 16px;
         font-family: SF Pro Display Medium;
+        opacity: 0.6;
     }
 }
 
@@ -290,7 +292,7 @@ start header
     width: 145px;
     height: 55px;
     border-radius: 0px 5px 5px 0px;
-    background: @orange;
+    background: @orange1;
     font-family: SF Pro Display Bold;
     font-size: 14px;
     text-transform: uppercase;
@@ -322,12 +324,13 @@ start header
 
         .services__link {
             text-decoration: none;
-            font-size: 14px;
+            font-size: 16px;
             color: @orange;
             font-family: SF Pro Display Medium;
 
             .number {
                 color: #79839c;
+                opacity: 0.75;
             }
         }
     }
@@ -431,11 +434,11 @@ start main__content
 
  .reset__password {
      width: 100%;
-     max-width: 555px;
+     max-width: 549px;
      margin: 0 auto;
      display: flex;
      flex-direction: column;
-     margin-top: 50px;
+     margin-top: 25px;
  }
 
  .form__title {
@@ -443,18 +446,20 @@ start main__content
      font-size: 24px;
      font-family: SF Pro Display Bold;
      margin: 0;
-     margin-bottom: 20px;
+     margin-bottom: 24px;
  }
 
  .form__txt {
      font-size: 16px;
      line-height: 24px;
      color: #79839c;
+     margin: 0;
      margin-bottom: 20px;
+     letter-spacing: 0.45px;
  }
 
  .mail {
-     padding: 15px 24px;
+     padding: 12px 20px;
      border: 1px solid #e4e4e5;
      border-radius: 5px;
      width: 100%;
@@ -470,11 +475,11 @@ start main__content
 
 
  .reset {
-     background: @orange;
+     background: @orange1;
      border: 1px solid #fac4ae;
      outline: none;
      font-family: SF Pro Display Medium;
-     height: 42px;
+     height: 46px;
      display: flex;
      align-items: center;
      justify-content: center;
@@ -482,6 +487,7 @@ start main__content
      border-radius: 25px;
      cursor: pointer;
      transition: 0.5s ease 0s;
+     font-size: 16px;
 
      &:hover {
          background: #000000;
@@ -529,6 +535,7 @@ start footer
      font-size: 16px;
      line-height: 24px;
      color: #777777;
+     margin: 0;
  }
  .orange {
      color: @orange;
@@ -576,18 +583,18 @@ start footer
 
 .facebook {
     mask-image: url(../icons/ico-socials-facebook.svg);
-    mask-size: 40px 40px;
-    width: 40px;
-    height: 40px;
+    mask-size: 50px 50px;
+    width: 50px;
+    height: 50px;
     background: #bdbdbd;
 
 }
 
 .twiter {
     mask-image: url(../icons/ico-socials-twitter.svg);
-    mask-size: 45px 35px;
-    width: 45px;
-    height: 35px;
+    mask-size: 50px 50px;
+    width: 50px;
+    height: 50px;
     background: #bdbdbd;
 
 }
@@ -603,9 +610,9 @@ start footer
 
 .up {
     mask-image: url(../icons/ico-arrow-up.svg);
-    mask-size: 40px 30px;
-    width: 40px;
-    height: 30px;
+    mask-size: 25px 25px;
+    width: 25px;
+    height: 25px;
     background: #bdbdbd;
 }
 
@@ -617,7 +624,7 @@ start footer
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 0;
+    padding: 16px 0;
     border-top: 1px solid #f2f2f2;
 }
 
@@ -662,7 +669,12 @@ start footer
         width: 100%;
         white-space: nowrap;
         overflow-x: scroll;
+
     }
+
+    .services::-webkit-scrollbar { width: 0; }
+    .services { -ms-overflow-style: none; }
+    .services { overflow: -moz-scrollbars-none; }
 
     .header {
         height: 80px;
@@ -696,8 +708,9 @@ start footer
     
         &::placeholder {
             color: #79839c;
-            font-size: 14px;
+            font-size: 16px;
             font-family: SF Pro Display Regular;
+            opacity: 0.6;
         }
     }
     
@@ -706,7 +719,7 @@ start footer
         height: 55px;
         border-radius: 0;
         background: transparent url(../icons/ico-search-orange.svg) no-repeat center center;
-        background-size: 21px;
+        background-size: 30px;
         font-family: SF Pro Display Bold;
         font-size: 0px;
         text-transform: uppercase;
@@ -741,13 +754,13 @@ start footer
             border-right: 1px solid #e4e4e5;
             border-bottom: 1px solid #e4e4e5;
             border-radius: 0px;
-            padding: 15px 15px;
+            padding: 15px 21px;
             margin-right: 0px;
             background: #ffffff;
     
             .services__link {
                 text-decoration: none;
-                font-size: 14px;
+                font-size: 16px;
                 color: @orange;
                 font-family: SF Pro Display Medium;
     
@@ -759,15 +772,21 @@ start footer
     }
 
     .main__content {
-        padding-bottom: 80px;
+        padding-bottom: 120px;
+    }
+
+    .form__txt {
+        margin-bottom: 15px;
     }
 
     .reset__password {
-        padding-top: 50px;
+        padding-top: 25px;
     }
+
 
     .form__title {
         text-align: left;
+        margin-bottom: 15px;
     }
 
 
@@ -781,6 +800,14 @@ start footer
         margin-top: 0;
     }
 
+    .top__menu {
+        display: none;
+    }
+
+    .lang {
+        display: none;
+    }
+
 }
 
 @media (max-width: 600px) {
@@ -790,7 +817,7 @@ start footer
     }
 
     .logo__item {
-        font-size: 24px;
+        font-size: 30px;
     }
 
 
@@ -872,7 +899,7 @@ start footer
     }
 
     .footer__logo {
-        font-size: 24px;
+        font-size: 30px;
     }
 
     .about {

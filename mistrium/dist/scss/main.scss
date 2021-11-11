@@ -1,0 +1,127 @@
+@import 'reset';
+
+@font-face {
+    font-family: 'Geomanist Thin';
+    src: url('../fonts/Geomanist-Thin.eot');
+    src: url('../fonts/Geomanist-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Geomanist-Thin.woff2') format('woff2'),
+        url('../fonts/Geomanist-Thin.woff') format('woff'),
+        url('../fonts/Geomanist-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geomanist Black';
+    src: url('../fonts/Geomanist-Black.eot');
+    src: 
+        url('../fonts/Geomanist-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Geomanist-Black.woff2') format('woff2'),
+        url('../fonts/Geomanist-Black.woff') format('woff'),
+        url('../fonts/Geomanist-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geomanist Medium';
+    src: url('../fonts/Geomanist-Medium.eot');
+    src: 
+        url('../fonts/Geomanist-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Geomanist-Medium.woff2') format('woff2'),
+        url('../fonts/Geomanist-Medium.woff') format('woff'),
+        url('../fonts/Geomanist-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geomanist Bold';
+    src: url('../fonts/Geomanist-Bold.eot');
+    src: 
+        url('../fonts/Geomanist-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Geomanist-Bold.woff2') format('woff2'),
+        url('../fonts/Geomanist-Bold.woff') format('woff'),
+        url('../fonts/Geomanist-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geomanist Book';
+    src: url('../fonts/Geomanist-Book.eot');
+    src: 
+        url('../fonts/Geomanist-Book.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Geomanist-Book.woff2') format('woff2'),
+        url('../fonts/Geomanist-Book.woff') format('woff'),
+        url('../fonts/Geomanist-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geomanist Ultra';
+    src: url('../fonts/Geomanist-Ultra.eot');
+    src: 
+        url('../fonts/Geomanist-Ultra.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Geomanist-Ultra.woff2') format('woff2'),
+        url('../fonts/Geomanist-Ultra.woff') format('woff'),
+        url('../fonts/Geomanist-Ultra.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geomanist';
+    src: url('../fonts/Geomanist-Regular.eot');
+    src: 
+        url('../fonts/Geomanist-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Geomanist-Regular.woff2') format('woff2'),
+        url('../fonts/Geomanist-Regular.woff') format('woff'),
+        url('../fonts/Geomanist-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geomanist ExtraLight';
+    src: url('../fonts/Geomanist-ExtraLight.eot');
+    src: 
+        url('../fonts/Geomanist-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Geomanist-ExtraLight.woff2') format('woff2'),
+        url('../fonts/Geomanist-ExtraLight.woff') format('woff'),
+        url('../fonts/Geomanist-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geomanist Light';
+    src: url('../fonts/Geomanist-Light.eot');
+    src: 
+        url('../fonts/Geomanist-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Geomanist-Light.woff2') format('woff2'),
+        url('../fonts/Geomanist-Light.woff') format('woff'),
+        url('../fonts/Geomanist-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+
+body {
+    font-family: Geomanist;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@import 'header';

@@ -1,5 +1,5 @@
 /* open / close mobile menu */
- const burger = document.querySelector(".burger");
+ /* const burger = document.querySelector(".burger");
  const mobile__menu = document.querySelector(".mobile__menu");
  const closed = document.querySelector(".close");
 
@@ -11,7 +11,7 @@ burger.onclick = function(){
 closed.onclick = function(){
     mobile__menu.classList.toggle("opened");
     
-  } 
+  }  */
 
 /* end */ 
 
