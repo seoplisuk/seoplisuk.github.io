@@ -1,6 +1,7 @@
 @import 'reset';
 @import 'fonts';
 @import 'swiper-bundle.min';
+@import 'fancybox';
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -19,6 +20,14 @@ body {
 
 // Main slider
 @import 'main__slider';
+
+// Page
+@import 'page';
+
+
+// footer
+@import 'footer';
+
 
 // Responsive 1367px
 @import 'response1367';
