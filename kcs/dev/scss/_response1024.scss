@@ -1,0 +1,41 @@
+@media screen and (max-width: 1024px) {
+
+    .main__slider {
+        min-height: 100vh;
+        height: 100vh;
+
+
+        .swiper-slide {
+
+            img {
+                height: 100vh;
+            }
+
+        }
+    }
+
+
+    .menu__list {
+        
+    
+    
+        .menu__item {
+    
+            .menu__link {
+                
+                padding: 22px 20px;
+               
+    
+                &:hover {
+                   
+                }
+            }
+    
+        }
+    }
+
+    .lang {
+        margin-left: 30px;
+    }
+    
+}

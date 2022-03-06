@@ -1,0 +1,38 @@
+@media screen and (max-width: 767px) {
+
+    .mobile__menu {
+        padding: 0 15px;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+
+    .menu__list {
+        flex-direction: column;
+    
+    
+        .menu__item {
+            width: 100%;
+            .menu__link {
+                color: #000000;
+                padding: 10px 10px;
+                width: 100%;
+                display: flex;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    
+                &:hover {
+                   color: #ffffff;
+                }
+            }
+    
+        }
+    }
+
+    .mobile__logo {
+        text-align: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    
+}

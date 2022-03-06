@@ -1,0 +1,137 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+}
+
+.top__line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #336CFF;
+    letter-spacing: -3%;
+}
+
+
+.menu__list {
+    display: flex;
+    align-items: center;
+
+
+    .menu__item {
+
+        .menu__link {
+            font-size: 16px;
+            font-weight: 600;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 38px 30px;
+            transition: 0.5s ease 0s;
+
+            &:hover {
+                background: #336CFF;
+            }
+        }
+
+    }
+}
+
+
+.lang {
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+
+    
+}
+
+.lang__link {
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.5s ease 0s;
+    text-transform: uppercase;
+
+    &:hover {
+        color: #336CFF;
+        font-weight: 700;
+    }
+}
+
+.separator {
+    display: block;
+    height: 16px;
+    width: 1px;
+    background: #ffffff;
+    margin: 0 10px;
+}
+
+
+.burger {
+    display: none;
+    flex-direction: column;
+
+    span {
+        width: 35px;
+        height: 2px;
+        margin-bottom: 8px;
+        background: #ffffff;
+        display: block;
+        transition: 0.5s ease 0s;
+
+        &:nth-last-child(1) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.close {
+    span {
+        &:nth-child(1) {
+            display: none;
+        }
+
+        &:nth-child(2) {
+            transform: rotate(45deg);
+        }
+
+        &:nth-child(3) {
+            transform: rotate(-45deg);
+            position: relative;
+            top: -9px;
+           
+        }
+    }
+}
+
+
+.mobile__menu {
+    background: #ffffff;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    height: 100vh;
+    z-index: 100;
+    width: 80%;
+    transition: 1s ease 0s;
+    overflow: hidden;
+}
+
+.opened {
+    left: 0;
+}

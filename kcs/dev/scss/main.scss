@@ -1,0 +1,36 @@
+@import 'reset';
+@import 'fonts';
+@import 'swiper-bundle.min';
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 1230px;
+    
+    width: 100%;
+    margin: 0 auto;
+   
+}
+
+// Header
+@import 'header';
+
+// Main slider
+@import 'main__slider';
+
+// Responsive 1367px
+@import 'response1367';
+
+// Responsive 1229px
+@import 'response1229';
+
+// Responsive 1024px
+@import 'response1024';
+
+// Responsive 768px
+@import 'response767';
+
+// Responsive 480px
+@import 'response479';

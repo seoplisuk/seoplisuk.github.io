@@ -1,0 +1,19 @@
+@media screen and (max-width: 479px) {
+
+    .main__slider {
+
+        .main__slider__title {
+            font-size: 18px;
+        }
+
+        .main__slider__txt {
+            font-size: 13.5px;
+            br {
+                display: none;
+            }
+        }
+        
+
+    }
+
+}

@@ -1,43 +1,20 @@
-document.addEventListener('mousewheel', event => {
+/*! lozad.js - v1.16.0 - 2020-09-06
+* https://github.com/ApoorvSaxena/lozad.js
+* Copyright (c) 2020 Apoorv Saxena; Licensed MIT */
+!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?module.exports=e():"function"==typeof define&&define.amd?define(e):t.lozad=e()}(this,function(){"use strict";
+/**
+   * Detect IE browser
+   * @const {boolean}
+   * @private
+   */var g="undefined"!=typeof document&&document.documentMode,f={rootMargin:"0px",threshold:0,load:function(t){if("picture"===t.nodeName.toLowerCase()){var e=t.querySelector("img"),r=!1;null===e&&(e=document.createElement("img"),r=!0),g&&t.getAttribute("data-iesrc")&&(e.src=t.getAttribute("data-iesrc")),t.getAttribute("data-alt")&&(e.alt=t.getAttribute("data-alt")),r&&t.append(e)}if("video"===t.nodeName.toLowerCase()&&!t.getAttribute("data-src")&&t.children){for(var a=t.children,o=void 0,i=0;i<=a.length-1;i++)(o=a[i].getAttribute("data-src"))&&(a[i].src=o);t.load()}t.getAttribute("data-poster")&&(t.poster=t.getAttribute("data-poster")),t.getAttribute("data-src")&&(t.src=t.getAttribute("data-src")),t.getAttribute("data-srcset")&&t.setAttribute("srcset",t.getAttribute("data-srcset"));var n=",";if(t.getAttribute("data-background-delimiter")&&(n=t.getAttribute("data-background-delimiter")),t.getAttribute("data-background-image"))t.style.backgroundImage="url('"+t.getAttribute("data-background-image").split(n).join("'),url('")+"')";else if(t.getAttribute("data-background-image-set")){var d=t.getAttribute("data-background-image-set").split(n),u=d[0].substr(0,d[0].indexOf(" "))||d[0];// Substring before ... 1x
+u=-1===u.indexOf("url(")?"url("+u+")":u,1===d.length?t.style.backgroundImage=u:t.setAttribute("style",(t.getAttribute("style")||"")+"background-image: "+u+"; background-image: -webkit-image-set("+d+"); background-image: image-set("+d+")")}t.getAttribute("data-toggle-class")&&t.classList.toggle(t.getAttribute("data-toggle-class"))},loaded:function(){}};function A(t){t.setAttribute("data-loaded",!0)}var m=function(t){return"true"===t.getAttribute("data-loaded")},v=function(t){var e=1<arguments.length&&void 0!==arguments[1]?arguments[1]:document;return t instanceof Element?[t]:t instanceof NodeList?t:e.querySelectorAll(t)};return function(){var r,a,o=0<arguments.length&&void 0!==arguments[0]?arguments[0]:".lozad",t=1<arguments.length&&void 0!==arguments[1]?arguments[1]:{},e=Object.assign({},f,t),i=e.root,n=e.rootMargin,d=e.threshold,u=e.load,g=e.loaded,s=void 0;"undefined"!=typeof window&&window.IntersectionObserver&&(s=new IntersectionObserver((r=u,a=g,function(t,e){t.forEach(function(t){(0<t.intersectionRatio||t.isIntersecting)&&(e.unobserve(t.target),m(t.target)||(r(t.target),A(t.target),a(t.target)))})}),{root:i,rootMargin:n,threshold:d}));for(var c,l=v(o,i),b=0;b<l.length;b++)(c=l[b]).getAttribute("data-placeholder-background")&&(c.style.background=c.getAttribute("data-placeholder-background"));return{observe:function(){for(var t=v(o,i),e=0;e<t.length;e++)m(t[e])||(s?s.observe(t[e]):(u(t[e]),A(t[e]),g(t[e])))},triggerLoad:function(t){m(t)||(u(t),A(t),g(t))},observer:s}}});
 
-}, { passive: true });
-
-document.addEventListener('wheel', event => {
-
-}, { passive: true });
-
-document.addEventListener('scroll', event => {
-
-}, { passive: true });
-
-
-document.addEventListener('touchstart', event => {
-
-}, { passive: true });
-
-document.addEventListener('touchend', event => {
-
-}, { passive: true });
-
-document.addEventListener('touchmove', event => {
-
-}, { passive: true });
+/* ***************************************************
+---------------------------------------------------
+*************************************************** */
 
 
 
-const burger = document.querySelector(".burger");
-const mobile__menu = document.querySelector(".mobile__menu");
-const closed = document.querySelector(".close");
-
-burger.onclick = function () {
-    mobile__menu.classList.toggle("opened");
-
-}
-
-closed.onclick = function () {
-    mobile__menu.classList.toggle("opened");
-
-}
 
 
 /**
@@ -56,163 +33,253 @@ closed.onclick = function () {
  //# sourceMappingURL=swiper-bundle.min.js.map
 
 
+ /* ***************************************************
+---------------------------------------------------
+*************************************************** */
 
 
-// Dynamic Adaptive
+/* dynamic adaptive */
+// Dynamic Adapt v.1
+// HTML data-da="where(uniq class name),when(breakpoint),position(digi)"
+// e.x. data-da=".item,992,2"
+// Andrikanych Yevhen 2020
+// https://www.youtube.com/c/freelancerlifestyle
 
 "use strict";
 
 function DynamicAdapt(type) {
-    this.type = type;
+	this.type = type;
 }
 
 DynamicAdapt.prototype.init = function () {
-    const _this = this;
-    // массив объектов
-    this.оbjects = [];
-    this.daClassname = "_dynamic_adapt_";
-    // массив DOM-элементов
-    this.nodes = document.querySelectorAll("[data-da]");
+	const _this = this;
+	// массив объектов
+	this.оbjects = [];
+	this.daClassname = "_dynamic_adapt_";
+	// массив DOM-элементов
+	this.nodes = document.querySelectorAll("[data-da]");
 
-    // наполнение оbjects объктами
-    for (let i = 0; i < this.nodes.length; i++) {
-        const node = this.nodes[i];
-        const data = node.dataset.da.trim();
-        const dataArray = data.split(",");
-        const оbject = {};
-        оbject.element = node;
-        оbject.parent = node.parentNode;
-        оbject.destination = document.querySelector(dataArray[0].trim());
-        оbject.breakpoint = dataArray[1] ? dataArray[1].trim() : "767";
-        оbject.place = dataArray[2] ? dataArray[2].trim() : "last";
-        оbject.index = this.indexInParent(оbject.parent, оbject.element);
-        this.оbjects.push(оbject);
-    }
+	// наполнение оbjects объктами
+	for (let i = 0; i < this.nodes.length; i++) {
+		const node = this.nodes[i];
+		const data = node.dataset.da.trim();
+		const dataArray = data.split(",");
+		const оbject = {};
+		оbject.element = node;
+		оbject.parent = node.parentNode;
+		оbject.destination = document.querySelector(dataArray[0].trim());
+		оbject.breakpoint = dataArray[1] ? dataArray[1].trim() : "767";
+		оbject.place = dataArray[2] ? dataArray[2].trim() : "last";
+		оbject.index = this.indexInParent(оbject.parent, оbject.element);
+		this.оbjects.push(оbject);
+	}
 
-    this.arraySort(this.оbjects);
+	this.arraySort(this.оbjects);
 
-    // массив уникальных медиа-запросов
-    this.mediaQueries = Array.prototype.map.call(this.оbjects, function (item) {
-        return '(' + this.type + "-width: " + item.breakpoint + "px)," + item.breakpoint;
-    }, this);
-    this.mediaQueries = Array.prototype.filter.call(this.mediaQueries, function (item, index, self) {
-        return Array.prototype.indexOf.call(self, item) === index;
-    });
+	// массив уникальных медиа-запросов
+	this.mediaQueries = Array.prototype.map.call(this.оbjects, function (item) {
+		return '(' + this.type + "-width: " + item.breakpoint + "px)," + item.breakpoint;
+	}, this);
+	this.mediaQueries = Array.prototype.filter.call(this.mediaQueries, function (item, index, self) {
+		return Array.prototype.indexOf.call(self, item) === index;
+	});
 
-    // навешивание слушателя на медиа-запрос
-    // и вызов обработчика при первом запуске
-    for (let i = 0; i < this.mediaQueries.length; i++) {
-        const media = this.mediaQueries[i];
-        const mediaSplit = String.prototype.split.call(media, ',');
-        const matchMedia = window.matchMedia(mediaSplit[0]);
-        const mediaBreakpoint = mediaSplit[1];
+	// навешивание слушателя на медиа-запрос
+	// и вызов обработчика при первом запуске
+	for (let i = 0; i < this.mediaQueries.length; i++) {
+		const media = this.mediaQueries[i];
+		const mediaSplit = String.prototype.split.call(media, ',');
+		const matchMedia = window.matchMedia(mediaSplit[0]);
+		const mediaBreakpoint = mediaSplit[1];
 
-        // массив объектов с подходящим брейкпоинтом
-        const оbjectsFilter = Array.prototype.filter.call(this.оbjects, function (item) {
-            return item.breakpoint === mediaBreakpoint;
-        });
-        matchMedia.addListener(function () {
-            _this.mediaHandler(matchMedia, оbjectsFilter);
-        });
-        this.mediaHandler(matchMedia, оbjectsFilter);
-    }
+		// массив объектов с подходящим брейкпоинтом
+		const оbjectsFilter = Array.prototype.filter.call(this.оbjects, function (item) {
+			return item.breakpoint === mediaBreakpoint;
+		});
+		matchMedia.addListener(function () {
+			_this.mediaHandler(matchMedia, оbjectsFilter);
+		});
+		this.mediaHandler(matchMedia, оbjectsFilter);
+	}
 };
 
 DynamicAdapt.prototype.mediaHandler = function (matchMedia, оbjects) {
-    if (matchMedia.matches) {
-        for (let i = 0; i < оbjects.length; i++) {
-            const оbject = оbjects[i];
-            оbject.index = this.indexInParent(оbject.parent, оbject.element);
-            this.moveTo(оbject.place, оbject.element, оbject.destination);
-        }
-    } else {
-        for (let i = 0; i < оbjects.length; i++) {
-            const оbject = оbjects[i];
-            if (оbject.element.classList.contains(this.daClassname)) {
-                this.moveBack(оbject.parent, оbject.element, оbject.index);
-            }
-        }
-    }
+	if (matchMedia.matches) {
+		for (let i = 0; i < оbjects.length; i++) {
+			const оbject = оbjects[i];
+			оbject.index = this.indexInParent(оbject.parent, оbject.element);
+			this.moveTo(оbject.place, оbject.element, оbject.destination);
+		}
+	} else {
+		for (let i = 0; i < оbjects.length; i++) {
+			const оbject = оbjects[i];
+			if (оbject.element.classList.contains(this.daClassname)) {
+				this.moveBack(оbject.parent, оbject.element, оbject.index);
+			}
+		}
+	}
 };
 
 // Функция перемещения
 DynamicAdapt.prototype.moveTo = function (place, element, destination) {
-    element.classList.add(this.daClassname);
-    if (place === 'last' || place >= destination.children.length) {
-        destination.insertAdjacentElement('beforeend', element);
-        return;
-    }
-    if (place === 'first') {
-        destination.insertAdjacentElement('afterbegin', element);
-        return;
-    }
-    destination.children[place].insertAdjacentElement('beforebegin', element);
+	element.classList.add(this.daClassname);
+	if (place === 'last' || place >= destination.children.length) {
+		destination.insertAdjacentElement('beforeend', element);
+		return;
+	}
+	if (place === 'first') {
+		destination.insertAdjacentElement('afterbegin', element);
+		return;
+	}
+	destination.children[place].insertAdjacentElement('beforebegin', element);
 }
 
 // Функция возврата
 DynamicAdapt.prototype.moveBack = function (parent, element, index) {
-    element.classList.remove(this.daClassname);
-    if (parent.children[index] !== undefined) {
-        parent.children[index].insertAdjacentElement('beforebegin', element);
-    } else {
-        parent.insertAdjacentElement('beforeend', element);
-    }
+	element.classList.remove(this.daClassname);
+	if (parent.children[index] !== undefined) {
+		parent.children[index].insertAdjacentElement('beforebegin', element);
+	} else {
+		parent.insertAdjacentElement('beforeend', element);
+	}
 }
 
 // Функция получения индекса внутри родителя
 DynamicAdapt.prototype.indexInParent = function (parent, element) {
-    const array = Array.prototype.slice.call(parent.children);
-    return Array.prototype.indexOf.call(array, element);
+	const array = Array.prototype.slice.call(parent.children);
+	return Array.prototype.indexOf.call(array, element);
 };
 
 // Функция сортировки массива по breakpoint и place 
 // по возрастанию для this.type = min
 // по убыванию для this.type = max
 DynamicAdapt.prototype.arraySort = function (arr) {
-    if (this.type === "min") {
-        Array.prototype.sort.call(arr, function (a, b) {
-            if (a.breakpoint === b.breakpoint) {
-                if (a.place === b.place) {
-                    return 0;
-                }
+	if (this.type === "min") {
+		Array.prototype.sort.call(arr, function (a, b) {
+			if (a.breakpoint === b.breakpoint) {
+				if (a.place === b.place) {
+					return 0;
+				}
 
-                if (a.place === "first" || b.place === "last") {
-                    return -1;
-                }
+				if (a.place === "first" || b.place === "last") {
+					return -1;
+				}
 
-                if (a.place === "last" || b.place === "first") {
-                    return 1;
-                }
+				if (a.place === "last" || b.place === "first") {
+					return 1;
+				}
 
-                return a.place - b.place;
-            }
+				return a.place - b.place;
+			}
 
-            return a.breakpoint - b.breakpoint;
-        });
-    } else {
-        Array.prototype.sort.call(arr, function (a, b) {
-            if (a.breakpoint === b.breakpoint) {
-                if (a.place === b.place) {
-                    return 0;
-                }
+			return a.breakpoint - b.breakpoint;
+		});
+	} else {
+		Array.prototype.sort.call(arr, function (a, b) {
+			if (a.breakpoint === b.breakpoint) {
+				if (a.place === b.place) {
+					return 0;
+				}
 
-                if (a.place === "first" || b.place === "last") {
-                    return 1;
-                }
+				if (a.place === "first" || b.place === "last") {
+					return 1;
+				}
 
-                if (a.place === "last" || b.place === "first") {
-                    return -1;
-                }
+				if (a.place === "last" || b.place === "first") {
+					return -1;
+				}
 
-                return b.place - a.place;
-            }
+				return b.place - a.place;
+			}
 
-            return b.breakpoint - a.breakpoint;
-        });
-        return;
-    }
+			return b.breakpoint - a.breakpoint;
+		});
+		return;
+	}
 };
 
 const da = new DynamicAdapt("max");
 da.init();
 /* end */
+
+
+/* ***************************************************
+---------------------------------------------------
+*************************************************** */
+
+
+const burger = document.querySelector(".burger");
+const mobile__menu = document.querySelector(".mobile__menu");
+
+
+burger.onclick = function () {
+	mobile__menu.classList.toggle("opened");
+	burger.classList.toggle("close");
+}
+
+
+
+/* ***************************************************
+---------------------------------------------------
+*************************************************** */
+
+
+
+const observer = lozad('.lozad', {
+    rootMargin: '10px 0px', // syntax similar to that of CSS Margin
+    threshold: 0.1, // ratio of element convergence
+    enableAutoReload: true // it will reload the new image when validating attributes changes
+});
+observer.observe();
+
+/* ***************************************************
+---------------------------------------------------
+*************************************************** */
+
+
+const swiper = new Swiper('.swiper', {
+	// Optional parameters
+	slidesPerView: 1,
+	spaceBetween: 0,
+	freeMode: false,
+	direction: 'horizontal',
+	loop: true,
+
+	breakpoints: {
+		// when window width is >= 320px
+		320: {
+			slidesPerView: 1,
+			spaceBetween: 0
+		},
+		// when window width is >= 480px
+		480: {
+			slidesPerView: 1,
+			spaceBetween: 0
+		},
+		// when window width is >= 640px
+		992: {
+			slidesPerView: 1,
+			spaceBetween: 0
+		}
+
+	},
+
+	// If we need pagination
+	pagination: {
+		el: '.swiper-pagination',
+	},
+
+	// Navigation arrows
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+
+	// And if we need scrollbar
+	scrollbar: {
+		el: '.swiper-scrollbar',
+	},
+
+
+
+});

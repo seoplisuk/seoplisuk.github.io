@@ -1,0 +1,53 @@
+@media screen and (max-width: 1229px) {
+    .main__slider {
+
+        .main__slider__title {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .main__slider__txt {
+            font-size: 14px;
+            line-height: 24px;
+            margin-bottom: 20px;
+        }
+
+        .main__slider__link {
+            font-size: 16px;
+
+            &::after {
+                width: 26px;
+                height: 26px;
+            }
+        }
+
+        
+
+    }
+
+
+    .logo {
+        font-size: 40px;
+    }
+
+
+    .menu__list {
+        
+    
+    
+        .menu__item {
+    
+            .menu__link {
+                
+                padding: 22px 30px;
+               
+    
+                &:hover {
+                   
+                }
+            }
+    
+        }
+    }
+
+}
