@@ -1,0 +1,114 @@
+
+.categories__products {
+  
+   
+
+    .products__row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 60px 0;
+        border-bottom: 1px solid #ebebeb;
+
+        .product {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            color: #576159;
+            text-decoration: none;
+            width: calc(100% / 9 - 10px);
+
+            &::before {
+                content: "";
+                width: 40px;
+                height: 48px;
+                background: #cbb89f;
+                
+                mask-size: contain;
+                mask-repeat: no-repeat;
+                margin-bottom: 10px;
+                display: flex;
+            }
+
+            @media (max-width: 992px) {
+                width: 31%;
+                margin-bottom: 15px;
+            }
+
+            @media (max-width: 600px) {
+                width: 31%;
+                margin-bottom: 30px;
+
+               
+            }
+
+        }
+
+
+        .k0 {
+            &::before {
+                mask-image: url(../icons/lotion.svg);
+            }
+        }
+
+        .k1 {
+            &::before {
+                mask-image: url(../icons/shampoo2.svg);
+            }
+        }
+
+        .k2 {
+            &::before {
+                mask-image: url(../icons/serum.svg);
+            }
+        }
+
+        .k3 {
+            &::before {
+                mask-image: url(../icons/cream.svg);
+            }
+        }
+
+        .k4 {
+            &::before {
+                mask-image: url(../icons/shampoo.svg);
+            }
+        }
+
+        .k5 {
+            &::before {
+                mask-image: url(../icons/cream2.svg);
+            }
+        }
+
+        .k6 {
+            &::before {
+                mask-image: url(../icons/mask.svg);
+            }
+        }
+
+        .k7 {
+            &::before {
+                mask-image: url(../icons/eye-patch.svg);
+            }
+        }
+
+        .k8 {
+            &::before {
+                mask-image: url(../icons/massage.svg);
+            }
+        }
+
+        @media (max-width: 600px) {
+            padding: 35px 0;
+        }
+
+
+    }
+
+
+
+
+}
