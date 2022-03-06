@@ -208,14 +208,40 @@ da.init();
 *************************************************** */
 
 
-const burger = document.querySelector(".burger");
+/* const burger = document.querySelector(".burger");
 const mobile__menu = document.querySelector(".mobile__menu");
 
 
 burger.onclick = function () {
 	mobile__menu.classList.toggle("opened");
 	burger.classList.toggle("close");
-}
+} */
+
+
+document.addEventListener('DOMContentLoaded', () => { // Структура страницы загружена и готова к взаимодействию
+
+    const button = document.querySelector('.burger') // находим кнопку для открытия/закрытия окна навигации
+    const nav = document.querySelector('.mobile__menu') // находим окно навигации
+  
+    button.addEventListener('click', () => { // при клике на кнопку
+      nav.classList.toggle('opened') // открываем/закрываем окно навигации, добаляя/удаляя активный класс
+      button.classList.toggle("close")
+    })
+  
+    window.addEventListener('click', e => { // при клике в любом месте окна браузера
+      const target = e.target // находим элемент, на котором был клик
+      if (!target.closest('.mobile__menu') && !target.closest('.burger')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
+        nav.classList.remove('opened') // то закрываем окно навигации, удаляя активный класс
+      }
+    })
+  
+  })
+
+
+
+/* ***************************************************
+---------------------------------------------------
+*************************************************** */
 
 
 
