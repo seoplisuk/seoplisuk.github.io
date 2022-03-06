@@ -1027,6 +1027,7 @@ body {
   -webkit-transition: 0.5s ease 0s;
   transition: 0.5s ease 0s;
   opacity: 0.6;
+  outline: none;
 }
 .main__slider .arrows .swiper-button-prev:hover {
   opacity: 1;
@@ -1035,6 +1036,7 @@ body {
   -webkit-transition: 0.5s ease 0s;
   transition: 0.5s ease 0s;
   opacity: 0.6;
+  utline: none;
 }
 .main__slider .arrows .swiper-button-next:hover {
   opacity: 1;
