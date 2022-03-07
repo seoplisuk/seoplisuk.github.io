@@ -2707,7 +2707,7 @@ body {
   left: -100%;
   top: 0;
   height: 100vh;
-  z-index: 100;
+  z-index: 5000;
   width: 80%;
   -webkit-transition: 1s ease 0s;
   transition: 1s ease 0s;
@@ -3944,5 +3944,13 @@ p {
   }
   .questions .form__input input:focus-within::placeholder {
     opacity: 0;
+  }
+
+  .mobile__menu .footer__contacts {
+    padding-left: 0;
+  }
+  .mobile__menu .footer__contacts .mail {
+    color: #333333;
+    font-size: 12px;
   }
 }
