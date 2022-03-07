@@ -139,5 +139,17 @@
             align-items: center;
         }
     }
+
+
+    .service__row {
+        margin-right: 0;
+        justify-content: space-between;
+
+    }
+
+    .service__item {
+        max-width: calc(100% / 2 - 15px);
+        margin-right: 0;
+    }
     
 }

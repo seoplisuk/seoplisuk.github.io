@@ -13,4 +13,17 @@
 
     }
 
+
+    .service__row {
+        margin-right: 0;
+        justify-content: space-between;
+
+    }
+
+    .service__item {
+        max-width: calc(100% / 3 - 15px);
+        margin-right: 0;
+    }
+
+
 }
