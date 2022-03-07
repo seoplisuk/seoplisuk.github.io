@@ -1,0 +1,21 @@
+.last__projects {
+    overflow: hidden;
+    padding-bottom: 80px;
+}
+
+.last__projects__title {
+    font-size: 50px;
+    font-weight: 700;
+    color: #333333;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+
+    &::after {
+        content: "";
+        width: 60px;
+        height: 2px;
+        background: #1E4BBE;
+        margin-top: 15px;
+    }
+}

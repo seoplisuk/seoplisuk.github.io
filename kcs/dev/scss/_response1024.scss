@@ -219,7 +219,23 @@
         font-size: 30px;
     }
 
-    
+    .brands__row {
+        flex-wrap: wrap;
+    }
+
+    .brand__item {
+        width: calc(100% / 3);
+    }
+
+    .last__projects__title {
+        font-size: 24px;
+        margin-top: 30px;
+    }
+
+    .last__projects {
+        overflow: hidden;
+        padding-bottom: 30px;
+    }
 
     
 }
