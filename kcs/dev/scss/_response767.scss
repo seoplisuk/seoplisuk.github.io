@@ -50,5 +50,13 @@
     .service__title {
         min-height: 100px;
     }
+
+
+    .project__row {
+        flex-direction: column;
+        width: 100%;
+        border: 1px solid #D9D9D9;
+        margin-bottom: 30px;
+    }
     
 }
