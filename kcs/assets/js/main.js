@@ -318,3 +318,129 @@ const swiper = new Swiper('.swiper', {
 
 
 });
+
+/* ***************************************************
+---------------------------------------------------
+*************************************************** */
+
+
+$(document).ready(function (){
+
+
+	var rws_menu = false; // true если виджет открыт
+	var rws_message = false; // true если сообщение открыто
+	
+
+	// ========== Открыть сообщение через 5 сек ========== //
+	setTimeout(function (){
+		showMessage();
+	}, 5000)
+
+
+	// ========== Открыть виджет ========== //
+   $(".rsw-button__icon").click(function (){
+     rwsOpen();
+   });
+
+   // ========== Закрыть виджет ========== //
+   $(".rsw-button__close, .rsw-overlay").click(function (){
+     rwsClose();
+   });
+
+   // ========== Открыть виджет при клике на сообщение ========== //
+	$(".rsw-message").click(function (){
+		if(event.target.classList.contains("rsw-message__close")){
+			hideMessage()
+		}else{
+			hideMessage();
+			rwsOpen();
+		}
+	});
+
+
+	// ========== Функция закрытия виджета ========== //
+	function rwsOpen(){
+		rws_menu = true;
+		$(".rsw").addClass("rsw-open");
+
+		if (rws_message == true){
+			hideMessage();
+		}
+	}
+
+	// ========== Функция открытия виджета ========== //
+	function rwsClose(){
+		rws_menu = false;
+		$(".rsw").removeClass("rsw-open");
+
+		if (rws_message == true){
+			hideMessage();
+		}else if(rws_message == 0){
+			setTimeout(function (){
+				showMessage();
+			}, 2000);
+		}
+	}
+
+	// ========== Функция открытия сообщения ========== //
+	function showMessage(){
+		if(rws_menu == false){
+			
+			rws_message = true;
+		
+			$(".rsw-message").addClass("rsw-message--show");
+			$(".rsw-notify").addClass("rsw-notify--show rsw-bounce");
+
+			setTimeout(function (){
+				$(".rsw-notify").removeClass("rsw-bounce");
+			}, 1000);
+
+			setInterval(function (){
+				$(".rsw-notify--show").addClass("rsw-bounce");
+				setTimeout(function (){
+					$(".rsw-notify").removeClass("rsw-bounce");
+				}, 1000);
+			}, 4000);
+
+		}else{
+			rws_message = 0;
+		}
+	}
+	
+	// ========== Функция закрытия сообщения ========== //
+	function hideMessage(){
+		$(".rsw-message").removeClass("rsw-message--show");
+		$(".rsw-notify").removeClass("rsw-notify--show rsw-bounce");
+	}
+
+	// ========== Анимация смены иконок в кнопке ========== //
+   var currentIndex = 0,
+       icons = $('.rsw-button__icon i'),
+       iconsTotal = icons.length;
+
+  	icons.eq(0).addClass("show");
+
+   function changeIcons() {
+     var icon = icons.eq(currentIndex);
+     
+     icons.removeClass("show");
+     icon.addClass("show");
+   }
+
+   if(iconsTotal > 1){
+      setTimeout(function (){
+         setInterval(function () {
+            currentIndex += 1;
+               if (currentIndex > iconsTotal - 1) {
+               	currentIndex = 0;
+               }
+               changeIcons()
+         }, 4000);      
+      }, 1000);
+   }
+
+});
+
+/* ***************************************************
+---------------------------------------------------
+*************************************************** */

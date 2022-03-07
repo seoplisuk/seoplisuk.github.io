@@ -1,0 +1,883 @@
+
+
+/* =================== [01] General =================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+@import url(../fonts/fontawesome/css/all.min.css);
+
+
+:root{
+	--rsw-color: #2196F3;
+	--rsw-icon-color: #fff;
+}
+
+.rsw{
+	font-family: 'Rubik', sans-serif;
+}
+.rsw-inner{
+	position: fixed;
+	left: 40px;
+	bottom: 40px;
+	width: 60px;
+	height: 60px;
+	-webkit-border-radius: 50%;
+	-ms-border-radius: 50%;
+	border-radius: 50%;
+   z-index: 990;
+}
+.rsw-overlay{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 900;
+	background: rgba(0, 0, 0, .25);
+	-webkit-transition: all 0.3s;
+   -moz-transition: all 0.3s;
+   -ms-transition: all 0.3s;
+   -o-transition: all 0.3s;
+   transition: all 0.3s;
+	visibility: hidden;
+	opacity: 0;
+}
+
+
+/* =================== [02] If Open =================== */
+.rsw.rsw-open .rsw-overlay{
+	visibility: visible;
+	opacity: 1	
+}
+.rsw.rsw-open .rsw-button{
+	-webkit-transform: scale(.8);
+	-ms-transform: scale(.8);
+	-o-transform: scale(.8);
+	transform: scale(.8);
+}
+.rsw.rsw-open .rsw-button__icon{
+	visibility: hidden;
+	opacity: 0;
+}
+.rsw.rsw-open .rsw-button__close{
+	-webkit-transform: rotateY(0);
+	-ms-transform: rotateY(0);
+	-o-transform: rotateY(0);
+	transform: rotateY(0);
+	visibility: visible;
+	opacity: 1;
+}
+.rsw.rsw-open .rsw-menu{
+	-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
+	transform: translateY(0);
+	visibility: visible;
+	opacity: 1;
+}
+.rsw.rsw-open .rsw-menu__item{
+	-webkit-transform: rotate(0);
+	-ms-transform: rotate(0);
+	-o-transform: rotate(0);
+	transform: rotate(0);
+}
+
+
+/* =================== [03] Button =================== */
+.rsw-button{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	-webkit-border-radius: 50%;
+	-ms-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+   -moz-box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+   -ms-box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+   -o-box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+   box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+   -webkit-transition: all 0.5s;
+   -moz-transition: all 0.5s;
+   -ms-transition: all 0.5s;
+   -o-transition: all 0.5s;
+   transition: all 0.5s;
+   z-index: 995;
+   cursor: pointer;
+}
+.rsw-button:hover {
+	-webkit-transform: translateY(-5px);
+	-ms-transform: translateY(-5px);
+	-o-transform: translateY(-5px);
+	transform: translateY(-5px);
+   -webkit-box-shadow: 0 5px 15px 1px rgba(43,43,43,.15);
+   -moz-box-shadow: 0 5px 15px 1px rgba(43,43,43,.15);
+   -o-box-shadow: 0 5px 15px 1px rgba(43,43,43,.15);
+   -ms-box-shadow: 0 5px 15px 1px rgba(43,43,43,.15);
+   box-shadow: 0 5px 15px 1px rgba(43,43,43,.15);
+}
+
+
+/* ==================== [04] Button > Icon =================== */
+.rsw-button__icon{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	-webkit-border-radius: 50%;
+	-ms-border-radius: 50%;
+	border-radius: 50%;
+   background: var(--rsw-color);
+   z-index: 0;
+}
+.rsw-button__icon i{
+	position: absolute;
+	font-size: 22px;
+	color: var(--rsw-icon-color);
+	-webkit-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+	-webkit-transition: all 0.5s;
+   -moz-transition: all 0.5s;
+   -ms-transition: all 0.5s;
+   -o-transition: all 0.5s;
+   transition: all 0.5s;
+	opacity: 0;
+	visibility: hidden;
+}
+.rsw-button__icon i.show{
+	-webkit-transform: rotateY(0);
+	-ms-transform: rotateY(0);
+	-o-transform: rotateY(0);
+	transform: rotateY(0);
+	opacity: 1;
+	visibility: visible;
+}
+
+/* ==================== [05] Button > Close =================== */
+.rsw-button__close{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #555;   
+	font-size: 26px;
+   color: #fff;
+	-webkit-border-radius: 50%;
+	-ms-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-transition: all 0.5s;
+   -moz-transition: all 0.5s;
+   -ms-transition: all 0.5s;
+   -o-transition: all 0.5s;
+   transition: all 0.5s;
+   -webkit-box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0.15);
+   box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0.15);
+	-webkit-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	opacity: 0;
+	visibility: hidden;
+	z-index: 20;
+}
+.rsw-button__close:before{
+	content: "\f00d";
+	font-weight: 500;
+	font-family: "Font Awesome 5 Pro";
+	-moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased;
+   display: inline-block;
+   font-style: normal;
+   font-variant: normal;
+   text-rendering: auto;
+   line-height: 1;
+}
+.rsw-button__close:hover{
+   -webkit-box-shadow: 0 0 0px 10px rgba(0, 0, 0, 0.15);
+   box-shadow: 0 0 0px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ==================== [06] Button > Pulse Animation =================== */
+.rsw-button-pulse .rsw-button__icon:before,
+.rsw-button-pulse .rsw-button__icon:after{
+	content: '';
+	display: block;
+   position: absolute;
+   z-index: -1;
+   -webkit-border-radius: 50%;
+	-ms-border-radius: 50%;
+	border-radius: 50%;
+   -webkit-transform: scale(0);
+   -moz-transform: scale(0);
+   -ms-transform: scale(0);
+   -o-transform: scale(0);
+   transform: scale(0);
+   -webkit-animation: rswPulse 2s infinite;
+   -moz-animation: rswPulse 2s infinite;
+   -ms-animation: rswPulse 2s infinite;
+   -o-animation: rswPulse 2s infinite;
+   animation: rswPulse 2s infinite;
+   -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+   -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+   -ms-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+   -o-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+   box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+   visibility: visible;
+   opacity: .3;
+}
+.rsw-button-pulse .rsw-button__icon:before{
+   width: 132%;
+   height: 132%;
+   background: var(--rsw-color); 
+}
+.rsw-button-pulse .rsw-button__icon:after{
+   width: 165%;
+   height: 165%;
+   border: 1px solid var(--rsw-color);
+   -webkit-animation-delay: .5s;
+   -moz-animation-delay: .5s;
+   -ms-animation-delay: .5s;
+   -o-animation-delay: .5s;
+   animation-delay: .5s
+}
+@-webkit-keyframes rswPulse{
+   0%{
+      -webkit-transform:scale(0);
+      -moz-transform:scale(0);
+      -ms-transform:scale(0);
+      -o-transform:scale(0);
+      transform:scale(0);
+      opacity: 1;
+   }
+   50%{
+      opacity: .5;
+   }
+   100%{
+      -webkit-transform:scale(1);
+      -moz-transform:scale(1);
+      -ms-transform:scale(1);
+      -o-transform:scale(1);
+      transform:scale(1);
+      opacity: 0;
+   }
+}
+@-ms-keyframes rswPulse{
+   0%{
+      -webkit-transform:scale(0);
+      -moz-transform:scale(0);
+      -ms-transform:scale(0);
+      -o-transform:scale(0);
+      transform:scale(0);
+      opacity: 1;
+   }
+   50%{
+      opacity: .5;
+   }
+   100%{
+      -webkit-transform:scale(1);
+      -moz-transform:scale(1);
+      -ms-transform:scale(1);
+      -o-transform:scale(1);
+      transform:scale(1);
+      opacity: 0;
+   }
+}
+@keyframes rswPulse{
+   0%{
+      -webkit-transform:scale(0);
+      -moz-transform:scale(0);
+      -ms-transform:scale(0);
+      -o-transform:scale(0);
+      transform:scale(0);
+      opacity: 1;
+   }
+   50%{
+      opacity: .5;
+   }
+   100%{
+      -webkit-transform:scale(1);
+      -moz-transform:scale(1);
+      -ms-transform:scale(1);
+      -o-transform:scale(1);
+      transform:scale(1);
+      opacity: 0;
+   }
+}
+
+
+/* ==================== [07] Notify Count =================== */
+.rsw-notify{
+   position: absolute;
+   top: -5px;
+   left: -3px;
+   width: 20px;
+   height: 20px;
+   display: flex;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   color: #fff;
+   font-size: 12px;
+   font-weight: 500;
+   background-color: #f25;
+   -webkit-transition: .3s ease all;
+   -moz-transition: .3s ease all;
+   -ms-transition: .3s ease all;
+   -o-transition: .3s ease all;
+   transition: .3s ease all;
+  	-webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+   border-radius: 50%;
+   opacity: 0;
+   visibility: hidden;
+   z-index: 30;
+}
+.rsw-notify--show{
+   opacity: 1;
+   visibility: visible;
+}
+
+
+/* ==================== [08] Message =================== */
+.rsw-message{
+	position: absolute;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	left: 135%;
+	bottom: 0;
+	min-width: 280px;
+	padding: 12px 25px 12px 12px;
+	background: #fff;
+	border: 2px solid var(--rsw-color);
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+	border-radius: 15px;
+	-webkit-box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+   -moz-box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+   -ms-box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+   -o-box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+   box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+   -webkit-transform: translateX(-5%);
+   -ms-transform: translateX(-5%);
+   -o-transform: translateX(-5%);
+   transform: translateX(-5%);
+   -webkit-transition: .3s ease all;
+   -moz-transition: .3s ease all;
+   -ms-transition: .3s ease all;
+   -o-transition: .3s ease all;
+   transition: .3s ease all;
+   opacity: 0;
+   visibility: hidden;
+	cursor: pointer;
+}
+.rsw-message--show{
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	-o-transform: translateX(0);
+	transform: translateX(0);
+	opacity: 1;
+	visibility: visible;
+}
+.rsw-message:after{
+	content: '';
+	position: absolute;
+   display: block;
+   width: 8px;
+   height: 8px;
+   background: #fff;
+   bottom: 30px;
+   left: -6px;
+   -webkit-transform: rotate(134deg);
+   -ms-transform: rotate(134deg);
+   -o-transform: rotate(134deg);
+   transform: rotate(134deg);
+   border-right: 2px solid var(--rsw-color);
+   border-bottom: 2px solid var(--rsw-color);
+}
+.rsw-message:hover {
+	-webkit-transform: translateY(-5px);
+	-ms-transform: translateY(-5px);
+	-o-transform: translateY(-5px);
+	transform: translateY(-5px);
+   -webkit-box-shadow: 0 5px 15px 1px rgba(43,43,43,.15);
+   -moz-box-shadow: 0 5px 15px 1px rgba(43,43,43,.15);
+   -o-box-shadow: 0 5px 15px 1px rgba(43,43,43,.15);
+   -ms-box-shadow: 0 5px 15px 1px rgba(43,43,43,.15);
+   box-shadow: 0 5px 15px 1px rgba(43,43,43,.15);
+}
+.rsw-message__image{
+	position: relative;
+	width: 45px;
+	height: 45px;
+	margin: 0 15px 0 0;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.rsw-message__image img{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	object-position: center;
+}
+.rsw-message__content{
+	flex-basis: 0;
+	flex-grow: 1;
+}
+.rsw-message__title{
+	margin: 0 0 5px 0;
+   font-size: 14px;
+   font-weight: 700;
+}
+.rsw-message__text{
+	margin: 0;
+   font-size: 13px;
+   line-height: 1.3;
+   color: #555;
+}
+.rsw-message__close{
+	position: absolute;
+	top: 7px;
+	right: 10px;
+	font-size: 14px;
+	opacity: .4;
+	-webkit-transition: .3s ease all;
+   -moz-transition: .3s ease all;
+   -ms-transition: .3s ease all;
+   -o-transition: .3s ease all;
+   transition: .3s ease all;
+}
+.rsw-message__close:before{
+	content: "\f00d";
+	font-weight: 500;
+	font-family: "Font Awesome 5 Pro";
+	-moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased;
+   display: inline-block;
+   font-style: normal;
+   font-variant: normal;
+   text-rendering: auto;
+   line-height: 1;
+}
+.rsw-message__close:hover{
+	opacity: 1;
+}
+
+
+/* ==================== [08] Menu (Buttons) =================== */
+.rsw-menu{
+	position: absolute;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	flex-direction: column-reverse;
+	left: 0;
+	bottom: 100%;
+	width: 100%;
+	padding: 0 0 10px 0;	
+	z-index: 995;
+	-webkit-transition: all 0.5s;
+   -moz-transition: all 0.5s;
+   -ms-transition: all 0.5s;
+   -o-transition: all 0.5s;
+   transition: all 0.5s;
+	-webkit-transform: translateY(30px);
+	-ms-transform: translateY(30px);
+	-o-transform: translateY(30px);
+	transform: translateY(30px);
+	visibility: hidden;
+   opacity: 0;
+}
+.rsw-menu__item{
+	position: relative;
+	width: 55px;
+	height: 55px;
+	margin: 0 0 12px;
+	text-decoration: none;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	-webkit-border-radius: 50%;
+	-ms-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+   -moz-box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+   -ms-box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+   -o-box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+   box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+   -webkit-transition: all 0.5s;
+   -moz-transition: all 0.5s;
+   -ms-transition: all 0.5s;
+   -o-transition: all 0.5s;
+   transition: all 0.5s;
+	-webkit-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	background: var(--rsw-color);
+	color: var(--rsw-icon-color);
+   font-size: 22px;
+}
+
+/* ==================== [09] Buttons tooltipe =================== */
+[data-tooltip]:before{
+	content: attr(data-tooltip);
+	display: block;
+	position: absolute;
+	left: 120%;
+	padding: 5px 8px;
+	background: #000;
+	color: #fff;
+   font-size: 12px;
+   font-weight: 500;
+   white-space: nowrap;
+   text-align: center;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   -ms-border-radius: 3px;
+   -o-border-radius: 3px;
+   border-radius: 3px;
+   -webkit-box-shadow: 0 1px 2px 0 rgba(82,82,82,.5);
+   box-shadow: 0 1px 2px 0 rgba(82,82,82,.5);
+   will-change: auto;
+   pointer-events: none;
+   -webkit-transform: translateX(-5px);
+   -ms-transform: translateX(-5px);
+   -o-transform: translateX(-5px);
+   transform: translateX(-5px);
+   -webkit-transition: all .5s;
+   transition: all .5s; 
+   visibility: hidden;
+   opacity: 0;
+}
+[data-tooltip]:after {
+   content: '';
+   position: absolute;
+   height: 0;
+   width: 0;
+   left: 120%;
+   margin-left: -9px;
+   border: 5px solid rgba(0,0,0,0);
+   border-right-color: #000;
+   pointer-events: none;
+   will-change: auto;
+   -webkit-transform: translateX(-5px);
+   transform: translateX(-5px);
+	-webkit-transition: all .5s;
+   transition: all .5s;
+   visibility: hidden;
+   opacity: 0;
+}
+
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after{
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	-o-transform: translateX(0);
+	transform: translateX(0);
+	visibility: visible;
+	opacity: 1;
+}
+
+/* ==================== Whatsapp Icon =================== */
+.rsw-whatsapp{
+	background: -webkit-linear-gradient(top right, #5CF277 0%, #02b32a 100%);
+	background: linear-gradient(to bottom left, #5CF277 0%, #02b32a 100%);
+	color: #fff;
+	font-size: 27px;
+}
+
+/* ==================== Telegram Icon =================== */
+.rsw-telegram{
+	background: #2aa1da;
+	color: #fff;
+	font-size: 23px;
+}
+.rsw-telegram i{
+	position: relative;
+	left: -1px;
+}
+
+/* ==================== Instagram Icon =================== */
+.rsw-instagram{
+	background: #f05c94;
+	color: #fff;
+	font-size: 24px;
+}
+
+/* ==================== Viber Icon =================== */
+.rsw-viber{
+	background: #7360f2;
+	color: #fff;
+	font-size: 24px;
+}
+
+/* ==================== Youtube Icon =================== */
+.rsw-youtube{
+	background: #e83030;
+	color: #fff;
+	font-size: 24px;
+}
+
+/* ==================== Facebook Icon =================== */
+.rsw-facebook{
+	background: -webkit-linear-gradient(top right, #00C7FF 0%, #0069FF 100%);
+	background: linear-gradient(to bottom left, #00C7FF 0%, #0069FF 100%);
+	color: #fff;
+	font-size: 23px;
+}
+
+/* ==================== Phone Icon =================== */
+.rsw-phone{
+	font-size: 18px;
+}
+
+/* ==================== Application Icon =================== */
+.rsw-application{
+	font-size: 21px;
+}
+
+
+
+
+/* ==================== [10] Bounce Animation for Notify =================== */
+.rsw-bounce{
+	-webkit-animation: rswBounce 1s infinite both;
+	-o-animation: rswBounce 1s infinite both;
+	animation: rswBounce 1s infinite both;
+   -webkit-transform-origin: center bottom;
+   -moz-transform-origin: center bottom;
+   -ms-transform-origin: center bottom;
+   -o-transform-origin: center bottom;
+   transform-origin: center bottom;
+}
+@-webkit-keyframes rswBounce{
+   from, 20%, 53%, 80%, to{
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      -moz-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      -ms-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      -o-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+   }
+   40%, 43%{
+      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -moz-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -ms-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -o-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -webkit-transform: translate3d(0, -10px, 0);
+      -moz-transform: translate3d(0, -10px, 0);
+      -ms-transform: translate3d(0, -10px, 0);
+      -o-transform: translate3d(0, -10px, 0);
+      transform: translate3d(0, -10px, 0);
+   }
+   70%{
+      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -moz-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -ms-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -o-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -webkit-transform: translate3d(0, -5px, 0);
+      -moz-transform: translate3d(0, -5px, 0);
+      -ms-transform: translate3d(0, -5px, 0);
+      -o-transform: translate3d(0, -5px, 0);
+      transform: translate3d(0, -5px, 0);
+   }
+   90%{
+      -webkit-transform: translate3d(0, -1px, 0);
+      -moz-transform: translate3d(0, -1px, 0);
+      -ms-transform: translate3d(0, -1px, 0);
+      -o-transform: translate3d(0, -1px, 0);
+      transform: translate3d(0, -1px, 0);
+   }
+}
+@-ms-keyframes rswBounce{
+   from, 20%, 53%, 80%, to{
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      -moz-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      -ms-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      -o-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+   }
+   40%, 43%{
+      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -moz-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -ms-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -o-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -webkit-transform: translate3d(0, -10px, 0);
+      -moz-transform: translate3d(0, -10px, 0);
+      -ms-transform: translate3d(0, -10px, 0);
+      -o-transform: translate3d(0, -10px, 0);
+      transform: translate3d(0, -10px, 0);
+   }
+   70%{
+      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -moz-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -ms-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -o-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -webkit-transform: translate3d(0, -5px, 0);
+      -moz-transform: translate3d(0, -5px, 0);
+      -ms-transform: translate3d(0, -5px, 0);
+      -o-transform: translate3d(0, -5px, 0);
+      transform: translate3d(0, -5px, 0);
+   }
+   90%{
+      -webkit-transform: translate3d(0, -1px, 0);
+      -moz-transform: translate3d(0, -1px, 0);
+      -ms-transform: translate3d(0, -1px, 0);
+      -o-transform: translate3d(0, -1px, 0);
+      transform: translate3d(0, -1px, 0);
+   }
+}
+@keyframes rswBounce{
+   from, 20%, 53%, 80%, to{
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      -moz-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      -ms-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      -o-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+   }
+   40%, 43%{
+      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -moz-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -ms-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -o-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -webkit-transform: translate3d(0, -10px, 0);
+      -moz-transform: translate3d(0, -10px, 0);
+      -ms-transform: translate3d(0, -10px, 0);
+      -o-transform: translate3d(0, -10px, 0);
+      transform: translate3d(0, -10px, 0);
+   }
+   70%{
+      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -moz-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -ms-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -o-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -webkit-transform: translate3d(0, -5px, 0);
+      -moz-transform: translate3d(0, -5px, 0);
+      -ms-transform: translate3d(0, -5px, 0);
+      -o-transform: translate3d(0, -5px, 0);
+      transform: translate3d(0, -5px, 0);
+   }
+   90%{
+      -webkit-transform: translate3d(0, -1px, 0);
+      -moz-transform: translate3d(0, -1px, 0);
+      -ms-transform: translate3d(0, -1px, 0);
+      -o-transform: translate3d(0, -1px, 0);
+      transform: translate3d(0, -1px, 0);
+   }
+}
+
+@media (max-width: 992px){
+
+	.rsw-inner{
+		left: 25px;
+		bottom: 25px;
+		width: 55px;
+		height: 55px;
+	}
+	.rsw-button__icon i{
+		font-size: 20px;
+	}
+	.rsw-menu{
+		padding: 0 0 5px 0;
+	}
+}
+@media (max-width: 575px){
+	.rsw-message{
+		min-width: 255px;
+	}
+	.rsw-message__image{
+		width: 40px;
+		height: 40px;
+		margin: 0 14px 0 0;
+	}
+	.rsw.rsw-open [data-tooltip]:before,
+	.rsw.rsw-open [data-tooltip]:after{
+		display: block;
+		left: 130%;
+		-webkit-transition-delay: .5s;
+		-o-transition-delay: .5s;
+		transition-delay: .5s;
+		-webkit-transform: translateX(0);
+		-ms-transform: translateX(0);
+		-o-transform: translateX(0);
+		transform: translateX(0);
+		visibility: visible;
+		opacity: 1;
+	}	
+}
+@media (max-width: 400px){	
+	.rsw-message{
+		left: 130%;
+		min-width: 210px;
+		padding: 12px 12px 12px 16px;
+	}
+	.rsw-message__image{
+		display: none;
+	}
+}
+@media (max-width: 360px){
+	.rsw-message{
+		min-width: 175px;
+	}	
+}
+
+
+
+
+
+
+

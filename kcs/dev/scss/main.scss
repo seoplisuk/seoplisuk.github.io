@@ -15,31 +15,46 @@ body {
    
 }
 
+// support widget
+@import 'support-widget';
+// end support-widget
+
 // Header
 @import 'header';
+// end Header
 
 // Main slider
 @import 'main__slider';
+// end Main slider
+
+// Questions
+@import 'questions';
+// end Questions
 
 // Page
 @import 'page';
-
+// end Page
 
 // footer
 @import 'footer';
-
+// end footer
 
 // Responsive 1367px
 @import 'response1367';
+// end Responsive 1367px
 
 // Responsive 1229px
 @import 'response1229';
+// end Responsive 1229px
 
 // Responsive 1024px
 @import 'response1024';
+// end Responsive 1024px
 
 // Responsive 768px
 @import 'response767';
+// end Responsive 768px
 
 // Responsive 480px
 @import 'response479';
+// end Responsive 480px
