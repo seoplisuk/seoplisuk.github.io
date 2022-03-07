@@ -36,4 +36,133 @@
         }
     }
 
+
+    .questions {
+        margin-bottom: 30px;
+        
+    
+        .questions__main {
+            
+            padding: 30px 0px;
+        }
+    
+    
+        .question__row {
+            flex-direction: column;
+        }
+    
+        .question__title {
+            
+            width: 100%;
+            font-size: 20px;
+            margin-bottom: 30px;
+
+            br {
+                display: none;
+            }
+    
+            &::after {
+                content: "";
+                
+            }
+        }
+    
+    
+        .form__questions {
+            
+        }
+    
+        .form__row {
+            flex-direction: column;
+            margin-bottom: 0;
+        }
+    
+    
+        .main__slider__link {
+            
+        
+            &::after {
+                
+            }
+        
+            &:hover {
+                
+        
+                &::after {
+                   
+                }
+        
+            }
+        }
+    
+    
+        .form__input {
+            width: 100%;
+            position: relative;
+            margin-bottom: 30px;
+    
+            .place {
+                position: absolute;
+                font-size: 12px;
+                color: #333333;
+                font-family: Noto Sans;
+                top: -20px;
+                left: 15px;
+                transition: 0.5s ease 0s;
+                opacity: 0;
+                visibility: hidden;
+            }
+    
+            
+            &:focus-within {
+                label.place {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+            
+    
+            input {
+                
+                border: 1px solid #D9D9D9;
+                outline: none;
+                border-radius: none;
+                width: 100%;
+                padding: 14px 26px;
+                transition: 0.5s ease 0s;
+    
+                
+    
+                &::placeholder {
+                    font-family: Noto Sans;
+                    color: #333333;
+                    font-size: 14px;
+                    transition: 0.5s ease 0s;
+                    
+                }
+    
+                &:focus-within {
+                    border: 1px solid #333333;
+    
+                    &::placeholder {
+                        opacity: 0;
+                        
+                    }
+    
+                   
+                }
+    
+            }
+    
+    
+            
+    
+           
+    
+            
+        }
+    
+    }
+
+
 }

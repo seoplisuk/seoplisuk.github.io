@@ -54,4 +54,157 @@
         margin-top: 61px;
     }
 
+
+    .questions {
+        
+    
+        .questions__main {
+            
+            padding: 60px 0px;
+        }
+    
+    
+        .question__row {
+            flex-direction: column;
+        }
+    
+        .question__title {
+            
+            width: 100%;
+            font-size: 40px;
+            margin-bottom: 30px;
+
+            br {
+                display: none;
+            }
+    
+            &::after {
+                content: "";
+                width: 60px;
+                height: 2px;
+                background: #1E4BBE;
+                display: block;
+                margin-top: 15px;
+            }
+        }
+    
+    
+        .form__questions {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .form__row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+    
+    
+        .main__slider__link {
+            font-family: Noto Sans;
+            font-size: 18px;
+            color: #336CFF;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: 0.5s ease 0s;
+            letter-spacing: 1%;
+            display: flex;
+            align-items: center;
+            align-self: flex-end;
+            background: transparent;
+            outline: none;
+            border: none;
+            cursor: pointer;
+        
+            &::after {
+                content: "";
+                width: 36px;
+                height: 36px;
+                border-radius: 50px;
+                background: #336CFF url(../icons/arrow__up.svg) no-repeat center center;
+                margin-left: 10px;
+                transition: 0.5s ease 0s;
+            }
+        
+            &:hover {
+                color: #333333;
+        
+                &::after {
+                    transform: rotate(85deg);
+                }
+        
+            }
+        }
+    
+    
+        .form__input {
+            width: 48%;
+            position: relative;
+    
+            .place {
+                position: absolute;
+                font-size: 12px;
+                color: #333333;
+                font-family: Noto Sans;
+                top: -20px;
+                left: 15px;
+                transition: 0.5s ease 0s;
+                opacity: 0;
+                visibility: hidden;
+            }
+    
+            
+            &:focus-within {
+                label.place {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+            
+    
+            input {
+                
+                border: 1px solid #D9D9D9;
+                outline: none;
+                border-radius: none;
+                width: 100%;
+                padding: 14px 26px;
+                transition: 0.5s ease 0s;
+    
+                
+    
+                &::placeholder {
+                    font-family: Noto Sans;
+                    color: #333333;
+                    font-size: 14px;
+                    transition: 0.5s ease 0s;
+                    
+                }
+    
+                &:focus-within {
+                    border: 1px solid #333333;
+    
+                    &::placeholder {
+                        opacity: 0;
+                        
+                    }
+    
+                   
+                }
+    
+            }
+    
+    
+            
+    
+           
+    
+            
+        }
+    
+    }
+
+
 }
