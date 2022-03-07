@@ -176,6 +176,37 @@
     
     
     }
+
+    .about__item {
+        flex-wrap: wrap;
+    }
+
+
+    .about__item-content {
+        width: 100%;
+    }
+
+    .about__item-img {
+        width: 100%;
+
+        min-height: 250px;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .second {
+        padding-top: 0;
+        .about__item-content {
+            order: 2;
+        }
+
+        .about__item-img {
+            order: 1;
+            margin-bottom: 15px;
+        }
+    }
+
+
     
     
 

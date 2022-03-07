@@ -1,0 +1,135 @@
+.about__main {
+    position: relative;
+}
+
+.slogan {
+    position: absolute;
+    right: 0;
+    top: -30px;
+    z-index: 50;
+}
+
+.about__main-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__item {
+    width: calc(100% / 3);
+    padding-top: 160px;
+    padding-bottom: 80px;
+
+
+}
+
+.about__item-content {
+    p {
+        font-size: 16px;
+        line-height: 28px;
+        font-family: Noto Sans;
+        color: #333333;
+    }
+}
+
+.second {
+    background: #f8f8f8;
+    
+    .about__item-content {
+        padding-left: 30px;
+
+        
+    }
+
+    
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            list-style-type: none;
+            margin-bottom: 19px;
+
+            a {
+                text-decoration: none;
+                color: #333333;
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+                line-height: 22px;
+                font-family: Noto Sans;
+                transition: 0.5s ease 0s;
+               
+
+                img {
+                    width: 30px;
+                    margin-right: 16px;
+                    
+                }
+
+                &::after {
+                    content: "";
+                    mask-image: url(../icons/about__right.svg);
+                    mask-size: contain;
+                    mask-repeat: no-repeat;
+                    background: #1E4BBE;
+                    min-width: 14px;
+                    height: 11px;
+                    display: block;
+                    margin-left: 10px;
+                    transition: 0.5s ease 0s;
+                    opacity: 0;
+                }
+
+                &:hover {
+                    color: #1E4BBE;
+
+                    &::after {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.about__item-img {
+    width: 100%;
+    object-fit: cover;
+    min-height: 455.2px;
+}
+
+.about__title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #333333;
+
+    
+}
+
+.first {
+    .about__title {
+        padding-top: 20px;
+    }
+
+    .about__item-content {
+        padding-right: 30px;
+    }
+}
+
+.second {
+    .about__item-content {
+        padding-right: 30px;
+    }
+}
+
+.last {
+    .about__title {
+        padding-top: 20px;
+    }
+
+    .about__item-content {
+        padding-left: 30px;
+    }
+}

@@ -207,4 +207,40 @@
     }
 
 
+    .about__main-row {
+        flex-wrap: wrap;
+    }
+
+
+    .about__item {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .about__item-img {
+        width: 30%;
+    }
+
+    .about__item-content {
+        width: 68%;
+    }
+
+    .first {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .second {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .last {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+
 }

@@ -253,6 +253,15 @@ document.addEventListener('DOMContentLoaded', () => { // Структура ст
 *************************************************** */
 
 
+ var element = document.getElementById('header');
+window.addEventListener('scroll', function () {
+
+  if (window.scrollY > 100) {
+        element.classList.add("scrolled");
+    } else {
+        element.classList.remove("scrolled");
+    }
+});
 
 
 
