@@ -1,0 +1,158 @@
+.contacts__page {
+    margin: 0;
+    background: url(../img/contacts.jpg) no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.contact__block {
+    background: #FFFFFF;
+    box-shadow: 0px 7px 24px rgba(0, 0, 0, 0.11);
+    max-width: 50%;
+    width: 100%;
+    padding: 40px;
+    margin: 100px 0;
+
+}
+
+
+.contacts__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts {
+    width: 48%;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.c__title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.c__txt {
+    font-size: 14px;
+    line-height: 22px;
+    font-family: Noto Sans;
+    color: #333333;
+
+    a {
+        font-size: 16px;
+        font-family: Noto Sans;
+        text-decoration: none;
+        color: #333333;
+        display: block;
+        margin-right: 25px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.contacts__left {
+    margin-right: 14px;
+    img {
+        min-width: 20px;
+    }
+}
+
+.grafik__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.socials__row {
+    display: flex;
+    align-items: center;
+}
+
+
+.social {
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    background: #ACACAC;
+    display: block;
+    margin-right: 25px;
+
+    &:nth-last-child(1) {
+        margin-right: 0;
+    }
+
+    &:hover {
+        background: #1E4BBE;
+    }
+}
+
+.soc1 {
+    mask-image: url(../icons/social1.svg);
+    width: 12px;
+    height: 20px;
+}
+
+.soc2 {
+    mask-image: url(../icons/social2.svg);
+    width: 20px;
+    height: 13px;
+}
+
+.soc3 {
+    mask-image: url(../icons/social3.svg);
+    width: 20px;
+    height: 20px;
+}
+
+.soc4 {
+    mask-image: url(../icons/social4.svg);
+    width: 20px;
+    height: 15px;
+}
+
+.soc5 {
+    mask-image: url(../icons/social5.svg);
+    width: 20px;
+    height: 18px;
+}
+
+.soc6 {
+    mask-image: url(../icons/social6.svg);
+    width: 20px;
+    height: 20px;
+}
+
+.soc7 {
+    mask-image: url(../icons/social7.svg);
+    width: 20px;
+    height: 17px;
+}
+
+.soc8 {
+    mask-image: url(../icons/social8.svg);
+    width: 20px;
+    height: 20px;
+}
+
+.soc9 {
+    mask-image: url(../icons/social9.svg);
+    width: 19px;
+    height: 20px;
+}
+
+
+.c__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.marker__block {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
