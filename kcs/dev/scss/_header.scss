@@ -221,16 +221,11 @@
     overflow: hidden;
 
     .swiper-slide {
-        width: calc(100% / 4);
-        a {
-            display: block;
-        }
+        
+        
 
         img {
-            margin-right: 0 !important;
-            width: 100%;
-            max-height: 350px;
-            object-fit: contain;
+           
         }
     }
 

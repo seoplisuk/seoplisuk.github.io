@@ -356,13 +356,13 @@ const sertificate = new Swiper('.sertificate', {
 		},
 		// when window width is >= 480px
 		767: {
-			slidesPerView: 3,
-			spaceBetween: 0
+			slidesPerView: 2,
+			spaceBetween: 15
 		},
 		// when window width is >= 640px
 		992: {
 			slidesPerView: 4,
-			spaceBetween: 0
+			spaceBetween: 30
 		}
 
 	},
@@ -374,8 +374,8 @@ const sertificate = new Swiper('.sertificate', {
 
 	// Navigation arrows
 	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
+		nextEl: '.sert-button-next',
+		prevEl: '.sert-button-prev',
 	},
 
 	// And if we need scrollbar
