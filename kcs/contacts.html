@@ -278,7 +278,50 @@
 
     <!-- callback -->
     <div id="callback-full" style="display:none;">
-        Тут будет форма
+        
+        <div class="form__block">
+
+            <form class="modal__form" action="">
+
+                <div class="modal__form__title">У Вас есть вопросы?</div>
+                <div class="modal__form__txt">Заполните форму и наш менеджер с Вами свяжется</div>
+
+                <div class="modal__form__line"></div>
+
+                <div class="form__row">
+                    <div class="form__input">
+                        <input type="text" name="name" id="name" placeholder="Ваше имя">
+                        <label class="place" for="name">Ваше имя</label>
+                    </div>
+                    <div class="form__input">
+                        <input type="text" name="mail" id="mail" placeholder="Ваш Email" required>
+                        <label class="place" for="mail">Ваш Email</label>
+                    </div>
+                </div>
+                <button class="main__slider__link triger">Отправить</button>
+
+            </form>
+
+        </div>
+
+        <div class="succes__block">
+
+            <div class="succes__header">
+
+                <div class="modal__form__title">Заявка<br> отправлена!</div>
+
+                <div class="succes__img"><img src="assets/icons/succes.svg" alt=""></div>
+
+            </div>
+
+            <div class="modal__form__line"></div>
+
+            <div class="modal__form__txt">Заполните форму и наш менеджер с Вами свяжется</div>
+
+            <a href="index.html" class="main__slider__link">На главную</a>
+
+        </div>
+
     </div>
     
     <script src="assets/js/jquery-3.5.1.min.js"></script>
