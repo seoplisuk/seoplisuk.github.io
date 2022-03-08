@@ -283,6 +283,28 @@ observer.observe();
 *************************************************** */
 
 
+document.addEventListener('DOMContentLoaded', () => { // Структура страницы загружена и готова к взаимодействию
+
+	const triger = document.querySelector('.triger')
+    const form = document.querySelector('.modal__form') 
+    const success = document.querySelector('.succes__block')
+  
+    triger.addEventListener('click', () => {
+      form.classList.add('v1') 
+      success.classList.add("v2")
+    })
+  
+  
+  
+  })
+
+
+  /* ***************************************************
+---------------------------------------------------
+*************************************************** */
+
+
+
 const swiper = new Swiper('.swiper', {
 	// Optional parameters
 	slidesPerView: 1,

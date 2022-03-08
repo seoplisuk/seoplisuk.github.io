@@ -348,5 +348,53 @@
 
     }
 
+    #callback-full {
+        min-width: auto;
+        padding: 15px;
+    }
+
+    .modal__form__title {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .modal__form__txt {
+        font-size: 15px;
+        color: #333333;
+    }
+
+    .form__row {
+        flex-direction: column;
+    }
+
+    .modal__form {
+
+        .form__input {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+    }
+
+    .succes__header {
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .succes__img {
+        margin-left: 25px;
+        img {
+            width: 35px;
+        }
+    }
+
+    .succes__block {
+        .modal__form__title {
+            margin-bottom: 0;
+        }
+    }
+
+    
+
     
 }
