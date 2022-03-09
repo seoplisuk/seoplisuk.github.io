@@ -1091,6 +1091,12 @@ body {
   margin-top: 40px;
   overflow: hidden;
 }
+.slogan img {
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .main__slider {
   max-height: 695px;
   overflow: hidden;
@@ -1244,6 +1250,9 @@ body {
   padding-top: 160px;
   padding-bottom: 80px;
 }
+.about__item img {
+  width: 100%;
+}
 
 .about__item-content p {
   font-size: 16px;
@@ -1264,7 +1273,7 @@ body {
 }
 .second ul li {
   list-style-type: none;
-  margin-bottom: 19px;
+  margin-bottom: 16px;
 }
 .second ul li a {
   text-decoration: none;
