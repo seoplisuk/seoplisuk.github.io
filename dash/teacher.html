@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -21,6 +23,7 @@
                         <div class="block__title">Мои студенты</div>
                     </a>
                 </div>
+                <div class="mobile"></div>
                 <div class="teacher__block">
                     <a href="#" class="block__content">
                         <img class="teacher__img" src="icons/books.svg" alt="">
@@ -58,7 +61,7 @@
         </div>
     </section>
 
-    <section class="students">
+    <section data-da=".mobile, 768, first" class="students">
         <div class="container">
             <div class="students__block">
                 <div class="students__title">Мои ученики</div>
@@ -139,27 +142,25 @@
         </div>
     </section>
 
-    <section class="students__lessons">
+    <section data-da=".mobile, 768, last" class="students__lessons">
         <div class="container">
             <div class="students__block">
                
                 <div class="sdutents__tabs">
                     <a href="#" class="tab__link active">Курсы студента</a>
                     <a href="#" class="tab__link">Каталог курсов</a>
+                    <a href="#" class="tab__link">Домашнее задание</a>
+                    <a href="#" class="tab__link">Словарь студента</a>
+                    <a href="#" class="tab__link">История уроков</a>
+                    <a href="#" class="tab__link">О студенте</a>
                 </div>
 
                 <div class="tabs__content">
                     <ul>
-                        <li>1 Урок 1 | Тема урока | Название урока | Очень длинное название урока</li>
-                        <li>1 Урок 1 | Тема урока | Название урока | Очень длинное название урока</li>
-                        <li>1 Урок 1 | Тема урока | Название урока | Очень длинное название урока</li>
-                        <li>1 Урок 1 | Тема урока | Название урока | Очень длинное название урока</li>
-                        <li>1 Урок 1 | Тема урока | Название урока | Очень длинное название урока</li>
-                        <li>1 Урок 1 | Тема урока | Название урока | Очень длинное название урока</li>
-                        <li>1 Урок 1 | Тема урока | Название урока | Очень длинное название урока</li>
-                        <li>1 Урок 1 | Тема урока | Название урока | Очень длинное название урока</li>
-                        <li>1 Урок 1 | Тема урока | Название урока | Очень длинное название урока</li>
-                        <li>1 Урок 1 | Тема урока | Название урока | Очень длинное название урока</li>
+                        <li><span class="number">1</span>Урок 1 | Тема урока | Название урока | Очень длинное название урока</li>
+                        <li><span class="number">2</span>Урок 2 | Тема урока | Название урока | Очень длинное название урока</li>
+                        <li><span class="number">3</span>Урок 3 | Тема урока | Название урока | Очень длинное название урока</li>
+                        <li><span class="number">...</span></li>
                     </ul>
                 </div>
 
@@ -167,7 +168,102 @@
             
         </div>
     </section>
+
+    <section class="howmuch">
+        <div class="container">
+            <div class="howmuch__row">
+                <div class="howmuch__block">
+                    <div class="block__number">10</div>
+                    <div class="block__txt">Уроков проведено</div>
+                    <img src="icons/success.svg" alt="" class="block__ico">
+                </div>
+                <div class="howmuch__block">
+                    <div class="block__number">10</div>
+                    <div class="block__txt">Часов обучения</div>
+                    <img src="icons/time2.svg" alt="" class="block__ico">
+                </div>
+                <div class="howmuch__block">
+                    <div class="block__number">10</div>
+                    <div class="block__txt">Студентов на обучении</div>
+                    <img src="icons/sdury.svg" alt="" class="block__ico">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="teacher__update">
+        <div class="container">
+            <div class="update__title">Повышение квалификации</div>
+
+            <div class="update__row">
+
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <a href="#" class="swiper-slide">
+                        <img src="icons/t1.jpg" alt="">
+                        <div class="slide__txt">Стандарты преподавания</div>
+                      </a>
+                    <a href="#" class="swiper-slide">
+                        <img src="icons/t2.jpg" alt="">
+                        <div class="slide__txt">Особенности обучения детей</div>
+                    </a>
+                    <a href="#" class="swiper-slide">
+                        <img src="icons/t3.jpg" alt="">
+                        <div class="slide__txt">Методические рекомендации</div>
+                    </a>
+                    <a href="#" class="swiper-slide">
+                        <img src="icons/t4.jpg" alt="">
+                        <div class="slide__txt">Как не утратить мотивацию</div>
+                    </a>
     
+                    <a href="#" class="swiper-slide">
+                        <img src="icons/t1.jpg" alt="">
+                        <div class="slide__txt">Стандарты преподавания</div>
+                      </a>
+                    <a href="#" class="swiper-slide">
+                        <img src="icons/t2.jpg" alt="">
+                        <div class="slide__txt">Особенности обучения детей</div>
+                    </a>
+                    <a href="#" class="swiper-slide">
+                        <img src="icons/t3.jpg" alt="">
+                        <div class="slide__txt">Методические рекомендации</div>
+                    </a>
+                    <a href="#" class="swiper-slide">
+                        <img src="icons/t4.jpg" alt="">
+                        <div class="slide__txt">Как не утратить мотивацию</div>
+                    </a>
+                    
+                    </div>
+                   
+                    <!-- <div class="swiper-pagination"></div>
+                  
+                   
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  
+                   
+                    <div class="swiper-scrollbar"></div> -->
+                  </div>
+
+                
+            </div>
+
+        </div>
+    </section>
+
+    <div class="teacher__buttons">
+        <div class="container">
+            <div class="buttons__row">
+                <a href="#" class="button1">пригласи преподавателя - получи бонус</a>
+                <a href="#" class="button1">пригласи студента- получи бонус</a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

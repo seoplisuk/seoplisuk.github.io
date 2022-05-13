@@ -172,13 +172,7 @@ document.addEventListener('DOMContentLoaded', () => { // Структура ст
       button.classList.toggle("close")
     })
   
-    window.addEventListener('click', e => { // при клике в любом месте окна браузера
-      const target = e.target // находим элемент, на котором был клик
-      if (!target.closest('.students') && !target.closest('.my__students')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
-        nav.classList.remove('opened') // то закрываем окно навигации, удаляя активный класс
-		button.classList.remove('close')
-      }
-    })
+  
   
   })
 
@@ -193,12 +187,107 @@ document.addEventListener('DOMContentLoaded', () => { // Структура ст
       button.classList.toggle("close1")
     })
   
-    window.addEventListener('click', e => { // при клике в любом месте окна браузера
-      const target = e.target // находим элемент, на котором был клик
-      if (!target.closest('.students__lessons') && !target.closest('.student')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
-        nav.classList.remove('opened1') // то закрываем окно навигации, удаляя активный класс
-		button.classList.remove('close1')
-      }
-    })
+    
   
   })
+
+  const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    slidesPerView: 4,
+    spaceBetween: 60,
+    loop: true,
+
+    breakpoints: {
+        1024: {
+            slidesPerView: 4,
+           
+        },
+        768: {
+            slidesPerView: 3,
+            
+        },
+        600: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            
+        },
+        480: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            
+        },
+        320: {
+            slidesPerView: 1,
+            
+        },
+    },
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+
+    
+  });
+
+  const swiper2 = new Swiper('.swiper2', {
+    // Optional parameters
+    slidesPerView: "auto",
+    spaceBetween: 10,
+    loop: false,
+
+ 
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+
+    
+  });
+
+
+  var tabNavs = document.querySelectorAll(".nav-tab");
+var tabPanes = document.querySelectorAll(".tab-pane");
+
+for (var i = 0; i < tabNavs.length; i++) {
+
+  tabNavs[i].addEventListener("click", function(e){
+    e.preventDefault();
+    var activeTabAttr = e.target.getAttribute("data-tab");
+
+    for (var j = 0; j < tabNavs.length; j++) {
+      var contentAttr = tabPanes[j].getAttribute("data-tab-content");
+
+      if (activeTabAttr === contentAttr) {
+        tabNavs[j].classList.add("active");
+        tabPanes[j].classList.add("active"); 
+      } else {
+        tabNavs[j].classList.remove("active");
+        tabPanes[j].classList.remove("active");
+      }
+    };
+  });
+}
