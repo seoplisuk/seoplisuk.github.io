@@ -211,6 +211,46 @@ select {
 .video__right video {
   width: 100%;
 }
+.video__right .nav {
+  position: absolute;
+  z-index: 5000;
+  top: -57px;
+}
+@media screen and (max-width: 600px) {
+  .video__right .nav {
+    top: -35px;
+  }
+}
+.video__right .tutor {
+  position: absolute;
+  right: 10px;
+  z-index: 6000;
+  top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4px 8px;
+  background-color: rgba(21, 22, 24, 0.8);
+  border-radius: 8px;
+}
+.video__right .tutur__txt {
+  font-size: 10px;
+  color: #ffffff;
+  font-family: opensansbold;
+}
+.video__right .circle {
+  width: 8px;
+  height: 8px;
+  margin-right: 4px;
+  -webkit-animation: heartbeat 2s linear infinite;
+          animation: heartbeat 2s linear infinite;
+  background-color: #35f96c;
+  border-radius: 12px;
+  border-radius: 25px;
+}
 @media screen and (max-width: 1200px) {
   .video__right {
     position: absolute;
@@ -672,7 +712,7 @@ select {
 }
 @media screen and (max-width: 480px) {
   .repetitor__left {
-    padding: 20px 10px;
+    padding: 20px 6px;
   }
 }
 
@@ -1354,4 +1394,67 @@ select {
 .skysmart .form1 .form__block {
   width: 100%;
   margin-right: 0;
+}
+
+.page2 .section1 {
+  padding-top: 70px;
+  background: #5d9cec;
+  background: -webkit-gradient(linear, left top, left bottom, from(#5d9cec), color-stop(60%, #5d9cec), to(white));
+  background: linear-gradient(180deg, #5d9cec 0%, #5d9cec 60%, white 100%);
+}
+.page2 .section1__txt1 {
+  color: #000000;
+  font-family: opensansbold;
+}
+.page2 .section1__title1 {
+  color: #ffffff;
+}
+.page2 .section1__list {
+  color: #ffffff;
+}
+.page2 .section1__list p {
+  margin-bottom: 20px;
+}
+.page2 .section__form1 {
+  margin-bottom: 0;
+}
+.page2 .button__want {
+  word-wrap: break-word;
+}
+@media screen and (max-width: 600px) {
+  .page2 .button__want {
+    width: 100%;
+    text-align: center;
+  }
+}
+.page2 .section__form3 {
+  padding-top: 50px;
+  padding-bottom: 75px;
+  background: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(60%, white), to(#5d9cec));
+  background: linear-gradient(180deg, white 0%, white 60%, #5d9cec 100%);
+}
+
+@-webkit-keyframes heartbeat {
+  0% {
+    opacity: 0.8;
+  }
+  20% {
+    opacity: 0.5;
+  }
+  40% {
+    opacity: 1;
+  }
+}
+
+@keyframes heartbeat {
+  0% {
+    opacity: 0.8;
+  }
+  20% {
+    opacity: 0.5;
+  }
+  40% {
+    opacity: 1;
+  }
 }

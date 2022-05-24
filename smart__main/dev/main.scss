@@ -203,6 +203,44 @@ select {
         width: 100%;
     }
 
+    .nav {
+        position: absolute;
+        z-index: 5000;
+        top: -57px;
+
+        @media screen and (max-width: 600px) {
+            top: -35px;
+        }
+    }
+
+    .tutor {
+        position: absolute;
+        right: 10px;
+        z-index: 6000;
+        top: 10px;
+        display: flex;
+        align-items: center;
+        padding: 4px 8px;
+        background-color: rgba(21,22,24,.8);
+        border-radius: 8px;
+    }
+
+    .tutur__txt {
+        font-size: 10px;
+        color: #ffffff;
+        font-family: opensansbold;
+    }
+
+    .circle {
+        width: 8px;
+        height: 8px;
+        margin-right: 4px;
+        animation: heartbeat 2s linear infinite;
+        background-color: #35f96c;
+        border-radius: 12px;
+        border-radius: 25px;
+    }
+
 
     @media screen and (max-width: 1200px) {
         position: absolute;
@@ -618,7 +656,7 @@ select {
     }
 
     @media screen and (max-width: 480px) {
-        padding: 20px 10px;
+        padding: 20px 6px;
         
         
     }
@@ -1238,4 +1276,67 @@ select {
         }
     }
 
+}
+
+
+.page2 {
+    .section1 {
+        padding-top: 70px;
+        
+        background: rgb(93,156,236);
+        background: linear-gradient(180deg, rgba(93,156,236,1) 0%, rgba(93,156,236,1) 60%, rgba(255,255,255,1) 100%);
+        
+    }
+
+    .section1__txt1 {
+        color: #000000;
+        font-family: opensansbold;
+    }
+
+    .section1__title1 {
+        color: #ffffff;
+    }
+
+    .section1__list {
+        color: #ffffff;
+
+        p {
+            margin-bottom: 20px;
+        }
+    }
+
+    .section__form1 {
+        margin-bottom: 0;
+    }
+
+    .button__want {
+        word-wrap: break-word;
+        
+        @media screen and (max-width: 600px) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+
+    .section__form3 {
+        padding-top: 50px;
+        padding-bottom: 75px;
+        background: rgb(255,255,255);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 60%, rgba(93,156,236,1) 100%);
+    }
+
+}
+
+@keyframes heartbeat
+{
+    0% {
+        opacity: .8;
+    }
+    20% {
+        opacity: .5;
+    }
+    40%{
+        opacity: 1;
+    }
 }
