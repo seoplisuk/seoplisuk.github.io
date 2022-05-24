@@ -425,3 +425,204 @@ select {
     margin-bottom: 15px;
   }
 }
+
+.section2__title {
+  color: #333333;
+  text-align: center;
+  font-family: opensansbold;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 600px) {
+  .section2__title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+.section2__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+.section2__row .section2__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 31%;
+}
+.section2__row .section2__block picture {
+  margin-bottom: 35px;
+}
+.section2__row .section2__block .block__title {
+  color: #808080;
+  font-size: 16px;
+  text-align: center;
+  min-height: 50px;
+}
+@media screen and (max-width: 480px) {
+  .section2__row .section2__block .block__title {
+    min-height: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .section2__row .section2__block {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+  .section2__row .section2__block:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section2__row .section2__block {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .section2__row .section2__block:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .section2__row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.button__want {
+  font-size: 14px;
+  text-decoration: none;
+  background: #dd3333;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  -webkit-transition: 0.5s ease 0s;
+  transition: 0.5s ease 0s;
+}
+.button__want:hover {
+  background: #b63030;
+}
+
+.section3 {
+  margin: 70px 0;
+}
+@media screen and (max-width: 600px) {
+  .section3 {
+    margin: 30px 0;
+  }
+}
+
+.section3__txt {
+  font-size: 24px;
+  color: #808080;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .section3__txt {
+    font-size: 15px;
+  }
+}
+
+.section3__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 50px 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media screen and (max-width: 1024px) {
+  .section3__row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: -30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .section3__row {
+    margin-right: 0;
+    margin: 25px 0;
+  }
+}
+
+.section3__block {
+  background: #5d9cec;
+  border-radius: 10px;
+  width: 31%;
+  padding: 20px;
+}
+@media screen and (max-width: 1024px) {
+  .section3__block {
+    width: calc(100% / 2 - 30px);
+    margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 30px;
+  }
+  .section3__block:nth-last-child(1) {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .section3__block {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.s3__block__title {
+  font-size: 24px;
+  color: #ffffff;
+  font-family: opensansbold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.s3__block__txt {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 30px;
+}
