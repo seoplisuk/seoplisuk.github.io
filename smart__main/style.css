@@ -193,6 +193,7 @@ select {
     background-size: contain;
     width: 289px;
     height: 190px;
+    margin: 0 auto;
   }
 }
 
@@ -354,6 +355,11 @@ select {
           box-shadow: 3px 2px 10px #878787;
   margin: 3em auto;
 }
+@media screen and (max-width: 600px) {
+  .section__form1 {
+    padding: 15px;
+  }
+}
 
 .form1__title {
   font-size: 36px;
@@ -361,6 +367,16 @@ select {
   text-align: center;
   margin-bottom: 17px;
   font-family: opensansbold;
+}
+@media screen and (max-width: 600px) {
+  .form1__title {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .form1__title {
+    font-size: 18px;
+  }
 }
 
 .form1 {
@@ -392,4 +408,20 @@ select {
   color: #ffffff;
   padding: 7px 10px;
   cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+  .form1 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .form1 .form__block {
+    width: 48%;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .form1 .form__block {
+    width: 100%;
+    margin-bottom: 15px;
+  }
 }
