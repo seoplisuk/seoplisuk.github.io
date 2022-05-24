@@ -170,7 +170,7 @@ select {
 }
 
 .main__video {
-    background: url(/images/nout.png);
+    background: url(images/nout.png);
     width: 550px;
     height: 361px;
     position: relative;
@@ -229,7 +229,7 @@ select {
 }
 
 .video__left {
-    background: url(/images/smart.svg);
+    background: url(images/smart.svg);
     width: 94px;
     height: 180px;
     position: absolute;
@@ -249,7 +249,7 @@ select {
 
 
     @media screen and (max-width: 1200px) {
-        background: url(/images/smart.svg);
+        background: url(images/smart.svg);
         width: 80px;
         background-size: contain;
         height: 153px;
@@ -270,7 +270,7 @@ select {
     }
 
     @media screen and (max-width: 600px) {
-        background: url(/images/smart.svg);
+        background: url(images/smart.svg);
         width: 45px;
         background-size: contain;
         height: 86px;
