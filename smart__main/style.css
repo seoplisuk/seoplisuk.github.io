@@ -1632,3 +1632,106 @@ select {
   margin-bottom: 30px;
   text-align: center;
 }
+
+.section__dropdown {
+  border: 1px solid #f0f0f0;
+  background: #f9f9f9;
+  border-radius: 5px;
+}
+
+.dropdown__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #666666;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+}
+.dropdown__header .dropdown__arrow {
+  margin-right: 5px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: 0.5s ease 0s;
+  transition: 0.5s ease 0s;
+}
+.dropdown__header .up {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.dropdown__hidden {
+  padding: 5px;
+  display: none;
+}
+
+.block__opened {
+  display: block;
+}
+
+.hidden__main {
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 0;
+}
+@media screen and (max-width: 1024px) {
+  .hidden__main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px 20px;
+  }
+}
+
+.hidden__left {
+  width: 48%;
+}
+@media screen and (max-width: 1024px) {
+  .hidden__left {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.hidden__right {
+  width: 48%;
+}
+@media screen and (max-width: 1024px) {
+  .hidden__right {
+    width: 100%;
+  }
+}
+
+.demo__title {
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 30px;
+}
+
+.demo__txt {
+  font-size: 18px;
+  color: #808080;
+  margin-bottom: 30px;
+}
+
+.section__dropdown {
+  margin: 70px 0;
+}

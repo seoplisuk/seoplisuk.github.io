@@ -2,7 +2,7 @@ const swiper = new Swiper('.swiper', {
     // Optional parameters
     slidesPerView: "1",
     loop: true,
-    autoplay: false,
+    autoplay: true,
     centerMode: true,
   
 });
@@ -74,3 +74,19 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrapword { border-right: 0.08em solid #0366d6}";
     document.body.appendChild(css);
 };
+
+document.addEventListener('DOMContentLoaded', () => { // Структура страницы загружена и готова к взаимодействию
+
+	const dropdown__header = document.querySelector('.dropdown__header') // находим кнопку для открытия/закрытия окна навигации
+	const dropdown__hidden = document.querySelector('.dropdown__hidden') // находим окно навигации
+	const dropdown__arrow = document.querySelector('.dropdown__arrow')
+
+	dropdown__header.addEventListener('click', () => { // при клике на кнопку
+		dropdown__hidden.classList.toggle('block__opened') // открываем/закрываем окно навигации, добаляя/удаляя активный класс
+		dropdown__arrow.classList.toggle('up')
+
+	})
+
+
+
+})
