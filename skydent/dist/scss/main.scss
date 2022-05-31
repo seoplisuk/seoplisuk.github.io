@@ -95,11 +95,23 @@ select {
   }
 }
 
+.wind__opened {
+    overflow: hidden;
+}
+
 .container {
     max-width: 1170px;
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.section {
+    padding-top: 70px;
+
+    @media screen and (max-width: 600px) {
+        padding-top: 30px;
+    }
 }
 
 // header styles
@@ -117,4 +129,27 @@ select {
 // main__services styles
 @import 'main__services';
 // end main__services styles
+
+// about__main styles
+@import 'about__main';
+// end about__main styles
+
+
+// advantages styles
+@import 'advantages';
+// end advantages styles
+
+
+// calculate styles
+@import 'calculate';
+// end calculate styles
+
+// comfort styles
+@import 'comfort';
+// end comfort styles
+
+
+// team styles
+@import 'team';
+// end team styles
 

@@ -20,9 +20,11 @@ const swiper = new Swiper('.swiper', {
 document.addEventListener('DOMContentLoaded', () => {
     const burger = document.querySelector('.burger') 
 	const mobile__menu = document.querySelector('.mobile__menu') 
+    const html = document.querySelector('html')
 	burger.addEventListener('click', () => { 
 		mobile__menu.classList.toggle('menu__opened') 
 		burger.classList.toggle('burger__close')
+        html.classList.toggle('wind__opened')
 	})
 })
 
