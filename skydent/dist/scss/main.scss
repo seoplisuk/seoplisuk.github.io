@@ -95,3 +95,21 @@ select {
   }
 }
 
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+// header styles
+@import 'header';
+// end header styles
+
+
+
+
+// slider__main styles
+@import 'slider__main';
+// end slider__main styles
+
