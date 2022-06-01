@@ -1333,6 +1333,7 @@ select {
 
 .main__team-item {
   width: 28%;
+  margin-bottom: 30px;
 }
 .main__team-item .main__team-img {
   width: 100%;
