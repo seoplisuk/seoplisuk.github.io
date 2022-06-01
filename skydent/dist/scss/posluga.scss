@@ -1,0 +1,255 @@
+.calculate__txt2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 30px;
+    overflow: hidden;
+    
+}
+
+.posluga__button {
+    background: #0540C7;
+    border-radius: 50px;
+    color: #ffffff;
+    font-family: open_sansbold;
+    text-decoration: none;
+    transition: 0.5s ease 0s;
+    border: 2px solid transparent;
+    padding: 10px 20px;
+    width: max-content;
+    display: block;
+    width: max-content;
+    text-align: center;
+}
+
+.posluga__header {
+    background: #e8efff;
+    padding: 50px 0;
+    position: relative;
+
+    @media screen and (max-width: 768px) {
+        padding-bottom: 0px;
+    }
+}
+
+.posluga__row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.posluga__left {
+    width: 48%;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.posluga__right {
+    width: 48%;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.posluga__title {
+    font-size: 52px;
+    font-family: open_sansbold;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 36px;
+    }
+
+    @media screen and (max-width: 600px) {
+        font-size: 24px;
+    }
+}
+
+.posluga__txt {
+    font-size: 24px;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 600px) {
+        font-size: 18px;
+    }
+}
+
+.posluga__right {
+    
+}
+
+.posluga__doctor {
+    position: absolute;
+    height: 450px;
+    object-fit: cover;
+    width: 350px;
+    bottom: 0;
+
+    @media screen and (max-width: 768px) {
+        position: relative;
+    }
+}
+
+
+.do__row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.do__left {
+    width: 60%;
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        order: 2;
+    }
+}
+
+.do__right {
+    width: 38%;
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        order: 1;
+        margin-bottom: 30px;
+    }
+}
+
+.do__left__title {
+    font-size: 36px;
+    font-family: open_sansbold;
+    color: #111111;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 24px;
+    }
+}
+
+.do__left__block {
+    background: rgb(249,237,248);
+    background: linear-gradient(103deg, rgba(249,237,248,1) 0%, rgba(240,249,240,1) 60%, rgba(240,249,240,1) 100%);
+    padding: 20px 30px;
+    width: 80%;
+    margin-bottom: 30px;
+    position: relative;
+
+    &::before {
+        content: "";
+        background: url(../img/zub.png);
+        width: 51px;
+        height: 68px;
+        display: block;
+        position: absolute;
+        left: -26px;
+        top: -30px;
+
+        @media screen and (max-width: 1200px) {
+            right: 1px;
+            left: inherit;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+    }
+}
+
+.left__block-title {
+    font-size: 18px;
+    font-family: open_sanssemibold;
+    margin-bottom: 10px;
+}
+
+
+.do__title {
+    color: rgb(168, 0, 0);
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.do__img {
+    text-align: center;
+    img {
+        margin: 0 auto;
+    }
+}
+
+.podhod__row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    
+}
+
+.podhod__item {
+    box-shadow: 0px 0px 30px #e0e0e0;
+    border-radius: 10px;
+    padding: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 50px;
+    width: 48%;
+    font-size: 24px;
+
+    @media screen and (max-width: 600px) {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+.podhod__number {
+    box-shadow: 0px 0px 30px #e0e0e0;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    font-family: open_sansbold;
+    background: #0540C7;
+    position: absolute;
+    left: -25px;
+    top: -25px;
+
+    @media screen and (max-width: 1200px) {
+        position: relative;
+        left: 0;
+        top: 0;
+        margin: 0 auto;
+    }
+}
+
+
+    .calculate__button2 {
+        
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: open_sansbold;
+        font-size: 18px;
+        text-decoration: none;
+        border: 2px solid #0540C7;
+        color: #ffffff;
+        background: #0540C7;
+        transition: 0.5s ease 0s;
+        padding: 10px 20px;
+        width: max-content;
+        margin: 0 auto;
+    }
+
+
+
+
