@@ -77,3 +77,22 @@
     margin-bottom: 20px;
     padding: 0 20px;
 }
+
+.single__content {
+    padding-bottom: 70px;
+
+    p {
+        margin-bottom: 30px;
+        color: #111111;
+    }
+
+    @media screen and (max-width: 1024px) {
+        padding-bottom: 30px;
+    }
+
+    .float {
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+}
