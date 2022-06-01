@@ -153,3 +153,106 @@ select {
 @import 'team';
 // end team styles
 
+// stages styles
+@import 'stages';
+// end stages styles
+
+// works styles
+@import 'works';
+// end works styles
+
+// main__otz styles
+@import 'main__otz';
+// end main__otz styles
+
+// seo__content styles
+@import 'seo__content';
+// end seo__content styles
+
+
+// main__contacts styles
+@import 'main__contacts';
+// end main__contacts styles
+
+// footer styles
+@import 'footer';
+// end footer styles
+
+.fancybox__container  {
+  z-index: 10000;
+}
+
+#hidden-content {
+  max-width: 500px;
+
+  .fancybox__content {
+    @media screen and (max-width: 600px) {
+      padding: 15px !important;
+    }
+  }
+}
+
+.fancybox__content {
+  @media screen and (max-width: 600px) {
+    padding: 15px !important;
+  }
+}
+
+.form__title {
+  font-family: open_sanssemibold;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.zayavka {
+  .form__input {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+
+    label {
+      font-family: open_sanssemibold;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    input {
+      border: 1px solid rgba(204, 204, 204, 1);
+      border-radius: 25px;
+      padding: 10px 20px;
+      outline: none;
+
+      &:focus {
+        border: 1px solid #0540C7;
+        outline: none !important;
+      }
+
+    }
+  }
+}
+
+.order {
+  background: #0540C7;
+  border-radius: 50px;
+  color: #ffffff;
+  font-family: open_sansbold;
+  text-decoration: none;
+  transition: 0.5s ease 0s;
+  border: 2px solid transparent;
+  padding: 10px 20px;
+  width: max-content;
+  display: block;
+  width: 270px;
+  text-align: center;
+  cursor: pointer;
+  margin: 0 auto;
+
+  &:hover {
+    border: 2px solid #0540C7;
+    background: transparent;
+    color: #0540C7;
+  }
+}
+

@@ -15,6 +15,37 @@ const swiper = new Swiper('.swiper', {
     },
   });
 
+  const swiper2 = new Swiper('.swiper2', {
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 30,
+    
+    pagination: {
+      el: '.swiper-pagination2',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+			spaceBetween: 0,
+		},
+		600: {
+			slidesPerView: 2.3,
+			spaceBetween: 15,
+		},
+		1024: {
+			slidesPerView: 3,
+		}
+	}
+  });
+
 
 
 document.addEventListener('DOMContentLoaded', () => {

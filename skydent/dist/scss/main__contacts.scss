@@ -1,0 +1,114 @@
+.main__contacts {
+    background-color: #e9eef9;
+    overflow: hidden;
+    padding-bottom: 70px;
+}
+
+.main__contacts-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main__contacts-left {
+    width: 48%;
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+.main__contacts-right {
+    width: 48%;
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        
+    }
+}
+
+.adr {
+    &::before {
+        content: "";
+        mask-image: url(../icons/geo.svg);
+        mask-repeat: no-repeat;
+        mask-size: contain;
+        background: #0540C7;
+        min-width: 30px;
+        min-height: 30px;
+        display: block;
+    }
+}
+.tel {
+    &::before {
+        content: "";
+        mask-image: url(../icons/telephone.svg);
+        mask-repeat: no-repeat;
+        mask-size: contain;
+        background: #0540C7;
+        min-width: 30px;
+        min-height: 30px;
+        display: block;
+    }
+}
+.mail {
+    &::before {
+        content: "";
+        mask-image: url(../icons/mail.svg);
+        mask-repeat: no-repeat;
+        mask-size: contain;
+        background: #0540C7;
+        min-width: 30px;
+        min-height: 30px;
+        display: block;
+    }
+}
+
+
+
+.contacts__left-block {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    color: #111111;
+    margin-bottom: 20px;
+
+    span {
+        margin-left: 15px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #111111;
+        margin-left: 15px;
+    }
+}
+
+.call {
+    align-items: flex-start;
+    &::before {
+        content: "";
+        mask-image: url(../icons/calltime.svg);
+        mask-repeat: no-repeat;
+        mask-size: contain;
+        background: #0540C7;
+        min-width: 30px;
+        min-height: 30px;
+        display: block;
+    }
+}
+
+.socials__title {
+    font-size: 24px;
+    font-family: open_sansbold;
+    color: #111111;
+    margin-bottom: 20px;
+}
+
+.socials__row {
+    display: flex;
+
+    a {
+        margin-right: 15px;
+    }
+}

@@ -1,0 +1,197 @@
+.stage__numb {
+    font-size: 36px;
+    color: #111111;
+    font-family: open_sansbold;
+    line-height: 100%;
+}
+
+.stage__txt {
+    font-size: 18px;
+    color: #111111;
+    font-family: open_sanssemibold;
+    text-align: center;
+}
+
+.stage__button {
+    background: #0540C7;
+    border-radius: 50px;
+    color: #ffffff;
+    font-family: open_sansbold;
+    text-decoration: none;
+    transition: 0.5s ease 0s;
+    border: 2px solid transparent;
+    padding: 10px 20px;
+    width: max-content;
+    display: block;
+    position: absolute;
+    bottom: -50px;
+    width: 270px;
+    text-align: center;
+
+    &:hover {
+        border: 2px solid #0540C7;
+        background: #ffffff;
+        color: #0540C7;
+    }
+
+
+    @media screen and (max-width: 1024px) {
+        position: relative;
+        bottom: 0;
+        width: 80%;
+        margin-top: 15px;
+    }
+}
+
+.stage1 {
+    width: max-content;
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    position: absolute;
+    top: -63px;
+
+    @media screen and (max-width: 1024px) {
+        position: relative;
+        top: 0;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+.stage2 {
+    background: url(../img/etap.png) no-repeat center;
+    width: 211px;
+    height: 128px;
+    display: flex;
+    padding: 0 20px;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    right: 100px;
+    top: -70px;
+
+    @media screen and (max-width: 1024px) {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin-bottom: 20px;
+    }
+}
+.stage3 {
+    background: url(../img/etap.png) no-repeat center;
+    width: 211px;
+    height: 128px;
+    display: flex;
+    padding: 0 20px;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 50px;
+
+    @media screen and (max-width: 1024px) {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+}
+.stage4 {
+    background: url(../img/etap.png) no-repeat center;
+    width: 211px;
+    height: 128px;
+    display: flex;
+    padding: 0 20px;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 20px;
+    left: 25px;
+
+    @media screen and (max-width: 1024px) {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: 20px;
+    }
+}
+.stage5 {
+    background: url(../img/etap.png) no-repeat center;
+    width: 211px;
+    height: 128px;
+    display: flex;
+    padding: 0 20px;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    right: 25px;
+    bottom: 20px;
+
+    @media screen and (max-width: 1024px) {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin-bottom: 20px;
+        
+    }
+}
+
+.stage__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.stages__block {
+    position: relative;
+    min-height: 300px;
+    margin-top: 100px;
+
+    @media screen and (max-width: 1024px) {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    @media screen and (max-width: 480px) {
+        
+        justify-content: center;
+    }
+    
+}
+
+.stage__line1 {
+    width: 90%;
+    height: 2px;
+    background: #eaeaea;
+    position: relative;
+    left: 29px;
+    bottom: 0px;
+
+    @media screen and (max-width: 1024px) {
+        display: none;
+    }
+    
+}
+
+.etaps__img {
+    img {
+        width: 100%;
+    }
+
+    @media screen and (max-width: 1024px) {
+        display: none;
+    }
+}
+
