@@ -918,6 +918,11 @@ select {
     width: 100%;
   }
 }
+@media screen and (max-width: 600px) {
+  .slider__content-form {
+    margin-top: 10px;
+  }
+}
 
 .main__services .main__services-row {
   display: -webkit-box;
