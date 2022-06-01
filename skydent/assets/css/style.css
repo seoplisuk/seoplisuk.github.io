@@ -650,6 +650,11 @@ select {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media screen and (max-width: 600px) {
+  .slider__main .swiper .swiper-pagination {
+    display: none;
+  }
+}
 .slider__main .slider__content {
   position: absolute;
   z-index: 110;
