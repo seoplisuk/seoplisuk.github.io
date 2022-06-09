@@ -60,6 +60,18 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 
+document.addEventListener('DOMContentLoaded', () => {
+    const lang__item__main = document.querySelector('.lang__item__main') 
+	const lang__hidden = document.querySelector('.lang__hidden') 
+    const lang__arrow = document.querySelector('.lang__arrow')
+	lang__item__main.addEventListener('click', () => { 
+		lang__hidden.classList.toggle('lang__opened') 
+		lang__arrow.classList.toggle('arrow__close')
+        
+	})
+})
+
+
 
 
 

@@ -194,7 +194,7 @@ select {
 
 .fancybox__content {
   @media screen and (max-width: 600px) {
-    padding: 15px !important;
+    padding: 0px !important;
   }
 }
 
@@ -241,7 +241,8 @@ select {
   text-decoration: none;
   transition: 0.5s ease 0s;
   border: 2px solid transparent;
-  padding: 10px 20px;
+  padding: 10px 0px;
+  height: 48px;
   width: max-content;
   display: block;
   width: 270px;
