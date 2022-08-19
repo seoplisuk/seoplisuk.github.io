@@ -1,0 +1,24 @@
+.block {
+    background: red;
+}
+
+.plisuk__popup__back {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease 0s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.body__opened {
+
+}
+
+.opened__back {
+    opacity: 1;
+    visibility: visible;
+}

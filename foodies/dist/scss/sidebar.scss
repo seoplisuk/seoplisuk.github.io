@@ -1,0 +1,141 @@
+.sidebar {
+    background: #ffffff;
+    width: 261px;
+    position: absolute;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: width 0.5s;
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        position: relative;
+        margin-bottom: 15px;
+    }
+}
+
+.sidebar__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 30px;
+    min-height: 121px;
+
+    @media screen and (max-width: 1024px) {
+        padding: 15px 15px;
+        min-height: auto;
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    .logo__txt {
+        margin-left: 12px;
+    }
+}
+
+
+.burger {
+    width: 22px;
+    height: 14.38px;
+    display: block;
+    span {
+        height: 3px;
+        width: 22px;
+        border-radius: 3px;
+        background: #262F56;
+        margin-bottom: 3px;
+        display: block;
+
+        &:nth-last-child(1) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.menu {
+    .menu__item {
+        .menu__link {
+            display: flex;
+            align-items: center;
+            padding: 20px 30px;
+            font-size: 18px;
+            color: #7A7A7A;
+            font-family: poppinsregular;
+            text-decoration: none;
+            position: relative;
+            transition: 0.5s ease 0s;
+
+            span {
+                
+            }
+
+            &::before {
+                content: "";
+                width: 7px;
+                background: #6779DF;
+                height: 100%;
+                display: block;
+                position: absolute;
+                left: 0;
+                border-radius: 0px 19px 19px 0px;
+                opacity: 0;
+                transition: 0.5s ease 0s;
+                visibility: hidden;
+            }
+
+            img {
+                min-width: 24px;
+                width: 24px;
+                object-fit: contain;
+                margin-right: 30px;
+            }
+
+            &:hover {
+                background: #F9FAFE;
+
+                &::before {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+}
+
+
+.sidebar__close {
+    width: 84px;
+    transition: width 0.5s;
+    .logo__txt {
+        display: none;
+    }
+
+    .logo {
+       display: none;
+    }
+
+    .menu {
+        .menu__item {
+            .menu__link {
+                
+                span {
+                    display: none;
+                }
+
+                img {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+
+
+.mobile__menu {
+    display: none;
+}

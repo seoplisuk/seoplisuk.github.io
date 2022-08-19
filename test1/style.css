@@ -1,0 +1,42 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.myblock {
+    background: #ccc;
+    width: max-content;
+    margin-bottom: 10px;
+}
+
+.myblock2 {
+    background: #ccc;
+    width: max-content;
+    margin-bottom: 10px;
+}
+
+picture {
+    
+}
+
+img {
+    background-color: #ccc;
+    min-height: 250px;
+    width: 100%;
+    object-fit: cover;
+    
+    
+}
+
+.block {
+    background: red;
+    width: 23%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.new__block {
+    background: #ccc;
+}
