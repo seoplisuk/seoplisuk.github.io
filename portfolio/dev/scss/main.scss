@@ -92,6 +92,11 @@ body {
 .main {
     background: #1F2235;
     padding-top: 100px;
+
+
+    @media screen and (min-width: 320px) {
+        padding-top: 20px;
+    }
    
 }
 
@@ -112,13 +117,17 @@ body {
 
 .main__left {
     width: 48%;
-
+    color: #ffffff;
+    position: relative;
     @media screen and (min-width: 320px) {
         width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
     }
 
     @media screen and (min-width: 768px) {
         width: 48%;
+        text-align: left;
     }
 }
 
@@ -202,4 +211,143 @@ body {
     }
 
 
+}
+
+.left__txt1 {
+    font-size: 18px;
+    font-weight: 600;
+    
+}
+
+.left__txt2 {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: arial;
+
+    span {
+        color: #FE461C;
+    }
+
+
+    @media screen and (min-width: 320px) {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    
+}
+
+.left__txt3 {
+    font-size: 18px;
+    font-weight: 600;
+    
+    @media screen and (min-width: 320px) {
+        font-size: 12px;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+    }
+}
+
+
+.main__buttons {
+    display: flex;
+    margin-top: 36px;
+
+
+    @media screen and (min-width: 320px) {
+        justify-content: space-between;
+    }
+
+    @media screen and (min-width: 768px) {
+        justify-content: initial;
+    }
+}
+
+.hire {
+    background: #FE461C;
+    border-radius: 4px;
+    transition: 0.5s ease 0s;
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    padding: 0 20px;
+    font-family: arial;
+    margin-right: 25px;
+
+    &:hover {
+        background: #f06a4c;
+    }
+
+
+    @media screen and (min-width: 320px) {
+        margin-right: 0px;
+        font-size: 15px;
+        padding: 0 15px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding: 0 20px;
+        margin-right: 25px;
+        font-size: 18px;
+    }
+}
+
+.down {
+    background: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    transition: 0.5s ease 0s;
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    padding: 0 20px;
+    font-family: arial;
+
+    &:hover {
+        background: #f06a4c;
+    }
+
+    @media screen and (min-width: 320px) {
+        margin-right: 0px;
+        font-size: 15px;
+        padding: 0 15px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding: 0 20px;
+        font-size: 18px;
+        
+    }
+}
+
+.ellipse {
+    width: 204px;
+    height: 204px;
+    border-radius: 300px;
+    background: rgba(187, 197, 211, 0.08);
+    position: absolute;
+    top: -102px;
+    left: -102px;
+    @media screen and (min-width: 1320px) {
+        
+    }
 }
