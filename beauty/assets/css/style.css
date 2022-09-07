@@ -228,8 +228,8 @@ section {
 }
 
 .whatsup {
-  -webkit-mask-image: url(/assets/img/whatsapp.svg);
-          mask-image: url(/assets/img/whatsapp.svg);
+  -webkit-mask-image: url(../img/whatsapp.svg);
+          mask-image: url(../img/whatsapp.svg);
 }
 
 .facebook {
