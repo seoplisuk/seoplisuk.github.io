@@ -1,0 +1,56 @@
+.team {
+    .title {
+        text-align: center;
+    }
+}
+
+.team__name {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.team__vacancy {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.team__txt {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.team__block {
+    display: flex;
+    margin-bottom: 46px;
+    justify-content: space-between;
+
+    @media screen and (max-width: 600px) {
+        flex-wrap: wrap;
+    }
+    
+}
+
+.team__img {
+    
+    width: 30%;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    @media screen and (max-width: 600px) {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.team__content {
+    width: 65%;
+
+    @media screen and (max-width: 600px) {
+        width: 100%;
+    }
+}

@@ -1,0 +1,33 @@
+.swiper2 {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    width: 90%;
+    margin: 0 auto;
+
+    .gal__item {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.licenzes {
+    .title {
+        text-align: center;
+    }
+}
+
+.licenzes__txt {
+    margin-bottom: 24px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.licenzes__slider {
+    position: relative;
+}

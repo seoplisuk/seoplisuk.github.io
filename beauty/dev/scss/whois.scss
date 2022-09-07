@@ -1,0 +1,151 @@
+.whoistitle {
+    text-align: left;
+    align-items: flex-start;
+
+    @media screen and (max-width: 600px) {
+        text-align: center;
+        align-items: center;
+    }
+}
+
+.whois__row {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+    }
+}
+
+.whois__left {
+    width: 48%;
+
+    @media screen and (max-width: 600px) {
+        width: 100%;
+    }
+}
+
+.whois__right {
+    width: 48%;
+
+    @media screen and (max-width: 600px) {
+        width: 100%;
+    }
+}
+
+.whois__item {
+    display: flex;
+    margin-bottom: 38px;
+}
+
+.whois__ico {
+    margin-right: 20px;
+}
+
+.whois__txt1 {
+    font-size: 22px;
+    font-weight: 600;
+
+    
+}
+
+.comp__row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+
+    @media screen and (max-width: 600px) {
+        flex-wrap: wrap;
+    }
+}
+
+.comp__item {
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (max-width: 600px) {
+        width: 48%;
+        font-size: 18px;
+        margin-bottom: 28px;
+    }
+}
+
+.comp__img {
+    text-align: center;
+    min-height: 80px;
+}
+
+.comp {
+    .title {
+        text-align: center;
+    }
+}
+
+.steps {
+    .title {
+        text-align: center;
+    }
+}
+
+.steps__row {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 1024px) {
+        width: 300px;
+    }
+}
+
+.step__numb {
+    width: 46px;
+    height: 46px;
+    border-radius: 100px;
+    background: #CEB290;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 48%;
+    margin-bottom: 21px;
+}
+
+.step__line {
+    position: absolute;
+    width: 530px;
+    height: 116px;
+    border-top: 4px solid #EDE3D7;
+    border-bottom: 4px solid #EDE3D7;
+    border-right: 4px solid #EDE3D7;
+    border-radius: 0px 300px 300px 0px;
+    top: 21px;
+    right: 0;
+    z-index: -1;
+
+    @media screen and (max-width: 1024px) {
+        width: 240px;
+    }
+}
+
+.fill__button {
+    width: 181px;
+    height: 52px;
+    margin: 0 auto;
+}
+
+.step__txt {
+    text-align: center;
+}
