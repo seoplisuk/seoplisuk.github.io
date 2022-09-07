@@ -69,6 +69,33 @@
     }
 }
 
+.form__input {
+    height: 40px;
+    margin-bottom: 26px;
+    textarea {
+        background: #FCFCFC;
+        border: 1px solid #CEB290;
+        border-radius: 3px;
+        outline: none;
+        font-size: 14px;
+        color: #000000;
+        padding: 8px;
+        width: 100%;
+
+        &:focus {
+            border: 2px solid #CEB290;
+
+            &::placeholder {
+                color: #000000;
+            }
+        }
+        
+        &::placeholder {
+            color: #575757;
+        }
+    }
+}
+
 .send {
     border: none;
     outline: none;

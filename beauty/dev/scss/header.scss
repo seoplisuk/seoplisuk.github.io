@@ -82,10 +82,10 @@
     mask-image: url(../img/whatsapp.svg);
 }
 .facebook {
-    mask-image: url(/assets/img/facebook.svg);
+    mask-image: url(../img/facebook.svg);
 }
 .instagram {
-    mask-image: url(/assets/img/instagram.svg);
+    mask-image: url(../img/instagram.svg);
 }
 
 .top__row__right {
@@ -198,7 +198,7 @@
         transition: all 0.5 ease 0s;
         &::before {
             content: "";
-            mask-image: url(/assets/img/phone.svg);
+            mask-image: url(../img/phone.svg);
             mask-size: cover;
             mask-repeat: no-repeat;
             width: 24px;
@@ -255,7 +255,7 @@
             align-items: center;
             &::after {
                 content: "";
-                mask-image: url(/assets/img/arrow__top.svg);
+                mask-image: url(../img/arrow__top.svg);
                 mask-size: cover;
                 mask-repeat: no-repeat;
                 background: #000000;

@@ -1,7 +1,7 @@
 
 .category__service {
     min-height: 250px;
-    background: url(/assets/img/category__service.jpg) no-repeat center;
+    background: url(../img/category__service.jpg) no-repeat center;
     background-size: cover;
 
     
@@ -13,7 +13,7 @@
     }
 
     @media screen and (max-width: 600px) {
-        background: url(/assets/img/category__service__mobile.jpg) no-repeat center;
+        background: url(../img/category__service__mobile.jpg) no-repeat center;
         min-height: 175px;
         background-size: cover;
     }
