@@ -622,6 +622,109 @@ section {
           transform: translate(0, 0);
 }
 
+.section1 {
+  background: radial-gradient(40.73% 96.84% at 66.49% 44.33%, #FFF6E8 0%, rgba(255, 255, 255, 0) 100%);
+  border-bottom: 2px solid #CEB290;
+  margin-bottom: 80px;
+  padding-bottom: 0;
+}
+@media screen and (max-width: 1024px) {
+  .section1 {
+    border: none;
+  }
+  .section1 .container {
+    padding: 0;
+  }
+}
+
+.section1__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 80px;
+}
+@media screen and (max-width: 1024px) {
+  .section1__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.section1__left {
+  width: 48%;
+}
+@media screen and (max-width: 1024px) {
+  .section1__left {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 100%;
+  }
+}
+
+.section1__right {
+  width: 48%;
+}
+@media screen and (max-width: 1024px) {
+  .section1__right {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+    border-top: 2px solid #CEB290;
+    border-bottom: 2px solid #CEB290;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 15px;
+    background: radial-gradient(40.73% 96.84% at 66.49% 44.33%, #FFF6E8 0%, rgba(255, 255, 255, 0) 100%);
+  }
+}
+
+.section1__title {
+  font-size: 64px;
+  line-height: 70px;
+  font-family: "Playfair Display";
+  font-weight: 500;
+  margin-bottom: 44px;
+}
+@media screen and (max-width: 1024px) {
+  .section1__title {
+    font-size: 43px;
+    line-height: 47px;
+    text-align: center;
+  }
+}
+
+.section1__txt {
+  margin-bottom: 30px;
+  font-size: 22px;
+}
+@media screen and (max-width: 1024px) {
+  .section1__txt {
+    text-align: center;
+  }
+}
+
+.read {
+  width: 149px;
+  height: 52px;
+}
+@media screen and (max-width: 1024px) {
+  .read {
+    margin: 0 auto;
+  }
+}
+
 .section2__row {
   display: -webkit-box;
   display: -ms-flexbox;
