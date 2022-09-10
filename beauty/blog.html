@@ -32,7 +32,7 @@
                     <div class="logo"><a href="/"><img src="assets/img/logo.svg" alt=""></a></div>
                     <div data-da=".header__bottom, 1024, last" class="top__row__right">
                         <div class="phone"><a href="tel:(305) 842-9292">(305) 842-9292</a></div>
-                        <a href="#" class="contact__us button2">Contact Us</a>
+                        <a data-fancybox data-src="#hidden-content" href="javascript:;" class="contact__us button2">Contact Us</a>
                     </div>
                     <div class="burger">
                         <span></span>
@@ -195,6 +195,19 @@
     </footer>
     <div class="copy">
         <div class="container">© 2022 Beauty Center</div>
+    </div>
+
+
+    <div style="display: none;" id="hidden-content">
+        <div class="form__popup">
+            <div class="form__footer__title">CONTACT US</div>
+                <form action="">
+                    <div class="form__input"><input type="text" placeholder="Name"></div>
+                    <div class="form__input"><input type="text" placeholder="Phone *" required></div>
+                    <div class="form__input"><input type="text" placeholder="Mail *" required></div>
+                    <button class="send button1">SEND</button>
+                </form>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
