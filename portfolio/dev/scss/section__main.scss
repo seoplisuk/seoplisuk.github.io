@@ -1,6 +1,10 @@
 .main {
     background: #1F2235;
     padding-top: 100px;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
 
 
     @media screen and (min-width: 320px) {
@@ -61,6 +65,7 @@
     height: 634px;
     border-radius: 100%;
     position: relative;
+    overflow: hidden;
 
     img {
         width: 350px;
@@ -89,7 +94,7 @@
         }
 
         @media screen and (min-width: 1320px) {
-            width: 350px;
+            width: 305px;
             
         }
 
@@ -115,8 +120,8 @@
     }
 
     @media screen and (min-width: 1320px) {
-        width: 634px;
-        height: 634px;
+        width: 580px;
+        height: 580px;
     }
 
 
@@ -267,8 +272,18 @@
 }
 
 header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    top: 30px;
     .hire {
         margin-right: 0;
         width: auto;
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
     }
 }

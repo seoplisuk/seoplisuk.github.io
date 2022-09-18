@@ -1,0 +1,75 @@
+.main__photo__block {
+    background: url("/assets/img/main__photo.jpg") no-repeat center;
+    background-size: cover;
+    min-height: 562px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @media screen and (max-width: 1024px) {
+        min-height: 397px;
+        padding: 0 25px;
+    }
+}
+
+
+.main__photo__txt1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #FAD749;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 34px;
+    }
+    
+}
+
+.main__photo__txt2 {
+    font-size: 56px;
+    line-height: 110%;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+
+.order {
+    margin-top: 29px;
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+    }
+}
+
+
+.button1 {
+    background: #FAD749;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #1d1d1d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 28px;
+    transition: 0.5s ease 0s;
+
+    &:hover {
+        background: #FFE866;
+    }
+
+    &:active {
+        background:#E5C200;
+    }
+
+
+
+}
+

@@ -1,0 +1,4 @@
+.main__photo__block {
+  background: url("/assets/img/main__photo.jpg") no-repeat center;
+  background-size: cover;
+}

@@ -1,0 +1,165 @@
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+section {
+    margin-bottom: 100px;
+}
+
+
+
+.container {
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 1140px) {
+        padding: 0 20px;
+    }
+
+}
+
+.txt1 {
+    color: 14px;
+    color: #9A6437;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.txt1::before {
+    content: "";
+    width: 55px;
+    height: 1px;
+    background: #9A6437;
+    display: block;
+    margin-right: 10px;
+
+}
+
+
+.title {
+    font-size: 42px;
+    color: #1B1A1A;
+    margin-bottom: 34px;
+}
+
+
+.products__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 39px;
+}
+
+.product {
+    
+}
+
+.product {
+
+    .product__img {
+        background: #F7F7F7;
+        padding-top: 64px;
+        padding-bottom: 31px;
+        display: flex;
+        justify-content: center;
+        min-height: 260px;
+    }
+    
+}
+
+.buttons {
+    background: #1C1B1B;
+    display: flex;
+    justify-content: center;
+    height: 33px;
+    align-items: center;
+
+    .button {
+        margin-right: 20px;
+
+        &:nth-last-child(1) {
+            margin-right: 0;
+        }
+    }
+    
+    
+}
+
+
+
+.product__title {
+    margin-top: 6px;
+    margin-bottom: 9px;
+    font-weight: 600;
+    font-size: 24px;
+    color: #282828;
+}
+
+.product__bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.price {
+    font-size: 15px;
+}
+
+.old__price {
+    color: #737373;
+    text-decoration: line-through;
+}
+
+.new__price {
+    color: #1E1D1D;
+}
+
+
+.raiting {
+    display: flex;
+}
+
+.raiting .star {
+    margin-right: 5px;
+}
+
+.raiting .star:nth-last-child(1) {
+    margin-right: 0px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .products__row {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .products__row {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .products__row {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        padding: 0 20px;
+    
+    }
+}
+
+
+@import "section__reviews";

@@ -1,0 +1,17 @@
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    flex-wrap: wrap;        
+}
+
+.block {
+    width: 48%;
+}

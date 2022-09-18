@@ -1,0 +1,99 @@
+.about__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 80px;
+
+    @media screen and (max-width: 1024px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.block {
+    p {
+        font-size: 18px;
+        line-height: 27px;
+        margin-bottom: 20px;
+
+
+        @media screen and (max-width: 1024px) {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+    img {
+        border-radius: 14px;
+
+        @media screen and (max-width: 600px) {
+            height: 262px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        img {
+            margin: 0 auto;
+        }
+    }
+}
+
+.button__service {
+    width: 194px;
+
+    @media screen and (max-width: 1024px) {
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    @media screen and (max-width: 600px) {
+        width: 100%;
+    }
+}
+
+
+.advantages__row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.advantage {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+    }
+}
+
+.advantage__ico {
+    margin-bottom: 25px;
+
+    @media screen and (max-width: 1024px) {
+        img {
+            width: 52px;
+        }
+    }
+}
+
+.advantage__title {
+    font-size: 28px;
+    text-align: center;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 24px;
+        line-height: 31px;
+    }
+}
+
+.advantage__txt {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}

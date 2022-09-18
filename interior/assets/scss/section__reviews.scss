@@ -1,0 +1,147 @@
+.reviews {
+    background: url("/assets/img/reviews.jpg") no-repeat center;
+    background-size: cover;
+    padding-top: 73px;
+    padding-bottom: 82px;
+    
+}
+
+
+.reviews__txt1 {
+    color: #E0E0E0;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 21px;
+
+    &::before {
+        content: "";
+        width: 55px;
+        height: 1px;
+        background: #E0E0E0;
+        display: block;
+        margin-right: 10px;
+    }
+
+    &::after {
+        content: "";
+        width: 55px;
+        height: 1px;
+        background: #E0E0E0;
+        display: block;
+        margin-left: 10px;
+    }
+}
+
+.reviews__title {
+    font-size: 42px;
+    margin-bottom: 100px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.reviews__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 60px;
+
+
+    @media screen and (max-width: 1024px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (max-width: 600px) {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+
+.reviews__item {
+    background: #ffffff;
+    padding-top: 93px;
+    padding-bottom: 29px;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    transition: 0.5s ease 0s;
+
+    &:hover {
+       
+       transform: translate(0px, -50px);
+    }
+}
+
+.reviews__img {
+    width: 111px;
+    height: 111px;
+    background: #d9d9d9;
+    border-radius: 150px;
+    overflow: hidden;
+    position: absolute;
+    top: -34px;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    img {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+.reviews__name {
+    font-size: 24px;
+    color: #1B1A1A;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.reviews__posada {
+    font-size: 14px;
+    color: #999999;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.reviews__rating {
+    text-align: center;
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.reviews__content {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    color: #999999;
+    text-align: center;
+}
+
+
+.button1 {
+    text-decoration: none;
+    background: #000000;
+    color: #ffffff;
+    padding: 8px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    transition: 0.5s ease 0s;
+    margin: 0 auto;
+    width: 200px;
+    margin-bottom: 300px;
+
+    &:hover {
+        background: yellow;
+        color: red;
+    }
+}
