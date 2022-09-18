@@ -259,8 +259,8 @@ section {
   content: "";
   width: 12px;
   height: 8px;
-  -webkit-mask-image: url("/assets/img/arrow__menu.svg");
-          mask-image: url("/assets/img/arrow__menu.svg");
+  -webkit-mask-image: url("../img/arrow__menu.svg");
+          mask-image: url("../img/arrow__menu.svg");
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
   -webkit-mask-size: cover;
