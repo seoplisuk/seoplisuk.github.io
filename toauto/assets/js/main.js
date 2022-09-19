@@ -172,3 +172,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	
 })
+
+
+var action="click";
+var speed="500";
+
+$(document).ready(function() {
+// Question handler
+$('.a').hide();
+$('.q').on(action, function() {
+	$(this).toggleClass('plus')
+	// Get next element
+	$(this).next()
+		.slideToggle(speed)
+	// Select all other answers
+			.siblings('.a')
+				.slideUp();
+});
+});

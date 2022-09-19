@@ -143,6 +143,7 @@
             opacity: 0;
             visibility: hidden;
             transition: 0.5s ease 0s;
+            z-index: 1;
 
             .sub-menu {
                 background: #ffffff;
@@ -253,6 +254,7 @@
     transform: translate(200%, 0px);
     transition: 0.5s ease 0s;
     padding: 20px 30px;
+    z-index: 10;
 
     .menu {
         flex-direction: column;

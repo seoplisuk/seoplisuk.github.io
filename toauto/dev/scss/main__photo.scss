@@ -1,3 +1,14 @@
+.main__photo {
+    position: relative;
+    overflow: hidden;
+}
+.decor1 {
+    position: absolute;
+    right: -240px;
+    top: 0;
+    z-index: -1;
+}
+
 .main__photo__block {
     background: url("../img/main__photo.jpg") no-repeat center;
     background-size: cover;

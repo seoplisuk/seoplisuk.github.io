@@ -1,0 +1,41 @@
+.page__block {
+    width: 100%;
+    min-height: 150px;
+    border-radius: 14px;
+    position: relative;
+    overflow: hidden;
+
+    img {
+        position: absolute;
+        border-radius: 14px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+
+    .page__header {
+        position: absolute;
+        text-align: center;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        font-size: 42px;
+        font-weight: 700;
+        color: #FAD749;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 34px;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        min-height: 84px;
+    }
+}
