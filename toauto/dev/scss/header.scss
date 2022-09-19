@@ -25,9 +25,43 @@
     }
 }
 
+.arrow__lang {
+    margin-left: 10px;
+}
+
+.lang {
+    position: relative;
+
+    &:hover {
+        .lang__hover {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+.lang__hover {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 8px;
+
+}
+
+.lang__item {
+    cursor: pointer;
+    &:hover {
+        color: #FAD749;
+    }
+}
+
 .lang__main {
     display: flex;
     align-items: center;
+
+    
 }
 
 .header__bottom {

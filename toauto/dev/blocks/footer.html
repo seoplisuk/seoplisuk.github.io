@@ -13,16 +13,16 @@
             <div class="footer__center">
                 <div class="menu__title">Меню сайту</div>
                 <ul class="footer__menu1">
-                    <li><a href="/aboutus.html">Про нас</a></li>
-                    <li><a href="/services.html">Послуги</a></li>
-                    <li><a href="#">Новини</a></li>
-                    <li><a href="#">Контакти</a></li>
+                    <li><a href="aboutus.html">Про нас</a></li>
+                    <li><a href="services.html">Послуги</a></li>
+                    <li><a href="news.html">Новини</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
                 </ul>
             </div>
             <div class="footer__center">
                 <div class="menu__title">Корисні посилання</div>
                 <ul class="footer__menu2">
-                    <li><a href="#">Водіям</a></li>
+                    <li><a href="drivers.html">Водіям</a></li>
                     <li><a href="#">Поширені запитання</a></li>
                     <li><a href="#">Конфіденційність</a></li>
                 </ul>
@@ -30,7 +30,10 @@
             <div class="footer__right">
                 <div class="lang">
                     <div class="lang__main">Укр <img class="arrow__lang" src="assets/img/arrow__down.svg" alt=""></div>
-                    <div class="lang__hover"></div>
+                    <div class="lang__hover">
+                        <div class="lang__item">Рус</div>
+                        <div class="lang__item">Eng</div>
+                    </div>
                 </div>
                 <div data-da=".contacts__mobile, 1024, first" class="footer__contacts">
                     <a href="tel:38067443-77-96" class="f__telephone">0(67)443-77-96</a>
@@ -50,7 +53,14 @@
 
 
 <div style="display: none;" id="hidden-content">
-    Тут буде форма
+    <form action="">
+        <div class="form__title">Записатися на послугу:</div>
+        <div class="form__row">
+            <div class="form__input"><input type="text" placeholder="Ваше ім’я" required></div>
+            <div class="form__input"><input type="text" placeholder="Телефон" required></div>
+            <div class="form__button"><button class="form__button button2">Відправити</button></div>
+        </div>
+    </form>
 </div>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <script src="assets/js/fancybox.umd.js"></script>

@@ -58,5 +58,25 @@
     color: #5C5C5C;
 }
 
+.article__title {
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.article__img {
+    margin-bottom: 40px;
+    img {
+        max-width: 716px;
+        max-height: 420px;
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 14px;
+    }
+}
+
+
 
 
