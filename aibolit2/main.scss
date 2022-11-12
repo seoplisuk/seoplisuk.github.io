@@ -1213,12 +1213,28 @@ footer {
         border: 1px solid #525252;
         border-radius: none;
         outline: none;
+
+        &:focus {
+          border: 1px solid #1D3CE1;
+        }
+
+        &:active {
+          border: 1px solid #1D3CE1;
+        }
     }
 
     textarea {
         border: 1px solid #525252;
         border-radius: none;
         outline: none;
+
+        &:focus {
+          border: 1px solid #1D3CE1;
+        }
+
+        &:active {
+          border: 1px solid #1D3CE1;
+        }
     }
 
     .input__top {

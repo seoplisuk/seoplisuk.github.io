@@ -1287,10 +1287,22 @@ footer {
   border-radius: none;
   outline: none;
 }
+.form__block input:focus {
+  border: 1px solid #1D3CE1;
+}
+.form__block input:active {
+  border: 1px solid #1D3CE1;
+}
 .form__block textarea {
   border: 1px solid #525252;
   border-radius: none;
   outline: none;
+}
+.form__block textarea:focus {
+  border: 1px solid #1D3CE1;
+}
+.form__block textarea:active {
+  border: 1px solid #1D3CE1;
 }
 .form__block .input__top {
   display: -webkit-box;

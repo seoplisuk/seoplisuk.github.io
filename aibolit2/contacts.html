@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="ua">
 <head>
     <meta charset="UTF-8">
+    
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Контакти</title>
@@ -49,7 +50,7 @@
                     <span class="bread__name">Шлях:</span>
                     <a href="index.html">Головна</a>
                     <span class="arrow"></span>
-                    <span class="bread__txt">Контакти</span>
+                    <a href="#">Контакти</a>
                 </div>
             </div>
           
@@ -62,53 +63,53 @@
         <div class="contacts__row">
 
             <div class="contacts__form">
-                <form action="">
+                <form action="form.php">
                     <div class="form__title">Ми можемо вам допомогти!</div>
                     <div class="form__txt">Заповніть форму нижче з вашою проблемою</div>
 
                     <div class="form__block">
                         <div class="input__top">
-                            <label for="">Ваше ім’я:</label>
+                            <label for="name">Ваше ім’я:</label>
                             <div class="alert">це поле є обов’язковим</div>
                         </div>
                         
-                        <input type="text" autofocus>
+                        <input class="name" name="name" id="name" type="text" autofocus>
                     </div>
 
                     <div class="form__block">
                         
 
                         <div class="input__top">
-                            <label for="">Ваш e-mail:</label>
+                            <label for="mail">Ваш e-mail:</label>
                             <div class="alert">це поле є обов’язковим</div>
                         </div>
-                        <input type="text">
+                        <input class="mail" name="mail" id="mail" type="text">
                     </div>
 
                     <div class="form__block">
-                        <label for="">Тема питання:</label>
-                        <select name="" id="">
-                            <option value="">-Виберіть тему-</option>
-                            <option value="">Питання по функціонуванню сайту</option>
-                            <option value="">Я помітив помилку на сайті</option>
-                            <option value="">Інше</option>
+                        <label for="theme">Тема питання:</label>
+                        <select name="theme" id="theme">
+                            <option value="0">-Виберіть тему-</option>
+                            <option value="1">Питання по функціонуванню сайту</option>
+                            <option value="2">Я помітив помилку на сайті</option>
+                            <option value="3">Інше</option>
                         </select>
                     </div>
 
                     <div class="form__block">
 
                         <div class="input__top">
-                            <label for="">Суть повідомлення::</label>
+                            <label for="mess">Суть повідомлення::</label>
                             <div class="alert">це поле є обов’язковим</div>
                             
                         </div>
-                        <textarea name="" id="" cols="30" rows="10" required></textarea>
+                        <textarea name="mess" id="mess" cols="30" rows="10" required></textarea>
                       
                         <div class="txtarea__txt">Стисло та по суті викладіть ваше питання</div>
                     </div>
 
                     <div class="form__block">
-                        <label for="">Приєднати файл:</label>
+                        <label for="myFile">Приєднати файл:</label>
                         <input name="myFile" type="file">
                     </div>
 
