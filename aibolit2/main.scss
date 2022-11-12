@@ -913,8 +913,12 @@ footer {
     a {
         font-size: 16px;
         font-weight: 500;
-        
+        text-decoration: none;
         color: #525252;
+
+        &:hover {
+          text-decoration: underline;
+        }
     }
 
 
@@ -1157,16 +1161,24 @@ footer {
         width: 100%;
 
         button {
-            background: #1D3CE1;
-            border-radius: 25px;
-            text-align: center;
-            font-size: 16px;
-            font-weight: 700;
-            color: #ffffff;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            padding: 5px 10px;
+          background: #1D3CE1;
+          border-radius: 25px;
+          text-align: center;
+          font-size: 16px;
+          font-weight: 700;
+          color: #ffffff;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          padding: 5px 10px;
+          width: 139px;
+          height: 38px;
+          border: 1px solid transparent;
+          transition: 0.5s ease 0s;
+
+          &:hover {
+            border: 1px solid #525252;
+          }
         }
     }
 
@@ -1194,7 +1206,7 @@ footer {
 
     label {
         font-weight: 500;
-        margin-bottom: 9px;
+        
     }
 
     input {
@@ -1208,6 +1220,17 @@ footer {
         border-radius: none;
         outline: none;
     }
+
+    .input__top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  .alert {
+    color: #e80000;
+    font-size: 14px;
+  }
 }
 
 .cont__txt1 {

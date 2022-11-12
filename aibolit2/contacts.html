@@ -67,12 +67,21 @@
                     <div class="form__txt">Заповніть форму нижче з вашою проблемою</div>
 
                     <div class="form__block">
-                        <label for="">Ваше ім’я:</label>
-                        <input type="text">
+                        <div class="input__top">
+                            <label for="">Ваше ім’я:</label>
+                            <div class="alert">це поле є обов’язковим</div>
+                        </div>
+                        
+                        <input type="text" autofocus>
                     </div>
 
                     <div class="form__block">
-                        <label for="">Ваш e-mail:</label>
+                        
+
+                        <div class="input__top">
+                            <label for="">Ваш e-mail:</label>
+                            <div class="alert">це поле є обов’язковим</div>
+                        </div>
                         <input type="text">
                     </div>
 
@@ -87,8 +96,14 @@
                     </div>
 
                     <div class="form__block">
-                        <label for="">Суть повідомлення:</label>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+                        <div class="input__top">
+                            <label for="">Суть повідомлення::</label>
+                            <div class="alert">це поле є обов’язковим</div>
+                            
+                        </div>
+                        <textarea name="" id="" cols="30" rows="10" required></textarea>
+                      
                         <div class="txtarea__txt">Стисло та по суті викладіть ваше питання</div>
                     </div>
 
