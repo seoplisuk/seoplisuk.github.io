@@ -2,12 +2,14 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Контакти</title>
 </head>
 <body>
+    <div class="mobile__menu"></div>
     <header>
         <div class="top__line">
             <div class="container">
@@ -19,7 +21,7 @@
             <div class="container">
                 <div class="middle__row">
                     <a href="index.html" class="logo"><img src="img/logo.svg" alt=""><img src="img/logo2.svg" alt=""></a>
-                    <div class="top__menu">
+                    <div class="top__menu" data-da=".mobile__menu, 768, first">
                         <ul class="menu">
                             <li class="menu__item"><a href="index.html" class="menu__link">Головна</a></li>
                             <li class="menu__item"><a href="news.html" class="menu__link active1">Статті</a></li>
@@ -29,10 +31,15 @@
 
                         </ul>
                     </div>
-                    <a href="#" class="button__pay">Передплата</a>
-                    <form action="form2.php" class="form__search">
+                    <a href="#" class="button__pay" data-da=".mobile__menu, 768, last">Передплата</a>
+                    <form action="form2.php" class="form__search" data-da=".mobile__menu, 768, last">
                         <input type="text" placeholder="Пошук">
                     </form> 
+                    <div class="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </div>
             
@@ -180,6 +187,6 @@
 
         </div>
     </footer>
-
+    <script src="main.js"></script>
 </body>
 </html>
