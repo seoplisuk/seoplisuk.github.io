@@ -162,3 +162,24 @@ const da = new DynamicAdapt("max");
 da.init();
 /* end */
 
+
+// открыть-закрыть меню
+document.addEventListener('DOMContentLoaded', () => {
+	const burger = document.querySelector('.burger')
+	const mobile__menu = document.querySelector('.mobile__menu')
+	const body = document.querySelector('body')
+	
+
+	burger.addEventListener('click', () => {
+		mobile__menu.classList.toggle('menu__opened')
+		burger.classList.toggle('burger__close')
+		body.classList.toggle('body__opened')
+		
+	})
+
+	
+
+	
+})
+/* end */
+
