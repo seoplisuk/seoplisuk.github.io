@@ -105,7 +105,7 @@
 }
 
 .banner1 {
-    background: url(/assets/img/banner1.jpg) no-repeat;
+    background: url(../img/banner1.jpg) no-repeat;
     background-size: cover;
     
     border-radius: 16px;
@@ -263,7 +263,7 @@
 
     &::before {
         content: "";
-        mask-image: url(/assets/img/scanner__ico.svg);
+        mask-image: url(../img/scanner__ico.svg);
         mask-repeat: no-repeat;
         mask-size: cover;
         width: 15px;
