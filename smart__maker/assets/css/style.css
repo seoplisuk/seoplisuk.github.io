@@ -797,3 +797,31 @@ body {
     display: block;
   }
 }
+
+.block__title {
+  font-family: mazzardh_bold;
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.products__row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 12px 1fr 12px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+}
+@media screen and (max-width: 1440px) {
+  .products__row {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.product {
+  border: 1px solid #56555B;
+  border-radius: 16px;
+  background: #2F2E38;
+}
