@@ -216,6 +216,7 @@
     font-size: 30px;
     color: #FBFBFD;
     margin-bottom: 15px;
+    line-height: 120%;
 
     @media screen and (max-width: 1024px) {
         font-size: 24px;
@@ -427,6 +428,10 @@
 
     @media screen and (max-width: 1440px) {
         font-size: 18px;
+    }
+
+    @media screen and (max-width: 600px) {
+        margin-bottom: 16px;
     }
 }
 
