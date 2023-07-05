@@ -17,13 +17,15 @@
     appearance: none;
     background: #ffffff;
     cursor: pointer;
+    font-size: 14px;
+    font-family: "Stem Medium";
 
    
     
 }
 
 .select__arrow {
-    mask-image: url("/assets/img/down-chevron1.svg");
+    mask-image: url("../img/down-chevron1.svg");
     mask-repeat: no-repeat;
     mask-size: contain;
     mask-position: center;
@@ -72,7 +74,7 @@
         line-height: 20px;
         cursor: pointer;
         font-size: 14px;
-        font-family: "Gotham Pro Medium";
+        font-family: "Stem Medium";
       }
       
       input[type="radio"]:checked + label:before,
@@ -100,7 +102,7 @@
       
       input[type="radio"]:checked + label:before,
       input[type="radio"]:not(:checked) + label:before {
-        border-radius: 3px;
+        border-radius: 30px;
       }
       
       input[type="radio"]:checked + label:after,
@@ -117,8 +119,8 @@
         top: 3px;
         width: 15px;
         height: 15px;
-        border-radius: 3px;
-        background-color: $orange;
+        border-radius: 30px;
+        background: linear-gradient(to right, #FF5200, #FF00A8);
       }
       
       input[type="radio"]:not(:checked) + label:after {
@@ -136,7 +138,7 @@
     margin-top: 20px;
     margin-bottom: 10px;
     font-size: 16px;
-    font-family: "Gotham Pro Medium";
+    font-family: "Stem medium";
     color: #afafaf;
     padding-left: 10px;
 }
@@ -144,7 +146,7 @@
 .sub__name {
     margin-bottom: 10px;
     font-size: 14px;
-    font-family: "Gotham Pro Medium";
+    font-family: "Stem medium";
     color: #afafaf;
     padding-left: 20px;
 }
@@ -173,11 +175,7 @@
         
     }
 
-    .check__active {
-        background: rgba(242, 101, 34, 0.05);
-        border: 1px solid $orange;
-    }
-
+   
 
     .check:nth-child(1) {
         margin-top: 10px;
@@ -197,11 +195,11 @@
         position: relative;
         padding: 10px;
         border: 1px solid #f4f4f4;
-        border-radius: 10px;
+        border-radius: 30px;
         width: 100%;
         cursor: pointer;
         font-size: 14px;
-        font-family: "Gotham Pro Medium";
+        font-family: "Stem Medium";
 
         span {
             padding-left: 25px;
@@ -216,6 +214,9 @@
 
         span {
             color: $orange;
+            background: -webkit-linear-gradient(#FF5200, #FF00A8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             
         }
 
@@ -242,17 +243,19 @@
         top: 12px;
         width: 15px;
         height: 15px;
-        background-color: $orange;
+        background: linear-gradient(to right, #FF5200, #FF00A8);
       }
 
       input[type="checkbox"]:checked + label {
-        border: 1px solid $orange;
-        background: rgba(242, 101, 34, 0.05);
+        background: linear-gradient(white, white) padding-box, linear-gradient(to right, #FF5200, #FF00A8) border-box;
+        border-radius: 50em;
+        border: 1px solid transparent;
+        
       }
 
       input[type="checkbox"]:checked + label:before,
       input[type="checkbox"]:not(:checked) + label:before {
-        border-radius: 3px;
+        border-radius: 30px;
       }
       
       input[type="checkbox"]:checked + label:after,
@@ -297,6 +300,8 @@
         border-radius: 10px;
         padding: 7px 20px;
         outline: none;
+        font-size: 14px;
+        font-family: "Stem Medium";
     }
 
 .cond {
@@ -316,9 +321,9 @@
 
 .reset {
     border: 1px solid #f4f4f4;
-    border-radius: 10px;
+    border-radius: 30px;
     padding: 15px 10px;
-    font-family: "Gotham Pro Medium";
+    font-family: "Stem Medium";
     font-size: 14px;
     color: #afafaf;
     text-align: center;
@@ -329,16 +334,16 @@
 }
 
 .search {
-    border: 1px solid orange;
-    border-radius: 10px;
+    border: none;
+    border-radius: 30px;
     padding: 15px 24px;
-    font-family: "Gotham Pro Medium";
+    font-family: "Stem Medium";
     font-size: 14px;
     color: #ffffff;
     text-align: center;
     cursor: pointer;
     outline: none;
-    background: $orange;
+    background: linear-gradient(136deg, #FF5200 0%, #FF00A8 100%);
     transition: 0.5s ease 0s;
 
     &:hover {
@@ -347,4 +352,141 @@
     
 }
 
+.mobile__filter {
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: #ffffff;
+    border-top: 1px solid $orange;
+    z-index: 10;
+    display: none;
 
+    @media screen and (max-width: 768px) {
+        display: block;
+    }
+} 
+
+.filter__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.filter__lines {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+
+    span {
+        width: 15px;
+        height: 1px;
+        margin-bottom: 3px;
+        background: $black;
+
+        &:nth-child(2) {
+            width: 10px;
+        }
+
+        &:nth-child(3) {
+            width: 5px;
+        }
+    }
+}
+
+.filter__button__name {
+  background: -webkit-linear-gradient(#FF5200, #FF00A8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-family: "Stem Medium";
+}
+
+
+.mobile__block {
+    position: fixed;
+    background: #ffffff;
+    left: 0;
+    top: 0;
+    z-index: 15;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+    transform: translate(-200%, 0);
+
+    form {
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+    }
+
+    .filter--form-buttons {
+        left: 0;
+        margin-bottom: 0;
+        bottom: 0;
+        position: sticky;
+        right: 0;
+        padding: 12px;
+        border-top: 1px solid #f4f4f4;
+        background: #ffffff;
+    }
+
+
+}
+
+.mobile__block__opened {
+    transform: translate(0, 0);
+}
+
+.filter--header {
+    align-items: baseline;
+    background-color: #fafbfc;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    padding: 0.75rem;
+    position: sticky;
+    right: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.filter--sets {
+    flex-grow: 1;
+    padding: 12px;
+    
+}
+
+.filter--header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.close {
+    position: relative;
+    width: 15px;
+
+    span {
+        width: 15px;
+        height: 1px;
+        display: block;
+        background: $black;
+        position: absolute;
+
+        &:nth-child(1) {
+            transform: rotate(45deg);
+        }
+        &:nth-child(2) {
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+
+.body__opened {
+    overflow: hidden;
+}

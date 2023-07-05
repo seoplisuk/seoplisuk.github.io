@@ -8,16 +8,41 @@
 </head>
 <body>
     <!-- start header -->
-    <header class="header">header</header>
+    <header class="header">
+        <div class="container">
+            <div class="header__row">
+                <div class="logo"><a href="/"><img src="assets/img/logo.svg" alt=""></a></div>
+                <div class="top-menu">
+                    <ul data-da=".mobile__menu, 1024" class="menu">
+                        <li class="menu-item"><a href="#" class="menu-link">Main page</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">List of applicant</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Pricing</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div data-da=".mobile__menu, 1024, last" class="header__buttons">
+                    <a href="#" class="sign-in">Sign-in</a>
+                    <a href="#" class="sign-up">Sign-up</a>
+                </div>
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
     <!-- end header -->
+
+    <div class="mobile__menu"></div>
 
     <!-- start content -->
     <div class="content">
         <div class="container">
-            <h1 class="content__title">Candidates <span class="candidates__number">(10)</span></h1>
+            
             <div class="content__row">
                 <div class="content__left">
-                    <form method="GET" class="filter__form">
+                    <form data-da=".filter--sets, 768" method="GET" class="filter__form">
                         <div class="content__block">
                             <div class="filter__title"><span class="filter__name">Country</span></div>
                             <div class="select__block">
@@ -191,13 +216,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="form__buttons">
+                        <div data-da=".filter--form-buttons, 768" class="form__buttons">
                             <button class="reset">Reset the filter</button>
                             <button class="search">Search</button>
                         </div>
                     </form>
                 </div>
                 <div class="content__right">
+                    <h1 class="content__title">Candidates <div class="candidates__number">10</div></h1>
                     <div class="filter__tags">
                         <span class="filter__tags__name">Filter:</span>
                         <div class="tags">
@@ -224,7 +250,7 @@
 
                         <div class="hidden__info">
                             <div class="skills">
-                                <div class="skills__name">Proven skills</div>
+                                
                                 <div class="skills__row">
                                     <div class="skills__block">
                                         <div class="skills__block-left">
@@ -248,6 +274,9 @@
                                                 <span class="skills__title">English sertificate</span>
                                                 <span class="skills__txt">TOEFL</span>
                                             </div>
+                                            
+                                        </div>
+                                        <div class="skills__block-left">
                                             <div class="skills__row2">
                                                 <span class="skills__title">Written english level</span>
                                                 <span class="skills__txt">B2</span>
@@ -260,8 +289,6 @@
                                                 <span class="skills__title">Competitions</span>
                                                 <span class="skills__txt">IOI 3rd place</span>
                                             </div>
-                                        </div>
-                                        <div class="skills__block-right">
                                             <div class="skills__row2">
                                                 <span class="skills__title">Certificates</span>
                                                 <span class="skills__txt">AWS</span>
@@ -270,6 +297,9 @@
                                                 <span class="skills__title">Online Courses passed</span>
                                                 <span class="skills__txt"><a href="#">Udemy .NET Core</a></span>
                                             </div>
+                                        </div>
+                                        <div class="skills__block-left">
+                                            
                                             <div class="skills__row2">
                                                 <span class="skills__title">Offline Courses passed</span>
                                                 <span class="skills__txt">EPAM Internships</span>
@@ -280,7 +310,7 @@
                                             </div>
                                             <div class="skills__row2">
                                                 <span class="skills__title">Skills description</span>
-                                                <span class="skills__txt">.NET Web stack <br>JS <br>Full-stack</span>
+                                                <span class="skills__txt">.NET Web stack JS Full-stack</span>
                                             </div>
                                             <div class="skills__row2">
                                                 <span class="skills__title">Candidate code</span>
@@ -315,11 +345,14 @@
 
                         </div>
 
-                        <div class="show__hide">Show all information</div>
+                        
 
                         <div class="candidate__footer">
                             <div class="candidate__left">Last time available: <span>3 days ago</span></div>
-                            <div class="candidate__right"><a href="#" class="button2">Sign in to schedule an interview</a></div>
+                            <div class="candidate__right">
+                                <div class="show__hide">Hide information</div>
+                                <a href="#" class="button2">Sign in to schedule an interview</a>
+                            </div>
                         </div>
 
                     </div>
@@ -338,104 +371,13 @@
                             I am a visual designer with 6 years of experience, currently based in Berlin.The main directions of my work are the design of identity and logos...
                         </div>
 
-                        <div class="hidden__info">
-                            <div class="skills">
-                                <div class="skills__name">Proven skills</div>
-                                <div class="skills__row">
-                                    <div class="skills__block">
-                                        <div class="skills__block-left">
-                                            <div class="skills__row2">
-                                                <span class="skills__title">Graduation</span>
-                                                <span class="skills__txt">Appliced mathematics</span>
-                                            </div>
-                                            <div class="skills__row2">
-                                                <span class="skills__title">Job experience</span>
-                                                <span class="skills__txt">2 month</span>
-                                            </div>
-                                            <div class="skills__row2">
-                                                <span class="skills__title">Volunteer expierence</span>
-                                                <span class="skills__txt">-</span>
-                                            </div>
-                                            <div class="skills__row2">
-                                                <span class="skills__title">Verbal English Level</span>
-                                                <span class="skills__txt">B2</span>
-                                            </div>
-                                            <div class="skills__row2">
-                                                <span class="skills__title">English sertificate</span>
-                                                <span class="skills__txt">TOEFL</span>
-                                            </div>
-                                            <div class="skills__row2">
-                                                <span class="skills__title">Written english level</span>
-                                                <span class="skills__txt">B2</span>
-                                            </div>
-                                            <div class="skills__row2">
-                                                <span class="skills__title">Git Portfolio</span>
-                                                <span class="skills__txt"><a href="#">View Portfolio</a></span>
-                                            </div>
-                                            <div class="skills__row2">
-                                                <span class="skills__title">Competitions</span>
-                                                <span class="skills__txt">IOI 3rd place</span>
-                                            </div>
-                                        </div>
-                                        <div class="skills__block-right">
-                                            <div class="skills__row2">
-                                                <span class="skills__title">Certificates</span>
-                                                <span class="skills__txt">AWS</span>
-                                            </div>
-                                            <div class="skills__row2">
-                                                <span class="skills__title">Online Courses passed</span>
-                                                <span class="skills__txt"><a href="#">Udemy .NET Core</a></span>
-                                            </div>
-                                            <div class="skills__row2">
-                                                <span class="skills__title">Offline Courses passed</span>
-                                                <span class="skills__txt">EPAM Internships</span>
-                                            </div>
-                                            <div class="skills__row2">
-                                                <span class="skills__title">Specialization</span>
-                                                <span class="skills__txt">.NET</span>
-                                            </div>
-                                            <div class="skills__row2">
-                                                <span class="skills__title">Skills description</span>
-                                                <span class="skills__txt">.NET Web stack <br>JS <br>Full-stack</span>
-                                            </div>
-                                            <div class="skills__row2">
-                                                <span class="skills__title">Candidate code</span>
-                                                <span class="skills__txt">YT001</span>
-                                            </div>
-                                            <div class="skills__row2">
-                                                <span class="skills__title">Additional tests</span>
-                                                <span class="skills__txt">Codility</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>  
-
-                            <div class="specialization">
-                                <div class="skills__name">Specialization</div>
-                                <div class="spec__row">
-                                    <span class="spec">C#</span>
-                                    <span class="spec">Git</span>
-                                    <span class="spec">OOP</span>
-                                    <span class="spec">SQL</span>
-                                    <span class="spec">SOLID</span>
-                                    <span class="spec">.NET</span>
-                                    <span class="spec">Entity Framework</span>
-                                    <span class="spec">.NET Core</span>
-                                    <span class="spec">LINQ</span>
-                                    <span class="spec">ASP.NET</span>
-                                    <span class="spec">MSSQL</span>
-                                    <span class="spec">Design Patterns</span>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="show__hide">Show all information</div>
-
+                       
                         <div class="candidate__footer">
                             <div class="candidate__left">Last time available: <span>3 days ago</span></div>
-                            <div class="candidate__right"><a href="#" class="button2">Sign in to schedule an interview</a></div>
+                            <div class="candidate__right">
+                                <div class="show__hide">Hide information</div>
+                                <a href="#" class="button2">Sign in to schedule an interview</a>
+                            </div>
                         </div>
 
                     </div>
@@ -454,104 +396,14 @@
                             I am a visual designer with 6 years of experience, currently based in Berlin.The main directions of my work are the design of identity and logos...
                         </div>
 
-                        <div class="hidden__info">
-                            <div class="skills">
-                                <div class="skills__name">Proven skills</div>
-                                <div class="skills__row">
-                                    <div class="skills__block">
-                                        <div class="skills__block-left">
-                                            <div class="skills__row2">
-                                                <span class="skills__title">Graduation</span>
-                                                <span class="skills__txt">Appliced mathematics</span>
-                                            </div>
-                                            <div class="skills__row2">
-                                                <span class="skills__title">Job experience</span>
-                                                <span class="skills__txt">2 month</span>
-                                            </div>
-                                            <div class="skills__row2">
-                                                <span class="skills__title">Volunteer expierence</span>
-                                                <span class="skills__txt">-</span>
-                                            </div>
-                                            <div class="skills__row2">
-                                                <span class="skills__title">Verbal English Level</span>
-                                                <span class="skills__txt">B2</span>
-                                            </div>
-                                            <div class="skills__row2">
-                                                <span class="skills__title">English sertificate</span>
-                                                <span class="skills__txt">TOEFL</span>
-                                            </div>
-                                            <div class="skills__row2">
-                                                <span class="skills__title">Written english level</span>
-                                                <span class="skills__txt">B2</span>
-                                            </div>
-                                            <div class="skills__row2">
-                                                <span class="skills__title">Git Portfolio</span>
-                                                <span class="skills__txt"><a href="#">View Portfolio</a></span>
-                                            </div>
-                                            <div class="skills__row2">
-                                                <span class="skills__title">Competitions</span>
-                                                <span class="skills__txt">IOI 3rd place</span>
-                                            </div>
-                                        </div>
-                                        <div class="skills__block-right">
-                                            <div class="skills__row2">
-                                                <span class="skills__title">Certificates</span>
-                                                <span class="skills__txt">AWS</span>
-                                            </div>
-                                            <div class="skills__row2">
-                                                <span class="skills__title">Online Courses passed</span>
-                                                <span class="skills__txt"><a href="#">Udemy .NET Core</a></span>
-                                            </div>
-                                            <div class="skills__row2">
-                                                <span class="skills__title">Offline Courses passed</span>
-                                                <span class="skills__txt">EPAM Internships</span>
-                                            </div>
-                                            <div class="skills__row2">
-                                                <span class="skills__title">Specialization</span>
-                                                <span class="skills__txt">.NET</span>
-                                            </div>
-                                            <div class="skills__row2">
-                                                <span class="skills__title">Skills description</span>
-                                                <span class="skills__txt">.NET Web stack <br>JS <br>Full-stack</span>
-                                            </div>
-                                            <div class="skills__row2">
-                                                <span class="skills__title">Candidate code</span>
-                                                <span class="skills__txt">YT001</span>
-                                            </div>
-                                            <div class="skills__row2">
-                                                <span class="skills__title">Additional tests</span>
-                                                <span class="skills__txt">Codility</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>  
-
-                            <div class="specialization">
-                                <div class="skills__name">Specialization</div>
-                                <div class="spec__row">
-                                    <span class="spec">C#</span>
-                                    <span class="spec">Git</span>
-                                    <span class="spec">OOP</span>
-                                    <span class="spec">SQL</span>
-                                    <span class="spec">SOLID</span>
-                                    <span class="spec">.NET</span>
-                                    <span class="spec">Entity Framework</span>
-                                    <span class="spec">.NET Core</span>
-                                    <span class="spec">LINQ</span>
-                                    <span class="spec">ASP.NET</span>
-                                    <span class="spec">MSSQL</span>
-                                    <span class="spec">Design Patterns</span>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="show__hide">Show all information</div>
+                        
 
                         <div class="candidate__footer">
                             <div class="candidate__left">Last time available: <span>3 days ago</span></div>
-                            <div class="candidate__right"><a href="#" class="button2">Sign in to schedule an interview</a></div>
+                            <div class="candidate__right">
+                                <div class="show__hide">Hide information</div>
+                                <a href="#" class="button2">Sign in to schedule an interview</a>
+                            </div>
                         </div>
 
                     </div>
@@ -571,106 +423,34 @@
                             I am a visual designer with 6 years of experience, currently based in Berlin.The main directions of my work are the design of identity and logos...
                         </div>
 
-                        <div class="hidden__info">
-                            <div class="skills">
-                                <div class="skills__name">Proven skills</div>
-                                <div class="skills__row">
-                                    <div class="skills__block">
-                                        <div class="skills__block-left">
-                                            <div class="skills__row2">
-                                                <span class="skills__title">Graduation</span>
-                                                <span class="skills__txt">Appliced mathematics</span>
-                                            </div>
-                                            <div class="skills__row2">
-                                                <span class="skills__title">Job experience</span>
-                                                <span class="skills__txt">2 month</span>
-                                            </div>
-                                            <div class="skills__row2">
-                                                <span class="skills__title">Volunteer expierence</span>
-                                                <span class="skills__txt">-</span>
-                                            </div>
-                                            <div class="skills__row2">
-                                                <span class="skills__title">Verbal English Level</span>
-                                                <span class="skills__txt">B2</span>
-                                            </div>
-                                            <div class="skills__row2">
-                                                <span class="skills__title">English sertificate</span>
-                                                <span class="skills__txt">TOEFL</span>
-                                            </div>
-                                            <div class="skills__row2">
-                                                <span class="skills__title">Written english level</span>
-                                                <span class="skills__txt">B2</span>
-                                            </div>
-                                            <div class="skills__row2">
-                                                <span class="skills__title">Git Portfolio</span>
-                                                <span class="skills__txt"><a href="#">View Portfolio</a></span>
-                                            </div>
-                                            <div class="skills__row2">
-                                                <span class="skills__title">Competitions</span>
-                                                <span class="skills__txt">IOI 3rd place</span>
-                                            </div>
-                                        </div>
-                                        <div class="skills__block-right">
-                                            <div class="skills__row2">
-                                                <span class="skills__title">Certificates</span>
-                                                <span class="skills__txt">AWS</span>
-                                            </div>
-                                            <div class="skills__row2">
-                                                <span class="skills__title">Online Courses passed</span>
-                                                <span class="skills__txt"><a href="#">Udemy .NET Core</a></span>
-                                            </div>
-                                            <div class="skills__row2">
-                                                <span class="skills__title">Offline Courses passed</span>
-                                                <span class="skills__txt">EPAM Internships</span>
-                                            </div>
-                                            <div class="skills__row2">
-                                                <span class="skills__title">Specialization</span>
-                                                <span class="skills__txt">.NET</span>
-                                            </div>
-                                            <div class="skills__row2">
-                                                <span class="skills__title">Skills description</span>
-                                                <span class="skills__txt">.NET Web stack <br>JS <br>Full-stack</span>
-                                            </div>
-                                            <div class="skills__row2">
-                                                <span class="skills__title">Candidate code</span>
-                                                <span class="skills__txt">YT001</span>
-                                            </div>
-                                            <div class="skills__row2">
-                                                <span class="skills__title">Additional tests</span>
-                                                <span class="skills__txt">Codility</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>  
-
-                            <div class="specialization">
-                                <div class="skills__name">Specialization</div>
-                                <div class="spec__row">
-                                    <span class="spec">C#</span>
-                                    <span class="spec">Git</span>
-                                    <span class="spec">OOP</span>
-                                    <span class="spec">SQL</span>
-                                    <span class="spec">SOLID</span>
-                                    <span class="spec">.NET</span>
-                                    <span class="spec">Entity Framework</span>
-                                    <span class="spec">.NET Core</span>
-                                    <span class="spec">LINQ</span>
-                                    <span class="spec">ASP.NET</span>
-                                    <span class="spec">MSSQL</span>
-                                    <span class="spec">Design Patterns</span>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="show__hide">Show all information</div>
+                       
 
                         <div class="candidate__footer">
                             <div class="candidate__left">Last time available: <span>3 days ago</span></div>
-                            <div class="candidate__right"><a href="#" class="button2">Sign in to schedule an interview</a></div>
+                            <div class="candidate__right">
+                                <div class="show__hide">Hide information</div>
+                                <a href="#" class="button2">Sign in to schedule an interview</a>
+                            </div>
                         </div>
 
+                    </div>
+
+
+                    <div class="pagination">
+                        <div class="pagination__row">
+                            <div class="pagination__left"><img src="assets/img/arrow__left.svg" alt=""></div>
+                            <div class="pagination__center">
+                                <ul>
+                                    <li class="pagination__active"><span>1</span></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">...</a></li>
+                                    <li><a href="#">23</a></li>
+                                </ul>
+                            </div>
+                            <div class="pagination__right"><img src="assets/img/arrow__right.svg" alt=""></div>
+                        </div>
                     </div>
 
                     
@@ -684,7 +464,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__row">
-                <div class="footer__left"><a href="/"><img width="157" height="48" src="/assets/img/footer-logo.svg" alt="footer logo"></a></div>
+                <div class="footer__left"><a href="/"><img width="157" height="48" src="assets/img/footer-logo.svg" alt="footer logo"></a></div>
                 <div class="footer__center">
                     <ul class="footer__menu">
                         <li class="footer__menu-item"><a href="#" class="footer__menu-link">Privat policy</a></li>
@@ -697,7 +477,30 @@
     </footer>
     <!-- end footer -->
 
-    <script src="/assets/js/jquery-3.6.4.min"></script>
-    <script src="/assets/js/main.js"></script>
+    <div class="mobile__filter">
+        <div class="filter__button">
+            <div class="filter__lines">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="filter__button__name">Filters</div>
+        </div>
+    </div>
+
+    <div class="mobile__block">
+        <div class="filter--header">
+            <div class="filter__mobile__header__left">Filters</div>
+            <div class="close">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="filter--sets"></div>
+        <div class="filter--form-buttons"></div>
+    </div>
+
+    <script src="assets/js/jquery-3.6.4.min"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

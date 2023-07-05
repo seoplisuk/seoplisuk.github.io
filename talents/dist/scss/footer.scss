@@ -2,6 +2,10 @@
     background: $black;
     padding: 6px 0px;
     flex: 0 0 auto;
+
+    @media screen and (max-width: 768px) {
+        padding-bottom: 51px;
+    }
 }
 
 .footer__row {
@@ -30,7 +34,9 @@
             color: #AFAFAF;
 
             &:hover {
-                color: $orange;
+                background: -webkit-linear-gradient(#FF5200, #FF00A8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
             }
         }
 
@@ -59,7 +65,9 @@
     color: #fff;
 
     &:hover {
-        color: $orange;
+        background: -webkit-linear-gradient(#FF5200, #FF00A8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     }
 }
 
