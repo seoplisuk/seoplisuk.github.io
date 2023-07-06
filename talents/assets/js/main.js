@@ -7,8 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const mobile__block = document.querySelector('.mobile__block')
     const close = document.querySelector('.close')
 	const body = document.querySelector('body')
-    const burger = document.querySelector('.burger')
-    const mobilemenu = document.querySelector('.mobile__menu')
+    
 	
 
    
@@ -27,6 +26,18 @@ document.addEventListener('DOMContentLoaded', () => {
 		
 	})
 
+   
+
+})
+
+
+document.addEventListener('DOMContentLoaded', () => {
+	
+	const body = document.querySelector('body')
+    const burger = document.querySelector('.burger')
+    const mobilemenu = document.querySelector('.mobile__menu')
+	
+
     burger.addEventListener('click', () => {
 		mobilemenu.classList.toggle('mobile__menu__opened')
 		burger.classList.toggle('burger__opened')
@@ -35,6 +46,37 @@ document.addEventListener('DOMContentLoaded', () => {
 	})
 
 })
+
+
+
+const swiper = new Swiper('.swiper', {
+	
+
+	slidesPerView: 2,
+  	spaceBetween: 20,
+	loop: true,
+	
+  
+	navigation: {
+	  nextEl: '.swiper-button-next',
+	  prevEl: '.swiper-button-prev',
+	},
+
+	breakpoints: {
+		320: {
+		  slidesPerView: 1,
+		  spaceBetween: 0
+		},
+		
+		1024: {
+		  slidesPerView: 2,
+		  spaceBetween: 20
+		}
+	  }
+  
+	
+	
+  });
 
 
 

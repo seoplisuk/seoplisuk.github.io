@@ -1,0 +1,261 @@
+.sign__block {
+    max-width: 530px;
+    width: 100%;
+    padding: 40px 55px;
+    box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 20px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 1024px) {
+        padding: 12px;
+    }
+}
+
+.sign__title {
+    font-size: 20px;
+    font-family: "Stem Medium";
+    margin-bottom: 20px;
+    text-align: center;
+    color: $black;
+}
+
+.sign__txt1 {
+    font-size: 14px;
+    color: #949494;
+    font-family: "Stem Medium";
+    text-align: center;
+    margin-bottom: 30px;
+
+    
+}
+
+.link {
+    font-family: "Stem";
+    text-decoration: none;
+    background: -webkit-linear-gradient(#FF5200, #FF00A8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.google__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: "Stem Medium";
+    color: $black;
+    text-decoration: none;
+    border: 1px solid #f4f4f4;
+    padding: 10px 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+
+    &::before {
+        content: "";
+        min-height: 30px;
+        min-width: 30px;
+        background: url("../img/google.svg") no-repeat;
+        margin-right: 10px;
+        
+    }
+}
+
+.or {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 20px;
+
+    &::before {
+        content: "";
+        height: 1px;
+        width: 100%;
+        background: #f4f4f4;
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+
+    }
+
+    span {
+        font-size: 12px;
+        color: #949494;
+        display: block;
+        z-index: 1;
+        background: #fff;
+        padding: 0 20px;
+    }
+}
+
+.sign__input {
+    margin-bottom: 20px;
+    label {
+        font-size: 12px;
+        display: block;
+        color: #949494;
+        margin-bottom: 10px;
+    }
+    input {
+        border-radius: 20px;
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+}
+
+.input__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    label {
+        margin-bottom: 0;
+    }
+}
+
+.sign__button {
+    margin-top: 40px;
+
+
+    .sign-up {
+        width: 100%;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+.im {
+    margin-bottom: 20px;
+}
+
+
+
+.im__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.im__block {
+    border: 1px solid #f4f4f4;
+    font-size: 14px;
+    font-family: "Stem Medium";
+    color: "black";
+    border-radius: 20px;
+    width: 48%;
+    padding: 12px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+
+    &:nth-last-child(1) {
+        margin-right: 0;
+    }
+}
+
+.im__active {
+    background: linear-gradient(white, white) padding-box, linear-gradient(to right, #FF5200, #FF00A8) border-box;
+    border-radius: 50em;
+    border: 1px solid transparent;
+}
+
+
+
+
+.check label::before {
+    margin-right: 10px;
+    display: block;
+  }
+  input[type="checkbox"]:checked,
+  input[type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+  }
+  input[type="checkbox"]:checked + label,
+  input[type="checkbox"]:not(:checked) + label{
+    display: inline-block;
+    position: relative;
+    width: max-content;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: "Stem Medium";
+
+    span {
+        padding-left: 25px;
+        
+    }
+
+  }
+
+
+  input[type="checkbox"]:checked + label{
+    
+
+    span {
+        
+        
+    }
+
+  }
+
+  
+
+
+  input[type="checkbox"]:checked + label:before,
+  input[type="checkbox"]:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 3px;
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff;
+    border: 1px solid #f4f4f4;
+  }
+  input[type="checkbox"]:checked + label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 3px;
+    width: 15px;
+    height: 15px;
+    background: linear-gradient(to right, #FF5200, #FF00A8);
+  }
+
+  input[type="checkbox"]:checked + label {
+    background: linear-gradient(white, white) padding-box, linear-gradient(to right, #FF5200, #FF00A8) border-box;
+    
+    
+    
+  }
+
+  input[type="checkbox"]:checked + label:before,
+  input[type="checkbox"]:not(:checked) + label:before {
+    border-radius: 30px;
+  }
+  
+  input[type="checkbox"]:checked + label:after,
+  input[type="checkbox"]:not(:checked) + label:after {
+    content: "";
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  input[type="checkbox"]:checked + label:after,
+  input[type="checkbox"]:not(:checked) + label:after {
+    
+  }
+  
+  input[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+  }
+  input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+  }

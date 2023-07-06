@@ -1,0 +1,136 @@
+.section1 {
+    background: linear-gradient(143deg, #171717 0%, #303030 100%);
+    min-height: 700px;
+
+    .header {
+        border: none;
+    }
+
+    .sign-in {
+        color: #ffffff;
+    }
+
+    .menu {
+        display: flex;
+    
+        .menu-item {
+            margin-right: 40px;
+    
+            &:nth-last-child(1) {
+                margin-right: 0;
+            }
+    
+            .menu-link {
+                text-decoration: none;
+                color: #ffffff;
+                transition: 0.5s ease 0s;
+                font-size: 14px;
+                font-family: "Stem Medium";
+    
+                &:hover {
+                    background: -webkit-linear-gradient(#FF5200, #FF00A8);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+        }
+    
+        
+    }
+}
+
+.section1__main {
+    max-width: 884px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 100px;
+
+    @media screen and (max-width: 1024px) {
+        margin-top: 50px;
+    }
+
+    @media screen and (max-width: 600px) {
+        margin-top: 30px;
+    }
+}
+
+.section1__txt {
+    font-size: 100px;
+    font-family: "Stem Light";
+    color: #ffffff;
+    text-align: center;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 50px;
+    }
+}
+
+.section1__txt2 {
+    font-size: 100px;
+    font-family: "Stem Light";
+    color: #ffffff;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 50px;
+    }
+}
+
+.section1__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 34px;
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+    }
+}
+
+.section1__row2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+    }
+}
+
+.section1__txt3 {
+    font-family: "Stem Medium";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    color: #ffffff;
+
+    @media screen and (max-width: 1024px) {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+.section1__buttons {
+    display: flex;
+    align-items: center;
+
+    .but2 {
+        background: transparent;
+        border: 1px solid #595959;
+        margin-right: 10px;
+    }
+
+    .but3 {
+        background: linear-gradient(#000, #000000) padding-box, linear-gradient(to right, #FF5200, #FF00A8) border-box;
+    }
+
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+
+        .but2 {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
+}
+

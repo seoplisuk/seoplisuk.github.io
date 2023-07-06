@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>List of applicants</title>
+</head>
+<body>
+    <!-- start header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__row">
+                <div class="logo"><a href="/"><img src="assets/img/logo.svg" alt=""></a></div>
+                <div class="top-menu">
+                    <ul data-da=".mobile__menu, 1024" class="menu">
+                        <li class="menu-item"><a href="#" class="menu-link">Main page</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">List of applicant</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Pricing</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div data-da=".mobile__menu, 1024, last" class="header__buttons">
+                    <a href="#" class="sign-in">Sign-in</a>
+                    <a href="#" class="sign-up">Sign-up</a>
+                </div>
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <div class="mobile__menu"></div>
+
+    <!-- start content -->
+    <div class="content">
+        <div class="container">
+            
+            <div class="content__row">
+                <div class="content__left">
+                    <form data-da=".filter--sets, 768" method="GET" class="filter__form">
+                        <div class="content__block">
+                            <div class="filter__title"><span class="filter__name">Country</span></div>
+                            <div class="select__block">
+                                <div class="select__arrow"></div>
+                                <select class="select" name="country">
+                                    <option value="Ukraine">Country</option>
+                                    <option value="Ukraine">Ukraine</option>
+                                    <option value="Spain">Spain</option>
+                                    <option value="Poland">Poland</option>
+                                </select>
+                            </div>
+                            
+                        </div>
+                        <div class="content__block">
+                            <div class="filter__title drop__down"><span class="filter__name">Specialization</span></div>
+                            <div class="specialization__content">
+                                <div class="spec__category">Development</div>
+                                    <div class="spec__sub__category">
+                                        <span class="sub__name">Tech</span>
+                                        <div class="check">
+                                            <input type="radio" name="tech" class="" id="check1">
+                                            <label for="check1">Javascript / Front-End</label>
+                                        </div>
+                                        <div class="check">
+                                            <input type="radio" name="tech" class="" id="check2">
+                                            <label for="check2">Java</label>
+                                        </div>
+                                        <div class="check">
+                                            <input type="radio" name="tech" class="" id="check3">
+                                            <label for="check3">C# / .NET</label>
+                                        </div>
+                                        <div class="check">
+                                            <input type="radio" name="tech" class="" id="check4">
+                                            <label for="check4">Python</label>
+                                        </div>
+                                        <div class="check">
+                                            <input type="radio" name="tech" class="" id="check5">
+                                            <label for="check5">PHP</label>
+                                        </div>
+                                        <div class="check">
+                                            <input type="radio" name="tech" class="" id="check6">
+                                            <label for="check6">Node.js</label>
+                                        </div>
+                                        <div class="check">
+                                            <input type="radio" name="tech" class="" id="check7">
+                                            <label for="check7">Android</label>
+                                        </div>
+                                        <div class="check">
+                                            <input type="radio" name="tech" class="" id="check8">
+                                            <label for="check8">iOS</label>
+                                        </div>
+                                    </div>
+                                    <div class="spec__sub__category">
+                                        <span class="sub__name">Non-Tech</span>
+                                        <div class="check">
+                                            <input type="radio" name="non-tech" class="" id="check9">
+                                            <label for="check9">Javascript / Front-End</label>
+                                        </div>
+                                        <div class="check">
+                                            <input type="radio" name="non-tech" class="" id="check10">
+                                            <label for="check10">Java</label>
+                                        </div>
+                                        <div class="check">
+                                            <input type="radio" name="non-tech" class="" id="check11">
+                                            <label for="check11">C# / .NET</label>
+                                        </div>
+                                        <div class="check">
+                                            <input type="radio" name="non-tech" class="" id="check12">
+                                            <label for="check12">Python</label>
+                                        </div>
+                                        <div class="check">
+                                            <input type="radio" name="non-tech" class="" id="check13">
+                                            <label for="check13">PHP</label>
+                                        </div>
+                                        <div class="check">
+                                            <input type="radio" name="non-tech" class="" id="check14">
+                                            <label for="check14">Node.js</label>
+                                        </div>
+                                        <div class="check">
+                                            <input type="radio" name="non-tech" class="" id="check15">
+                                            <label for="check15">Android</label>
+                                        </div>
+                                        <div class="check">
+                                            <input type="radio" name="non-tech" class="" id="check16">
+                                            <label for="check16">iOS</label>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="content__block">
+                            <div class="filter__title"><span class="filter__name">Proof of expirience</span></div>
+                            <div class="proof__block">
+                                <div class="check2">
+                                    <input type="checkbox" name="check17" class="" id="check17">
+                                    <label class="l" for="check17"><span>Passed Internship</span></label>
+                                </div>
+                                <div class="check2">
+                                    <input type="checkbox" name="check18" class="" id="check18">
+                                    <label class="l" for="check18"><span>Pet-projects</span></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content__block">
+                            <div class="filter__title"><span class="filter__name">Min Pet Project complexity</span></div>
+                            <div class="select__block">
+                                <div class="select__arrow"></div>
+                                <select class="select" name="complexity">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="content__block">
+                            <div class="filter__title"><span class="filter__name">Work expierence month</span></div>
+                            <div class="month__row">
+                                <input type="text" class="input" placeholder="0">
+                                <input type="text" class="input" placeholder="12">
+                            </div>
+                        </div>
+                        <div class="content__block">
+                            <div class="filter__title"><span class="filter__name">Salary Expectations ($)</span></div>
+                            <div class="month__row">
+                                <input type="text" class="input" placeholder="0">
+                                <input type="text" class="input" placeholder="1000">
+                            </div>
+                        </div>
+                        <div class="content__block">
+                            <div class="filter__title"><span class="filter__name">Written english level at least</span></div>
+                            <div class="select__block">
+                                <div class="select__arrow"></div>
+                                <select class="select" name="level">
+                                    <option value="1">A1</option>
+                                    <option value="2">A2</option>
+                                    <option value="3">A3</option>
+                                    <option value="4">A4</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="content__block">
+                            <div class="filter__title"><span class="filter__name">Verbal english level at least</span></div>
+                            <div class="select__block">
+                                <div class="select__arrow"></div>
+                                <select class="select" name="level">
+                                    <option value="1">A1</option>
+                                    <option value="2">A2</option>
+                                    <option value="3">A3</option>
+                                    <option value="4">A4</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="content__block">
+                            <div class="filter__title"><span class="filter__name">Conditions</span></div>
+                            <div class="proof__block cond">
+                                <div class="check2">
+                                    <input type="checkbox" name="check20" class="" id="check20">
+                                    <label class="l" for="check20"><span>Office</span></label>
+                                </div>
+                                <div class="check2">
+                                    <input type="checkbox" name="check21" class="" id="check21">
+                                    <label class="l" for="check21"><span>Part-time</span></label>
+                                </div>
+                                <div class="check2">
+                                    <input type="checkbox" name="check22" class="" id="check22">
+                                    <label class="l" for="check22"><span>Remote</span></label>
+                                </div>
+                                <div class="check2">
+                                    <input type="checkbox" name="check23" class="" id="check23">
+                                    <label class="l" for="check23"><span>Relocation</span></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-da=".filter--form-buttons, 768" class="form__buttons">
+                            <button class="reset">Reset the filter</button>
+                            <button class="search">Search</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="content__right">
+                    <h1 class="content__title">Candidates <div class="candidates__number">10</div></h1>
+                    <div class="filter__tags">
+                        <span class="filter__tags__name">Filter:</span>
+                        <div class="tags">
+                            <div class="filter__tag">Office <span class="tag__close"></span></div>
+                            <div class="filter__tag">Pet-projects <span class="tag__close"></span></div>
+                            <div class="filter__tag">Pet-projects <span class="tag__close"></span></div>
+                            <div class="filter__tag">Pet-projects <span class="tag__close"></span></div>
+                            <div class="filter__tag">Pet-projects <span class="tag__close"></span></div>
+                        </div>
+                    </div>
+                    <div class="candidate__block">
+                        <div class="candidate__header">
+                            <span class="candidate__title">.NET developer</span>
+                            <span class="candidate__price">$400</span>
+                        </div>
+                        <div class="candidate__info">
+                            <span class="info info__country">Ukraine</span>
+                            <span class="info">j.e. 2 month</span>
+                            <span class="info">Appliced mathematics</span>
+                        </div>
+                        <div class="candidate__description">
+                            I am a visual designer with 6 years of experience, currently based in Berlin.The main directions of my work are the design of identity and logos...
+                        </div>
+
+                        <div class="hidden__info">
+                            <div class="skills">
+                                
+                                <div class="skills__row">
+                                    <div class="skills__block">
+                                        <div class="skills__block-left">
+                                            <div class="skills__row2">
+                                                <span class="skills__title">Graduation</span>
+                                                <span class="skills__txt">Appliced mathematics</span>
+                                            </div>
+                                            <div class="skills__row2">
+                                                <span class="skills__title">Job experience</span>
+                                                <span class="skills__txt">2 month</span>
+                                            </div>
+                                            <div class="skills__row2">
+                                                <span class="skills__title">Volunteer expierence</span>
+                                                <span class="skills__txt">-</span>
+                                            </div>
+                                            <div class="skills__row2">
+                                                <span class="skills__title">Verbal English Level</span>
+                                                <span class="skills__txt">B2</span>
+                                            </div>
+                                            <div class="skills__row2">
+                                                <span class="skills__title">English sertificate</span>
+                                                <span class="skills__txt">TOEFL</span>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="skills__block-left">
+                                            <div class="skills__row2">
+                                                <span class="skills__title">Written english level</span>
+                                                <span class="skills__txt">B2</span>
+                                            </div>
+                                            <div class="skills__row2">
+                                                <span class="skills__title">Git Portfolio</span>
+                                                <span class="skills__txt"><a href="#">View Portfolio</a></span>
+                                            </div>
+                                            <div class="skills__row2">
+                                                <span class="skills__title">Competitions</span>
+                                                <span class="skills__txt">IOI 3rd place</span>
+                                            </div>
+                                            <div class="skills__row2">
+                                                <span class="skills__title">Certificates</span>
+                                                <span class="skills__txt">AWS</span>
+                                            </div>
+                                            <div class="skills__row2">
+                                                <span class="skills__title">Online Courses passed</span>
+                                                <span class="skills__txt"><a href="#">Udemy .NET Core</a></span>
+                                            </div>
+                                        </div>
+                                        <div class="skills__block-left">
+                                            
+                                            <div class="skills__row2">
+                                                <span class="skills__title">Offline Courses passed</span>
+                                                <span class="skills__txt">EPAM Internships</span>
+                                            </div>
+                                            <div class="skills__row2">
+                                                <span class="skills__title">Specialization</span>
+                                                <span class="skills__txt">.NET</span>
+                                            </div>
+                                            <div class="skills__row2">
+                                                <span class="skills__title">Skills description</span>
+                                                <span class="skills__txt">.NET Web stack JS Full-stack</span>
+                                            </div>
+                                            <div class="skills__row2">
+                                                <span class="skills__title">Candidate code</span>
+                                                <span class="skills__txt">YT001</span>
+                                            </div>
+                                            <div class="skills__row2">
+                                                <span class="skills__title">Additional tests</span>
+                                                <span class="skills__txt">Codility</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+
+                            <div class="specialization">
+                                <div class="skills__name">Specialization</div>
+                                <div class="spec__row">
+                                    <span class="spec">C#</span>
+                                    <span class="spec">Git</span>
+                                    <span class="spec">OOP</span>
+                                    <span class="spec">SQL</span>
+                                    <span class="spec">SOLID</span>
+                                    <span class="spec">.NET</span>
+                                    <span class="spec">Entity Framework</span>
+                                    <span class="spec">.NET Core</span>
+                                    <span class="spec">LINQ</span>
+                                    <span class="spec">ASP.NET</span>
+                                    <span class="spec">MSSQL</span>
+                                    <span class="spec">Design Patterns</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        
+
+                        <div class="candidate__footer">
+                            <div class="candidate__left">Last time available: <span>3 days ago</span></div>
+                            <div class="candidate__right">
+                                <div class="show__hide">Hide information</div>
+                                <a href="#" class="button2">Sign in to schedule an interview</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="candidate__block">
+                        <div class="candidate__header">
+                            <span class="candidate__title">.NET developer</span>
+                            <span class="candidate__price">$400</span>
+                        </div>
+                        <div class="candidate__info">
+                            <span class="info info__country">Ukraine</span>
+                            <span class="info">j.e. 2 month</span>
+                            <span class="info">Appliced mathematics</span>
+                        </div>
+                        <div class="candidate__description">
+                            I am a visual designer with 6 years of experience, currently based in Berlin.The main directions of my work are the design of identity and logos...
+                        </div>
+
+                       
+                        <div class="candidate__footer">
+                            <div class="candidate__left">Last time available: <span>3 days ago</span></div>
+                            <div class="candidate__right">
+                                <div class="show__hide">Hide information</div>
+                                <a href="#" class="button2">Sign in to schedule an interview</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="candidate__block">
+                        <div class="candidate__header">
+                            <span class="candidate__title">.NET developer</span>
+                            <span class="candidate__price">$1000</span>
+                        </div>
+                        <div class="candidate__info">
+                            <span class="info info__country">Ukraine</span>
+                            <span class="info">j.e. 2 month</span>
+                            <span class="info">Appliced mathematics</span>
+                        </div>
+                        <div class="candidate__description">
+                            I am a visual designer with 6 years of experience, currently based in Berlin.The main directions of my work are the design of identity and logos...
+                        </div>
+
+                        
+
+                        <div class="candidate__footer">
+                            <div class="candidate__left">Last time available: <span>3 days ago</span></div>
+                            <div class="candidate__right">
+                                <div class="show__hide">Hide information</div>
+                                <a href="#" class="button2">Sign in to schedule an interview</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="candidate__block">
+                        <div class="candidate__header">
+                            <span class="candidate__title">.NET developer</span>
+                            <span class="candidate__price">$400</span>
+                        </div>
+                        <div class="candidate__info">
+                            <span class="info info__country">Ukraine</span>
+                            <span class="info">j.e. 2 month</span>
+                            <span class="info">Appliced mathematics</span>
+                        </div>
+                        <div class="candidate__description">
+                            I am a visual designer with 6 years of experience, currently based in Berlin.The main directions of my work are the design of identity and logos...
+                        </div>
+
+                       
+
+                        <div class="candidate__footer">
+                            <div class="candidate__left">Last time available: <span>3 days ago</span></div>
+                            <div class="candidate__right">
+                                <div class="show__hide">Hide information</div>
+                                <a href="#" class="button2">Sign in to schedule an interview</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="pagination">
+                        <div class="pagination__row">
+                            <div class="pagination__left"><img src="assets/img/arrow__left.svg" alt=""></div>
+                            <div class="pagination__center">
+                                <ul>
+                                    <li class="pagination__active"><span>1</span></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">...</a></li>
+                                    <li><a href="#">23</a></li>
+                                </ul>
+                            </div>
+                            <div class="pagination__right"><img src="assets/img/arrow__right.svg" alt=""></div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end content -->
+
+    <!-- start footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__row">
+                <div class="footer__left"><a href="/"><img width="157" height="48" src="assets/img/footer-logo.svg" alt="footer logo"></a></div>
+                <div class="footer__center">
+                    <ul class="footer__menu">
+                        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Privat policy</a></li>
+                        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Terms for use</a></li>
+                    </ul>
+                </div>
+                <div class="footer__right"><a href="mailto:hello@hireyoungtalants.com" class="footer__mail">hello@hireyoungtalants.com</a></div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <div class="mobile__filter">
+        <div class="filter__button">
+            <div class="filter__lines">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="filter__button__name">Filters</div>
+        </div>
+    </div>
+
+    <div class="mobile__block">
+        <div class="filter--header">
+            <div class="filter__mobile__header__left">Filters</div>
+            <div class="close">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="filter--sets"></div>
+        <div class="filter--form-buttons"></div>
+    </div>
+
+    
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

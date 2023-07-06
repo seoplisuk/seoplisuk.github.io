@@ -1,0 +1,30 @@
+.breadcrumbs {
+    font-family: "Stem Medium";
+    font-size: 12px;
+    margin-top: 20px;
+
+    ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+
+        li {
+            list-style-type: none;
+
+            a {
+                text-decoration: none;
+                color: #949494;
+            }
+        }
+
+        .breadcrumbs-link {
+            display: flex;
+            align-items: center;
+            &::after {
+                content: "/";
+                color: #949494;
+                margin: 0 5px;
+            }
+        }
+    }
+}
