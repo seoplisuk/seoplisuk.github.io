@@ -1,0 +1,91 @@
+.section1__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 130px;
+    align-items: center;
+}
+
+.section1__left {
+    width: 48%;
+}
+
+.section1__right {
+    width: 48%;
+}
+
+.section1__txt1 {
+    color: #C0BFB3;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.section1__txt2 {
+    color: #FFF;
+    font-family: Abhaya Libre;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 60px;
+    margin-bottom: 24px;
+}
+
+.section1__txt3 {
+    color: #C0BFB3;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 48px;
+}
+
+.section1__buttons {
+    display: flex;
+    align-items: center;
+}
+
+.button1 {
+    border-radius: 8px;
+    border: 1.5px solid #C18D35;
+    background: #362D25 url("../img/button__decor.svg") no-repeat left bottom;
+    color: #C18C35;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 16px;
+    text-decoration: none;
+    min-width: 177px;
+    cursor: pointer;
+    transition: 0.5s ease 0s;
+    margin-right: 20px;
+
+    &:hover {
+        background: #362d25;
+    }    
+}
+
+.button2 {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+
+    img {
+        margin-right: 20px;
+    }
+}
