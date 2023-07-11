@@ -1023,13 +1023,13 @@ section {
       -ms-flex-direction: column;
           flex-direction: column;
   cursor: pointer;
+  margin-left: 16px;
 }
 .burger span {
-  width: 40px;
+  width: 32px;
   height: 4px;
   margin-bottom: 5px;
-  background: -webkit-gradient(linear, left top, right top, from(#FF5200), to(#FF00A8));
-  background: linear-gradient(to right, #FF5200, #FF00A8);
+  background: #ffffff;
   -webkit-transition: 0.5s ease 0s;
   transition: 0.5s ease 0s;
 }

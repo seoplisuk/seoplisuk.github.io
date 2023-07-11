@@ -68,12 +68,13 @@
     display: none;
     flex-direction: column;
     cursor: pointer;
+    margin-left: 16px;
 
     span {
-        width: 40px;
+        width: 32px;
         height: 4px;
         margin-bottom: 5px;
-        background: linear-gradient(to right, #FF5200, #FF00A8);
+        background: #ffffff;
         transition: 0.5s ease 0s;
 
 
