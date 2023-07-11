@@ -39,6 +39,23 @@ if (document.documentElement.clientWidth < 1024) {
 }
 
 
+$('.tab-wrap').each(function(){
+
+	let tabTabs = $(this).find('.tab');
+	let tabItems = $(this).find('.item');
+	
+	tabTabs.each(function(i){
+	  $(this).click(function(){
+		$(this).addClass('on');
+		tabTabs.not(this).removeClass('on');
+		$(tabItems[i]).addClass('on');
+		tabItems.not(tabItems[i]).removeClass('on');
+	  });
+	});
+	
+  });
+
+
 
 
 /* dynamic adaptive */

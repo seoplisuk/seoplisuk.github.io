@@ -41,6 +41,7 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1191,6 +1192,98 @@ section {
   background: #C18D35;
 }
 
+.section4 .section__title {
+  margin-bottom: 0;
+}
+.section4 .container {
+  padding: 0;
+}
+@media screen and (max-width: 1024px) {
+  .section4 .section__txt {
+    padding: 0 20px;
+  }
+  .section4 .section__title {
+    padding: 0 20px;
+  }
+  .section4 .section9__txt1 {
+    padding: 0 20px;
+  }
+  .section4 .tab-wrap {
+    padding-left: 20px;
+  }
+  .section4 .section9__title {
+    padding-right: 20px;
+  }
+  .section4 .section9__txt {
+    padding-right: 20px;
+  }
+  .section4 .section9__img {
+    padding-right: 20px;
+  }
+}
+
+.tabs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4px 1fr 4px 1fr 4px 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 4px;
+  border-radius: 500px;
+  border: 1px solid #646462;
+  background: #232224;
+  padding: 8px;
+  cursor: pointer;
+  margin-bottom: 48px;
+}
+.tabs .tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #FFF;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.3px;
+  padding: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.tabs .on {
+  border-radius: 500px;
+  border: 1.5px solid #C18D35;
+  background: #362D25 url("../img/section4__decor1.svg") no-repeat left bottom;
+  color: #C18D35;
+}
+@media screen and (max-width: 1024px) {
+  .tabs {
+    min-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow-x: auto;
+  }
+  .tabs .tab {
+    font-size: 14px;
+    padding: 8px;
+    min-width: 200px;
+  }
+  .tabs::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.tabs-items .item {
+  display: none;
+}
+
+.tabs-items .on {
+  display: block;
+}
+
 .section5__live {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1361,6 +1454,9 @@ section {
   font-weight: 400;
   line-height: 24px;
   margin-bottom: 48px;
+}
+.section9__txt p {
+  margin-bottom: 20px;
 }
 @media screen and (max-width: 1024px) {
   .section9__txt {
