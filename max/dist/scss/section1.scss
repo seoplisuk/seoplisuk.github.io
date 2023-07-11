@@ -3,14 +3,29 @@
     justify-content: space-between;
     margin-bottom: 130px;
     align-items: center;
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+        margin-bottom: 120px;
+    }
 }
 
 .section1__left {
     width: 48%;
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        margin-bottom: 60px;
+    }
 }
 
 .section1__right {
     width: 48%;
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        
+    }
 }
 
 .section1__txt1 {
@@ -23,6 +38,13 @@
     letter-spacing: -0.72px;
     text-transform: uppercase;
     margin-bottom: 24px;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 16px;
+        line-height: 120%;
+        text-align: center;
+        
+    }
 }
 
 .section1__txt2 {
@@ -33,6 +55,13 @@
     font-weight: 500;
     line-height: 60px;
     margin-bottom: 24px;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 32px;
+        line-height: 120%;
+        text-align: center;
+        
+    }
 }
 
 .section1__txt3 {
@@ -43,6 +72,14 @@
     font-weight: 400;
     line-height: 32px;
     margin-bottom: 48px;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 16px;
+        line-height: 120%;
+        text-align: center;
+        margin-bottom: 24px;
+        
+    }
 }
 
 .section1__buttons {
@@ -70,7 +107,15 @@
 
     &:hover {
         background: #362d25;
-    }    
+    }  
+    
+    @media screen and (max-width: 1024px) {
+        font-size: 14px;
+        padding: 10px 10px;
+        min-width: 139px;
+        margin-right: 16px;
+        
+    }
 }
 
 .button2 {
@@ -87,5 +132,19 @@
 
     img {
         margin-right: 20px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        font-size: 14px;
+        align-items: center;
+        text-align: left;
+        
+        img {
+            width: 44px;
+            height: 44px;
+            object-fit: contain;
+            margin-right: 8px;
+        }
+        
     }
 }

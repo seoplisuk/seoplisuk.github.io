@@ -1,3 +1,19 @@
+document.addEventListener('DOMContentLoaded', () => {
+	
+	const body = document.querySelector('body')
+    const burger = document.querySelector('.burger')
+    const mobilemenu = document.querySelector('.mobile__menu')
+	
+
+    burger.addEventListener('click', () => {
+		mobilemenu.classList.toggle('mobile__menu__opened')
+		burger.classList.toggle('burger__opened')
+		body.classList.toggle('body__opened')
+		
+	})
+
+})
+
 
 if (document.documentElement.clientWidth < 1024) {
 
