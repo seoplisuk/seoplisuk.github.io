@@ -1,0 +1,133 @@
+.section6 {
+    .section__title {
+        margin-bottom: 0;
+    }
+}
+
+.section6__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    align-items: center;
+    position: relative;
+
+    
+
+    &:nth-last-child(1) {
+        margin-bottom: 0;
+    }
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+        margin-bottom: 70px;
+
+        &:nth-last-child(4) {
+            .section6__left {
+                order: 2;
+            }
+
+            .section6__right {
+                order: 1;
+            }
+        }
+
+        &:nth-last-child(2) {
+            .section6__left {
+                order: 2;
+            }
+
+            .section6__right {
+                order: 1;
+            }
+        }
+    }
+
+    
+}
+
+.section6__left {
+    width: 48%;
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+    }
+}
+
+.section6__right {
+    width: 48%;
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+    }
+}
+
+.section6__right__title {
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    font-family: Abhaya Libre;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -0.96px;
+    margin-bottom: 36px;
+
+    img {
+        margin-right: 19px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        font-size: 20px;
+        line-height: 120%;
+
+        img {
+            height: 32px;
+            object-fit: contain;
+        }
+    }
+}
+
+.section6__right__txt {
+    color: #C0BFB3;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+
+    p {
+        margin-bottom: 20px;
+    }
+
+
+    @media screen and (max-width: 1024px) {
+        font-size: 16px;
+        line-height: 24px;
+
+        
+    }
+}
+
+
+
+.section6__decor1 {
+    position: absolute;
+    bottom: -89px;
+    left: 350px;
+    right: 0;
+}
+
+.section6__decor2 {
+    position: absolute;
+    bottom: -161px;
+    left: 305px;
+    right: 0;
+}
+
+.section6__decor3 {
+    position: absolute;
+    bottom: -161px;
+    left: 305px;
+    right: 0;
+}
