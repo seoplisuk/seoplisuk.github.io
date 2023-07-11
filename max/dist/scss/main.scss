@@ -1,0 +1,71 @@
+@import "reset";
+@import "swiper";
+
+section {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+
+    @media screen and (max-width: 1024px) {
+        padding-bottom: 32px;
+        margin-bottom: 32px;
+    }
+}
+
+.section__txt {
+    color: #FABE65;
+    font-family: "Inter";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 128%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+
+    @media screen and (max-width: 1024px) {
+       font-size: 12px;
+    }
+}
+
+.section__title {
+    color: #FFF;
+    font-family: "Abhaya Libre";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 60px;
+    margin-bottom: 48px;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 28px;
+        margin-bottom: 32px;
+        line-height: 120%;
+     }
+
+    
+
+}
+
+
+
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+@import "section1";
+@import "section2";
+@import "section3";
+
+@import "section5";
+
+
+
+
+@import "section10";
+@import "footer";

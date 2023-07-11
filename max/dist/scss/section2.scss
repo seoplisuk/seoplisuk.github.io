@@ -1,0 +1,129 @@
+
+
+.section2__row {
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.section2__left {
+    width: 48%;
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 32px;
+    }
+}
+.section2__right {
+    width: 48%;
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+    }
+}
+
+
+
+.section2__left__block {
+    position: relative;
+
+    @media screen and (max-width: 1024px) {
+      
+    }
+}
+.section2__photo {
+    position: relative;
+    bottom: 23px;
+    left: 23px;
+    img {
+        max-width: 413px;
+        object-fit: contain;
+        border-radius: 15px;
+
+        @media screen and (max-width: 1024px) {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        left: 0;
+        bottom: 0;
+    }
+}
+
+.section2__back {
+    max-width: 413px;
+    width: 100%;
+    height: 496px;
+    border-radius: 8.873px;
+    border: 1.109px solid #C18D35;
+    background: #232224 url("/assets/img/section2__decor1.png") no-repeat bottom left;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @media screen and (max-width: 1024px) {
+        width: 280px;
+        height: 380px;
+        left: 20px;
+        display: none;
+    }
+
+}
+
+.section2__title {
+    font-family: "Abhaya Libre";
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    line-height: 120%;
+    font-size: 56px;
+    font-weight: 500;
+    
+
+
+    &::after {
+        content: "";
+        max-width: 564px;
+        width: 100%;
+        height: 1px;
+        background: #C18D35;
+        display: block;
+        margin: 16px 0;
+    }
+
+    @media screen and (max-width: 1024px) {
+       font-size: 28px;
+    }
+}
+
+.section2__txt {
+    font-family: "Inter";
+    font-size: 20px;
+    line-height: 30px;
+    color: #C0BFB3;
+
+    p {
+        margin-bottom: 30px;
+
+        &:nth-last-child(1) {
+            margin-bottom: 0;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        font-size: 16px;
+        
+        p {
+            margin-bottom: 15px;
+        }
+     }
+}

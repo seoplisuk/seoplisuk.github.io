@@ -1,0 +1,99 @@
+.section3__swiper {
+    overflow: hidden;
+
+    .swiper-slide {
+        border-radius: 8px;
+        border: 1px solid #646462;
+        padding: 24px;
+        background: #232224;
+
+        @media screen and (max-width: 1024px) {
+            padding: 16px;
+        }
+    }
+
+    .slider__img {
+        margin-bottom: 16px;
+    }
+
+    .slider__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8px;
+
+        @media screen and (max-width: 1024px) {
+            align-items: flex-start;
+        }
+    }
+
+    .slider__left {
+        color: #C0BFB3;
+        font-family: "Inter";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 21.718px;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 14px;
+        }
+    }
+
+    .slider__right {
+        color: #C0BFB3;
+        font-family: "Inter";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 21.718px;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 14px;
+        }
+    }
+
+    .slider__txt {
+        color: #FFF;
+        font-family: "Inter";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26.73px;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 16px;
+        }
+    }
+
+    .swiper-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 32px;
+        grid-row-gap: 32px;
+
+        @media screen and (max-width: 1024px) {
+            display: flex;
+            grid-template-columns: initial;
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        
+        }
+    }
+
+    .swiper-pagination {
+        position: relative;
+        margin-top: 24px;
+
+        .swiper-pagination-bullet {
+            background: #232224;
+            width: 10px;
+            height: 10px;
+            border-radius: 25px;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #C18D35;
+        }
+    }
+}
