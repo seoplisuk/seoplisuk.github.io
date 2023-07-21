@@ -38,7 +38,7 @@
 
 .inner__title {
     font-size: 50px;
-    font-family: "Stem Light";
+    font-family: 'Inter', sans-serif;
     color: #1E212B;
 
     @media screen and (max-width: 1024px) {
@@ -58,7 +58,7 @@
     height: max-content;
     border: 1px solid transparent;
     font-size: 14px;
-    font-family: "Stem Medium";
+    font-family: 'Inter', sans-serif;
     text-transform: uppercase;
     display: flex;
     align-items: center;
@@ -82,12 +82,12 @@
 .inner__txt {
     font-size: 14px;
     line-height: 26px;
-    font-family: "Stem medium";
+    font-family: 'Inter', sans-serif;
     color: #1E212B;
 }
 
 .inner__block__title {
-    font-family: "Stem Medium";
+    font-family: 'Inter', sans-serif;
     font-size: 20px;
     color: #1E212B;
     margin-bottom: 30px;
@@ -101,7 +101,7 @@
 
 .salary__txt1 {
     font-size: 40px;
-    font-family: "Stem Medium";
+    font-family: 'Inter', sans-serif;
 
     span {
         font-size: 16px;
@@ -110,7 +110,7 @@
 
 .salary__txt2 {
     font-size: 12px;
-    font-family: "Stem Medium";
+    font-family: 'Inter', sans-serif;
     color: #949494;
 }
 
@@ -131,7 +131,7 @@
 
 .country__span {
     font-size: 12px;
-    font-family: "Stem medium";
+    font-family: 'Inter', sans-serif;
     color: #949494;
 }
 
@@ -140,7 +140,7 @@
     display: flex;
     align-items: center;
     font-size: 14px;
-    font-family: "Stem medium";
+    font-family: 'Inter', sans-serif;
     
 
     &::before {
@@ -156,7 +156,7 @@
 .condition__title {
     font-size: 16px;
     color: $black;
-    font-family: "Stem Medium";
+    font-family: 'Inter', sans-serif;
     margin-bottom: 10px;
 }
 
@@ -168,7 +168,7 @@
 
 .conditions-item {
     font-size: 14px;
-    font-family: "Stem Medium";
+    font-family: 'Inter', sans-serif;
     color: $black;
     border-radius: 30px;
     border: 1px solid #f4f4f4;
