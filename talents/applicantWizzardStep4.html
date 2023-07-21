@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Hire Young Talents</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./favicon.ico">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="./assets/css/theme.min.css">
+
+  <link rel="stylesheet" href="./assets/css/vendor.min.css">
+
+  <!-- Menu Template -->
+
+  <!-- JS Global Compulsory -->
+
+  <!-- JS Implementing Plugins -->
+  <script src="./assets/js/vendor.min.js"></script>
+
+  <script>
+        window.hs_config = {"autopath":"@@autopath","deleteLine":"hs-builder:delete","deleteLine:build":"hs-builder:build-delete","deleteLine:dist":"hs-builder:dist-delete","previewMode":false,"startPath":"/index.html","vars":{"themeFont":"https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap","version":"?v=1.0"},"layoutBuilder":{"extend":{"switcherSupport":true},"header":{"layoutMode":"default","containerMode":"container-fluid"},"sidebarLayout":"default"},"themeAppearance":{"layoutSkin":"default","sidebarSkin":"default","styles":{"colors":{"primary":"#377dff","transparent":"transparent","white":"#fff","dark":"132144","gray":{"100":"#f9fafc","900":"#1e2022"}},"font":"Inter"}},"languageDirection":{"lang":"en"},"skipFilesFromBundle":{"dist":["assets/js/hs.theme-appearance.js","assets/js/hs.theme-appearance-charts.js"],"build":["assets/css/theme.css","assets/vendor/hs-navbar-vertical-aside/dist/hs-navbar-vertical-aside-mini-cache.js","assets/js/demo.js","assets/css/theme-dark.css","assets/css/docs.css","assets/vendor/icon-set/style.css","assets/js/hs.theme-appearance.js","assets/js/hs.theme-appearance-charts.js","node_modules/chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels.min.js"]},"minifyCSSFiles":["assets/css/theme.css","assets/css/theme-dark.css"],"copyDependencies":{"dist":{"*assets/js/theme-custom.js":""},"build":{"*assets/js/theme-custom.js":"","node_modules/bootstrap-icons/font/*fonts/**":"assets/css"}},"buildFolder":"","replacePathsToCDN":{},"directoryNames":{"src":"./src","dist":"./dist","build":"./build"},"fileNames":{"dist":{"js":"theme.min.js","css":"theme.min.css"},"build":{"css":"theme.min.css","js":"theme.min.js","vendorCSS":"vendor.min.css","vendorJS":"vendor.min.js"}},"fileTypes":"jpg|png|svg|mp4|webm|ogv|json"}
+        window.hs_config.gulpRGBA = (p1) => {
+  const options = p1.split(',')
+  const hex = options[0].toString()
+  const transparent = options[1].toString()
+
+  var c;
+  if(/^#([A-Fa-f0-9]{3}){1,2}$/.test(hex)){
+    c= hex.substring(1).split('');
+    if(c.length== 3){
+      c= [c[0], c[0], c[1], c[1], c[2], c[2]];
+    }
+    c= '0x'+c.join('');
+    return 'rgba('+[(c>>16)&255, (c>>8)&255, c&255].join(',')+',' + transparent + ')';
+  }
+  throw new Error('Bad Hex');
+}
+        window.hs_config.gulpDarken = (p1) => {
+  const options = p1.split(',')
+
+  let col = options[0].toString()
+  let amt = -parseInt(options[1])
+  var usePound = false
+
+  if (col[0] == "#") {
+    col = col.slice(1)
+    usePound = true
+  }
+  var num = parseInt(col, 16)
+  var r = (num >> 16) + amt
+  if (r > 255) {
+    r = 255
+  } else if (r < 0) {
+    r = 0
+  }
+  var b = ((num >> 8) & 0x00FF) + amt
+  if (b > 255) {
+    b = 255
+  } else if (b < 0) {
+    b = 0
+  }
+  var g = (num & 0x0000FF) + amt
+  if (g > 255) {
+    g = 255
+  } else if (g < 0) {
+    g = 0
+  }
+  return (usePound ? "#" : "") + (g | (b << 8) | (r << 16)).toString(16)
+}
+        window.hs_config.gulpLighten = (p1) => {
+  const options = p1.split(',')
+
+  let col = options[0].toString()
+  let amt = parseInt(options[1])
+  var usePound = false
+
+  if (col[0] == "#") {
+    col = col.slice(1)
+    usePound = true
+  }
+  var num = parseInt(col, 16)
+  var r = (num >> 16) + amt
+  if (r > 255) {
+    r = 255
+  } else if (r < 0) {
+    r = 0
+  }
+  var b = ((num >> 8) & 0x00FF) + amt
+  if (b > 255) {
+    b = 255
+  } else if (b < 0) {
+    b = 0
+  }
+  var g = (num & 0x0000FF) + amt
+  if (g > 255) {
+    g = 255
+  } else if (g < 0) {
+    g = 0
+  }
+  return (usePound ? "#" : "") + (g | (b << 8) | (r << 16)).toString(16)
+}
+        </script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="docs-navbar navbar navbar-expand-lg navbar-end navbar-light bg-white">
+    <div class="container">
+      <div class="js-mega-menu navbar-nav-wrap">
+        <!-- Logo -->
+        <a class="navbar-brand" href="./index.html" aria-label="Front">
+          <img class="navbar-brand-logo" src="./assets/svg/logos/logo.svg" alt="Logo">
+        </a>
+        <!-- End Logo -->
+
+        <!-- Toggle -->
+        <button type="button" class="navbar-toggler ms-auto" data-bs-toggle="collapse" data-bs-target="#megaMenuBasicToggler" aria-label="Toggle navigation" aria-expanded="false" aria-controls="megaMenuBasicToggler">
+          <span class="navbar-toggler-default">
+            <i class="bi-list"></i>
+          </span>
+          <span class="navbar-toggler-toggled">
+            <i class="bi-x"></i>
+          </span>
+        </button>
+        <!-- End Toggle -->
+
+        <nav class="navbar-nav-wrap-col collapse navbar-collapse" id="megaMenuBasicToggler">
+          <!-- Navbar -->
+          <ul class="navbar-nav ms-auto justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Main page</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">List of applicant</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Terms & Conditions</a>
+            </li>
+          </ul>
+          <!-- End Navbar -->
+        </nav>
+        <button type="button" class="sign-in btn btn-outline-primary">
+          <i class="bi bi-door-open"></i>
+          Sign-in
+        </button>
+      </div>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- Step Form -->
+  <form class="js-step-form-validate js-validate mt-5" data-hs-step-form-options='{
+        "progressSelector": "#validationFormProgress",
+        "stepsSelector": "#validationFormContent",
+        "endSelector": "#validationFormFinishBtn",
+        "isValidate": true
+      }'>
+    <div class="container">
+      <!-- Step -->
+      <ul id="validationFormProgress" class="js-step-progress step step-sm step-icon-sm step-inline step-item-between mb-5">
+        <li class="step-item">
+          <a class="step-content-wrapper" href="javascript:;" data-hs-step-form-next-options='{
+                  "targetSelector": "#validationFormPersonal"
+                }'>
+            <span class="step-icon step-icon-soft-dark">1</span>
+            <div class="step-content">
+              <span class="step-title">Personal info</span>
+            </div>
+          </a>
+        </li>
+
+        <li class="step-item">
+          <a class="step-content-wrapper" href="javascript:;" data-hs-step-form-next-options='{
+                  "targetSelector": "#validationFormEducation"
+                }'>
+            <span class="step-icon step-icon-soft-dark">2</span>
+            <div class="step-content">
+              <span class="step-title">Education & Skills</span>
+            </div>
+          </a>
+        </li>
+
+        <li class="step-item">
+          <a class="step-content-wrapper" href="javascript:;" data-hs-step-form-next-options='{
+                  "targetSelector": "#validationFormExpirience"
+                }'>
+            <span class="step-icon step-icon-soft-dark">3</span>
+            <div class="step-content">
+              <span class="step-title">Expirience</span>
+            </div>
+          </a>
+        </li>
+
+        <li class="step-item">
+          <a class="step-content-wrapper" href="javascript:;" data-hs-step-form-next-options='{
+                  "targetSelector": "#validationFormPortfolio"
+                }'>
+            <span class="step-icon step-icon-soft-dark">4</span>
+            <div class="step-content">
+              <span class="step-title">Portfolio</span>
+            </div>
+          </a>
+        </li>
+
+        <li class="step-item">
+          <a class="step-content-wrapper" href="javascript:;" data-hs-step-form-next-options='{
+                  "targetSelector": "#validationFormWork"
+                }'>
+            <span class="step-icon step-icon-soft-dark">5</span>
+            <div class="step-content">
+              <span class="step-title">Work Conditions</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <!-- End Step -->
+
+      <!-- Content Step Form -->
+      <div id="validationFormContent">
+        <div id="validationFormPersonal" style="display: none;">>
+          <!-- Footer -->
+          <div class="d-flex align-items-center">
+            <div class="ms-auto">
+              <button type="button" class="btn btn-primary my-2" data-hs-step-form-next-options='{
+                            "targetSelector": "#validationFormEducation"
+                          }'>
+                Next <i class="bi-chevron-right small"></i>
+              </button>
+            </div>
+          </div>
+          <!-- End Footer -->
+        </div>
+
+        <div id="validationFormEducation" style="display: none;">
+
+          <!-- Footer -->
+          <div class="d-flex align-items-center mt-2 mb-4">
+            <button type="button" class="btn btn-ghost-secondary me-2" data-hs-step-form-prev-options='{
+                    "targetSelector": "#validationFormPersonal"
+                  }'>
+              <i class="bi-chevron-left small"></i> Previous step
+            </button>
+
+            <div class="ms-auto">
+              <button type="button" class="btn btn-primary" data-hs-step-form-next-options='{
+                            "targetSelector": "#validationFormExpirience"
+                          }'>
+                Next <i class="bi-chevron-right small"></i>
+              </button>
+            </div>
+          </div>
+          <!-- End Footer -->
+        </div>
+        <div id="validationFormExpirience" style="display: none;">
+
+          <!-- Footer -->
+          <div class="d-flex align-items-center mt-4">
+            <button type="button" class="btn btn-ghost-secondary me-2" data-hs-step-form-prev-options='{
+                    "targetSelector": "#validationFormEducation"
+                  }'>
+              <i class="bi-chevron-left small"></i> Previous step
+            </button>
+
+            <div class="ms-auto">
+              <button type="button" class="btn btn-primary" data-hs-step-form-next-options='{
+                            "targetSelector": "#validationFormPortfolio"
+                          }'>
+                Next <i class="bi-chevron-right small"></i>
+              </button>
+            </div>
+          </div>
+          <!-- End Footer -->
+        </div>
+
+        <div id="validationFormPortfolio" class="active">
+          <!-- Form Group -->
+          <div class="card p-4">
+            <!-- Checkbox -->
+            <h4 class="col-sm-3 col-md-4 col-lg-12 ms-0 mb-1">Your CV</h4>
+            <div class="row">
+              <div class="d-flex align-items-center gap-3 mb-2">
+                <input type="text" class="form-control link-sertificate your-cv-control link-cv-input" required placeholder="Link" aria-label="link">
+                <input type="radio" id="formRadio7" class="form-check-input" name="formRadioCV" required>
+              </div>
+              <!-- End Checkbox -->
+
+              <!-- Checkbox -->
+              <div class="d-flex align-items-center gap-3">
+                <input class="form-control choice-sertificate your-cv-control choice-cv" type="file" id="formInputCV">
+                <input type="radio" id="formRadio8" class="form-check-input" name="formRadioCV">
+              </div>
+              <!-- End Checkbox -->
+            </div>
+          </div>
+
+          <div class="card p-4 mt-2 d-flex pet-projects">
+            <div class="col-md-8 col-lg-8 col-sm-12">
+              <!-- Form -->
+              <div class="js-add-field row mb-3 mt-2 col-md-12" data-hs-add-field-options='{
+                      "template": "#addPetFieldTemplate",
+                      "container": "#addTextFieldPetContainer",
+                      "defaultCreated": 0
+                    }'>
+                <div class=" d-flex align-items-center">
+                  <h4 class="col-sm-5 col-md-5 col-lg-3 ms-0 mb-0 pet-title">Link to your pet-projects</h4>
+                  <a href="javascript:;" class="js-create-field col-sm-2 col-md-2">
+                    <i class="bi-plus-circle me-1">
+                      Add
+                    </i>
+                  </a>
+                </div>
+                <p class="card-text col-lg-10">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo expedita voluptate dolores et ad neque veritatis commodi ipsam molestias ducimus!
+                </p>
+                <div class="col-md-12">
+                  <!-- Container For Input Field -->
+                  <div id="addTextFieldPetContainer"></div>
+                </div>
+              </div>
+              <!-- End Form -->
+
+              <!-- Add Input Field -->
+              <div id="addPetFieldTemplate" class="position-relative mb-4" style="display: none;">
+                <div class="row mt-2">
+                  <label for="projectLabel" class="col-sm-3 col-form-label form-label">Project</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" name="project" id="projectLabel" placeholder="Todo list" aria-label="Todo list">
+                  </div>
+                </div>
+                <div class="row mt-2">
+                  <label for="linkToProject" class="col-sm-3 col-form-label form-label">Link to project</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" name="link-project" id="linkToProject" placeholder="github.com/todolist" aria-label="Link to project">
+                  </div>
+                </div>
+                <a class="js-delete-field input-group-add-field-delete graduation-delete" href="javascript:;">
+                  <i class="bi bi-x-circle"></i>
+                </a>
+              </div>
+              <!-- End Add Input Field -->
+            </div>
+
+            <div class="col-md-3 col-lg-3 col-sm-12 text-center">
+              <h4 class="ms-0 mb-0">Requirements for pet-projects</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum iure, nam alias voluptatem aut soluta. Reprehenderit in, eos officiis aperiam voluptates natus magnam
+              </p>
+            </div>
+          </div>
+
+          <div class="card p-4 mt-2 d-flex pet-projects">
+            <div class="col-md-8 col-lg-8">
+              <h4 class="ms-0 mb-2 h-title">Cover letter</h4>
+              <textarea type="textarea" class="form-control cover-letter-textarea" name="link-project" id="cover-letter" placeholder="github.com/todolist" aria-label="Link to project">
+                  </textarea>
+            </div>
+
+            <div class="col-md-3 col-lg-3 text-center">
+              <h4 class="ms-0 mb-0">Requirements for your cover letter</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum iure, nam alias voluptatem aut soluta. Reprehenderit in, eos officiis aperiam voluptates natus magnam
+              </p>
+            </div>
+          </div>
+          <!-- End Form Group -->
+          <!-- Footer -->
+          <div class="d-flex align-items-center">
+            <button type="button" class="btn btn-ghost-secondary me-2" data-hs-step-form-prev-options='{
+                    "targetSelector": "#validationFormExpirience"
+                  }'>
+              <i class="bi-chevron-left small"></i> Previous step
+            </button>
+
+            <div class="ms-auto">
+              <button type="button" class="btn btn-primary" data-hs-step-form-next-options='{
+                            "targetSelector": "#validationFormWork"
+                          }'>
+                Next <i class="bi-chevron-right small"></i>
+              </button>
+            </div>
+          </div>
+          <!-- End Footer -->
+        </div>
+
+        <div id="validationFormWork" style="display: none;">
+
+          <!-- Footer -->
+          <div class="d-sm-flex align-items-center">
+            <button type="button" class="btn btn-ghost-secondary mb-3 mb-sm-0 me-2" data-hs-step-form-prev-options='{
+                    "targetSelector": "#validationFormPortfolio"
+                  }'>
+              <i class="bi-chevron-left small"></i> Previous step
+            </button>
+
+            <div class="d-flex justify-content-end ms-auto">
+              <button type="button" class="btn btn-white me-2" data-dismiss="modal" aria-label="Close">Cancel</button>
+              <button id="validationFormFinishBtn" type="button" class="btn btn-primary">Save Changes</button>
+            </div>
+          </div>
+          <!-- End Footer -->
+        </div>
+      </div>
+      <!-- End Content Step Form -->
+
+      <!-- Message Body -->
+      <div id="validationFormSuccessMessage" class="js-success-message" style="display:none;">
+        <div class="text-center">
+          <img class="img-fluid mb-3" src="../assets/svg/illustrations/oc-hi-five.svg" alt="Image Description" style="max-width: 15rem;">
+
+          <div class="mb-3">
+            <h2>Successful!</h2>
+            <p>Your changes have been successfully saved.</p>
+          </div>
+
+          <div class="d-flex justify-content-center">
+            <a class="btn btn-white me-3" href="#">
+              <i class="bi-chevron-left small ms-1"></i> Back to projects
+            </a>
+            <a class="btn btn-primary" href="#">
+              <i class="tio-city me-1"></i> Add new project
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- End Message Body -->
+  </form>
+  <!-- End Step Form -->
+
+  <!-- JS Front -->
+  <script src="./assets/js/theme.min.js"></script>
+
+  <!-- JS Menu -->
+  <script src="./assets/js/theme.min.js"></script>
+  <script>
+      (function() {
+        // INITIALIZATION OF MEGA MENU
+        // =======================================================
+        new HSMegaMenu('.js-mega-menu')
+      })();
+    </script>
+
+  <!-- JS Steps -->
+  <script src="./assets/js/theme.min.js"></script>
+  <script>
+      (function() {
+        // INITIALIZATION OF STEP FORM
+        // =======================================================
+        new HSStepForm('.js-step-form', {
+          finish ($el) {
+            const $successMessageTempalte = $el.querySelector('.js-success-message').cloneNode(true)
+    
+            $successMessageTempalte.style.display = 'block'
+    
+            $el.style.display = 'none'
+            $el.parentElement.appendChild($successMessageTempalte)
+          }
+        })
+      })();
+    </script>
+  <!-- JS Front -->
+  <script src="./assets/js/theme.min.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+      (function() {
+        // INITIALIZATION OF STEP FORM
+        // =======================================================
+        new HSStepForm('.js-step-form-validate', {
+          validator: HSBsValidation.init('.js-validate'),
+          finish ($el) {
+            const $successMessageTempalte = $el.querySelector('.js-success-message').cloneNode(true)
+
+            $successMessageTempalte.style.display = 'block'
+
+            $el.style.display = 'none'
+            $el.parentElement.appendChild($successMessageTempalte)
+          }
+        })
+      })()
+    </script>
+
+  <!-- JS Global Compulsory -->
+  <script src="./assets/js/theme.min.js"></script>
+  <script>
+      (function() {
+        // INITIALIZATION OF SELECT
+        // =======================================================
+        HSCore.components.HSTomSelect.init('.js-select')
+      })();
+    </script>
+
+  <!-- JS add field -->
+  <script src="./assets/js/theme.min.js"></script>
+  <script>
+      (function() {
+        // INITIALIZATION OF ADD FIELD
+        // =======================================================
+        new HSAddField('.js-add-field')
+        new HSAddField('.js-remove-field')
+        HSCore.components.HSTomSelect.init('.js-selects')
+      })();
+    </script>
+
+  <script>
+      const linkCvRadio = document.getElementById('formRadio7');
+      const linkCvBlock = document.querySelector('.link-cv-input');
+      const choiceCvRadio = document.getElementById('formRadio8');
+      const choiceCvBlock = document.querySelector('.choice-cv');
+
+      choiceCvRadio.addEventListener('click', toggleDisabled);
+      function toggleDisabled() {
+        choiceCvBlock.removeAttribute('disabled');
+        linkCvBlock.setAttribute('disabled', true);
+      }
+
+      linkCvRadio.addEventListener('click', toggleDisabled2);
+      function toggleDisabled2() {
+        linkCvBlock.removeAttribute('disabled');
+        choiceCvBlock.setAttribute('disabled', true);
+      }
+
+    </script>
+</body>
+</html>

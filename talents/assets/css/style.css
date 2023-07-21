@@ -926,6 +926,12 @@ button.swiper-pagination-bullet {
           align-items: center;
 }
 
+@media screen and (max-width: 480px) {
+  .logo {
+    width: 150px;
+  }
+}
+
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3388,6 +3394,497 @@ input {
   background: linear-gradient(white, white) padding-box, linear-gradient(to right, #FF5200, #FF00A8) border-box;
   border-radius: 10px;
   border: 1px solid transparent;
+}
+
+.chat__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (max-width: 1024px) {
+  .chat__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.chat__sidebar {
+  width: 25%;
+}
+@media screen and (max-width: 1024px) {
+  .chat__sidebar {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.chat__content {
+  width: 73%;
+  border: 1px solid #f4f4f4;
+  border-radius: 20px;
+}
+@media screen and (max-width: 1024px) {
+  .chat__content {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .user__content {
+    display: none;
+  }
+}
+
+.chat__sidebar__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+}
+.chat__sidebar__buttons .im__block {
+  text-decoration: none;
+  color: #1E212B;
+}
+
+.chat__sidebar__content {
+  border-radius: 20px;
+  border: 1px solid #f4f4f4;
+}
+
+.chat__search {
+  padding: 20px 30px;
+  border-bottom: 1px solid #f4f4f4;
+}
+.chat__search input {
+  padding: 15px 20px;
+  padding-left: 50px;
+  border-radius: 30px;
+  font-size: 14px;
+  color: #949494;
+  font-family: "Stem medium";
+  background: url(../img/sidebar__search.svg) no-repeat 20px center;
+}
+.chat__search input::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #949494;
+  font-family: "Stem medium";
+}
+.chat__search input::-moz-placeholder {
+  font-size: 14px;
+  color: #949494;
+  font-family: "Stem medium";
+}
+.chat__search input:-ms-input-placeholder {
+  font-size: 14px;
+  color: #949494;
+  font-family: "Stem medium";
+}
+.chat__search input::-ms-input-placeholder {
+  font-size: 14px;
+  color: #949494;
+  font-family: "Stem medium";
+}
+.chat__search input::placeholder {
+  font-size: 14px;
+  color: #949494;
+  font-family: "Stem medium";
+}
+
+.sidebar__chat__items {
+  height: 392px;
+  overflow: hidden;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #FF5200 #FF00A8;
+  /* Работает в Chrome, Edge и Safari */
+}
+.sidebar__chat__items::-webkit-scrollbar {
+  width: 2px;
+}
+.sidebar__chat__items::-webkit-scrollbar-track {
+  background: transparent;
+}
+.sidebar__chat__items::-webkit-scrollbar-thumb {
+  background: linear-gradient(136deg, #FF5200 0%, #FF00A8 100%);
+}
+@media screen and (max-width: 1024px) {
+  .sidebar__chat__items {
+    height: 196px;
+  }
+}
+
+.sidebar__chat__item {
+  padding: 20px 30px;
+  border-bottom: 1px solid #f4f4f4;
+}
+.sidebar__chat__item:nth-last-child(1) {
+  border-bottom: none;
+}
+
+.chat__item__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 12px;
+}
+.chat__item__header .chat__name {
+  font-size: 16px;
+  color: #1f1f1f;
+  font-family: "Stem medium";
+}
+.chat__item__header .chat__time {
+  font-size: 12px;
+  font-family: "Stem medium";
+  color: #d9d9d9;
+}
+
+.chat__item__content {
+  font-size: 14px;
+  font-family: "stem medium";
+  color: #949494;
+}
+.chat__item__content .chat__who {
+  color: #1f1f1f;
+}
+
+.chat__content__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 30px;
+  border-bottom: 1px solid #f4f4f4;
+  margin-bottom: 120px;
+}
+@media screen and (max-width: 600px) {
+  .chat__content__header {
+    margin-bottom: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .chat__content__header .chat__content__left {
+    margin-bottom: 10px;
+  }
+}
+
+.content__left__name {
+  font-family: "Stem medium";
+  font-size: 16px;
+  color: #1f1f1f;
+}
+
+.content__left__time {
+  font-size: 12px;
+  font-family: "Stem medium";
+  color: #949494;
+}
+.content__left__time .time {
+  color: #1f1f1f;
+}
+
+.chat__content__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.chat__content__form input {
+  padding: 8.5px 15px;
+  padding-left: 50px;
+  border-radius: 30px;
+  font-size: 14px;
+  color: #949494;
+  font-family: "Stem medium";
+  background: url(../img/content__search.svg) no-repeat 20px center;
+}
+.chat__content__form input::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #949494;
+  font-family: "Stem medium";
+}
+.chat__content__form input::-moz-placeholder {
+  font-size: 14px;
+  color: #949494;
+  font-family: "Stem medium";
+}
+.chat__content__form input:-ms-input-placeholder {
+  font-size: 14px;
+  color: #949494;
+  font-family: "Stem medium";
+}
+.chat__content__form input::-ms-input-placeholder {
+  font-size: 14px;
+  color: #949494;
+  font-family: "Stem medium";
+}
+.chat__content__form input::placeholder {
+  font-size: 14px;
+  color: #949494;
+  font-family: "Stem medium";
+}
+
+.button__more {
+  background: url(../img/more.svg) no-repeat center center;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.chat__screen {
+  padding: 20px 30px;
+}
+
+.screen__date {
+  margin-bottom: 20px;
+  font-size: 12px;
+  font-family: "Stem medium";
+  text-align: center;
+  color: #949494;
+}
+
+.messages__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.message__first {
+  border-radius: 20px 20px 20px 0px;
+  background: #FBFBFB;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-family: "Stem medium";
+  line-height: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+}
+.message__first .message__date {
+  font-size: 10px;
+  font-family: "Stem medium";
+  color: #949494;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+@media screen and (max-width: 600px) {
+  .message__first {
+    width: 100%;
+  }
+}
+
+.message__second {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 40%;
+}
+@media screen and (max-width: 600px) {
+  .message__second {
+    width: 100%;
+  }
+}
+
+.message__block {
+  border-radius: 20px 20px 20px 0px;
+  background: linear-gradient(136deg, #FF5200 0%, #FF00A8 100%);
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-family: "Stem medium";
+  line-height: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.message__block .message__content {
+  color: #ffffff;
+}
+.message__block .message__date {
+  font-size: 10px;
+  font-family: "Stem medium";
+  color: #ffffff;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.view {
+  font-size: 12px;
+  color: #949494;
+  font-family: "Stem medium";
+}
+
+.chat__footer {
+  padding: 15px 20px;
+  border-top: 1px solid #f4f4f4;
+  margin-top: 30px;
+}
+
+.send__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.chat__input {
+  position: relative;
+}
+
+.send__smile {
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 0;
+  bottom: 0;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.send__upload {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.send__button {
+  padding: 0;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  margin-left: 10px;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease 0s;
+  transition: 0.5s ease 0s;
+}
+.send__button:hover {
+  opacity: 0.6;
+}
+
+.chat__input {
+  width: 100%;
+}
+.chat__input input {
+  border-radius: 30px;
+  padding: 12px 20px;
+}
+
+.header__user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.notification {
+  margin-right: 30px;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  .notification {
+    margin-right: 10px;
+  }
+}
+
+.user__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.user__ico {
+  margin-right: 10px;
+}
+
+.user__job {
+  font-family: "Stem";
+  text-decoration: none;
+  background: -webkit-linear-gradient(#FF5200, #FF00A8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  font-size: 10px;
+  font-family: "Stem medium";
+}
+
+.user__name {
+  font-size: 14px;
+  font-family: "Stem medium";
+  color: #1f1f1f;
+}
+
+.user__arrow {
+  margin-left: 15px;
+}
+@media screen and (max-width: 600px) {
+  .user__arrow {
+    display: none;
+  }
 }
 
 .footer {

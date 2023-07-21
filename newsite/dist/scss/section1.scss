@@ -1,0 +1,34 @@
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.row {
+    
+
+    .item {
+        margin-bottom: 30px;
+        background: red;
+
+        &:nth-last-child(1) {
+            margin: 0;
+        }
+    }
+    
+}
+
+.item:nth-child(1) {
+    background: yellow;
+}
+
+.item:nth-child(2) {
+    background: green;
+}
+
+.item:nth-child(3) {
+    background: yellow;
+}
+

@@ -10,6 +10,13 @@
     align-items: center;
 }
 
+.logo {
+
+    @media screen and (max-width: 480px) {
+        width: 150px;
+    }
+}
+
 .menu {
     display: flex;
 

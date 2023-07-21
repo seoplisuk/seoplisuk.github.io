@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Hire Young Talents</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./favicon.ico">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="./assets/css/theme.min.css">
+
+  <link rel="stylesheet" href="./assets/css/vendor.min.css">
+
+  <!-- Menu Template -->
+
+  <!-- JS Global Compulsory -->
+
+  <!-- JS Implementing Plugins -->
+  <script src="./assets/js/vendor.min.js"></script>
+
+  <script>
+        window.hs_config = {"autopath":"@@autopath","deleteLine":"hs-builder:delete","deleteLine:build":"hs-builder:build-delete","deleteLine:dist":"hs-builder:dist-delete","previewMode":false,"startPath":"/index.html","vars":{"themeFont":"https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap","version":"?v=1.0"},"layoutBuilder":{"extend":{"switcherSupport":true},"header":{"layoutMode":"default","containerMode":"container-fluid"},"sidebarLayout":"default"},"themeAppearance":{"layoutSkin":"default","sidebarSkin":"default","styles":{"colors":{"primary":"#377dff","transparent":"transparent","white":"#fff","dark":"132144","gray":{"100":"#f9fafc","900":"#1e2022"}},"font":"Inter"}},"languageDirection":{"lang":"en"},"skipFilesFromBundle":{"dist":["assets/js/hs.theme-appearance.js","assets/js/hs.theme-appearance-charts.js"],"build":["assets/css/theme.css","assets/vendor/hs-navbar-vertical-aside/dist/hs-navbar-vertical-aside-mini-cache.js","assets/js/demo.js","assets/css/theme-dark.css","assets/css/docs.css","assets/vendor/icon-set/style.css","assets/js/hs.theme-appearance.js","assets/js/hs.theme-appearance-charts.js","node_modules/chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels.min.js"]},"minifyCSSFiles":["assets/css/theme.css","assets/css/theme-dark.css"],"copyDependencies":{"dist":{"*assets/js/theme-custom.js":""},"build":{"*assets/js/theme-custom.js":"","node_modules/bootstrap-icons/font/*fonts/**":"assets/css"}},"buildFolder":"","replacePathsToCDN":{},"directoryNames":{"src":"./src","dist":"./dist","build":"./build"},"fileNames":{"dist":{"js":"theme.min.js","css":"theme.min.css"},"build":{"css":"theme.min.css","js":"theme.min.js","vendorCSS":"vendor.min.css","vendorJS":"vendor.min.js"}},"fileTypes":"jpg|png|svg|mp4|webm|ogv|json"}
+        window.hs_config.gulpRGBA = (p1) => {
+  const options = p1.split(',')
+  const hex = options[0].toString()
+  const transparent = options[1].toString()
+
+  var c;
+  if(/^#([A-Fa-f0-9]{3}){1,2}$/.test(hex)){
+    c= hex.substring(1).split('');
+    if(c.length== 3){
+      c= [c[0], c[0], c[1], c[1], c[2], c[2]];
+    }
+    c= '0x'+c.join('');
+    return 'rgba('+[(c>>16)&255, (c>>8)&255, c&255].join(',')+',' + transparent + ')';
+  }
+  throw new Error('Bad Hex');
+}
+        window.hs_config.gulpDarken = (p1) => {
+  const options = p1.split(',')
+
+  let col = options[0].toString()
+  let amt = -parseInt(options[1])
+  var usePound = false
+
+  if (col[0] == "#") {
+    col = col.slice(1)
+    usePound = true
+  }
+  var num = parseInt(col, 16)
+  var r = (num >> 16) + amt
+  if (r > 255) {
+    r = 255
+  } else if (r < 0) {
+    r = 0
+  }
+  var b = ((num >> 8) & 0x00FF) + amt
+  if (b > 255) {
+    b = 255
+  } else if (b < 0) {
+    b = 0
+  }
+  var g = (num & 0x0000FF) + amt
+  if (g > 255) {
+    g = 255
+  } else if (g < 0) {
+    g = 0
+  }
+  return (usePound ? "#" : "") + (g | (b << 8) | (r << 16)).toString(16)
+}
+        window.hs_config.gulpLighten = (p1) => {
+  const options = p1.split(',')
+
+  let col = options[0].toString()
+  let amt = parseInt(options[1])
+  var usePound = false
+
+  if (col[0] == "#") {
+    col = col.slice(1)
+    usePound = true
+  }
+  var num = parseInt(col, 16)
+  var r = (num >> 16) + amt
+  if (r > 255) {
+    r = 255
+  } else if (r < 0) {
+    r = 0
+  }
+  var b = ((num >> 8) & 0x00FF) + amt
+  if (b > 255) {
+    b = 255
+  } else if (b < 0) {
+    b = 0
+  }
+  var g = (num & 0x0000FF) + amt
+  if (g > 255) {
+    g = 255
+  } else if (g < 0) {
+    g = 0
+  }
+  return (usePound ? "#" : "") + (g | (b << 8) | (r << 16)).toString(16)
+}
+        </script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="docs-navbar navbar navbar-expand-lg navbar-end navbar-light bg-white">
+    <div class="container">
+      <div class="js-mega-menu navbar-nav-wrap">
+        <!-- Logo -->
+        <a class="navbar-brand" href="./index.html" aria-label="Front">
+          <img class="navbar-brand-logo" src="./assets/svg/logos/logo.svg" alt="Logo">
+        </a>
+        <!-- End Logo -->
+
+        <!-- Toggle -->
+        <button type="button" class="navbar-toggler ms-auto" data-bs-toggle="collapse" data-bs-target="#megaMenuBasicToggler" aria-label="Toggle navigation" aria-expanded="false" aria-controls="megaMenuBasicToggler">
+          <span class="navbar-toggler-default">
+            <i class="bi-list"></i>
+          </span>
+          <span class="navbar-toggler-toggled">
+            <i class="bi-x"></i>
+          </span>
+        </button>
+        <!-- End Toggle -->
+
+        <nav class="navbar-nav-wrap-col collapse navbar-collapse" id="megaMenuBasicToggler">
+          <!-- Navbar -->
+          <ul class="navbar-nav ms-auto justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Main page</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">List of applicant</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Terms & Conditions</a>
+            </li>
+          </ul>
+          <!-- End Navbar -->
+        </nav>
+        <button type="button" class="sign-in btn btn-outline-primary">
+          <i class="bi bi-door-open"></i>
+          Sign-in
+        </button>
+      </div>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <div class="container-fluid container-full-profile mt-6">
+    <div class="col-12 col-sm-8 col-md-8 col-lg-8">
+      <div class="card p-4 mt-2">
+        <h4 class="ms-0">Description</h4>
+        <p class="mt-2">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem voluptates tenetur ipsum hic eius similique, nostrum at facilis iure tempora adipisci aspernatur mollitia illum. Porro quia iste ex, explicabo ad voluptate, adipisci nostrum asperiores non fugit, quas voluptatem nesciunt eos! Hic unde eligendi saepe. Maxime totam, fugit quis nam molestias sequi ut rem minus cum debitis laborum dignissimos necessitatibus in?
+        </p>
+      </div>
+
+      <div class="card p-4 mt-2">
+        <h4 class="ms-0">Tags</h4>
+        <div class="descritions-tags-block d-flex gap-2 flex-wrap mt-2 col-xl-10 col-12">
+          <div>C#</div>
+          <div>Git</div>
+          <div>OOP</div>
+          <div>SQL</div>
+          <div>SOLID</div>
+          <div>.NET</div>
+          <div>Entity Framework</div>
+          <div>.NET Core</div>
+          <div>.NET Core</div>
+          <div>LINQ</div>
+          <div>ASP.NET</div>
+          <div>MSSQL</div>
+          <div>Design Patterns</div>
+        </div>
+      </div>
+
+      <div class="card p-4 mt-2 mb-4">
+        <h4 class="ms-0">Proven skills</h4>
+        <div class="proven-skills-table mt-2 col-lg-8">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td>Graduation</td>
+                <td>Appliced mathematics</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Job experience</td>
+                <td>2 month</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Volunteer expierence</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Verbal English Level</td>
+                <td>B2</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>English sertificate</td>
+                <td>TOEFL</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Written english level</td>
+                <td>B2</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Git Portfolio</td>
+                <td>*****</td>
+                <td><a href="#" class="link link-primary">Link</a></td>
+              </tr>
+              <tr>
+                <td>Competitions</td>
+                <td>IOI 3rd place</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Certificates</td>
+                <td>AWS</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Online Courses passed</td>
+                <td>Udemy .NET Core</td>
+                <td>
+                  <a href="#" class="link link-primary me-2">Link</a>
+                  <a href="#" class="link link-primary me-2">Link</a>
+                  <a href="#" class="link link-primary">Link</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Offline Courses passed</td>
+                <td>EPAM Internships</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Specialization</td>
+                <td>.NET</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Skills description</td>
+                <td>.NET Web stack, JS, Full-stack</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Candidate code</td>
+                <td>YT001</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Additional tests</td>
+                <td>Codility</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h4 class="mb-0 mt-4">CV <span><a href="#" class="link link-primary">Link</a></span></h4>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+      <div class="card p-4 mt-2">
+        <h4 class="ms-0 mb-0">Conditions</h4>
+        <div class="conditions-block conditions-block-full mt-2">
+          <div class="form-check mb-2">
+            <input type="checkbox" id="formCheck15" class="form-check-input" checked="">
+            <label class="form-check-label" for="formCheck15">Office</label>
+          </div>
+
+          <div class="form-check mb-2">
+            <input type="checkbox" id="formCheck16" class="form-check-input" checked="">
+            <label class="form-check-label" for="formCheck16">Part-time</label>
+          </div>
+
+          <div class="form-check mb-2">
+            <input type="checkbox" id="formCheck17" class="form-check-input" checked="">
+            <label class="form-check-label" for="formCheck17">Remote</label>
+          </div>
+
+          <div class="form-check mb-2">
+            <input type="checkbox" id="formCheck18" class="form-check-input" checked="">
+            <label class="form-check-label" for="formCheck18">Relocation</label>
+          </div>
+        </div>
+
+        <div class="conditions-block conditions-block-full conditions-block-full-location mt-4">
+          <div class="row mb-1">
+            <div class="col-6 col-sm-12 col-xl-8 col-lg-7">
+              Citizenship
+            </div>
+            <div class="col-4 col-sm-12 col-xl-4 col-lg-5">
+              Ukraine
+            </div>
+          </div>
+
+          <div class="row mb-1">
+            <div class="col-6 col-sm-12 col-xl-8 col-lg-7">
+              Based in
+            </div>
+            <div class="col-4 col-sm-12 col-xl-4 col-lg-5">
+              Poland
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-6 col-sm-12 col-xl-8 col-lg-7">
+              Salary expectations $
+            </div>
+            <div class="col-4 col-sm-12 col-xl-4 col-lg-5">
+              400
+            </div>
+          </div>
+
+        </div>
+
+        <h5 class="mb-0 mt-4 title-time">Last time available: <span class="text-success">3 days ago</span></h5>
+
+        <button type="button" class="btn btn-outline-primary mt-4 col-12 col-sm-12">
+          Add to favorites
+          <i class="bi bi-heart ms-1"></i>
+        </button>
+
+        <button type="button" class="btn btn-outline-primary mt-4 col-12 col-sm-12">
+          Schedule an interview
+          <i class="bi bi-calendar2-event ms-1"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS Front -->
+  <script src="./assets/js/theme.min.js"></script>
+
+  <!-- JS Menu -->
+  <script src="./assets/js/theme.min.js"></script>
+  <script>
+      (function() {
+        // INITIALIZATION OF MEGA MENU
+        // =======================================================
+        new HSMegaMenu('.js-mega-menu')
+      })();
+    </script>
+
+  <!-- JS Steps -->
+  <script src="./assets/js/theme.min.js"></script>
+  <script>
+      (function() {
+        // INITIALIZATION OF STEP FORM
+        // =======================================================
+        new HSStepForm('.js-step-form', {
+          finish ($el) {
+            const $successMessageTempalte = $el.querySelector('.js-success-message').cloneNode(true)
+    
+            $successMessageTempalte.style.display = 'block'
+    
+            $el.style.display = 'none'
+            $el.parentElement.appendChild($successMessageTempalte)
+          }
+        })
+      })();
+    </script>
+  <!-- JS Front -->
+  <script src="./assets/js/theme.min.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+      (function() {
+        // INITIALIZATION OF STEP FORM
+        // =======================================================
+        new HSStepForm('.js-step-form-validate', {
+          validator: HSBsValidation.init('.js-validate'),
+          finish ($el) {
+            const $successMessageTempalte = $el.querySelector('.js-success-message').cloneNode(true)
+
+            $successMessageTempalte.style.display = 'block'
+
+            $el.style.display = 'none'
+            $el.parentElement.appendChild($successMessageTempalte)
+          }
+        })
+      })()
+    </script>
+
+  <!-- JS Global Compulsory -->
+  <script src="./assets/js/theme.min.js"></script>
+  <script>
+      (function() {
+        // INITIALIZATION OF SELECT
+        // =======================================================
+        HSCore.components.HSTomSelect.init('.js-select')
+      })();
+    </script>
+
+  <!-- JS add field -->
+  <script src="./assets/js/theme.min.js"></script>
+  <script>
+      (function() {
+        // INITIALIZATION OF ADD FIELD
+        // =======================================================
+        new HSAddField('.js-add-field')
+        new HSAddField('.js-remove-field')
+        HSCore.components.HSTomSelect.init('.js-selects')
+      })();
+    </script>
+</body>
+</html>

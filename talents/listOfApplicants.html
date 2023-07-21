@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Hire Young Talents</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./favicon.ico">
+  <!-- Font -->
+  <link href="./https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <!-- JS Global Compulsory -->
+
+  <!-- JS Implementing Plugins -->
+  <script src="./assets/js/vendor.min.js"></script>
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="./assets/css/theme.min.css">
+
+  <link rel="stylesheet" href="./assets/css/vendor.min.css">
+
+  <!-- Menu Template -->
+
+  <script>
+        window.hs_config = {"autopath":"@@autopath","deleteLine":"hs-builder:delete","deleteLine:build":"hs-builder:build-delete","deleteLine:dist":"hs-builder:dist-delete","previewMode":false,"startPath":"/index.html","vars":{"themeFont":"https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap","version":"?v=1.0"},"layoutBuilder":{"extend":{"switcherSupport":true},"header":{"layoutMode":"default","containerMode":"container-fluid"},"sidebarLayout":"default"},"themeAppearance":{"layoutSkin":"default","sidebarSkin":"default","styles":{"colors":{"primary":"#377dff","transparent":"transparent","white":"#fff","dark":"132144","gray":{"100":"#f9fafc","900":"#1e2022"}},"font":"Inter"}},"languageDirection":{"lang":"en"},"skipFilesFromBundle":{"dist":["assets/js/hs.theme-appearance.js","assets/js/hs.theme-appearance-charts.js"],"build":["assets/css/theme.css","assets/vendor/hs-navbar-vertical-aside/dist/hs-navbar-vertical-aside-mini-cache.js","assets/js/demo.js","assets/css/theme-dark.css","assets/css/docs.css","assets/vendor/icon-set/style.css","assets/js/hs.theme-appearance.js","assets/js/hs.theme-appearance-charts.js","node_modules/chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels.min.js"]},"minifyCSSFiles":["assets/css/theme.css","assets/css/theme-dark.css"],"copyDependencies":{"dist":{"*assets/js/theme-custom.js":""},"build":{"*assets/js/theme-custom.js":"","node_modules/bootstrap-icons/font/*fonts/**":"assets/css"}},"buildFolder":"","replacePathsToCDN":{},"directoryNames":{"src":"./src","dist":"./dist","build":"./build"},"fileNames":{"dist":{"js":"theme.min.js","css":"theme.min.css"},"build":{"css":"theme.min.css","js":"theme.min.js","vendorCSS":"vendor.min.css","vendorJS":"vendor.min.js"}},"fileTypes":"jpg|png|svg|mp4|webm|ogv|json"}
+        window.hs_config.gulpRGBA = (p1) => {
+  const options = p1.split(',')
+  const hex = options[0].toString()
+  const transparent = options[1].toString()
+
+  var c;
+  if(/^#([A-Fa-f0-9]{3}){1,2}$/.test(hex)){
+    c= hex.substring(1).split('');
+    if(c.length== 3){
+      c= [c[0], c[0], c[1], c[1], c[2], c[2]];
+    }
+    c= '0x'+c.join('');
+    return 'rgba('+[(c>>16)&255, (c>>8)&255, c&255].join(',')+',' + transparent + ')';
+  }
+  throw new Error('Bad Hex');
+}
+        window.hs_config.gulpDarken = (p1) => {
+  const options = p1.split(',')
+
+  let col = options[0].toString()
+  let amt = -parseInt(options[1])
+  var usePound = false
+
+  if (col[0] == "#") {
+    col = col.slice(1)
+    usePound = true
+  }
+  var num = parseInt(col, 16)
+  var r = (num >> 16) + amt
+  if (r > 255) {
+    r = 255
+  } else if (r < 0) {
+    r = 0
+  }
+  var b = ((num >> 8) & 0x00FF) + amt
+  if (b > 255) {
+    b = 255
+  } else if (b < 0) {
+    b = 0
+  }
+  var g = (num & 0x0000FF) + amt
+  if (g > 255) {
+    g = 255
+  } else if (g < 0) {
+    g = 0
+  }
+  return (usePound ? "#" : "") + (g | (b << 8) | (r << 16)).toString(16)
+}
+        window.hs_config.gulpLighten = (p1) => {
+  const options = p1.split(',')
+
+  let col = options[0].toString()
+  let amt = parseInt(options[1])
+  var usePound = false
+
+  if (col[0] == "#") {
+    col = col.slice(1)
+    usePound = true
+  }
+  var num = parseInt(col, 16)
+  var r = (num >> 16) + amt
+  if (r > 255) {
+    r = 255
+  } else if (r < 0) {
+    r = 0
+  }
+  var b = ((num >> 8) & 0x00FF) + amt
+  if (b > 255) {
+    b = 255
+  } else if (b < 0) {
+    b = 0
+  }
+  var g = (num & 0x0000FF) + amt
+  if (g > 255) {
+    g = 255
+  } else if (g < 0) {
+    g = 0
+  }
+  return (usePound ? "#" : "") + (g | (b << 8) | (r << 16)).toString(16)
+}
+        </script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- Header -->
+    <header class="docs-navbar navbar navbar-expand-xl navbar-end navbar-light bg-white">
+      <div class="container">
+        <div class="js-mega-menu navbar-nav-wrap">
+          <!-- Logo -->
+          <a class="navbar-brand" href="./index.html" aria-label="Front">
+            <img class="navbar-brand-logo" src="./assets/svg/logos/logo.svg" alt="Logo">
+          </a>
+          <!-- End Logo -->
+
+          <!-- Toggle -->
+          <button type="button" class="navbar-toggler ms-auto" data-bs-toggle="collapse" data-bs-target="#megaMenuBasicToggler" aria-label="Toggle navigation" aria-expanded="false" aria-controls="megaMenuBasicToggler">
+            <span class="navbar-toggler-default">
+              <i class="bi-list"></i>
+            </span>
+            <span class="navbar-toggler-toggled">
+              <i class="bi-x"></i>
+            </span>
+          </button>
+          <!-- End Toggle -->
+
+          <nav class="navbar-nav-wrap-col collapse navbar-collapse" id="megaMenuBasicToggler">
+            <!-- Navbar -->
+            <ul class="navbar-nav ms-auto justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Main page</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">List of applicant</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Terms & Conditions</a>
+              </li>
+            </ul>
+            <!-- End Navbar -->
+          </nav>
+          <button type="button" class="sign-in btn btn-outline-primary">
+            <i class="bi bi-door-open"></i>
+            Sign-in
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-xl-2 col-lg-2 left-list-applicants">
+          <h1>
+            Кандидати
+            <span class="text-muted">10</span>
+          </h1>
+          <div class="development-header">
+            <div class="box"></div>
+          </div>
+          <div class="development mt-4">
+            <h4 class="mt-0">Розробка</h4>
+            <ul class="development-list list-unstyled">
+              <li class="item" data-id="1">Javascript / Front-End</li>
+              <li class="item" data-id="2">Java</li>
+              <li class="item" data-id="3">C# / .NET</li>
+              <li class="item" data-id="4">Python</li>
+              <li class="item" data-id="5">PHP</li>
+              <li class="item" data-id="6">Node.js</li>
+              <li class="item" data-id="7">Android</li>
+              <li class="item" data-id="8">iOS</li>
+              <li class="item" data-id="9">C / C++ / Embedded</li>
+              <li class="item" data-id="10">Ruby</li>
+              <li class="item" data-id="11">Scala</li>
+              <li class="item" data-id="12">Golang</li>
+            </ul>
+          </div>
+
+          <div class="development mt-4">
+            <h4 class="mt-0">Ще технічні</h4>
+            <ul class="development-list list-unstyled">
+              <li class="item" data-id="13">QA Manual</li>
+              <li class="item" data-id="14">QA Automation</li>
+              <li class="item" data-id="15">Design / UI/UX</li>
+              <li class="item" data-id="16">2D/3D Artist / Illustrator</li>
+              <li class="item" data-id="17">Project Manager</li>
+              <li class="item" data-id="18">Product Manager</li>
+              <li class="item" data-id="19">Architect / CTO</li>
+              <li class="item" data-id="20">DevOps</li>
+              <li class="item" data-id="21">Dusiness Analyst</li>
+              <li class="item" data-id="22">Data Analyst</li>
+              <li class="item" data-id="23">Sysadmin</li>
+              <li class="item" data-id="24">Gamedev / Unity</li>
+              <li class="item" data-id="25">SQL / DBA</li>
+              <li class="item" data-id="26">Security</li>
+              <li class="item" data-id="27">Data Engineer</li>
+              <li class="item" data-id="28">Scrum Master / Agile Coach</li>
+            </ul>
+          </div>
+
+          <div class="development mt-4">
+            <h4 class="mt-0">Нетехнічні</h4>
+            <ul class="development-list list-unstyled">
+              <li class="item" data-id="29">Marketing</li>
+              <li class="item" data-id="30">HR</li>
+              <li class="item" data-id="31">Recruiter</li>
+              <li class="item" data-id="32">Customer/Technical Support</li>
+              <li class="item" data-id="33">Sales</li>
+              <li class="item" data-id="34">SEO</li>
+              <li class="item" data-id="35">Technical Writting</li>
+              <li class="item" data-id="36">Lead Generation</li>
+              <li class="item" data-id="37">(Other)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-10 col-lg-10 col-md-12 right-list-applicants">
+          <div class="applicant-header row gap-4">
+            <div class="col-xl-3 col-lg-3">
+              <div class="list-applicant-location row mb-4">
+                <label for="list-applicants-country" class="col-sm-3 col-form-label form-label list-applicants-country">Country</label>
+                <div class="tom-select-custom col-sm-9 col-lg-8">
+                  <select id="list-applicants-country" class="js-select form-select" autocomplete="off" multiple data-hs-tom-select-options='{
+                        "create": true,
+                        "placeholder": "Country"
+                      }'>
+                  </select>
+                </div>
+              </div>
+
+              <div class="list-applicant-location row mb-4 d-flex justify-content-center">
+                <div class="row">
+                  <div class="form-check mb-3 col-xl-6 col-lg-5">
+                    <input type="checkbox" id="formCheck9" class="form-check-input">
+                    <label class="form-check-label" for="formCheck9">Office</label>
+                  </div>
+                  <div class="form-check mb-3 col-xl-6 col-lg-7">
+                    <input type="checkbox" id="formCheck10" class="form-check-input">
+                    <label class="form-check-label" for="formCheck10">Part-time</label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-check mb-3 col-xl-6 col-lg-5">
+                    <input type="checkbox" id="formCheck11" class="form-check-input">
+                    <label class="form-check-label" for="formCheck11">Remote</label>
+                  </div>
+                  <div class="form-check mb-3 col-xl-6 col-lg-7">
+                    <input type="checkbox" id="formCheck12" class="form-check-input">
+                    <label class="form-check-label" for="formCheck12">Relocation</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-5 col-lg-5">
+              <div class="row mb-2">
+                <label class="col-sm-4 col-lg-6 col-form-label form-label">Work expierence month</label>
+
+                <div class="col-sm-3">
+                  <input type="text" class="form-control" name="list-applicants-work" placeholder="0">
+                </div>
+                <div class="col-sm-3">
+                  <input type="text" class="form-control" name="list-applicants-work" placeholder="12">
+                </div>
+              </div>
+
+              <div class="row mb-2">
+                <label for="list-applicants-salary" class="col-sm-4 col-lg-6 col-form-label form-label">Salary Expectations $</label>
+
+                <div class="col-sm-3">
+                  <input type="text" class="form-control" name="list-applicants-work" placeholder="0">
+                </div>
+                <div class="col-sm-3">
+                  <input type="text" class="form-control" name="list-applicants-work" placeholder="400">
+                </div>
+              </div>
+
+              <div class="row mb-2">
+                <label class="col-sm-9 col-lg-8 col-form-label form-label">
+                  Written english level at least
+                </label>
+
+                <div class="col-sm-3 col-lg-4">
+                  <div class="tom-select-custom">
+                    <select class="js-select form-select" autocomplete="off" data-hs-tom-select-options='{
+                        "searchInDropdown": false,
+                        "hidePlaceholderOnSearch": true,
+                      }'>
+                      <option value="">B1</option>
+                      <option value="4">A1</option>
+                      <option value="1">A2</option>
+                      <option value="3">B1</option>
+                      <option value="5">B2</option>
+                      <option value="6">C1</option>
+                      <option value="7">C2</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mb-2">
+                <label class="col-sm-9 col-lg-8 col-form-label form-label">
+                  Verbal english level at least
+                </label>
+
+                <div class="col-sm-3 col-lg-4">
+                  <div class="tom-select-custom">
+                    <select class="js-select form-select" autocomplete="off" data-hs-tom-select-options='{
+                        "searchInDropdown": false,
+                        "hidePlaceholderOnSearch": true
+                      }'>
+                      <option value="">B1</option>
+                      <option value="4">A1</option>
+                      <option value="1">A2</option>
+                      <option value="3">B1</option>
+                      <option value="5">B2</option>
+                      <option value="6">C1</option>
+                      <option value="7">C2</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-3">
+              <div class="form-check mb-1">
+                <input type="checkbox" id="formCheck13" class="form-check-input" checked>
+                <label class="form-check-label" for="formCheck13">Passed Internship</label>
+              </div>
+
+              <div class="form-check mb-1">
+                <input type="checkbox" id="formCheck14" class="form-check-input" checked>
+                <label class="form-check-label" for="formCheck14">Pet-projects</label>
+              </div>
+
+              <div class="row">
+                <div class="mb-3 pet-complexity">
+                  <label class="form-label mt-4 mb-0">Min Pet Project complexity (1-5)</label>
+                  <div class="tom-select-custom col-xl-8 col-lg-8 d-flex align-items-center">
+                    <select class="js-select form-select" autocomplete="off" data-hs-tom-select-options='{
+                                    "searchInDropdown": false,
+                                    "hidePlaceholderOnSearch": true
+                                  }'>
+                      <option value="">3</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                    <i class="bi-question-circle input-hint ms-2" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="" data-bs-original-title="Text text text text Text text text text"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="">
+                <button type="submit" class="col-8 btn btn-primary">Search</button>
+              </div>
+            </div>
+
+          </div>
+          <h1 class="mobile-applicant-quantity">
+            Кандидати
+            <span class="text-muted">10</span>
+          </h1>
+          <div class="card-list-applicant card mt-4 mb-4">
+            <div class="card-list-applicant-header d-flex align-items-center py-2 px-2">
+              <div class="col-xl-5 col-lg-4 col-md-3 col-12">
+                <h2 class="card-title lh-xl applicant-title">.NET developer</h2>
+              </div>
+              <div class="col-xl-7 col-lg-8 col-md-9 col-12">
+                <div class="card-list-applicant-header__time row">
+                  <h5 class="mb-0 col-xl-5 col-lg-6 col-md-5 col-sm-5">Last time available: <span class="text-success">3 days ago</span></h5>
+                  <div class="col-xl-7 col-lg-6 col-md-6 col-sm-6 button-to-interview">
+                    <button type="submit" class="btn btn-outline-primary">Sign in to schedule an interview</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="button-to-interview-mobile">
+                <button type="submit" class="btn btn-outline-primary">Sign in to schedule an interview</button>
+              </div>
+            </div>
+
+            <div class="row px-4">
+              <div class="col-xl-4 col-lg-4 mt-4 mb-6 col-md-12">
+                <h4 class="card-title mb-2">Proven skills</h4>
+                <div class="proven-skills-block">
+                  <div class="row d-flex mb-1">
+                    <div class="col-xl-5 col-lg-5 card-text">
+                      Graduation
+                    </div>
+                    <div class="col-xl-7 col-lg-6 card-text">
+                      Appliced mathematics
+                    </div>
+                  </div>
+
+                  <div class="row d-flex mb-1">
+                    <div class="col-xl-5 col-lg-5 card-text">
+                      Job experience
+                    </div>
+                    <div class="col-xl-7 col-lg-6 card-text">
+                      2 month
+                    </div>
+                  </div>
+
+                  <div class="row d-flex mb-1">
+                    <div class="col-xl-5 col-lg-5 card-text">
+                      Valunteer experience
+                    </div>
+                    <div class="col-xl-7 col-lg-6 card-text">
+                    </div>
+                  </div>
+
+                  <div class="row d-flex mb-1">
+                    <div class="col-xl-5 col-lg-5 card-text">
+                      Verbal English level
+                    </div>
+                    <div class="col-xl-7 col-lg-6 card-text">
+                      -
+                    </div>
+                  </div>
+
+                  <div class="row d-flex mb-1">
+                    <div class="col-xl-5 col-lg-5 card-text">
+                      English certificate
+                    </div>
+                    <div class="col-xl-7 col-lg-6 card-text">
+                      TOEFL
+                    </div>
+                  </div>
+
+                  <div class="row d-flex mb-1">
+                    <div class="col-xl-5 col-lg-5 card-text">
+                      Written english level
+                    </div>
+                    <div class="col-xl-7 col-lg-6 card-text">
+                      B2
+                    </div>
+                  </div>
+
+                  <div class="row d-flex mb-1">
+                    <div class="col-xl-5 col-lg-5 card-text">
+                      Git Portfolio
+                    </div>
+                    <div class="col-xl-7 col-lg-6 card-text">
+
+                    </div>
+                  </div>
+
+                  <div class="row d-flex mb-1">
+                    <div class="col-xl-5 col-lg-5 card-text">
+                      Competitions
+                    </div>
+                    <div class="col-xl-7 col-lg-6 card-text">
+                      IOI 3rd place
+                    </div>
+                  </div>
+
+                  <div class="row d-flex mb-1">
+                    <div class="col-xl-5 col-lg-5 card-text">
+                      Certificates
+                    </div>
+                    <div class="col-xl-7 col-lg-6 card-text">
+                      AWS
+                    </div>
+                  </div>
+
+                  <div class="row d-flex mb-1">
+                    <div class="col-xl-5 col-lg-5 card-text">
+                      Online Courses passed
+                    </div>
+                    <div class="col-xl-7 col-lg-6 card-text">
+                      Udemy .NET Core
+                    </div>
+                  </div>
+
+                  <div class="row d-flex mb-1">
+                    <div class="col-xl-5 col-lg-5 card-text">
+                      Offline Courses passed
+                    </div>
+                    <div class="col-xl-7 col-lg-6 card-text">
+                      EPAM Academy
+                    </div>
+                  </div>
+
+                  <div class="row d-flex mb-1">
+                    <div class="col-xl-5 col-lg-5 card-text">
+                      Internships
+                    </div>
+                    <div class="col-xl-7 col-lg-6 card-text">
+                      EPAM Internships
+                    </div>
+                  </div>
+
+                  <div class="row d-flex mb-1">
+                    <div class="col-xl-5 col-lg-5 card-text">
+                      Specialization
+                    </div>
+                    <div class="col-xl-7 col-lg-6 card-text">
+                      .NET
+                    </div>
+                  </div>
+
+                  <div class="row d-flex mb-1">
+                    <div class="col-xl-5 col-lg-5 card-text">
+                      Skills description
+                    </div>
+                    <div class="col-xl-7 col-lg-6 card-text">
+                      .NET Web stack, Full Stack, JS
+                    </div>
+                  </div>
+
+                  <div class="row d-flex mb-1">
+                    <div class="col-xl-5 col-lg-5 card-text">
+                      Candidate code
+                    </div>
+                    <div class="col-xl-7 col-lg-6 card-text">
+                      YT001
+                    </div>
+                  </div>
+
+                  <div class="row d-flex">
+                    <div class="col-xl-5 col-lg-5 card-text">
+                      Additional tests
+                    </div>
+                    <div class="col-xl-7 col-lg-6 card-text">
+                      Codility
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex proven-skills-block-mobile">
+                  <div class="mb-2 col-sm-6 col-12 card-text row">
+                    <div class="skills-name col-md-5 col-sm-5 col-6">Graduation</div>
+                    <div class="skills-text col-md-7 col-sm-7 col-6">Appliced mathematics</div>
+                  </div>
+
+                  <div class="mb-2 col-sm-6 card-text row">
+                    <div class="skills-name col-md-5 col-sm-5 col-6">Job experience</div>
+                    <div class="skills-text col-md-7 col-sm-7 col-6">2 month</div>
+                  </div>
+
+                  <div class="mb-2 col-sm-6 card-text row">
+                    <div class="skills-name col-md-5 col-sm-5 col-6">Valunteer experience</div>
+                    <div class="skills-text col-md- col-sm-7" col-6></div>
+                  </div>
+
+                  <div class="mb-2 col-sm-6 card-text row">
+                    <div class="skills-name col-md-5 col-sm-5 col-6">Verbal English level</div>
+                    <div class="skills-text col-md-7 col-sm-7 col-6">-</div>
+                  </div>
+
+                  <div class="mb-2 col-sm-6 card-text row">
+                    <div class="skills-name col-md-5 col-sm-5 col-6">English certificate</div>
+                    <div class="skills-text col-md-7 col-sm-7 col-6">TOEFL</div>
+                  </div>
+
+                  <div class="mb-2 col-sm-6 card-text row">
+                    <div class="skills-name col-md-5 col-sm-5 col-6">Written english level</div>
+                    <div class="skills-text col-md-7 col-sm-7 col-6">B2</div>
+                  </div>
+
+                  <div class="mb-2 col-sm-6 card-text row">
+                    <div class="skills-name col-md-5 col-sm-5 col-6">Git Portfolio</div>
+                    <div class="skills-text col-md- col-sm-7 col-6"></div>
+                  </div>
+
+                  <div class="mb-2 col-sm-6 card-text row">
+                    <div class="skills-name col-md-5 col-sm-5 col-6">Competitions</div>
+                    <div class="skills-text col-md-7 col-sm-7 col-6">IOI 3rd place</div>
+                  </div>
+
+                  <div class="mb-2 col-sm-6 card-text row">
+                    <div class="skills-name col-md-5 col-sm-5 col-6">Certificates</div>
+                    <div class="skills-text col-md-7 col-sm-7 col-6">AWS</div>
+                  </div>
+
+                  <div class="mb-2 col-sm-6 card-text row">
+                    <div class="skills-name col-md-5 col-sm-5 col-6">Online Courses passed</div>
+                    <div class="skills-text col-md-7 col-sm-7 col-6">Udemy .NET Core</div>
+                  </div>
+
+                  <div class="mb-2 col-sm-6 card-text row">
+                    <div class="skills-name col-md-5 col-sm-5 col-6">Offline Courses passed</div>
+                    <div class="skills-text col-md-7 col-sm-7 col-6">EPAM Academy</div>
+                  </div>
+
+                  <div class="mb-2 col-sm-6 card-text row">
+                    <div class="skills-name col-md-5 col-sm-5 col-6">Internships</div>
+                    <div class="skills-text col-md-7 col-sm-7 col-6">EPAM Internships</div>
+                  </div>
+
+                  <div class="mb-2 col-sm-6 card-text row">
+                    <div class="skills-name col-md-5 col-sm-5 col-6">Specialization</div>
+                    <div class="skills-text col-md-7 col-sm-7 col-6">.NET</div>
+                  </div>
+
+                  <div class="mb-2 col-sm-6 card-text row">
+                    <div class="skills-name col-md-5 col-sm-5 col-6">Skills description</div>
+                    <div class="skills-text col-md-7 col-sm-7 col-6">.NET Web stack, Full Stack, JS</div>
+                  </div>
+
+                  <div class="mb-2 col-sm-6 card-text row">
+                    <div class="skills-name col-md-5 col-sm-5 col-6">Candidate code</div>
+                    <div class="skills-text col-md-7 col-sm-7 col-6">YT001</div>
+                  </div>
+
+                  <div class="mb-2 col-sm-6 card-text row">
+                    <div class="skills-name col-md-5 col-sm-5 col-6">Additional tests</div>
+                    <div class="skills-text col-md-7 col-sm-7 col-6">Codility</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="conditions-block col-xl-4 col-lg-4 col-sm-12 col-12 mb-6">
+                <div class="col-xl-9 col-lg-9 col-sm-12 col-12 mt-4">
+                  <h4 class="card-title">Conditions</h4>
+                  <div class="conditions-container">
+                    <div class="conditions-checkbox mb-4 col-lg-8 col-md-3 col-sm-4 col-12">
+                      <div class="form-check mb-2">
+                        <input type="checkbox" id="formCheck15" class="form-check-input" checked>
+                        <label class="form-check-label" for="formCheck15">Office</label>
+                      </div>
+
+                      <div class="form-check mb-2">
+                        <input type="checkbox" id="formCheck16" class="form-check-input" checked>
+                        <label class="form-check-label" for="formCheck16">Part-time</label>
+                      </div>
+
+                      <div class="form-check mb-2">
+                        <input type="checkbox" id="formCheck17" class="form-check-input" checked>
+                        <label class="form-check-label" for="formCheck17">Remote</label>
+                      </div>
+
+                      <div class="form-check mb-2">
+                        <input type="checkbox" id="formCheck18" class="form-check-input" checked>
+                        <label class="form-check-label" for="formCheck18">Relocation</label>
+                      </div>
+                    </div>
+                    <div class="conditions-params col-lg-12 col-md-8 col-sm-8 col-12">
+                      <div class="row mb-1">
+                        <div class="col-xl-8 col-lg-7 col-md-4 col-5">
+                          Citizenship
+                        </div>
+                        <div class="col-xl-4 col-lg-5 col-md-5 col-5">
+                          Ukraine
+                        </div>
+                      </div>
+
+                      <div class="row mb-1">
+                        <div class="col-xl-8 col-lg-7 col-md-4 col-5">
+                          Based in
+                        </div>
+                        <div class="col-xl-4 col-lg-5 col-md-5 col-5">
+                          Poland
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-xl-8 col-lg-7 col-md-4 col-5">
+                          Salary expectations $
+                        </div>
+                        <div class="col-xl-4 col-lg-5 col-md-5 col-5">
+                          400
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="description-block col-xl-4 col-lg-4 mt-4 mb-6">
+                <h4 class="card-title mb-2">Description</h4>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo error, quis harum corrupti voluptatem tenetur quisquam iste ratione at veniam ullam veritatis facilis facere atque modi nisi molestiae eligendi officia optio. Aliquam laboriosam aliquid modi fuga alias ipsam magnam velit.
+                </p>
+                <h4 class="card-title mt-6">Tags</h4>
+                <div class="descritions-tags-block d-flex gap-2 flex-wrap mt-2">
+                  <div>C#</div>
+                  <div>Git</div>
+                  <div>OOP</div>
+                  <div>SQL</div>
+                  <div>SOLID</div>
+                  <div>.NET</div>
+                  <div>Entity Framework</div>
+                  <div>.NET Core</div>
+                  <div>.NET Core</div>
+                  <div>LINQ</div>
+                  <div>ASP.NET</div>
+                  <div>MSSQL</div>
+                  <div>Design Patterns</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pagination-block mt-6 mb-8">
+            <!-- Pagination -->
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" tabindex="-1">Previous</a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- End Pagination -->
+        </div>
+      </div>
+      <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasBottomLabel">
+            <i class="bi bi-filter"></i>
+            Фільтри
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body small">
+          <div class="accordion" id="accordionSpecialization">
+            <div class="accordion">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Specialization
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionSpecialization">
+                <div class="accordion-body">
+                  <div class="development-mobile">
+                    <h4 class="mt-0">Розробка</h4>
+                    <ul class="development-list development-list-mobile list-unstyled">
+                      <li class="item-mobile">Javascript / Front-End</li>
+                      <li class="item-mobile">Java</li>
+                      <li class="item-mobile">C# / .NET</li>
+                      <li class="item-mobile">Python</li>
+                      <li class="item-mobile">PHP</li>
+                      <li class="item-mobile">Node.js</li>
+                      <li class="item-mobile">Android</li>
+                      <li class="item-mobile">iOS</li>
+                      <li class="item-mobile">C / C++ / Embedded</li>
+                      <li class="item-mobile">Ruby</li>
+                      <li class="item-mobile">Scala</li>
+                      <li class="item-mobile">Golang</li>
+                    </ul>
+                  </div>
+
+                  <div class="development-mobile mt-2">
+                    <h4 class="mt-0">Ще технічні</h4>
+                    <ul class="development-list development-list-mobile list-unstyled">
+                      <li class="item-mobile">QA Manual</li>
+                      <li class="item-mobile">QA Automation</li>
+                      <li class="item">Design / UI/UX</li>
+                      <li class="item-mobile">2D/3D Artist / Illustrator</li>
+                      <li class="item">Project Manager</li>
+                      <li class="item-mobile">Product Manager</li>
+                      <li class="item-mobile">Architect / CTO</li>
+                      <li class="item-mobile">DevOps</li>
+                      <li class="item">Dusiness Analyst</li>
+                      <li class="item-mobile">Data Analyst</li>
+                      <li class="item-mobile">Sysadmin</li>
+                      <li class="item-mobile">Gamedev / Unity</li>
+                      <li class="item-mobile">SQL / DBA</li>
+                      <li class="item-mobile">Security</li>
+                      <li class="item-mobile">Data Engineer</li>
+                      <li class="item-mobile">Scrum Master / Agile Coach</li>
+                    </ul>
+                  </div>
+
+                  <div class="development-mobile mt-2">
+                    <h4 class="mt-0">Нетехнічні</h4>
+                    <ul class="development-list development-list-mobile list-unstyled">
+                      <li class="item-mobile">Marketing</li>
+                      <li class="item-mobile">HR</li>
+                      <li class="item-mobile">Recruiter</li>
+                      <li class="item-mobile">Customer/Technical Support</li>
+                      <li class="item-mobile">Sales</li>
+                      <li class="item-mobile">SEO</li>
+                      <li class="item-mobile">Technical Writting</li>
+                      <li class="item-mobile">Lead Generation</li>
+                      <li class="item-mobile">(Other)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion" id="accordionEmployment">
+            <div class="accordion">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Employment
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionEmployment">
+                <div class="accordion-body">
+                  <div class="list-applicant-location-mobile row mb-4 d-flex justify-content-center">
+                    <div class="row">
+                      <div class="form-check mb-1 col-12">
+                        <input type="checkbox" id="formCheck9" class="form-check-input">
+                        <label class="form-check-label" for="formCheck9">Office</label>
+                      </div>
+                      <div class="form-check mb-1 col-12">
+                        <input type="checkbox" id="formCheck10" class="form-check-input">
+                        <label class="form-check-label" for="formCheck10">Part-time</label>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="form-check mb-1 col-12">
+                        <input type="checkbox" id="formCheck11" class="form-check-input">
+                        <label class="form-check-label" for="formCheck11">Remote</label>
+                      </div>
+                      <div class="form-check mb-1 col-12">
+                        <input type="checkbox" id="formCheck12" class="form-check-input">
+                        <label class="form-check-label" for="formCheck12">Relocation</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion" id="accordionWorkAndSalary">
+            <div class="accordion">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Work expirience and Salary Expectations
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionWorkAndSalary">
+                <div class="accordion-body">
+                  <div class="row mb-2">
+                    <label class="col-12 col-sm-6 col-md-4 col-form-label form-label">Work expierence month</label>
+
+                    <div class="col-5 col-sm-3 col-md-3">
+                      <input type="text" class="form-control" name="list-applicants-work" placeholder="0">
+                    </div>
+                    <div class="col-5 col-sm-3 col-md-3">
+                      <input type="text" class="form-control" name="list-applicants-work" placeholder="12">
+                    </div>
+                  </div>
+
+                  <div class="row mb-2">
+                    <label for="list-applicants-salary" class="col-12 col-sm-6 col-md-4 col-form-label form-label">Salary Expectations $</label>
+
+                    <div class="col-5 col-sm-3 col-md-3">
+                      <input type="text" class="form-control" name="list-applicants-work" placeholder="0">
+                    </div>
+                    <div class="col-5 col-sm-3 col-md-3">
+                      <input type="text" class="form-control" name="list-applicants-work" placeholder="400">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion" id="accordionEnglish">
+            <div class="accordion">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  English level
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionEnglish">
+                <div class="accordion-body">
+                  <div class="row mb-2">
+                    <label class="col-9 col-form-label form-label">
+                      Written english level at least
+                    </label>
+
+                    <div class="col-6">
+                      <div class="tom-select-custom">
+                        <select class="js-select form-select" autocomplete="off" data-hs-tom-select-options='{
+                            "searchInDropdown": false,
+                            "hidePlaceholderOnSearch": true,
+                          }'>
+                          <option value="">B1</option>
+                          <option value="4">A1</option>
+                          <option value="1">A2</option>
+                          <option value="3">B1</option>
+                          <option value="5">B2</option>
+                          <option value="6">C1</option>
+                          <option value="7">C2</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row mb-2">
+                    <label class="col-9 col-form-label form-label">
+                      Verbal english level at least
+                    </label>
+                    <div class="col-6">
+                      <div class="tom-select-custom">
+                        <select class="js-select form-select" autocomplete="off" data-hs-tom-select-options='{
+                            "searchInDropdown": false,
+                            "hidePlaceholderOnSearch": true
+                          }'>
+                          <option value="">B1</option>
+                          <option value="4">A1</option>
+                          <option value="1">A2</option>
+                          <option value="3">B1</option>
+                          <option value="5">B2</option>
+                          <option value="6">C1</option>
+                          <option value="7">C2</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion" id="accordionPetProjects">
+            <div class="accordion">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  Internships and Pet-rojects
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionPetProjects">
+                <div class="accordion-body">
+                  <div class="form-check mb-1">
+                    <input type="checkbox" id="formCheck13" class="form-check-input" checked>
+                    <label class="form-check-label" for="formCheck13">Passed Internship</label>
+                  </div>
+
+                  <div class="form-check mb-1">
+                    <input type="checkbox" id="formCheck14" class="form-check-input" checked>
+                    <label class="form-check-label" for="formCheck14">Pet-projects</label>
+                  </div>
+
+                  <div class="row">
+                    <div class="mb-3 pet-complexity">
+                      <label class="form-label mt-4 mb-0">Min Pet Project complexity (1-5)</label>
+                      <div class="tom-select-custom col-6 d-flex align-items-center">
+                        <select class="js-select form-select" autocomplete="off" data-hs-tom-select-options='{
+                                        "searchInDropdown": false,
+                                        "hidePlaceholderOnSearch": true
+                                      }'>
+                          <option value="">3</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                        </select>
+                        <i class="bi-question-circle input-hint ms-2" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="" data-bs-original-title="Text text text text Text text text text"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="offcanvas-footer gap-3">
+            <button type="button" class="btn btn-outline-primary col-5">Throw off</button>
+            <button type="button" class="btn btn-primary col-5">Apply</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="filter-block">
+      <button class="btn btn-outline-primary applicant-mobile-filter" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+        <i class="bi bi-filter"></i>
+        Фільтри
+      </button>
+    </div>
+  </div>
+  <!-- JS Front -->
+  <script src="./assets/js/theme.min.js"></script>
+
+  <!-- JS Menu -->
+  <script src="./assets/js/theme.min.js"></script>
+  <script>
+      (function() {
+        // INITIALIZATION OF MEGA MENU
+        // =======================================================
+        new HSMegaMenu('.js-mega-menu')
+      })();
+    </script>
+
+  <!-- JS Steps -->
+  <script src="./assets/js/theme.min.js"></script>
+  <script>
+      (function() {
+        // INITIALIZATION OF STEP FORM
+        // =======================================================
+        new HSStepForm('.js-step-form', {
+          finish ($el) {
+            const $successMessageTempalte = $el.querySelector('.js-success-message').cloneNode(true)
+    
+            $successMessageTempalte.style.display = 'block'
+    
+            $el.style.display = 'none'
+            $el.parentElement.appendChild($successMessageTempalte)
+          }
+        })
+      })();
+    </script>
+  <!-- JS Front -->
+  <script src="./assets/js/theme.min.js"></script>
+
+  <!-- JS Global Compulsory -->
+  <script src="./assets/js/theme.min.js"></script>
+  <script>
+      (function() {
+        // INITIALIZATION OF SELECT
+        // =======================================================
+        HSCore.components.HSTomSelect.init('.js-select')
+      })();
+    </script>
+
+  <!-- JS add field -->
+  <script src="./assets/js/theme.min.js"></script>
+  <script>
+      (function() {
+        // INITIALIZATION OF ADD FIELD
+        // =======================================================
+        new HSAddField('.js-add-field')
+        new HSAddField('.js-remove-field')
+        HSCore.components.HSTomSelect.init('.js-selects')
+      })();
+    </script>
+
+  <script>
+      // массив для отслеживания выбранных фильтров внутри js
+      let activeItems = [];
+
+      boxItemActive();
+
+      function boxItemActive() {
+        const items = document.querySelectorAll('.item');
+        const box = document.querySelector('.box');
+        console.log(box)
+
+        if( !items.length || !box ) return;
+
+        items.forEach( item => {
+          item.addEventListener('click', () => {
+            const id = item.dataset.id;
+
+            // если фильтр еще не был выбран,
+            // то есть если id только что кликнутого фильтра еще нет в нашем массиве
+            if( !activeItems.includes(id) ) {
+              addItem(item); // добавляем фильтр в html
+              item.classList.add('active'); // выделяем фильтр в списке
+              activeItems.push(id); // добавляем id фильтра в массив
+            }
+          })
+        })
+      }
+
+      function addItem(item) {
+        const box = document.querySelector('.box');
+        if( !box ) return;
+
+        // создаем html элемент для фильтра
+        let boxItem = document.createElement('div');
+        boxItem.classList.add('.box__item');
+        // ! обязательно указываем id фильтра со списка для фильтра в боксе
+        const boxItemContent = 
+          `<div class="box-item" data-box-id="${item.dataset.id}">
+              <span class="box-item__name">${item.textContent}</span>
+              <i class="bi bi-x-circle box-item__remove"></i>
+          </div>`;
+        boxItem.innerHTML = boxItemContent;
+
+        // и добавляем его в бокс
+        box.append(boxItem);
+
+        // обновляем список фильтров, чтобы их можно было удалять
+        removeItem();
+      }
+
+      function removeItem() {
+        const removeBtns = document.querySelectorAll('.box-item__remove');
+        if( !removeBtns.length ) return;
+
+        removeBtns.forEach( btn => {
+          btn.addEventListener('click', () => {
+            const boxItem = btn.closest('.box-item');
+            const boxItemId = boxItem.dataset.boxId;
+
+            // удаляем фильтр из массива фильтров по id
+            activeItems = activeItems.filter( item => item != boxItemId );
+            // убираем выделение фильтра в списке
+            document.querySelector(`[data-id="${boxItemId}"]`).classList.remove('active');
+            // удаляем фильтр из бокса
+            boxItem.remove();
+          })
+        })
+      }
+    </script>
+  <script>
+      const itemsMobile = document.querySelectorAll('.item-mobile');
+
+      itemsMobile.forEach( item => {
+        item.addEventListener('click', () => {
+          console.log(item)
+          item.classList.toggle('active');
+        });
+      });
+    </script>
+</body>
+</html>
