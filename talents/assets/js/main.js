@@ -81,6 +81,13 @@ $('.my').change(function() {
     else $(this).prev().text('');
 });
 
+$('.inp');
+$('.picker').lsxEmojiPicker({
+	twemoji: false,
+	onSelect: function(emoji){
+	  console.log(emoji);
+	}
+  });
 
 
 
@@ -115,7 +122,7 @@ $('.my').change(function() {
   }); */
 
 
-  $(function() {
+ /*  $(function() {
 	// Initializes and creates emoji set from sprite sheet
 	window.emojiPicker = new EmojiPicker({
 	  emojiable_selector: '[data-emojiable=true]',
@@ -126,7 +133,8 @@ $('.my').change(function() {
 	// You may want to delay this step if you have dynamically created input fields that appear later in the loading process
 	// It can be called as many times as necessary; previously converted input fields will not be converted again
 	window.emojiPicker.discover();
-  });
+  }); */
+
 
 
 
