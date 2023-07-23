@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/lib/css/emoji.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Page chat</title>
 </head>
@@ -145,15 +146,21 @@
 
 
                     <div class="chat__footer">
-                        <div class="send__row">
-                            <div class="send__upload"><img src="assets/img/upload.svg" alt=""></div>
+                        <form action="" class="send__row">
+                            <div class="send__upload">
+                                <label for="myfile" class="label"></label>
+                                <input type="file" class="my" id="myfile" name="myfile" onchange="myFunction()" multiple>
+                            </div>
                             <div class="chat__input">
-                                <input type="text" placeholder="Your message">
-                                <div class="send__smile"><img src="assets/img/smile.svg" alt=""></div>
+                                <div class="emoji-picker-container"><input data-emojiable="true" data-emoji-input="unicode" placeholder="Your message" required /></div>
                             </div>
                             <button class="send__button"><img src="assets/img/enter.svg" alt=""></button>
-                        </div>
+                            
+                        </form>
+                        <div id="demo"></div>
                     </div>
+
+                    
 
                 </div>
             </div>
@@ -180,7 +187,11 @@
 
     
 
-    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery-3.7.0.min.js"></script>
+    <script src="assets/lib/js/jquery.emojiarea.min.js"></script>
+    <script src="assets/lib/js/config.min.js"></script>
+    <script src="assets/lib/js/util.js"></script>
+    <script src="assets/lib/js/emoji-picker.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>

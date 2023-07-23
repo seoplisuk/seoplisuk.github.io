@@ -4,7 +4,7 @@
 }
 
 .content__title {
-    font-family: 'Inter', sans-serif;
+    font-family: "Stem Light";
     font-size: 50px;
     margin-bottom: 30px;
     display: flex;
@@ -21,7 +21,7 @@
 .candidates__number {
     font-size: 18px;
     color: $black;
-    font-family: 'Inter', sans-serif;
+    font-family: "Stem Medium";
     background: linear-gradient(white, white) padding-box,
               linear-gradient(to right, #FF5200, #FF00A8) border-box;
     border-radius: 50em;
@@ -90,7 +90,7 @@
 
 
 .filter__name {
-    font-family: 'Inter', sans-serif;
+    font-family: "Stem medium";
     font-size: 16px;
 }
 
@@ -117,7 +117,7 @@
     font-size: 14px;
     color: #949494;
     margin-right: 10px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Stem Medium";
 
     @media screen and (max-width: 768px) {
         margin-bottom: 10px;
@@ -131,7 +131,7 @@
     background:  rgba(242, 101, 34, 0.05);
     color: $black;
     font-size: 14px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Stem Medium";
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -193,7 +193,7 @@
 
 .candidate__title {
     font-size: 20px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Stem Medium";
     color: $black;
 
     @media screen and (max-width: 768px) {
@@ -208,7 +208,7 @@
     padding: 10px 14px;
     font-size: 16px;
     color: $black;
-    font-family: 'Inter', sans-serif;
+    font-family: "Stem Medium";
 
     @media screen and (max-width: 768px) {
         font-size: 20px;
@@ -227,7 +227,7 @@
 .info {
     color: #949494;
     font-size: 14px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Stem Medium";
     display: flex;
     align-items: center;
 
@@ -283,7 +283,7 @@
 
 .skills__name {
     font-size: 14px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Stem";
     font-weight: 400;
     line-height: normal;
     margin-bottom: 20px;
@@ -322,7 +322,7 @@
 .skills__title {
     display: block;
     font-size: 12px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Stem medium";
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
@@ -343,7 +343,7 @@
         display: flex;
         align-items: center;
         font-size: 14px;
-        font-family: 'Inter', sans-serif;
+        font-family: "Stem Medium";
         font-style: normal;
         font-weight: 400;
         line-height: 20px;
@@ -378,7 +378,7 @@
     background: #f6f6f7;
     border-radius: 10px;
     padding: 10px 14px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Stem Medium";
     margin-right: 5px;
     margin-bottom: 5px;
     font-size: 14px;
@@ -407,7 +407,7 @@
     border: 1px solid #f4f4f4;
     border-radius: 30px;
     font-size: 14px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Stem";
     margin-right: 10px;
     transition: 0.5s ease 0s;
     color: $black;
@@ -452,11 +452,11 @@
 
 .candidate__left {
     font-size: 12px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Stem medium";
     color: #AFAFAF;
 
     span {
-        font-family: 'Inter', sans-serif;
+        font-family: "Stem medium";
         color: $black;
     }
 
@@ -476,7 +476,7 @@
     align-items: center;
     width: max-content;
     text-decoration: none;
-    font-family: 'Inter', sans-serif;
+    font-family: "Stem";
     opacity: 0.6s ease 0s;
     background: linear-gradient(white, white) padding-box,
               linear-gradient(to right, #FF5200, #FF00A8) border-box;
@@ -536,7 +536,7 @@
         li {
             list-style-type: none;
             font-size: 12px;
-            font-family: 'Inter', sans-serif;
+            font-family: "Stem Medium";
             border: 1px solid #f4f4f4;
             margin-right: 5px;
             

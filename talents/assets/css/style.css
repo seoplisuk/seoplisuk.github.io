@@ -41,7 +41,7 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem Medium";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,25 +84,25 @@ select {
 }
 
 @font-face {
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem Medium";
   src: url("../fonts/Stem-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem Bold";
   src: url("../fonts/Stem-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem Light";
   src: url("../fonts/Stem-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem";
   src: url("../fonts/Stem-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
@@ -948,9 +948,8 @@ button.swiper-pagination-bullet {
   color: #1f1f1f;
   -webkit-transition: 0.5s ease 0s;
   transition: 0.5s ease 0s;
-  font-size: 16px;
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
+  font-size: 14px;
+  font-family: "Stem Medium";
 }
 .menu .menu-item .menu-link:hover {
   background: -webkit-linear-gradient(#FF5200, #FF00A8);
@@ -1077,18 +1076,17 @@ button.swiper-pagination-bullet {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 16px;
+  font-size: 14px;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  font-weight: 600;
 }
 .sign-in:hover {
   opacity: 0.7;
 }
 
 .sign-up {
-  font-size: 16px;
+  font-size: 14px;
   text-decoration: none;
   color: #ffffff;
   -webkit-transition: 0.5s ease 0s;
@@ -1101,7 +1099,6 @@ button.swiper-pagination-bullet {
   display: -ms-flexbox;
   display: flex;
   border-radius: 30px;
-  font-weight: 600;
   background: linear-gradient(136deg, #FF5200 0%, #FF00A8 100%);
   border: 1px solid transparent;
 }
@@ -1113,7 +1110,7 @@ button.swiper-pagination-bullet {
   font-size: 14px;
   text-decoration: none;
   color: #1f1f1f;
-  font-family: "Inter", sans-serif;
+  font-family: "Stem Medium";
   border-radius: 100px;
   padding: 20px;
   border: 1px solid transparent;
@@ -1161,7 +1158,7 @@ button.swiper-pagination-bullet {
   font-size: 14px;
   text-decoration: none;
   color: #1f1f1f;
-  font-family: "Inter", sans-serif;
+  font-family: "Stem Medium";
   border-radius: 100px;
   padding: 15px 20px;
   border: 1px solid transparent;
@@ -1185,7 +1182,7 @@ button.swiper-pagination-bullet {
 }
 
 .breadcrumbs {
-  font-family: "Inter", sans-serif;
+  font-family: "Stem Medium";
   font-size: 12px;
   margin-top: 20px;
 }
@@ -1228,7 +1225,7 @@ section {
 
 .section__txt {
   font-size: 14px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem medium";
   color: #1f1f1f;
   background: -webkit-gradient(linear, left top, left bottom, from(white), to(white)) padding-box, -webkit-gradient(linear, left top, right top, from(#FF5200), to(#FF00A8)) border-box;
   background: linear-gradient(white, white) padding-box, linear-gradient(to right, #FF5200, #FF00A8) border-box;
@@ -1246,7 +1243,7 @@ section {
 
 .section__title {
   font-size: 50px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem Light";
   line-height: 110%;
   color: #1f1f1f;
   text-align: center;
@@ -1291,7 +1288,7 @@ section {
   -webkit-transition: 0.5s ease 0s;
   transition: 0.5s ease 0s;
   font-size: 14px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem Medium";
 }
 .section1 .menu .menu-item .menu-link:hover {
   background: -webkit-linear-gradient(#FF5200, #FF00A8);
@@ -1318,7 +1315,7 @@ section {
 
 .section1__txt {
   font-size: 100px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem Light";
   color: #ffffff;
   text-align: center;
 }
@@ -1330,7 +1327,7 @@ section {
 
 .section1__txt2 {
   font-size: 100px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem Light";
   color: #ffffff;
 }
 @media screen and (max-width: 1024px) {
@@ -1381,7 +1378,7 @@ section {
 }
 
 .section1__txt3 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem Medium";
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -1469,7 +1466,7 @@ section {
 
 .section2__title1 {
   font-size: 32px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem Medium";
   display: block;
   margin-bottom: 20px;
   line-height: 110%;
@@ -1482,7 +1479,7 @@ section {
 
 .section2__title2 {
   font-size: 16px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem Medium";
   line-height: 20px;
 }
 
@@ -1544,7 +1541,7 @@ section {
 
 .profile__name {
   font-size: 20px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem Medium";
   margin-bottom: 5px;
   color: #1f1f1f;
 }
@@ -1562,7 +1559,7 @@ section {
 
 .from1 {
   color: #949494;
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem Light";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1582,7 +1579,7 @@ section {
 
 .from2 {
   color: #1f1f1f;
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem";
 }
 
 .section4__block {
@@ -1612,7 +1609,7 @@ section {
 
 .section4__item {
   font-size: 14px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem Medium";
   padding: 10px 14px;
   border-radius: 10px;
   background: #f6f6f7;
@@ -1659,18 +1656,18 @@ section {
 
 .slide__name {
   font-size: 16px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem Medium";
   color: #1f1f1f;
 }
 
 .slide__job {
   font-size: 14px;
   color: #949494;
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem Medium";
 }
 
 .slide__txt {
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem medium";
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -1691,7 +1688,7 @@ section {
 }
 
 .slide__date {
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem medium";
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -1820,7 +1817,7 @@ section {
 
 .inner__title {
   font-size: 50px;
-  font-family: "Inter", sans-serif;
+  font-family: "Stem Light";
   color: #1E212B;
 }
 @media screen and (max-width: 1024px) {
@@ -1845,7 +1842,7 @@ section {
   height: max-content;
   border: 1px solid transparent;
   font-size: 14px;
-  font-family: "Inter", sans-serif;
+  font-family: "Stem Medium";
   text-transform: uppercase;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1872,12 +1869,12 @@ section {
 .inner__txt {
   font-size: 14px;
   line-height: 26px;
-  font-family: "Inter", sans-serif;
+  font-family: "Stem medium";
   color: #1E212B;
 }
 
 .inner__block__title {
-  font-family: "Inter", sans-serif;
+  font-family: "Stem Medium";
   font-size: 20px;
   color: #1E212B;
   margin-bottom: 30px;
@@ -1891,7 +1888,7 @@ section {
 
 .salary__txt1 {
   font-size: 40px;
-  font-family: "Inter", sans-serif;
+  font-family: "Stem Medium";
 }
 .salary__txt1 span {
   font-size: 16px;
@@ -1899,7 +1896,7 @@ section {
 
 .salary__txt2 {
   font-size: 12px;
-  font-family: "Inter", sans-serif;
+  font-family: "Stem Medium";
   color: #949494;
 }
 
@@ -1921,7 +1918,7 @@ section {
 
 .country__span {
   font-size: 12px;
-  font-family: "Inter", sans-serif;
+  font-family: "Stem medium";
   color: #949494;
 }
 
@@ -1933,7 +1930,7 @@ section {
       -ms-flex-align: center;
           align-items: center;
   font-size: 14px;
-  font-family: "Inter", sans-serif;
+  font-family: "Stem medium";
 }
 .country__name::before {
   content: "";
@@ -1947,7 +1944,7 @@ section {
 .condition__title {
   font-size: 16px;
   color: #1f1f1f;
-  font-family: "Inter", sans-serif;
+  font-family: "Stem Medium";
   margin-bottom: 10px;
 }
 
@@ -1962,7 +1959,7 @@ section {
 
 .conditions-item {
   font-size: 14px;
-  font-family: "Inter", sans-serif;
+  font-family: "Stem Medium";
   color: #1f1f1f;
   border-radius: 30px;
   border: 1px solid #f4f4f4;
@@ -2034,7 +2031,7 @@ section {
 
 .sign__title {
   font-size: 20px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem Medium";
   margin-bottom: 20px;
   text-align: center;
   color: #1f1f1f;
@@ -2043,13 +2040,13 @@ section {
 .sign__txt1 {
   font-size: 14px;
   color: #949494;
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem Medium";
   text-align: center;
   margin-bottom: 30px;
 }
 
 .link {
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem";
   text-decoration: none;
   background: -webkit-linear-gradient(#FF5200, #FF00A8);
   -webkit-background-clip: text;
@@ -2070,7 +2067,7 @@ section {
       -ms-flex-align: center;
           align-items: center;
   font-size: 14px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem Medium";
   color: #1f1f1f;
   text-decoration: none;
   border: 1px solid #f4f4f4;
@@ -2177,7 +2174,7 @@ section {
 .im__block {
   border: 1px solid #f4f4f4;
   font-size: 14px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem Medium";
   color: "black";
   border-radius: 20px;
   width: 48%;
@@ -2221,7 +2218,7 @@ input[type=checkbox]:not(:checked) + label {
   width: max-content;
   cursor: pointer;
   font-size: 14px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem Medium";
 }
 input[type=checkbox]:checked + label span,
 input[type=checkbox]:not(:checked) + label span {
@@ -2296,7 +2293,7 @@ input[type=checkbox]:checked + label:after {
   background: #ffffff;
   cursor: pointer;
   font-size: 14px;
-  font-family: "Inter", sans-serif;
+  font-family: "Stem Medium";
 }
 
 .select__arrow {
@@ -2342,8 +2339,8 @@ input[type=checkbox]:checked + label:after {
   padding-left: 25px;
   line-height: 20px;
   cursor: pointer;
-  font-size: 16px;
-  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-family: "Stem Medium";
 }
 .specialization__content input[type=radio]:checked + label:before,
 .specialization__content input[type=radio]:not(:checked) + label:before {
@@ -2398,19 +2395,17 @@ input[type=checkbox]:checked + label:after {
   margin-top: 20px;
   margin-bottom: 10px;
   font-size: 16px;
-  font-family: "Inter", sans-serif;
+  font-family: "Stem medium";
   color: #afafaf;
   padding-left: 10px;
-  font-weight: 600;
 }
 
 .sub__name {
   margin-bottom: 10px;
   font-size: 14px;
-  font-family: "Inter", sans-serif;
+  font-family: "Stem medium";
   color: #afafaf;
   padding-left: 20px;
-  font-weight: 600;
 }
 
 .spec__sub__category {
@@ -2451,7 +2446,7 @@ input[type=checkbox]:checked + label:after {
   width: 100%;
   cursor: pointer;
   font-size: 14px;
-  font-family: "Inter", sans-serif;
+  font-family: "Stem Medium";
 }
 .proof__block input[type=checkbox]:checked + label span,
 .proof__block input[type=checkbox]:not(:checked) + label span {
@@ -2527,7 +2522,7 @@ input {
   padding: 7px 20px;
   outline: none;
   font-size: 14px;
-  font-family: "Inter", sans-serif;
+  font-family: "Stem Medium";
 }
 
 .cond {
@@ -2551,24 +2546,22 @@ input {
   border: 1px solid #f4f4f4;
   border-radius: 30px;
   padding: 15px 10px;
-  font-family: "Inter", sans-serif;
+  font-family: "Stem Medium";
   font-size: 14px;
   color: #afafaf;
   text-align: center;
   cursor: pointer;
   outline: none;
   background: #ffffff;
-  font-weight: 600;
 }
 
 .search {
   border: none;
   border-radius: 30px;
   padding: 15px 24px;
-  font-family: "Inter", sans-serif;
+  font-family: "Stem Medium";
   font-size: 14px;
   color: #ffffff;
-  font-weight: 600;
   text-align: center;
   cursor: pointer;
   outline: none;
@@ -2639,7 +2632,7 @@ input {
   background: -webkit-linear-gradient(#FF5200, #FF00A8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: "Inter", sans-serif;
+  font-family: "Stem Medium";
 }
 
 .mobile__block {
@@ -2751,8 +2744,8 @@ input {
 }
 
 .content__title {
-  font-family: "Inter", sans-serif;
-  font-size: 32px;
+  font-family: "Stem Light";
+  font-size: 50px;
   margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2763,14 +2756,14 @@ input {
 }
 @media screen and (max-width: 768px) {
   .content__title {
-    font-size: 32px;
+    font-size: 40px;
   }
 }
 
 .candidates__number {
-  font-size: 32px;
+  font-size: 18px;
   color: #1f1f1f;
-  font-family: "Inter", sans-serif;
+  font-family: "Stem Medium";
   background: -webkit-gradient(linear, left top, left bottom, from(white), to(white)) padding-box, -webkit-gradient(linear, left top, right top, from(#FF5200), to(#FF00A8)) border-box;
   background: linear-gradient(white, white) padding-box, linear-gradient(to right, #FF5200, #FF00A8) border-box;
   border-radius: 50em;
@@ -2836,9 +2829,8 @@ input {
 }
 
 .filter__name {
-  font-family: "Inter", sans-serif;
+  font-family: "Stem medium";
   font-size: 16px;
-  font-weight: 600;
 }
 
 .filter__tags {
@@ -2877,7 +2869,7 @@ input {
   font-size: 14px;
   color: #949494;
   margin-right: 10px;
-  font-family: "Inter", sans-serif;
+  font-family: "Stem Medium";
 }
 @media screen and (max-width: 768px) {
   .filter__tags__name {
@@ -2891,7 +2883,7 @@ input {
   background: rgba(242, 101, 34, 0.05);
   color: #1f1f1f;
   font-size: 14px;
-  font-family: "Inter", sans-serif;
+  font-family: "Stem Medium";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2967,10 +2959,9 @@ input {
 }
 
 .candidate__title {
-  font-size: 24px;
-  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-family: "Stem Medium";
   color: #1f1f1f;
-  font-weight: 700;
 }
 @media screen and (max-width: 768px) {
   .candidate__title {
@@ -2983,10 +2974,9 @@ input {
   border: 1px solid #f4f4f4;
   border-radius: 30px;
   padding: 10px 14px;
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 16px;
   color: #1f1f1f;
-  font-family: "Inter", sans-serif;
+  font-family: "Stem Medium";
 }
 @media screen and (max-width: 768px) {
   .candidate__price {
@@ -3010,7 +3000,7 @@ input {
 .info {
   color: #949494;
   font-size: 14px;
-  font-family: "Inter", sans-serif;
+  font-family: "Stem Medium";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3049,7 +3039,7 @@ input {
 }
 
 .candidate__description {
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
@@ -3067,7 +3057,7 @@ input {
 
 .skills__name {
   font-size: 14px;
-  font-family: "Inter", sans-serif;
+  font-family: "Stem";
   font-weight: 400;
   line-height: normal;
   margin-bottom: 20px;
@@ -3116,19 +3106,18 @@ input {
 
 .skills__title {
   display: block;
-  font-size: 16px;
-  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-family: "Stem medium";
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
   color: #949494;
-  font-weight: 600;
 }
 
 .skills__txt {
   display: block;
-  font-size: 16px;
-  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-family: "Stem";
   font-style: normal;
   line-height: 26px;
   color: #1f1f1f;
@@ -3141,7 +3130,7 @@ input {
       -ms-flex-align: center;
           align-items: center;
   font-size: 14px;
-  font-family: "Inter", sans-serif;
+  font-family: "Stem Medium";
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
@@ -3178,11 +3167,10 @@ input {
   background: #f6f6f7;
   border-radius: 10px;
   padding: 10px 14px;
-  font-family: "Inter", sans-serif;
+  font-family: "Stem Medium";
   margin-right: 5px;
   margin-bottom: 5px;
   font-size: 14px;
-  font-weight: 600;
 }
 .spec:nth-last-child(1) {
   margin-right: 0;
@@ -3217,7 +3205,7 @@ input {
   border: 1px solid #f4f4f4;
   border-radius: 30px;
   font-size: 14px;
-  font-family: "Inter", sans-serif;
+  font-family: "Stem";
   margin-right: 10px;
   -webkit-transition: 0.5s ease 0s;
   transition: 0.5s ease 0s;
@@ -3277,11 +3265,11 @@ input {
 
 .candidate__left {
   font-size: 12px;
-  font-family: "Inter", sans-serif;
+  font-family: "Stem medium";
   color: #AFAFAF;
 }
 .candidate__left span {
-  font-family: "Inter", sans-serif;
+  font-family: "Stem medium";
   color: #1f1f1f;
 }
 @media screen and (max-width: 1024px) {
@@ -3307,7 +3295,7 @@ input {
   width: -moz-max-content;
   width: max-content;
   text-decoration: none;
-  font-family: "Inter", sans-serif;
+  font-family: "Stem";
   opacity: 0.6s ease 0s;
   background: -webkit-gradient(linear, left top, left bottom, from(white), to(white)) padding-box, -webkit-gradient(linear, left top, right top, from(#FF5200), to(#FF00A8)) border-box;
   background: linear-gradient(white, white) padding-box, linear-gradient(to right, #FF5200, #FF00A8) border-box;
@@ -3379,7 +3367,7 @@ input {
 .pagination__center ul li {
   list-style-type: none;
   font-size: 12px;
-  font-family: "Inter", sans-serif;
+  font-family: "Stem Medium";
   border: 1px solid #f4f4f4;
   margin-right: 5px;
   border-radius: 10px;
@@ -3481,33 +3469,33 @@ input {
   border-radius: 30px;
   font-size: 14px;
   color: #949494;
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem medium";
   background: url(../img/sidebar__search.svg) no-repeat 20px center;
 }
 .chat__search input::-webkit-input-placeholder {
   font-size: 14px;
   color: #949494;
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem medium";
 }
 .chat__search input::-moz-placeholder {
   font-size: 14px;
   color: #949494;
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem medium";
 }
 .chat__search input:-ms-input-placeholder {
   font-size: 14px;
   color: #949494;
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem medium";
 }
 .chat__search input::-ms-input-placeholder {
   font-size: 14px;
   color: #949494;
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem medium";
 }
 .chat__search input::placeholder {
   font-size: 14px;
   color: #949494;
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem medium";
 }
 
 .sidebar__chat__items {
@@ -3556,17 +3544,17 @@ input {
 .chat__item__header .chat__name {
   font-size: 16px;
   color: #1f1f1f;
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem medium";
 }
 .chat__item__header .chat__time {
   font-size: 12px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem medium";
   color: #d9d9d9;
 }
 
 .chat__item__content {
   font-size: 14px;
-  font-family: 'Inter', sans-serif;
+  font-family: "stem medium";
   color: #949494;
 }
 .chat__item__content .chat__who {
@@ -3604,14 +3592,14 @@ input {
 }
 
 .content__left__name {
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem medium";
   font-size: 16px;
   color: #1f1f1f;
 }
 
 .content__left__time {
   font-size: 12px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem medium";
   color: #949494;
 }
 .content__left__time .time {
@@ -3630,33 +3618,33 @@ input {
   border-radius: 30px;
   font-size: 14px;
   color: #949494;
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem medium";
   background: url(../img/content__search.svg) no-repeat 20px center;
 }
 .chat__content__form input::-webkit-input-placeholder {
   font-size: 14px;
   color: #949494;
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem medium";
 }
 .chat__content__form input::-moz-placeholder {
   font-size: 14px;
   color: #949494;
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem medium";
 }
 .chat__content__form input:-ms-input-placeholder {
   font-size: 14px;
   color: #949494;
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem medium";
 }
 .chat__content__form input::-ms-input-placeholder {
   font-size: 14px;
   color: #949494;
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem medium";
 }
 .chat__content__form input::placeholder {
   font-size: 14px;
   color: #949494;
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem medium";
 }
 
 .button__more {
@@ -3683,7 +3671,7 @@ input {
 .screen__date {
   margin-bottom: 20px;
   font-size: 12px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem medium";
   text-align: center;
   color: #949494;
 }
@@ -3704,7 +3692,7 @@ input {
   padding: 15px 20px;
   margin-bottom: 10px;
   font-size: 14px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem medium";
   line-height: 26px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3717,7 +3705,7 @@ input {
 }
 .message__first .message__date {
   font-size: 10px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem medium";
   color: #949494;
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -3745,7 +3733,7 @@ input {
   padding: 15px 20px;
   margin-bottom: 10px;
   font-size: 14px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem medium";
   line-height: 26px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3760,7 +3748,7 @@ input {
 }
 .message__block .message__date {
   font-size: 10px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem medium";
   color: #ffffff;
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -3769,7 +3757,7 @@ input {
 .view {
   font-size: 12px;
   color: #949494;
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem medium";
 }
 
 .chat__footer {
@@ -3874,19 +3862,19 @@ input {
 }
 
 .user__job {
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem";
   text-decoration: none;
   background: -webkit-linear-gradient(#FF5200, #FF00A8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-decoration: none;
   font-size: 10px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem medium";
 }
 
 .user__name {
   font-size: 14px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Stem medium";
   color: #1f1f1f;
 }
 
@@ -3897,6 +3885,96 @@ input {
   .user__arrow {
     display: none;
   }
+}
+
+.emoji-picker-icon {
+  width: 20px;
+  height: 20px;
+  background: url("../img/smile.svg") no-repeat;
+  top: 13px;
+  right: 20px;
+}
+
+.emoji-wysiwyg-editor {
+  border: 1px solid #f4f4f4;
+  border-radius: 30px;
+  outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 20px;
+  font-family: "Stem medium";
+  color: #949494;
+  font-size: 14px;
+  padding: 12px 20px;
+}
+
+.emoji-menu {
+  top: -230px;
+  border: 1px solid #f4f4f4;
+  border-radius: 30px;
+}
+.emoji-menu .emoji-items-wrap {
+  overflow: hidden;
+  overflow-y: scroll;
+  /* Работает в Chrome, Edge и Safari */
+}
+.emoji-menu .emoji-items-wrap::-webkit-scrollbar {
+  width: 2px;
+}
+.emoji-menu .emoji-items-wrap::-webkit-scrollbar-track {
+  background: transparent;
+}
+.emoji-menu .emoji-items-wrap::-webkit-scrollbar-thumb {
+  background: linear-gradient(136deg, #FF5200 0%, #FF00A8 100%);
+}
+
+.emoji-wysiwyg-editor:empty:before {
+  content: attr(placeholder);
+  font-family: "Stem medium";
+  color: #949494;
+  font-size: 14px;
+}
+
+.my {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.label {
+  width: 20px;
+  height: 20px;
+  background: url("../img/upload.svg") no-repeat;
+  display: block;
+  cursor: pointer;
+}
+
+#demo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Stem medium";
+  font-size: 14px;
+  color: #949494;
+  margin-left: 40px;
+}
+#demo div {
+  margin-right: 10px;
+}
+#demo div:nth-last-child(1) {
+  margin-right: 0;
 }
 
 .footer {

@@ -2,7 +2,7 @@
 
 
 
-document.addEventListener('DOMContentLoaded', () => {
+/* document.addEventListener('DOMContentLoaded', () => {
 	const mobile__filter = document.querySelector('.mobile__filter')
     const mobile__block = document.querySelector('.mobile__block')
     const close = document.querySelector('.close')
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
    
 
-})
+}) */
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -47,9 +47,45 @@ document.addEventListener('DOMContentLoaded', () => {
 
 })
 
+function myFunction(){
+	var x = document.getElementById("myfile");
+	var txt = "";
+	if ('files' in x) {
+	  if (x.files.length == 0) {
+		txt = "Select one or more files.";
+	  } else {
+		for (var i = 0; i < x.files.length; i++) {
+		  
+		  var file = x.files[i];
+		  if ('name' in file) {
+			txt += "<div>" + file.name + "</div>";
+		  }
+		  
+		}
+	  }
+	} 
+	else {
+	  if (x.value == "") {
+		txt += "Select one or more files.";
+	  } else {
+		txt += "The files property is not supported by your browser!";
+		txt  += "<br>The path of the selected file: " + x.value; // If the browser does not support the files property, it will return the path of the selected file instead. 
+	  }
+	}
+	document.getElementById("demo").innerHTML = txt;
+  }
 
 
-const swiper = new Swiper('.swiper', {
+$('.my').change(function() {
+    if ($(this).val() != '') $(this).prev().text('');
+    else $(this).prev().text('');
+});
+
+
+
+
+
+/* const swiper = new Swiper('.swiper', {
 	
 
 	slidesPerView: 2,
@@ -76,6 +112,20 @@ const swiper = new Swiper('.swiper', {
   
 	
 	
+  }); */
+
+
+  $(function() {
+	// Initializes and creates emoji set from sprite sheet
+	window.emojiPicker = new EmojiPicker({
+	  emojiable_selector: '[data-emojiable=true]',
+	  assetsPath: 'assets/lib/img/',
+	  
+	});
+	// Finds all elements with `emojiable_selector` and converts them to rich emoji input fields
+	// You may want to delay this step if you have dynamically created input fields that appear later in the loading process
+	// It can be called as many times as necessary; previously converted input fields will not be converted again
+	window.emojiPicker.discover();
   });
 
 
