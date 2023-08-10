@@ -1,0 +1,340 @@
+.service {
+    padding: 80px 0;
+
+    @media (max-width: 992px) {
+        padding: 30px 0;
+    }
+}
+
+.service__title {
+    color: #282828;
+    font-size: 43px;
+    font-family: Montserrat;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    span {
+        &:nth-child(2) {
+            color: #0061aa;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+
+            &::before {
+                content: "";
+                height: 5px;
+                background: #eeeeee;
+                width: 40%;
+                display: block;
+
+                @media (max-width: 992px) {
+                    height: 3px;
+                    margin-right: 10px;
+                }
+            }
+
+            &::after {
+                content: "";
+                height: 5px;
+                background: #eeeeee;
+                width: 40%;
+                display: block;
+
+                @media (max-width: 992px) {
+                    height: 3px;
+                    margin-left: 10px;
+                }
+            }
+
+            
+        }
+    }
+
+    @media (max-width: 992px) {
+        font-size: 23px;
+    }
+}
+
+.service__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px 0;
+
+    @media (max-width: 992px) {
+        margin-bottom: 0px;
+    }
+}
+
+.service__item {
+    border: 2px solid #edf1f4;
+    border-radius: 10px;
+    padding: 25px;
+    text-decoration: none;
+    transition: 0.8s ease 0s;
+    display: flex;
+    width: 49%;
+    margin-bottom: 20px;
+
+    &:hover {
+        img {
+            transform: scale(1.1);
+            transition: 0.8s ease 0s;
+        }
+    }
+
+    .serv__img {
+        max-width: 247px;
+        margin-right: 40px;
+        /* overflow: hidden; */
+        border-radius: 15px;
+        display: flex;
+        overflow: hidden;
+
+        @media (max-width: 992px) {
+            margin-right: 0;
+        }
+    }
+
+    img {
+       
+        border-radius: 15px;
+       
+        object-fit: cover;
+
+        @media (max-width: 1200px) {
+            height: 150px;
+
+        }
+    }
+
+    &:hover {
+        border: 2px solid #1c80cc;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            list-style-type: none;
+            font-size: 14px;
+            color: #373737;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+
+            &::before {
+                content: "";
+                width: 3px;
+                height: 3px;
+                border-radius: 5px;
+                background: #447cb6;
+                margin-right: 5px;
+                display: inline-table;
+            }
+        }
+
+        @media (max-width: 600px) {
+            display: none;
+        }
+    }
+
+
+    @media (max-width: 992px) {
+        flex-direction: column;
+        padding: 10px;
+
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+
+
+}
+
+.service__name {
+    display: flex;
+    align-items: center;
+    font-family: gb;
+    font-size: 16px;
+    color: #0061aa;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+
+    @media (max-width: 992px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 12px;
+    }
+}
+
+
+.service__item__ico {
+    background: linear-gradient(to right, #0061aa 30%, #1d81cd 70%);
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+
+    @media (max-width: 992px) {
+        width: 30px;
+        height: 30px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.s1 {
+    width: 26px;
+    height: 26px;
+    background: #ffffff;
+    mask-image: url(../icons/dental-care2.svg);
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    display: block;
+
+    @media (max-width: 992px) {
+        width: 15px;
+        height: 15px;
+    }
+}
+.s2 {
+    width: 26px;
+    height: 26px;
+    background: #ffffff;
+    mask-image: url(../icons/dental-care.svg);
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    display: block;
+    @media (max-width: 992px) {
+        width: 15px;
+        height: 15px;
+    }
+}
+.s3 {
+    width: 26px;
+    height: 26px;
+    background: #ffffff;
+    mask-image: url(../icons/toothache.svg);
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    display: block;
+    @media (max-width: 992px) {
+        width: 15px;
+        height: 15px;
+    }
+}
+.s4 {
+    width: 26px;
+    height: 26px;
+    background: #ffffff;
+    mask-image: url(../icons/denture.svg);
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    display: block;
+    @media (max-width: 992px) {
+        width: 15px;
+        height: 15px;
+    }
+}
+.s5 {
+    width: 26px;
+    height: 26px;
+    background: #ffffff;
+    mask-image: url(../icons/dental-crown.svg);
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    display: block;
+    @media (max-width: 992px) {
+        width: 15px;
+        height: 15px;
+    }
+}
+.s6 {
+    width: 26px;
+    height: 26px;
+    background: #ffffff;
+    mask-image: url(../icons/braces.svg);
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    display: block;
+    @media (max-width: 992px) {
+        width: 15px;
+        height: 15px;
+    }
+}
+.s7 {
+    width: 26px;
+    height: 26px;
+    background: #ffffff;
+    mask-image: url(../icons/dentistry.svg);
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    display: block;
+    @media (max-width: 992px) {
+        width: 15px;
+        height: 15px;
+    }
+}
+.s8 {
+    width: 26px;
+    height: 26px;
+    background: #ffffff;
+    mask-image: url(../icons/x-ray.svg);
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    display: block;
+    @media (max-width: 992px) {
+        width: 15px;
+        height: 15px;
+    }
+}
+.s9 {
+    width: 26px;
+    height: 26px;
+    background: #ffffff;
+    mask-image: url(../icons/tooth-whitening.svg);
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    display: block;
+    @media (max-width: 992px) {
+        width: 15px;
+        height: 15px;
+    }
+}
+.s10 {
+    width: 26px;
+    height: 26px;
+    background: #ffffff;
+    mask-image: url(../icons/insurance.svg);
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    display: block;
+    @media (max-width: 992px) {
+        width: 15px;
+        height: 15px;
+    }
+}
+.service__subname {
+    font-family: gb;
+    font-size: 14px;
+    color: #2a2a2a;
+    margin-bottom: 20px;
+
+    @media (max-width: 600px) {
+        display: none;
+    }
+}

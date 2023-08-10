@@ -1,0 +1,115 @@
+.contacts {
+    padding: 60px 0;
+    
+    @media (max-width: 992px) {
+        padding: 30px 0;
+    }
+}
+
+.contacts__row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contacts__left {
+    width: 30%;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+}
+.contacts__right {
+    width: 65%;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        display: none;
+       
+    }
+}
+
+.mobile__map {
+    display: none;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        display: block;
+       
+    }
+}
+
+.contacts__title {
+    font-size: 41px;
+    font-family: Montserrat;
+    font-weight: 600;
+    color: #282828;
+    margin-bottom: 50px;
+
+    @media (max-width: 992px) {
+        font-size: 23px;
+    }
+}
+
+.contacts__block {
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.cont__ico {
+    width: 15px;
+    height: 15px;
+    background: #282828;
+    display: block;
+    margin-right: 10px;
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    position: relative;
+    top: 2px;
+}
+
+.i1 {
+    mask-image: url(../icons/call.svg);
+}
+.i2 {
+    mask-image: url(../icons/maps-and-flags.svg);
+}
+.i3 {
+    mask-image: url(../icons/mail.svg);
+}
+.i4 {
+    mask-image: url(../icons/clock.svg);
+}
+
+.contacts__content {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    font-family: Montserrat;
+    color: #282828;
+
+    a {
+        color: #282828;
+        text-decoration: none;
+    }
+}
+
+.cont__name {
+    font-weight: bold;
+}
+
+.zapis {
+    .btn__order {
+        width: 203px;
+        padding: 16px 0px;
+        text-transform: uppercase;
+        margin-left: 25px;
+    }
+}
+
+.ymaps#ymaps1622477116219934982 {
+    @media (max-width: 768px) {
+        height: 300px !important;
+    }
+}

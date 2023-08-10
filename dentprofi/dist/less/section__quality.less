@@ -1,0 +1,100 @@
+.quality {
+    padding: 60px 0;
+    overflow: hidden;
+    
+
+    @media (max-width: 992px) {
+        padding-top: 30px;
+    }
+}
+
+
+.quality__row {
+    display: flex;
+    justify-content: space-around;
+
+    @media (max-width: 992px) {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+.quality__item {
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: 992px) {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+.quality__img {
+    width: 126px;
+    height: 126px;
+    border-radius: 150px;
+    background: #f6f9fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.c1 {
+    mask-image: url(../icons/dentist.svg);
+    mask-size: cover;
+    mask-repeat: no-repeat;
+}
+.c2 {
+    mask-image: url(../icons/dentist-chair.svg);
+    mask-size: cover;
+    mask-repeat: no-repeat;
+}
+.c3 {
+    mask-image: url(../icons/tooth.svg);
+    mask-size: cover;
+    mask-repeat: no-repeat;
+}
+
+.quality__ico {
+    width: 51px;
+    height: 51px;
+    
+    display: block;
+    background: #0264ac;
+}
+
+.quality__name {
+    font-size: 15px;
+    line-height: 25px;
+    color: #282828;
+    text-align: center;
+}
+
+.quality__number {
+    width: 46px;
+    height: 46px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    position: absolute;
+    top: 0;
+    left: -23px;
+
+    span {
+        width: 36px;
+        height: 36px;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        font-size: 15px;
+        background: #0061aa;
+    }
+}

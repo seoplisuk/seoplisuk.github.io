@@ -1,0 +1,400 @@
+@font-face {
+	font-family: 'gm';
+	src: url('../fonts/GothamPro-Medium.eot');
+	src: local('../fonts/Gotham Pro Medium'), local('../fonts/GothamPro-Medium'),
+		url('../fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro-Medium.woff') format('woff'),
+		url('../fonts/GothamPro-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+	
+}
+@font-face {
+	font-family: 'gb';
+	src: url('../fonts/GothamPro-Bold.eot');
+	src: local('../fonts/Gotham Pro Bold'), local('../fonts/GothamPro-Bold'),
+		url('../fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro-Bold.woff') format('woff'),
+		url('../fonts/GothamPro-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+	
+}
+@font-face {
+	font-family: 'gn';
+	src: url('../fonts/GothamProNarrow-Bold.eot');
+	src: local('../fonts/Gotham Pro Narrow Bold'), local('../fonts/GothamProNarrow-Bold'),
+		url('../fonts/GothamProNarrow-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamProNarrow-Bold.woff') format('woff'),
+		url('../fonts/GothamProNarrow-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+	
+}
+@font-face {
+	font-family: 'gnm';
+	src: url('../fonts/GothamProNarrow-Medium.eot');
+	src: local('../fonts/Gotham Pro Narrow Medium'), local('../fonts/GothamProNarrow-Medium'),
+		url('../fonts/GothamProNarrow-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamProNarrow-Medium.woff') format('woff'),
+		url('../fonts/GothamProNarrow-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+	
+}
+@font-face {
+	font-family: 'gl';
+	src: url('../fonts/GothamPro-Light.eot');
+	src: local('../fonts/Gotham Pro Light'), local('../fonts/GothamPro-Light'),
+		url('../fonts/GothamPro-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro-Light.woff') format('woff'),
+		url('../fonts/GothamPro-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+	
+}
+@font-face {
+	font-family: 'gbl';
+	src: url('../fonts/GothamPro-Black.eot');
+	src: local('../fonts/Gotham Pro Black'), local('../fonts/GothamPro-Black'),
+		url('../fonts/GothamPro-Black.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro-Black.woff') format('woff'),
+		url('../fonts/GothamPro-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+	
+}
+@font-face {
+	font-family: 'gr';
+	src: url('../fonts/GothamPro.eot');
+	src: local('../fonts/Gotham Pro'), local('../fonts/GothamPro'),
+		url('../fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro.woff') format('woff'),
+		url('../fonts/GothamPro.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	
+}
+
+@font-face {
+    font-family: 'mm';
+    src: url('../fonts/16788.woff2') format('woff2'),
+         url('../fonts/16788.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@yellow:#f9da0b;
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  outline: none !important;
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: gr;
+	font-display: swap;
+	font-size: 16px;
+}
+
+.container {
+	max-width: 1240px;
+	width: 100%;
+	margin: auto;
+	position: relative;
+
+	@media (max-width: 1240px) {
+		padding-left: 30px;
+		padding-right: 30px;
+		width: auto;
+	}
+	@media (max-width: 768px) {
+		padding-left: 10px;
+		padding-right: 10px;
+		
+	}
+}
+
+a {
+	color: #0061aa;
+	text-decoration: none;
+
+	&:hover {
+		color: #0061aa;
+	}
+}
+
+.section__main {
+	padding: 60px 0px;
+
+	@media (max-width: 992px) {
+		padding: 30px 0;
+	}
+}
+
+.main__title {
+	font-size: 40px;
+	font-family: Montserrat;
+	font-weight: 900;
+	margin-bottom: 40px;
+
+	@media (max-width: 992px) {
+		font-size: 23px;
+	}
+
+}
+
+.main__txt {
+	border-bottom: 1px solid #d7d7d7;
+	font-size: 15px;
+	color: #252525;
+	padding-bottom: 35px;
+	margin-bottom: 35px
+}
+
+.hystmodal__close {
+	
+
+	&::before {
+		content: "";
+		width: 17px;
+		height: 17px;
+		mask-image: url(../icons/close.svg);
+		mask-size: cover;
+		mask-repeat: no-repeat;
+		background: #ffffff;
+		display: block;
+	}
+	
+	
+	right: -35px;
+
+	@media (max-width: 992px) {
+		right: 15px;
+	}
+}
+
+
+
+
+
+@import "header.less";
+@import "section__services.less";
+@import "section__worth.less";
+@import "section__quality.less";
+@import "section__think.less";
+@import "section__consult.less";
+@import "section__director.less";
+@import "section__spec.less";
+@import "section__advantages.less";
+@import "section__licenze.less";
+@import "section__trust.less";
+@import "section__videos.less";
+@import "section__contacts.less";
+@import "prices.less";
+@import "reviews.less";
+@import "about.less";
+@import "single__page.less";
+@import "footer.less";
+
+
+#myModal1 {
+	border-radius: 10px;
+
+	.hystmodal__window {
+		
+		width: 450px;
+		max-width: 100%;
+		
+		border-radius: 10px;
+	}
+	
+}
+
+
+.form__zapis {
+    height: 100%;
+    background: url(../img/form.jpg) no-repeat;
+    background-size: cover;
+    border: 5px solid #fff;
+    border-radius: 10px;
+
+	
+
+	.consult__button {
+		width: 100%;
+		margin-bottom: 25px;
+	}
+    
+
+	.form__top {
+		background: rgba(14, 29, 40, 0.5);
+		padding: 35px;
+	}
+
+	.form_t {
+		font-family: Montserrat;
+		font-size: 25px;
+		line-height: 35px;
+		font-weight: 600;
+		color: #ffffff;
+		text-align: center;
+		margin-bottom: 20px
+	}
+
+	.form_t2 {
+		font-size: 12px;
+		text-align: center;
+		color: #94a6b3;
+		font-family: Montserrat;
+		line-height: 21px;
+	}
+
+	.consultation {
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		padding: 35px;
+
+		.consult__block {
+			width: 100%;
+			margin-bottom: 35px;
+			
+		}
+	}
+
+
+	.consult__block {
+        border: none;
+        input {
+            background: transparent;
+        }
+
+        label {
+            color: #ffffff;
+            background: transparent;
+            z-index: 500;
+        }
+
+        ::placeholder {
+            color: #ffffff;
+        }
+    }
+
+    .consult__txt {
+        color: #ffffff;
+		line-height: 20px;
+    }
+    
+
+    .consult__block {
+        position: relative;
+        background-clip: content-box;
+      }
+      
+      .top-border {
+        position: absolute;
+        left: 10px;
+        right: 10px;
+        bottom: -2px;
+        height: 1px;
+        background: #ffffff;
+      }
+    
+      .consult__block:after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        top: -2px;
+        width: calc(50% - 20px);
+        border: 1px solid #ffffff;
+
+        @media (max-width: 992px) {
+            width: calc(29% - 20px);
+        }
+      }
+
+      .consult__block {
+        &:nth-child(2) {
+
+          &::after {
+              content: '';
+              position: absolute;
+              bottom: -2px;
+              top: -2px;
+              width: calc(61% - 20px);
+              border: 1px solid #ffffff;
+
+              @media (max-width: 992px) {
+                width: calc(45% - 20px);
+            }
+            }
+        }
+     }
+
+     .consult__block {
+         &:nth-child(2) {
+            &::after {
+                right: -2px;
+                border-left-width: 0;
+                border-radius: 0 10px 10px 0;
+            }
+        }    
+     }
+
+
+    
+      
+      .consult__block:before {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        top: -2px;
+        width: calc(5% - 0px);
+        border: 1px solid #ffffff;
+      }
+      
+      .consult__block::before {
+        left: -2px;
+        border-right-width: 0;
+        border-radius: 10px 0 0 10px;
+      }
+      
+      .consult__block::after {
+        right: -2px;
+        border-left-width: 0;
+        border-radius: 0 10px 10px 0;
+      }
+      
+      .label {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 50%);
+        width: 30px;
+        height: 30px;
+        border: 1px solid #ffffff;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      
+      .label::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -3px;
+        margin-top: -5px;
+        border-style: solid;
+        border-width: 5px 0 5px 10px;
+        border-color: transparent transparent transparent #ffffff;
+      }
+
+
+}

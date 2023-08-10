@@ -1,0 +1,155 @@
+.director {
+    background: #0061aa;
+   
+    position: relative;
+    clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 10%);
+    padding: 160px 0;
+  
+
+    @media (max-width: 1200px) {
+        padding: 75px 0;
+    }
+
+    @media (max-width: 992px) {
+        padding-bottom: 150px;
+    }
+    
+    
+}
+
+.director__row {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 992px) {
+        flex-direction: column;
+    }
+}
+
+.director__left {
+    width: 48%;
+    position: relative;
+
+    .director__img {
+        position: absolute;
+        top: -95px;
+        z-index: 500;
+
+        @media (max-width: 1240px) {
+
+            top: 35px;
+            img {
+                width: 380px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            position: relative;
+            top: 0;
+            img {
+                width: 200px;
+                position: absolute;
+                bottom: -150px;
+            }
+        }
+    }
+
+    @media (max-width: 992px) {
+        width: 100%;
+        order: 2;
+        
+
+        
+    }
+}
+.director__right {
+    width: 48%;
+    position: relative;
+
+    p {
+        margin-top: 0;
+        margin-bottom: 30px;
+        font-size: 13px;
+        font-family: gm;
+        line-height: 23px;
+        color: #ffffff;
+        font-style: italic;
+    }
+
+    @media (max-width: 992px) {
+        width: 100%;
+        order: 1;
+        padding-top: 50px;
+        margin-bottom: 150px;
+    }
+}
+
+.director__name {
+    color: #ffffff;
+    background: url(../img/director__name.png) no-repeat;
+    width: 345px;
+    height: 107px;
+    background-size: cover;
+    position: absolute;
+    bottom: 70px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-top: 15px;
+
+    span {
+        &:nth-child(1) {
+            font-size: 15px;
+            font-family: gm;
+            margin-bottom: 20px;
+
+            @media (max-width: 992px) {
+                font-size: 10px;
+                margin-bottom: 0px;
+            }
+        }
+
+        &:nth-child(2) {
+            font-size: 13px;
+            font-style: italic;
+
+            @media (max-width: 992px) {
+                font-size: 10px;
+                
+            }
+        }
+    }
+
+    @media (max-width: 992px) {
+        width: 170px;
+        height: auto;
+        background-size: contain;
+        bottom: 26px;
+        left: 133px;
+        padding-left: 25px;
+        padding-top: 10px;
+        padding-bottom: 9px;
+    }
+}
+
+.quote1 {
+    position: absolute;
+    top: -135px;
+    left: -250px;
+
+    @media (max-width: 1240px) {
+        top: -50px;
+    }
+
+}
+.quote2 {
+    position: absolute;
+    bottom: 0;
+    right: -70px;
+
+    @media (max-width: 1600px) {
+        right: 0;
+    }
+    
+}

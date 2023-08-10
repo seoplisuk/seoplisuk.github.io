@@ -1,0 +1,9 @@
+:root {
+    accent-color: lime;
+    
+}
+
+input {
+    width: 30px;
+    background-color: color-contrast(white vs, lightblue, lime, blue);
+}

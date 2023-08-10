@@ -1,0 +1,24 @@
+.card {
+  background: red;
+
+  & h1 {
+    color: blue;
+  }
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+.block {
+  margin-bottom: 300px;
+  min-height: 1080px;
+}

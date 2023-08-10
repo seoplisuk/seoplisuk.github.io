@@ -1,0 +1,125 @@
+.footer__row {
+    padding: 60px 0;
+    border-top: 1px solid #e8e8e8;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .top__socials {
+        margin-bottom: 90px;
+    }
+
+    .cont__ico {
+        background: #0061aa;
+    }
+}
+.footer__item {
+    width: 23%;
+
+    &:nth-child(1) {
+        width: 19%;
+    }
+    &:nth-child(2) {
+        width: 18%;
+    }
+    &:nth-child(3) {
+        width: 28%;
+    }
+    &:nth-child(4) {
+        width: 25%;
+    }
+
+    @media (max-width: 1240px) {
+        &:nth-child(1) {
+            width: 100%;
+            margin-bottom: 25px;
+        }
+    }
+
+    @media (max-width: 992px) {
+        &:nth-child(2) {
+            width: 48%;
+            margin-bottom: 25px;
+        }
+        &:nth-child(3) {
+            width: 48%;
+            margin-bottom: 25px;
+        }
+
+        &:nth-child(4) {
+            width: 100%;
+            margin-bottom: 25px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        &:nth-child(2) {
+            width: 100%;
+        }
+        &:nth-child(3) {
+            width: 100%;
+        }
+    }
+}
+
+.footer__logo {
+    margin-bottom: 50px;
+
+    img {
+        width: 215px;
+        object-fit: cover;
+    }
+}
+
+.item__title {
+    font-family: gbl;
+    color: #1e1e1e;
+    margin-bottom: 35px;
+}
+
+.menu__row {
+    display: flex;
+    
+
+    ul {
+        padding: 0;
+        margin: 0;
+        margin-right: 50px;
+
+        &:nth-child(2) {
+            margin-right: 0;
+        }
+
+        li {
+            list-style-type: none;
+            margin-bottom: 15px;
+
+            a {
+                font-size: 14px;
+                color: #747474;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.footer__copy {
+    font-size: 11px;
+    color: #747474;
+    line-height: 19px;
+}
+
+.online {
+    .btn__order {
+        text-transform: uppercase;
+        padding: 12.5px 0;
+        width: 188px;
+        margin-top: 50px;
+    }
+}
+
+

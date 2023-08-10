@@ -1,0 +1,227 @@
+.consult {
+    padding: 60px 0;
+    overflow: hidden;
+    
+
+    @media (max-width: 992px) {
+        padding-top: 30px;
+    }
+}
+
+.consultation {
+
+    ::placeholder {
+        font-size: 18px;
+        color: #c5c5c5;
+    }
+
+    margin-top: 75px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .consult__block {
+        width: 31%;
+        position: relative;
+        border: 1px solid #000000;
+        border-radius: 10px;
+        padding: 0px 30px;
+        display: flex;
+        align-items: center;
+
+        input {
+            border: 0;
+            padding: 20px 0px;
+            width: 100%;
+            font-size: 18px;
+            color: #c5c5c5;
+        }
+
+        label {
+            font-size: 15px;
+            color: #313131;
+            position: absolute;
+            top: -10px;
+            background: #fff;
+            padding: 0px 5px;
+            left: 25px;
+        }
+
+        @media (max-width: 992px) {
+            width: 280px;
+            margin-bottom: 15px;
+        }
+    }
+
+    .consult__button {
+        width: 31%;
+
+        .btn__order {
+            width: 100%;
+            border: none;
+            padding: 24px 0px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            width: 100%;
+           
+        }
+    }
+
+    @media (max-width: 992px) {
+       margin-top: 30px;
+       flex-direction: column;
+       align-items: center;
+       
+    }
+    
+}
+
+.consult__txt {
+    text-align: center;
+    color: #959595;
+    font-size: 12px;
+}
+
+.thisback {
+    background: url(../img/thisback.jpg) no-repeat;
+    background-size: cover;
+
+    .worth__title {
+        color: #ffffff;
+
+        span {
+            color: #2f8bd1;
+        }
+    }
+
+    .consult__block {
+        border: none;
+        input {
+            background: transparent;
+        }
+
+        label {
+            color: #ffffff;
+            background: transparent;
+            z-index: 500;
+        }
+
+        ::placeholder {
+            color: #ffffff;
+        }
+    }
+
+    .consult__txt {
+        color: #ffffff;
+    }
+    
+
+    .consult__block {
+        position: relative;
+        background-clip: content-box;
+      }
+      
+      .top-border {
+        position: absolute;
+        left: 10px;
+        right: 10px;
+        bottom: -2px;
+        height: 1px;
+        background: #ffffff;
+      }
+    
+      .consult__block:after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        top: -2px;
+        width: calc(50% - 20px);
+        border: 1px solid #ffffff;
+
+        @media (max-width: 992px) {
+            width: calc(29% - 20px);
+        }
+      }
+
+      .consult__block {
+        &:nth-child(2) {
+
+          &::after {
+              content: '';
+              position: absolute;
+              bottom: -2px;
+              top: -2px;
+              width: calc(61% - 20px);
+              border: 1px solid #ffffff;
+
+              @media (max-width: 992px) {
+                width: calc(45% - 20px);
+            }
+            }
+        }
+     }
+
+     .consult__block {
+         &:nth-child(2) {
+            &::after {
+                right: -2px;
+                border-left-width: 0;
+                border-radius: 0 10px 10px 0;
+            }
+        }    
+     }
+
+
+    
+      
+      .consult__block:before {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        top: -2px;
+        width: calc(5% - 0px);
+        border: 1px solid #ffffff;
+      }
+      
+      .consult__block::before {
+        left: -2px;
+        border-right-width: 0;
+        border-radius: 10px 0 0 10px;
+      }
+      
+      .consult__block::after {
+        right: -2px;
+        border-left-width: 0;
+        border-radius: 0 10px 10px 0;
+      }
+      
+      .label {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 50%);
+        width: 30px;
+        height: 30px;
+        border: 1px solid #ffffff;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      
+      .label::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -3px;
+        margin-top: -5px;
+        border-style: solid;
+        border-width: 5px 0 5px 10px;
+        border-color: transparent transparent transparent #ffffff;
+      }
+    
+}
+
+
