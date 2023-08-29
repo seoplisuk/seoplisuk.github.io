@@ -1,0 +1,151 @@
+.slider {
+    background: linear-gradient(0deg, rgba(212, 227, 236, 0.30) 0%, rgba(247, 249, 251, 0.30) 100%);
+    padding: 80px 0;
+    position: relative;
+
+    @media screen and (max-width: 1024px) {
+        padding: 40px 0;
+    }
+}
+
+.slide__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+    }
+}
+
+.slide__left {
+    width: 27%;
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.slide__center {
+    width: 44%;
+    img {
+        
+        object-fit: contain;
+    }
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+
+        img {
+            max-width: 560px;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+.slide__right {
+    width: 27%;
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+    }
+}
+
+.slide__title {
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    line-height: 130%;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+}
+
+.slide__txt {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 130%;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+}
+
+.slide__button {
+    width: max-content;
+    margin-right: 0;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+}
+
+.product__txt {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 130%; 
+    letter-spacing: 0.24px;
+    margin-bottom: 10px;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 14px;
+    }
+}
+
+.product__name {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 130%; 
+    letter-spacing: 0.24px;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 14px;
+    }
+}
+
+.product__button {
+    border-radius: 5px;
+    border: 2px solid #859BA6;
+    color: #859BA6;
+    text-decoration: none;
+    background: transparent;
+    padding: 13px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+
+    transition: 0.5s ease 0s;
+
+    &:hover {
+        background: #859BA6;
+        color: #fff;
+    }
+
+    @media screen and (max-width: 1024px) {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+}
+
+.swiper-scrollbar {
+    background: #ffffff;
+    @media screen and (max-width: 1024px) {
+        display: none;
+    }
+}
+
+
+
+
