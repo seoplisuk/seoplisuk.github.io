@@ -81,14 +81,19 @@ $('.my').change(function() {
     else $(this).prev().text('');
 });
 
-$('.inp');
-$('.picker').lsxEmojiPicker({
-	twemoji: false,
-	onSelect: function(emoji){
-	  console.log(emoji);
-	}
-  });
 
+$(".button__edit").click(function(e){
+	e.preventDefault();
+	$("body").toggleClass("body__popup");
+});
+
+$(".popup__close").click(function(){
+	$("body").removeClass("body__popup");
+});
+
+
+
+ 
 
 
 
