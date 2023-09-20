@@ -76,7 +76,7 @@ function myFunction(){
   }
 
 
-$('.my').change(function() {
+$('.my, .my2').change(function() {
     if ($(this).val() != '') $(this).prev().text('');
     else $(this).prev().text('');
 });

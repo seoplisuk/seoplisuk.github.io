@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Create a submission (step 5)</title>
+</head>
+<body>
+    
+    <!-- start header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__row">
+                <div class="logo"><a href="/"><img src="assets/img/logo.svg" alt=""></a></div>
+                <div class="top-menu">
+                    <ul data-da=".mobile__menu, 1024" class="menu">
+                        <li class="menu-item"><a href="#" class="menu-link">Main page</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">List of applicant</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Pricing</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div data-da=".mobile__menu, 1024, last" class="header__buttons">
+                    <a href="#" class="sign-in">Sign-in</a>
+                    <a href="#" class="sign-up">Sign-up</a>
+                </div>
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <div class="mobile__menu"></div>
+
+    
+
+    <!-- start content -->
+    <div class="content">
+        <div class="container">
+            
+            <h1 class="s__title">Create a submission</h1>
+
+            <div class="submission__header">
+                <div class="submission__item">
+                    <div class="s__number">1</div>
+                    <div class="s__name">Personal info</div>
+                </div>
+                <div class="submission__item ">
+                    <div class="s__number">2</div>
+                    <div class="s__name">Education & Skills</div>
+                </div>
+                <div class="submission__item ">
+                    <div class="s__number">3</div>
+                    <div class="s__name">Experience</div>
+                </div>
+                <div class="submission__item ">
+                    <div class="s__number">4</div>
+                    <div class="s__name">Portfolio</div>
+                </div>
+                <div class="submission__item s__active">
+                    <div class="s__number">5</div>
+                    <div class="s__name">Work Conditions</div>
+                </div>
+            </div>
+
+            
+
+            <div class="submission__block">
+                <div class="sub__row__title second">Еmployment</div>
+
+                <div class="employment__row">
+                    <div class="submission__check">
+                        <input type="checkbox" name="check10" class="" id="check10">
+                        <label class="l" for="check10"><span>Office</span></label>
+                    </div>
+                    <div class="submission__check">
+                        <input type="checkbox" name="check11" class="" id="check11">
+                        <label class="l" for="check11"><span>Part-time</span></label>
+                    </div>
+                    <div class="submission__check">
+                        <input type="checkbox" name="check12" class="" id="check12">
+                        <label class="l" for="check12"><span>Remote</span></label>
+                    </div>
+                    <div class="submission__check">
+                        <input type="checkbox" name="check14" class="" id="check14">
+                        <label class="l" for="check14"><span>Relocation</span></label>
+                    </div>
+                </div>
+
+                <div class="odd">
+                    <div class="submission__check">
+                        <input type="checkbox" name="check15" class="" id="check15">
+                        <label class="l" for="check15"><span>I have a blue card for EU</span></label>
+                    </div>
+                </div>
+                
+
+            </div>
+
+
+            <div class="submission__block">
+                <div class="sub__row__title second">Salary expectation</div>
+
+                <div class="spec__block">
+                    <div class="row2">
+                        <div class="submission__input">
+                            
+                            <input type="text" id="Specialization" placeholder="400">
+                        </div>
+                        <div class="submission__check">
+                            <input type="checkbox" name="check16" class="" id="check16">
+                            <label class="l" for="check16"><span>Any proposed</span></label>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+            </div>
+
+
+            <div class="submission__block">
+                <div class="sub__row__title second">Your ID card scan</div>
+                <div class="spec__block">
+
+                    <div class="upload__sert">
+                        
+                        <div class="sertificate__up">
+                            <div class="send__upload">
+                                <label for="myfile" class="label">Select a file</label>
+                                <input type="file" class="my" id="myfile" name="myfile" onchange="myFunction()" multiple>
+                            </div>
+                            <div id="demo"></div>
+                        </div>
+                        
+                    </div>
+    
+    
+                   
+
+                </div>
+            </div>
+
+
+            
+            
+
+            <div class="submission__buttons">
+
+                
+
+                <div class="buttons">
+                    <a class="next__button sign-in" href="create__submission__step4.html">Previous step</a>
+                    <a class="next__button sign-up" href="#">Submit for review</a>
+                </div>
+
+            </div>
+
+            
+
+        </div>
+    </div>
+    <!-- end content -->
+
+    <!-- start footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__row">
+                <div class="footer__left"><a href="/"><img width="157" height="48" src="assets/img/footer-logo.svg" alt="footer logo"></a></div>
+                <div class="footer__center">
+                    <ul class="footer__menu">
+                        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Privat policy</a></li>
+                        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Terms for use</a></li>
+                    </ul>
+                </div>
+                <div class="footer__right"><a href="mailto:hello@hireyoungtalants.com" class="footer__mail">hello@hireyoungtalants.com</a></div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+
+    <div class="back">
+        <div class="popup">
+            <div class="popup__close"><img src="assets/img/popup__close.svg" alt=""></div>
+            <div class="popup__title">Edit notes</div>
+            <form action="" class="popup__form">
+                <label for="">Your notes</label>
+                <textarea name="" id="" cols="" rows="" placeholder="email@gmail.com"></textarea>
+                <div class="popup__buttons">
+                    <a href="#" class="popup__cancel">Cancel</a>
+                    <a href="#" class="popup__save">Save changes</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+   
+   
+   
+    <script src="assets/js/jquery-3.7.0.min.js"></script>
+    
+   
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

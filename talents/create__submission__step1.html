@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Create a submission (step 1)</title>
+</head>
+<body>
+    
+    <!-- start header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__row">
+                <div class="logo"><a href="/"><img src="assets/img/logo.svg" alt=""></a></div>
+                <div class="top-menu">
+                    <ul data-da=".mobile__menu, 1024" class="menu">
+                        <li class="menu-item"><a href="#" class="menu-link">Main page</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">List of applicant</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Pricing</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div data-da=".mobile__menu, 1024, last" class="header__buttons">
+                    <a href="#" class="sign-in">Sign-in</a>
+                    <a href="#" class="sign-up">Sign-up</a>
+                </div>
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <div class="mobile__menu"></div>
+
+    
+
+    <!-- start content -->
+    <div class="content">
+        <div class="container">
+            
+            <h1 class="s__title">Create a submission</h1>
+
+            <div class="submission__header">
+                <div class="submission__item s__active">
+                    <div class="s__number">1</div>
+                    <div class="s__name">Personal info</div>
+                </div>
+                <div class="submission__item">
+                    <div class="s__number">2</div>
+                    <div class="s__name">Education & Skills</div>
+                </div>
+                <div class="submission__item">
+                    <div class="s__number">3</div>
+                    <div class="s__name">Experience</div>
+                </div>
+                <div class="submission__item">
+                    <div class="s__number">4</div>
+                    <div class="s__name">Portfolio</div>
+                </div>
+                <div class="submission__item">
+                    <div class="s__number">5</div>
+                    <div class="s__name">Work Conditions</div>
+                </div>
+            </div>
+
+            <div class="submission__block">
+                <div class="submission__row">
+                    <div class="submission__left">
+                        <div class="submission__input">
+                            <label for="first__name">First name</label>
+                            <input type="text" id="first__name" placeholder="Your name">
+                        </div>
+                        <div class="submission__input">
+                            <label for="last__name">Last name</label>
+                            <input type="text" id="last__name" placeholder="Your last name">
+                        </div>
+                    </div>
+                    <div class="submission__right">
+                        <div class="submission__select">
+                            <label for="citizenship__country">Citizenship country</label>
+                            <div class="sel">
+                                <select name="citizenship__country" id="citizenship__country">
+                                    <option value="1">Ukraine</option>
+                                    <option value="2">Spain</option>
+                                    <option value="3">France</option>
+                                </select>
+                            </div>
+                            
+                        </div>
+                        <div class="row2">
+                            <div class="submission__select">
+                                <label for="citizenship__country">Residence country</label>
+                                <div class="sel">
+                                    <select name="residence__country" id="residence__country">
+                                        <option value="1">Ukraine</option>
+                                        <option value="2">Spain</option>
+                                        <option value="3">France</option>
+                                    </select>
+                                </div>
+                                
+                            </div>
+                            <div class="submission__select">
+                                <label for="citizenship__country">Residence city</label>
+                                <div class="sel">
+                                    <select name="residence__city" id="residence__city">
+                                        <option value="1">Kyiv</option>
+                                        <option value="2">Barcelona</option>
+                                        <option value="3">Lviv</option>
+                                    </select>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="submission__buttons">
+
+                <div class="check2 submission__check first__check">
+                    <input type="checkbox" name="check1" class="" id="check1">
+                    <label class="l" for="check1"><span>Agree on <a href="#">Terms and conditions</a></span></label>
+                </div>
+
+                <div class="buttons">
+                    <a class="next__button sign-up" href="create__submission__step2.html">Next</a>
+                </div>
+
+            </div>
+
+            
+
+        </div>
+    </div>
+    <!-- end content -->
+
+    <!-- start footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__row">
+                <div class="footer__left"><a href="/"><img width="157" height="48" src="assets/img/footer-logo.svg" alt="footer logo"></a></div>
+                <div class="footer__center">
+                    <ul class="footer__menu">
+                        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Privat policy</a></li>
+                        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Terms for use</a></li>
+                    </ul>
+                </div>
+                <div class="footer__right"><a href="mailto:hello@hireyoungtalants.com" class="footer__mail">hello@hireyoungtalants.com</a></div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+
+    <div class="back">
+        <div class="popup">
+            <div class="popup__close"><img src="assets/img/popup__close.svg" alt=""></div>
+            <div class="popup__title">Edit notes</div>
+            <form action="" class="popup__form">
+                <label for="">Your notes</label>
+                <textarea name="" id="" cols="" rows="" placeholder="email@gmail.com"></textarea>
+                <div class="popup__buttons">
+                    <a href="#" class="popup__cancel">Cancel</a>
+                    <a href="#" class="popup__save">Save changes</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+   
+   
+   
+    <script src="assets/js/jquery-3.7.0.min.js"></script>
+    
+   
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
