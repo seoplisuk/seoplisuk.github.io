@@ -32,6 +32,10 @@
         background: url("../img/arrow.svg") no-repeat;
         display: block;
         margin-right: 10px;
+
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
     }
 
     &:hover {

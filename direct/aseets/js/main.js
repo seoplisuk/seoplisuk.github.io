@@ -195,6 +195,7 @@ const swiper = new Swiper('.swiper1', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
+	spaceBetween: 20,
 
   
     navigation: {
