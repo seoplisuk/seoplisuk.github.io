@@ -1,0 +1,41 @@
+.section6 {
+    margin-top: 80px;
+
+    @media screen and (max-width: 1024px) {
+        margin-top: 60px;
+    }
+
+
+    .section4__row {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        @media screen and (max-width: 1024px) {
+            grid-template-columns: 1fr;
+        }
+        
+    }
+}
+
+.down {
+    font-size: 16px;
+    font-family: 'sf medium';
+    color: #3B85FE;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    transition: 0.5 ease 0s;
+    &::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background: url("../img/arrow.svg") no-repeat;
+        display: block;
+        margin-right: 10px;
+    }
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+

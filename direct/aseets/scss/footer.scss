@@ -1,0 +1,76 @@
+.footer {
+    background: #000000;
+    height: 60px;
+    margin-top: 140px;
+
+
+    .logo {
+
+        .logo__img {
+            bottom: 60px;
+
+            @media screen and (max-width: 1200px) {
+                bottom: 0px;
+            }
+        }
+
+        .logo__txt {
+            display: block;
+
+            @media screen and (max-width: 1024px) {
+                font-size: 28px;
+            }
+
+            @media screen and (max-width: 360px) {
+                font-size: 20px;
+            }
+        }
+
+        @media screen and (max-width: 1200px) {
+            align-items: flex-end;
+            position: relative;
+            bottom: 27px;
+        }
+    }
+
+
+    @media screen and (max-width: 1200px) {
+        height: auto;
+
+        .header__line {
+            height: auto;
+            flex-direction: column;
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        padding-bottom: 30px;
+    }
+
+    @media screen and (max-width: 768px) {
+
+        .header__actions {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .button__download {
+            display: flex;
+            width: 100%;
+        }
+
+        .download__buttons {
+            margin-top: 40px;
+            width: 100%;
+        }
+
+        .contact__block {
+            margin-bottom: 30px;
+
+            &:nth-last-child(1) {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+}
