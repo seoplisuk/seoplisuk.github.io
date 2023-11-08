@@ -118,6 +118,11 @@ select {
   background: linear-gradient(0deg, #001625 0%, rgba(0, 0, 0, 0) 100%);
   padding: 80px 0;
 }
+@media screen and (max-width: 1024px) {
+  .section1__block {
+    padding: 40px 0;
+  }
+}
 
 .section1__title {
   color: #FFF;

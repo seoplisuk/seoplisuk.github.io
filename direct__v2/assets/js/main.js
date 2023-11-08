@@ -229,7 +229,7 @@ const swiper = new Swiper('.swiper', {
 	breakpoints: {
 		320: {
 			slidesPerView: 1,
-			autoHeight: true,
+			
 			
 		},
 		1024: { 
