@@ -1,0 +1,45 @@
+.section1 {
+    height: 100vh;
+    background: url('../img/section1.jpg') no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.section1__block {
+    background: linear-gradient(0deg, #001625 0%, rgba(0, 0, 0, 0.00) 100%);
+    padding: 80px 0;
+}
+
+.section1__title {
+    color: #FFF;
+    font-size: 66px;
+    font-weight: 700;
+    line-height: 123.2%;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 50px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        font-size: 34px;
+    }
+}
+
+.section1__txt {
+    font-size: 26px;
+    line-height: 140%;
+    color: #ffffff;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 20px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        font-size: 18px;
+    }
+}
+
+

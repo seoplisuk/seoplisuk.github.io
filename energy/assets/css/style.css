@@ -1,0 +1,234 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Century Gothic";
+  src: url("../fonts/CenturyGothic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Century Gothic";
+  src: url("../fonts/CenturyGothic-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Century Gothic";
+  font-weight: 400;
+  background: #001625;
+  height: 100%;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section1 {
+  height: 100vh;
+  background: url("../img/section1.jpg") no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.section1__block {
+  background: -webkit-gradient(linear, left bottom, left top, from(#001625), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(0deg, #001625 0%, rgba(0, 0, 0, 0) 100%);
+  padding: 80px 0;
+}
+
+.section1__title {
+  color: #FFF;
+  font-size: 66px;
+  font-weight: 700;
+  line-height: 123.2%;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .section1__title {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section1__title {
+    font-size: 34px;
+  }
+}
+
+.section1__txt {
+  font-size: 26px;
+  line-height: 140%;
+  color: #ffffff;
+}
+@media screen and (max-width: 1200px) {
+  .section1__txt {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section1__txt {
+    font-size: 18px;
+  }
+}
+
+.section2 {
+  padding: 80px 0;
+  background: url("../img/section2.svg") no-repeat center center;
+  color: #ffffff;
+}
+@media screen and (max-width: 1024px) {
+  .section2 {
+    padding: 40px 0;
+  }
+}
+
+.s2__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (max-width: 1024px) {
+  .s2__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.s2__left {
+  width: 48%;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 177.7%;
+}
+@media screen and (max-width: 1200px) {
+  .s2__left {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .s2__left {
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+.s2__right {
+  width: 48%;
+  font-size: 16px;
+  line-height: 200%;
+}
+.s2__right p {
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 1024px) {
+  .s2__right {
+    width: 100%;
+  }
+}
+
+.s2__title {
+  color: #FFF;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 130.2%;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 1200px) {
+  .s2__title {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .s2__title {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,29 @@
+@font-face {
+	font-family: 'Century Gothic';
+	src: url('../fonts/CenturyGothic.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Century Gothic';
+	src: url('../fonts/CenturyGothic-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+
+@import 'reset';
+
+
+
+.container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+@import 'section1';
+@import 'section2';
