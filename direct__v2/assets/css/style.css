@@ -666,6 +666,7 @@ select {
 
 .slide__content {
   padding: 30px 20px;
+  padding-bottom: 0px;
 }
 
 .slide__title {
