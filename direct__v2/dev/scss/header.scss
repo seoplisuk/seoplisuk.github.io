@@ -19,7 +19,7 @@
 
     @media screen and (max-width: 1024px) {
         font-size: 24px;
-        height: 80px;
+        height: 60px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -133,7 +133,7 @@
 
 .header__active {
     background: #3B85FE;
-    padding: 10px 0;
+    padding: 7.5px 0;
 
     .header__topline {
         display: none;
@@ -151,12 +151,16 @@
 
     }
 
+    .header__bottom {
+        align-items: center;
+    }
+
     .logo {
         order: 1;
         justify-content: flex-start;
         img {
-            width: 60px;
-            height: 60px;
+            width: 45px;
+            height: 45px;
         }
 
         @media screen and (max-width: 1024px) {
@@ -176,6 +180,7 @@
 
     .button__red {
         margin-top: 0;
+        padding: 7px 20px;
         
     }
 
@@ -185,6 +190,10 @@
 
     .menu {
         display: none;
+    }
+
+    @media screen and (max-width: 1024px) {
+        padding: 11.5px 0;
     }
 }
 

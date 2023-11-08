@@ -102,7 +102,7 @@ select {
 @media screen and (max-width: 1024px) {
   .header__topline {
     font-size: 24px;
-    height: 80px;
+    height: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -242,7 +242,7 @@ select {
 
 .header__active {
   background: #3B85FE;
-  padding: 10px 0;
+  padding: 7.5px 0;
 }
 .header__active .header__topline {
   display: none;
@@ -266,6 +266,11 @@ select {
     font-size: 16px;
   }
 }
+.header__active .header__bottom {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .header__active .logo {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
@@ -275,8 +280,8 @@ select {
           justify-content: flex-start;
 }
 .header__active .logo img {
-  width: 60px;
-  height: 60px;
+  width: 45px;
+  height: 45px;
 }
 @media screen and (max-width: 1024px) {
   .header__active .logo {
@@ -299,6 +304,7 @@ select {
 }
 .header__active .button__red {
   margin-top: 0;
+  padding: 7px 20px;
 }
 .header__active .button {
   -webkit-box-ordinal-group: 4;
@@ -307,6 +313,11 @@ select {
 }
 .header__active .menu {
   display: none;
+}
+@media screen and (max-width: 1024px) {
+  .header__active {
+    padding: 11.5px 0;
+  }
 }
 
 .burger {

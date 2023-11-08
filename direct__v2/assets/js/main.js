@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
 let scrollpos = window.scrollY
 
 const header = document.querySelector("header")
-const scrollChange = 1
+const scrollChange = 200
 
 const add_class_on_scroll = () => header.classList.add("header__active")
 const remove_class_on_scroll = () => header.classList.remove("header__active")
