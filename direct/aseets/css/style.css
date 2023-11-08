@@ -418,39 +418,23 @@ select {
 }
 .section1__main::before {
   content: "";
-  width: 740px;
-  height: 740px;
-  border-radius: 740px;
-  background: #FF3B2F;
+  width: 820px;
+  height: 550px;
+  background: url(../img/ellipse1.png);
   display: block;
   position: absolute;
-  left: -320px;
-  bottom: -427px;
-  -webkit-filter: blur(200px);
-          filter: blur(200px);
-}
-@media screen and (max-width: 1024px) {
-  .section1__main::before {
-    left: -522px;
-  }
+  left: 0;
+  bottom: 0;
 }
 .section1__main::after {
   content: "";
-  width: 740px;
-  height: 740px;
-  border-radius: 740px;
-  background: #3B85FE;
+  width: 851px;
+  height: 550px;
+  background: url(../img/ellipse2.png);
   display: block;
   position: absolute;
-  right: -320px;
-  bottom: -427px;
-  -webkit-filter: blur(200px);
-          filter: blur(200px);
-}
-@media screen and (max-width: 1024px) {
-  .section1__main::after {
-    right: -522px;
-  }
+  right: 0px;
+  bottom: 0px;
 }
 @media screen and (max-width: 375px) {
   .section1__main {
@@ -1013,13 +997,21 @@ select {
     margin-top: 60px;
   }
 }
+.section5 .section1__main {
+  background: url("../img/back__slider.jpg") no-repeat center;
+  background-size: cover;
+}
 .section5 .section1__main::before {
   left: 202px;
   top: 418px;
+  background: url(../img/ellipse3.png);
+  display: none;
 }
 .section5 .section1__main::after {
   right: 59px;
   top: 393px;
+  display: none;
+  background: url(../img/ellipse4.png);
 }
 @media screen and (max-width: 1024px) {
   .section5 .section1__main {
@@ -1028,7 +1020,6 @@ select {
     padding-top: 40px;
   }
 }
-
 .slider__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1042,6 +1033,11 @@ select {
           align-items: center;
   position: relative;
   z-index: 1;
+}
+@media screen and (max-width: 375px) {
+  .slider__row {
+    height: auto;
+  }
 }
 
 .slider__left {
@@ -1111,6 +1107,12 @@ select {
     -webkit-box-align: inherit;
         -ms-flex-align: inherit;
             align-items: inherit;
+  }
+}
+@media screen and (max-width: 375px) {
+  .right__row {
+    min-height: 650px;
+    height: auto;
   }
 }
 

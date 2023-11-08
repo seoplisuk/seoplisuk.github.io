@@ -20,34 +20,32 @@
 
     &::before {
         content: "";
-        width: 740px;
-        height: 740px;
-        border-radius: 740px;
-        background: #FF3B2F;
+        width: 820px;
+        height: 550px;
+        background: url(../img/ellipse1.png);
         display: block;
         position: absolute;
-        left: -320px;
-        bottom: -427px;
-        filter: blur(200px);
+        left: 0;
+        bottom: 0;
 
         @media screen and (max-width: 1024px) {
-            left: -522px;
+            
         }
     }
     &::after {
         content: "";
-        width: 740px;
-        height: 740px;
-        border-radius: 740px;
-        background: #3B85FE;
+        width: 851px;
+        height: 550px;
+        
+        background: url(../img/ellipse2.png);
         display: block;
         position: absolute;
-        right: -320px;
-        bottom: -427px;
-        filter: blur(200px);
+        right: 0px;
+        bottom: 0px;
+        
 
         @media screen and (max-width: 1024px) {
-            right: -522px;
+            
         }
     }
 

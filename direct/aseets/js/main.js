@@ -205,16 +205,32 @@ const swiper = new Swiper('.swiper1', {
   
 });
 
-const swiper2 = new Swiper('.swiper2', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-	effect: 'fade',
+if (document.documentElement.clientWidth < 375) {
+	const swiper2 = new Swiper('.swiper2', {
+		direction: 'horizontal',
+		loop: true,
+		autoHeight: true,
+		navigation: {
+		  nextEl: '.swiper-button-next2',
+		  prevEl: '.swiper-button-prev2',
+		},
+		
+	});
+}
 
-  
-    navigation: {
-      nextEl: '.swiper-button-next2',
-      prevEl: '.swiper-button-prev2',
-    },
-  
-});
+if (document.documentElement.clientWidth > 375) {
+	const swiper2 = new Swiper('.swiper2', {
+		direction: 'horizontal',
+		loop: true,
+		effect: 'fade',
+		navigation: {
+		  nextEl: '.swiper-button-next2',
+		  prevEl: '.swiper-button-prev2',
+		},
+		
+	});
+}
+
+
+
+
