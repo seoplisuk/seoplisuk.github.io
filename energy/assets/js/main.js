@@ -170,6 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const burger = document.querySelector('.burger')
     const mobilemenu = document.querySelector('.mobile__menu')
     const menu = document.querySelector('.menu')
+	const close = document.querySelector('.close')
 	
 
     burger.addEventListener('click', () => {
@@ -185,51 +186,78 @@ document.addEventListener('DOMContentLoaded', () => {
         
 	})
 
+	close.addEventListener('click', () => {
+		mobilemenu.classList.remove('mobile__menu__opened')
+		burger.classList.remove('burger__opened')
+        
+	})
+
 
     
 
 })
 
+let scrollpos = window.scrollY
 
-const swiper = new Swiper('.swiper1', {
+const header = document.querySelector("header")
+const scrollChange = 124
+
+const add_class_on_scroll = () => header.classList.add("header__active")
+const remove_class_on_scroll = () => header.classList.remove("header__active")
+
+window.addEventListener('scroll', function() { 
+  scrollpos = window.scrollY;
+
+  if (scrollpos >= scrollChange) { add_class_on_scroll() }
+  else { remove_class_on_scroll() }
+  
+})
+
+$(".question__content").hide();
+$(".question__header").click(function () {
+	
+	$(this).next().slideToggle();
+	$(this).parent().toggleClass('opened');
+});
+
+
+
+
+const swiper = new Swiper('.swiper', {
     // Optional parameters
-    direction: 'horizontal',
+	slidesPerView: 3,
     loop: true,
-	spaceBetween: 20,
+    spaceBetween: 20,
 
   
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+			
+			
+		},
+		1024: { 
+			slidesPerView: 2,
+		},
+		1200: {
+			slidesPerView: 3,
+		}
+	}
   
 });
 
-if (document.documentElement.clientWidth < 375) {
-	const swiper2 = new Swiper('.swiper2', {
-		direction: 'horizontal',
-		loop: true,
-		autoHeight: true,
-		navigation: {
-		  nextEl: '.swiper-button-next2',
-		  prevEl: '.swiper-button-prev2',
-		},
-		
-	});
-}
 
-if (document.documentElement.clientWidth > 375) {
-	const swiper2 = new Swiper('.swiper2', {
-		direction: 'horizontal',
-		loop: true,
-		effect: 'fade',
-		navigation: {
-		  nextEl: '.swiper-button-next2',
-		  prevEl: '.swiper-button-prev2',
-		},
-		
-	});
-}
+
+
+
+
+
+
 
 
 
