@@ -19,17 +19,27 @@
 
 .container {
     width: 100%;
-    max-width: 1300px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 4%;
 }
 
 @import 'header';
 @import 'section1';
 @import 'section2';
-
+@import 'section3';
+@import 'section4';
 @import 'section5';
 @import 'section6';
 @import 'section7';
+@import 'section8';
+@import 'page__about';
+@import 'page__products';
+@import 'page__people';
+@import 'page__privacy-policy';
 
+@import 'page__news';
+@import 'page__esg';
+@import 'page__contacts';
+@import 'page__news__inner';
+@import 'page__capabilities';
 @import 'footer';

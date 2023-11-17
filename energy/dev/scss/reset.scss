@@ -33,6 +33,7 @@ dd {
 
 html {
   height: 100%;
+  
 }
 
 /* Выставляем основные настройки по-умолчанию для body */
@@ -44,7 +45,7 @@ body {
   font-family: 'Century Gothic';
   font-weight: 400;
   background: #001625;
-  
+  overflow-x: hidden;
   height: 100%;
   }
 

@@ -168,6 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	
 	const body = document.querySelector('body')
     const burger = document.querySelector('.burger')
+	const burger2 = document.querySelector('.burger2')
     const mobilemenu = document.querySelector('.mobile__menu')
     const menu = document.querySelector('.menu')
 	const close = document.querySelector('.close')
@@ -189,6 +190,25 @@ document.addEventListener('DOMContentLoaded', () => {
 	close.addEventListener('click', () => {
 		mobilemenu.classList.remove('mobile__menu__opened')
 		burger.classList.remove('burger__opened')
+        
+	})
+
+	burger2.addEventListener('click', () => {
+		mobilemenu.classList.toggle('mobile__menu__opened')
+		burger.classList.toggle('burger__opened')
+		body.classList.toggle('body__opened')
+        
+	})
+
+    menu.addEventListener('click', () => {
+		mobilemenu.classList.remove('mobile__menu__opened')
+		burger2.classList.remove('burger__opened')
+        
+	})
+
+	close.addEventListener('click', () => {
+		mobilemenu.classList.remove('mobile__menu__opened')
+		burger2.classList.remove('burger__opened')
         
 	})
 

@@ -1,9 +1,12 @@
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
+    .logo {
+        display: none;
+    }
+
+    .button {
+        display: none;
+    }
+    
     
 }
 
@@ -15,6 +18,27 @@
     color: #fff;
     font-size: 40px;
     font-weight: 700;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .burger {
+        display: none;
+        width: calc(100% / 3);
+
+       
+    }
     
 
     @media screen and (max-width: 1024px) {
@@ -60,6 +84,7 @@
 
 .topmenu {
     margin-top: 10px;
+    transition: 0.5s ease 0s;
     @media screen and (max-width: 1200px) {
         align-items: center;
     }
@@ -125,6 +150,8 @@
     color: #fff;
     font-size: 30px;
     font-weight: 700;
+
+    
     
     display: none;
     width: calc(100% / 3);
@@ -132,30 +159,38 @@
 }
 
 .header__active {
-    background: #3B85FE;
-    padding: 7.5px 0;
+    
+    
 
     .header__topline {
-        display: none;
-    }
+        padding: 7.5px 0;
 
-    .mobile__txt {
-        display: flex;
-        justify-content: center;
-        order: 2;
-        align-items: center;
+        .burger {
+            display: none;
 
-        @media screen and (max-width: 1024px) {
-            font-size: 16px;
+            @media screen and (max-width: 1200px) {
+                display: flex;
+            }
         }
 
+        .logo {
+            display: block;
+
+            @media screen and (max-width: 1200px) {
+                display: none;
+            }
+        }
     }
+
+    
 
     .header__bottom {
         align-items: center;
     }
 
     .logo {
+        width: calc(100% / 3);
+        display: block;
         order: 1;
         justify-content: flex-start;
         img {
@@ -168,9 +203,22 @@
         }
     }
 
+    .header__txt {
+        order: 2;
+        width: calc(100% / 3);
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 16px;
+        }
+    }
+
     .topmenu {
         margin-top: 0;
         order: 2;
+        transform: translate(0px, -100%);
         display: none;
 
         @media screen and (max-width: 1024px) {
@@ -181,16 +229,25 @@
     .button__red {
         margin-top: 0;
         padding: 7px 20px;
+        width: max-content;
         
     }
 
     .button {
+        display: flex;
         order: 3;
+        width: calc(100% / 3);
     }
 
     .menu {
-        display: none;
+        
+
+        transform: translate(50px, 0);
+
+
     }
+
+
 
     @media screen and (max-width: 1024px) {
         padding: 11.5px 0;
@@ -250,7 +307,8 @@
 
 .mobile__menu {
     position: fixed;
-    width: 80%;
+    width: 100%;
+    top: 0;
     background: #3B85FE;
     height: 100%;
     z-index: 1000;
@@ -263,6 +321,7 @@
         flex-direction: column;
         width: 60%;
         margin: 0 auto;
+        transition: 0.5s ease 0s;
 
         .menu__item {
             margin-right: 0;

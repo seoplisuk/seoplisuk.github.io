@@ -164,38 +164,6 @@ da.init();
 
 
 
-document.addEventListener('DOMContentLoaded', () => {
-	
-	const body = document.querySelector('body')
-    const burger = document.querySelector('.burger')
-    const mobilemenu = document.querySelector('.mobile__menu')
-    const menu = document.querySelector('.menu')
-	const close = document.querySelector('.close')
-	
-
-    burger.addEventListener('click', () => {
-		mobilemenu.classList.toggle('mobile__menu__opened')
-		burger.classList.toggle('burger__opened')
-		body.classList.toggle('body__opened')
-        
-	})
-
-    menu.addEventListener('click', () => {
-		mobilemenu.classList.remove('mobile__menu__opened')
-		burger.classList.remove('burger__opened')
-        
-	})
-
-	close.addEventListener('click', () => {
-		mobilemenu.classList.remove('mobile__menu__opened')
-		burger.classList.remove('burger__opened')
-        
-	})
-
-
-    
-
-})
 
 let scrollpos = window.scrollY
 
@@ -225,9 +193,9 @@ $(".question__header").click(function () {
 
 const swiper = new Swiper('.swiper', {
     // Optional parameters
-	slidesPerView: 3,
+	slidesPerView: 2.4,
     loop: true,
-    spaceBetween: 20,
+    
 
   
     navigation: {
@@ -242,23 +210,167 @@ const swiper = new Swiper('.swiper', {
 			
 		},
 		1024: { 
-			slidesPerView: 2,
+			slidesPerView: 2.4,
 		},
 		1200: {
-			slidesPerView: 3,
+			slidesPerView: 2.4,
 		}
 	}
   
 });
 
 
+const swiper2 = new Swiper('.swiper2', {
+    // Optional parameters
+	slidesPerView: 2.4,
+    loop: true,
+	spaceBetween: 27,
+    
+
+  
+    navigation: {
+      nextEl: '.swiper-button-next2',
+      prevEl: '.swiper-button-prev2',
+    },
+
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+			
+			
+		},
+		1024: { 
+			slidesPerView: 2.4,
+		},
+		1200: {
+			slidesPerView: 2.4,
+		}
+	}
+  
+});
+
+
+const swiper3 = new Swiper('.cap__slider', {
+    // Optional parameters
+	slidesPerView: 3,
+    loop: true,
+	
+	centeredSlides: true,
+	spaceBetween: 51,
+    
+
+  
+    navigation: {
+      nextEl: '.swiper-button-next4',
+      prevEl: '.swiper-button-prev4',
+    },
+
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			
+		},
+		1024: { 
+			slidesPerView: 3,
+			spaceBetween: 30,
+		},
+		1200: {
+			slidesPerView: 3,
+			spaceBetween: 51,
+		}
+	}
+  
+});
+
+
+const swiper4 = new Swiper('.years__row', {
+    // Optional parameters
+	slidesPerView: 3.8,
+    loop: false,
+	spaceBetween: 72,
+	
+
+	breakpoints: {
+		320: {
+			slidesPerView: 1.2,
+			spaceBetween: 30,
+			
+		},
+		1024: { 
+			slidesPerView: 2.2,
+		},
+		1200: {
+			slidesPerView: 3.8,
+			spaceBetween: 72,
+		}
+	}
+
+});
+
+
+
+function openCity(evt, cityName) {
+	// Declare all variables
+	var i, tabcontent, tablinks;
+  
+	// Get all elements with class="tabcontent" and hide them
+	tabcontent = document.getElementsByClassName("tabcontent");
+	for (i = 0; i < tabcontent.length; i++) {
+	  tabcontent[i].style.display = "none";
+	}
+  
+	// Get all elements with class="tablinks" and remove the class "active"
+	tablinks = document.getElementsByClassName("tablinks");
+	for (i = 0; i < tablinks.length; i++) {
+	  tablinks[i].className = tablinks[i].className.replace(" active", "");
+	}
+  
+	// Show the current tab, and add an "active" class to the button that opened the tab
+	document.getElementById(cityName).style.display = "block";
+	evt.currentTarget.className += " active";
+  }
+
+
+  function myFunction(){
+	var x = document.getElementById("myfile");
+	var txt = "";
+	if ('files' in x) {
+	  if (x.files.length == 0) {
+		txt = "Select one or more files.";
+	  } else {
+		for (var i = 0; i < x.files.length; i++) {
+		  
+		  var file = x.files[i];
+		  if ('name' in file) {
+			txt += "<div>" + file.name + "</div>";
+		  }
+		  
+		}
+	  }
+	} 
+	else {
+	  if (x.value == "") {
+		txt += "Select one or more files.";
+	  } else {
+		txt += "The files property is not supported by your browser!";
+		txt  += "<br>The path of the selected file: " + x.value; // If the browser does not support the files property, it will return the path of the selected file instead. 
+	  }
+	}
+	document.getElementById("demo").innerHTML = txt;
+  }
 
 
 
 
-
-
-
+  $(document).ready(function () {
+    $(".content2").hide();
+    $(".show_hide").on("click", function () {
+        var txt = $(".content2").is(':visible') ? 'Read More' : 'Read Less';
+        $(".show_hide").text(txt);
+        $(this).prev('.content2').slideToggle(200);
+    });
+});
 
 
 

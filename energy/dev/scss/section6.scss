@@ -26,6 +26,7 @@
 
 .section6__img {
     width: 45%;
+    height: 781px;
 
     img {
         width: 100%;
@@ -37,6 +38,7 @@
     @media screen and (max-width: 1024px) {
         width: 100%;
         order: 2;
+        height: auto;
 
         img {
             height: 600px;

@@ -84,12 +84,11 @@ select {
   margin: 0 auto;
 }
 
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
+.header .logo {
+  display: none;
+}
+.header .button {
+  display: none;
 }
 
 .header__topline {
@@ -98,6 +97,35 @@ select {
   color: #fff;
   font-size: 40px;
   font-weight: 700;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.header__topline .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.header__topline .burger {
+  display: none;
+  width: 33.3333333333%;
 }
 @media screen and (max-width: 1024px) {
   .header__topline {
@@ -158,6 +186,8 @@ select {
 
 .topmenu {
   margin-top: 10px;
+  -webkit-transition: 0.5s ease 0s;
+  transition: 0.5s ease 0s;
 }
 @media screen and (max-width: 1200px) {
   .topmenu {
@@ -240,30 +270,25 @@ select {
   text-align: center;
 }
 
-.header__active {
-  background: #3B85FE;
+.header__active .header__topline {
   padding: 7.5px 0;
 }
-.header__active .header__topline {
+.header__active .header__topline .burger {
   display: none;
 }
-.header__active .mobile__txt {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (max-width: 1200px) {
+  .header__active .header__topline .burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
-@media screen and (max-width: 1024px) {
-  .header__active .mobile__txt {
-    font-size: 16px;
+.header__active .header__topline .logo {
+  display: block;
+}
+@media screen and (max-width: 1200px) {
+  .header__active .header__topline .logo {
+    display: none;
   }
 }
 .header__active .header__bottom {
@@ -272,6 +297,8 @@ select {
           align-items: center;
 }
 .header__active .logo {
+  width: 33.3333333333%;
+  display: block;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
@@ -288,11 +315,31 @@ select {
     display: none;
   }
 }
+.header__active .header__txt {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  width: 33.3333333333%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 30px;
+}
+@media screen and (max-width: 1024px) {
+  .header__active .header__txt {
+    font-size: 16px;
+  }
+}
 .header__active .topmenu {
   margin-top: 0;
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
+  -webkit-transform: translate(0px, -100%);
+          transform: translate(0px, -100%);
   display: none;
 }
 @media screen and (max-width: 1024px) {
@@ -305,14 +352,22 @@ select {
 .header__active .button__red {
   margin-top: 0;
   padding: 7px 20px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 .header__active .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
           order: 3;
+  width: 33.3333333333%;
 }
 .header__active .menu {
-  display: none;
+  -webkit-transform: translate(50px, 0);
+          transform: translate(50px, 0);
 }
 @media screen and (max-width: 1024px) {
   .header__active {
@@ -374,7 +429,8 @@ select {
 
 .mobile__menu {
   position: fixed;
-  width: 80%;
+  width: 100%;
+  top: 0;
   background: #3B85FE;
   height: 100%;
   z-index: 1000;
@@ -396,6 +452,8 @@ select {
           flex-direction: column;
   width: 60%;
   margin: 0 auto;
+  -webkit-transition: 0.5s ease 0s;
+  transition: 0.5s ease 0s;
 }
 .mobile__menu .menu .menu__item {
   margin-right: 0;
@@ -423,7 +481,7 @@ select {
 .section1 {
   background: url("../img/section1.jpg") no-repeat;
   background-size: cover;
-  padding-top: 179px;
+  padding-top: 60px;
 }
 
 .section1__title {
