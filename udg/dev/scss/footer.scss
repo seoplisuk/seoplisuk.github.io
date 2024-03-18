@@ -1,0 +1,234 @@
+.footer__top {
+    height: 218px;
+    background: $color2;
+    border-radius: 50px 50px 0 0;
+    border-top: 20px solid $color1;
+
+    .container {
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+
+    .footer__row {
+        display: flex;
+        align-items: center;
+        width: 60%;
+        align-self: flex-end;
+        position: relative;
+        top: 35px;
+
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
+    }
+
+
+    @media screen and (max-width: 1024px) {
+        border-radius: 30px 30px 0 0;
+        border-top: 10px solid $color1;
+    }
+}
+
+.footer__bottom {
+    background: $color1;
+    border-radius: 50px 50px 0 0;
+    margin-top: -80px;
+    padding: 100px 0;
+
+    .container {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+    }
+
+    .footer__bottom__block {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (max-width: 1024px) {
+            width: 100%;
+        }
+    }
+
+}
+
+.footer__txt {
+    font-size: 18px;
+    line-height: 22px;
+    color: $color1;
+    font-weight: 700;
+    letter-spacing: -4%;
+    margin-left: 15px;
+}
+
+
+.footer__menu {
+    display: flex;
+    margin-bottom: 124px !important;
+
+    li {
+        margin-right: 50px;
+        
+        &:nth-last-child(1) {
+            margin-right: 0;
+        }
+        a {
+            font-size: 18px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 700;
+            line-height: -4%;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+        margin-bottom: 40px !important;
+        li {
+            margin-right: 0;
+            margin-bottom: 20px;
+
+            &:nth-last-child(1) {
+                margin-bottom: 0;
+            }
+            a {
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+    }
+}
+
+.footer__contacts {
+    margin-bottom: 80px;
+    a {
+        font-size: 18px;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 700;
+        line-height: -4%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 22px;
+
+        &:nth-last-child(1) {
+            margin-bottom: 0;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        @media screen and (max-width: 360px) {
+            font-size: 14px;
+        }
+    }
+
+    img {
+        margin-right: 27px;
+    }
+}
+
+.copyright {
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    opacity: 0.6;
+
+    a {
+        color: #fff;
+
+        &:hover {
+            text-decoration: none;
+        }
+
+    }
+}
+
+.footer__img {
+    position: absolute;
+    left: 0;
+    top: -274px;
+    z-index: 100;
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        img {
+            width: 145px;
+            object-fit: contain;
+        }
+    }
+}
+
+
+.btn-up {
+    width: 89px;
+    height: 89px;
+    border-radius: 100px;
+    border: 2px solid $color2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 0.6s ease 0s;
+    cursor: pointer;
+    background: $color1;
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+
+    &::before {
+        content: '';
+        width: 25px;
+        height: 32px;
+        background: url(../img/up__line.svg);
+        display: block;
+        position: absolute;
+        left: -5px;
+        bottom: -3px;
+    }
+
+    &::after {
+        content: '';
+        width: 24px;
+        height: 22px;
+        mask-image: url(../img/arrow__up.svg);
+        mask-repeat: no-repeat;
+        mask-size: contain;
+        display: block;
+        background: $color2;
+        transition: 0.6s ease 0s;
+    }
+
+    &:hover {
+        background: $color2;
+
+        &::after {
+            content: '';
+            width: 24px;
+            height: 22px;
+            mask-image: url(../img/arrow__up.svg);
+            mask-repeat: no-repeat;
+            mask-size: contain;
+            display: block;
+            background: $color1;
+            transition: 0.6s ease 0s;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        bottom: inherit;
+        top: 0;
+        right: 30px;
+    }
+}
+

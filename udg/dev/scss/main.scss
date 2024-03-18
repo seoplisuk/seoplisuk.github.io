@@ -1,0 +1,28 @@
+@import "reset";
+
+$color1: rgba(1, 61, 49, 1);
+$color2: rgba(241, 255, 70, 1);
+
+.body__opened {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    
+    margin: 0 auto;
+
+    @media screen and (max-width: 1200px) {
+        padding: 0 30px;
+    }
+}
+
+@import "header";
+@import "section";
+@import "section1";
+@import "section2";
+@import "section3";
+@import "section4";
+@import "section5";
+@import "footer";
