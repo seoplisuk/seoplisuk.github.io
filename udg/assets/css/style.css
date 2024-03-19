@@ -51,6 +51,7 @@ body {
           flex-direction: column;
   height: 100%;
   font-family: Arial;
+  padding-top: 171px;
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
@@ -103,14 +104,24 @@ select {
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 50px;
-  position: relative;
+  position: fixed;
   z-index: 100;
+  width: 100%;
+  top: 0;
+  -webkit-transition: top 0.6s ease-in-out;
+  transition: top 0.6s ease-in-out;
+  background: #ffffff;
 }
 @media screen and (max-width: 1024px) {
   .header {
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 50px;
   }
+}
+
+.nav-up {
+  top: -100%;
 }
 
 .top__line {
