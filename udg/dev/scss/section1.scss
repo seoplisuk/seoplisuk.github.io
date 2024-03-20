@@ -162,6 +162,10 @@
         display: inline-flex;
         width: 100%;
     }
+
+    @media screen and (max-width: 1024px) {
+        top: 23px;
+    }
 }
 
 .yellow__block {
