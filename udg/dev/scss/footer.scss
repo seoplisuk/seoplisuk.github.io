@@ -1,5 +1,5 @@
 .footer__top {
-    height: 218px;
+    height: 226px;
     background: $color2;
     border-radius: 50px 50px 0 0;
     border-top: 20px solid $color1;
@@ -13,7 +13,7 @@
     .footer__row {
         display: flex;
         align-items: center;
-        width: 60%;
+        width: 62%;
         align-self: flex-end;
         position: relative;
         top: 35px;
@@ -43,7 +43,7 @@
     }
 
     .footer__bottom__block {
-        width: 60%;
+        width: 62%;
         display: flex;
         flex-direction: column;
 
@@ -59,7 +59,7 @@
     line-height: 22px;
     color: $color1;
     font-weight: 700;
-    letter-spacing: -4%;
+    letter-spacing: -0.04em;
     margin-left: 15px;
 }
 
@@ -69,7 +69,7 @@
     margin-bottom: 124px !important;
 
     li {
-        margin-right: 50px;
+        margin-right: 57px;
         
         &:nth-last-child(1) {
             margin-right: 0;
@@ -79,7 +79,7 @@
             color: #ffffff;
             text-decoration: none;
             font-weight: 700;
-            line-height: -4%;
+            line-height: -0.04em;
 
             &:hover {
                 text-decoration: underline;
@@ -113,10 +113,10 @@
         color: #ffffff;
         text-decoration: none;
         font-weight: 700;
-        line-height: -4%;
+        line-height: -0.04em;
         display: flex;
         align-items: center;
-        margin-bottom: 22px;
+        margin-bottom: 18px;
 
         &:nth-last-child(1) {
             margin-bottom: 0;
@@ -154,7 +154,7 @@
 
 .footer__img {
     position: absolute;
-    left: 0;
+    left: -34px;
     top: -274px;
     z-index: 100;
 
@@ -183,8 +183,8 @@
     cursor: pointer;
     background: $color1;
     position: absolute;
-    bottom: 100px;
-    right: 0;
+    bottom: 60px;
+    right: -3px;
 
     &::before {
         content: '';
@@ -232,3 +232,9 @@
     }
 }
 
+.footer__logo {
+    img {
+        min-width: 97.56px;
+        min-height: 23.51px;
+    }
+}

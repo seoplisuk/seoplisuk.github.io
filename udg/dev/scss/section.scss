@@ -1,5 +1,5 @@
 .section {
-    padding: 125px 50px;
+    padding: 114px 50px;
     display: flex;
     position: relative;
 
@@ -9,17 +9,19 @@
     }
 
     @media screen and (max-width: 1024px) {
-        padding-bottom: 127px;
+        padding-bottom: 75px;
         flex-direction: column;
+        padding-top: 6px;
     }
 }
 
 .est {
-    width: 17.2%;
+    width: 17%;
     color:rgba(1, 61, 49, 1);
     font-size: 12px;
     font-weight: 700;
-    letter-spacing: -2%;
+    letter-spacing: -0.02em;
+    opacity: 0.6;
 
     @media screen and (max-width: 1024px) {
         
@@ -30,7 +32,7 @@
 .section__title {
     font-size: 48px;
     color:rgba(1, 61, 49, 1);
-    letter-spacing: -4%;
+    letter-spacing: -0.04em;
     font-weight: 700;
     line-height: 44px;
     margin-bottom: 50px;
@@ -45,8 +47,9 @@
 .section__txt {
     font-size: 18px;
     line-height: 22px;
-    letter-spacing: -2%;
+    letter-spacing: -0.02em;
     color:rgba(1, 61, 49, 1);
+    opacity: 0.6;
 
     span {
         text-decoration: underline;

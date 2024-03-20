@@ -8,7 +8,7 @@ $color2: rgba(241, 255, 70, 1);
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1206px;
     width: 100%;
     
     margin: 0 auto;
@@ -18,6 +18,8 @@ $color2: rgba(241, 255, 70, 1);
     }
 }
 
+*::-webkit-scrollbar { width: 0; }  
+
 @import "header";
 @import "section";
 @import "section1";
@@ -25,4 +27,6 @@ $color2: rgba(241, 255, 70, 1);
 @import "section3";
 @import "section4";
 @import "section5";
+@import "services__page";
+@import "projects__page";
 @import "footer";

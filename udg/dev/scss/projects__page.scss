@@ -1,0 +1,23 @@
+.projects {
+    border-radius: 50px 50px 0 0;
+    background:rgba(249, 249, 249, 1);
+    padding-bottom: 150px;
+
+    .section4__buttons {
+        margin-top: 100px;
+    }
+    
+}
+
+
+.projects__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    margin-top: -44px;
+
+    @media screen and (max-width: 1024px) {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,21 +1,22 @@
 .rounded {
-    min-height: 580px;
+    
     position: relative;
     background: #ffffff;
+    margin-top: 14px;
 
     @media screen and (max-width: 1024px) {
-        min-height: 420px;
+        
     }
 }
 
 .section1 {
     background:rgba(1, 61, 49, 1);
     border-radius: 50px 50px 0 0;
-    height: 478px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    height: 468px;
+    
+    
+    
+   
     padding: 0 50px;
 
     @media screen and (max-width: 1600px) {
@@ -24,14 +25,14 @@
 
     @media screen and (max-width: 1024px) {
         border-radius: 30px 30px 0 0;
-        height: 317px;
+        height: 339px;
     }
 
 }
 
 .section1__back {
     position: absolute;
-    left: 0;
+    left: 143px;
     right: 0;
     display: flex;
     justify-content: center;
@@ -43,7 +44,7 @@
 
 .scroll {
     position: absolute;
-    top: 193px;
+    top: 181px;
 
     @media screen and (max-width: 1366px) {
         display: none;
@@ -60,7 +61,7 @@
     display: flex;
     align-items: center;
     position: relative;
-    top: 180px;
+    top: 181px;
 
     @media screen and (max-width: 1024px) {
         flex-direction: column;
@@ -71,8 +72,8 @@
 
 .section1__right {
     position: absolute;
-    right: 300px;
-    top: -146px;
+    right: 327px;
+    top: -176px;
 
     @media screen and (max-width: 1600px) {
         right: 150px;
@@ -86,10 +87,10 @@
         margin: 0 auto;
         display: flex;
         justify-content: center;
-        top: -66px;
+        top: -90px;
 
         img {
-            width: 145px;
+            width: 168px;
             object-fit: contain;
             
         }
@@ -105,7 +106,7 @@
     width: max-content;
     color: rgba(1, 61, 49, 1);
     font-size: 18px;
-    letter-spacing: -2%;
+    letter-spacing: -0.02em;
     font-weight: 700;
     text-decoration: none;
     transition: 0.5s ease 0s;
@@ -118,7 +119,7 @@
 
 .section1__txt {
     font-size: 16px;
-    letter-spacing: -2%;
+    letter-spacing: -0.02em;
     line-height: 18px;
     color: rgba(255, 255, 255, 0.5);
     margin-left: 20px;
@@ -130,12 +131,12 @@
 
 .section1__yellow {
     background: rgba(241, 255, 70, 1);
-    height: 160px;
+    height: 192px;
     border-radius: 50px 50px 0 0;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
+    margin-top: -50px;
     padding: 0 50px;
+    width: 100%;
+    
     overflow: hidden;
     overflow-x: scroll;
 
@@ -148,35 +149,13 @@
 
 }
 
-.section__green {
-    background: rgba(1, 61, 49, 1);
-    position: absolute;
-    border-radius: 50px 50px 0 0;
-    height: 50px;
-    width: 100%;
-    bottom: 0;
 
-    @media screen and (max-width: 1024px) {
-        border-radius: 30px 30px 0 0;
-        height: 40px;
-    }
-}   
-
-.section__white {
-    border-radius: 50px 50px 0 0;
-    background: #ffffff;
-    width: 100%;
-    height: 30px;
-    position: absolute;
-    bottom: 0;
-
-}
 
 .yellow__row {
     display: flex;
     justify-content: space-between;
     position: relative;
-    top: 23px;
+    top: 38px;
     align-items: center;
 
     @media screen and (max-width: 1200px) {
@@ -208,7 +187,7 @@
     font-weight: 700;
     font-size: 16px;
     color: rgba(1, 61, 49, 1);
-    letter-spacing: -4%;
+    letter-spacing: -0.04em;
 
     @media screen and (max-width: 1024px) {
         font-size: 11px;

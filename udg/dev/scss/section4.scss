@@ -2,9 +2,10 @@
     padding: 150px 0;
     border-radius: 50px 50px 0 0;
     background: rgba(249, 249, 249, 1);
-    margin-top: -50px;
+    margin-top: -89px;
     position: relative;
     z-index: 1;
+    padding-bottom: 196px;
     
 
     @media screen and (max-width: 1024px) {
@@ -66,7 +67,7 @@
     font-weight: 700;
     color: $color1;
     margin-bottom: 100px;
-    letter-spacing: -4%;
+    letter-spacing: -0.04em;
 
     @media screen and (max-width: 1024px) {
         font-size: 38px;
@@ -121,7 +122,7 @@
     font-size: 20px;
     line-height: 22px;
     font-weight: 700;
-    letter-spacing: -2%;
+    letter-spacing: -0.02em;
     color: $color1;
     text-decoration: none;
     margin-bottom: 20px;
@@ -202,7 +203,7 @@
     width: max-content;
     color: $color2;
     font-size: 18px;
-    letter-spacing: -2%;
+    letter-spacing: -0.02em;
     font-weight: 700;
     text-decoration: none;
     transition: 0.5s ease 0s;
@@ -214,7 +215,7 @@
 }
 
 .section4__buttons {
-    margin-top: 100px;
+    margin-top: 73px;
     display: flex;
     justify-content: flex-end;
 

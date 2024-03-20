@@ -1,0 +1,265 @@
+.services {
+
+    .section {
+        padding-bottom: 127px;
+    }
+
+    
+}
+
+.services__img {
+    background: url('../img/services__img.jpg') no-repeat;
+    min-height: 590px;
+    width: 100%;
+    display: block;
+    border-radius: 50px 50px 0 0;
+    position: relative;
+    z-index: 0;
+    padding: 0 50px;
+
+    @media screen and (max-width: 1024px) {
+        border-radius: 30px 30px 0 0;
+        min-height: 360px;
+        padding: 0 30px;
+    }
+}
+
+.how {
+    padding: 150px 0;
+    border-top: 20px solid $color2;
+    background: #ffffff;
+    border-radius: 50px 50px 0 0;
+    margin-top: -50px;
+    position: relative;
+    z-index: 1;
+
+    @media screen and (max-width: 1024px) {
+        padding: 60px 0;
+        border-top: 10px solid $color2;
+        border-radius: 30px 30px 0 0;
+        margin-top: -30px;
+    }
+}
+
+.how__row {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+    }
+}
+
+.how__left {
+    width: 50%;
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        margin-bottom: 66px;
+    }
+}
+
+.how__right {
+    width: 445px;
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        
+    }
+}
+
+
+
+.how__item {
+    margin-bottom: 70px;
+    display: flex;
+
+    &:nth-last-child(1) {
+        margin-bottom: 0px;
+
+        .item__line {
+        display: none;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        margin-bottom: 40px;
+    }
+}
+
+
+.how__item__left {
+    position: relative;
+}
+
+.item__number {
+    color: $color1;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.04em;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    min-width: 46px;
+    min-height: 46px;
+    background: #fff;
+    position: relative;
+    border: 2px solid rgba(1, 61, 49, 10%);
+    width: max-content;
+    position: absolute;
+    left: -149px;
+
+    @media screen and (max-width: 1600px) {
+        position: relative;
+        left: 0;
+        margin-right: 60px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        
+        margin-right: 20px;
+    }
+    
+    
+    
+
+    &::before {
+        content: "";
+        min-width: 15px;
+        min-height: 19px;
+        background: url(../img/number__grey.svg) no-repeat;
+        display: block;
+        position: absolute;
+        bottom: -5px;
+        left: -5px;
+    }
+}
+
+.item__title {
+    font-size: 48px;
+    line-height: 44px;
+    font-weight: 700;
+    color: $color1;
+    letter-spacing: -0.04em;
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 30px;
+    }
+}
+
+.item__txt1 {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    color: $color1;
+    letter-spacing: -0.04em;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 18px;
+        line-height: 23.4px;
+        margin-bottom: 20px;
+    }
+}
+
+.item__txt2 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 40;
+    color: $color1;
+    letter-spacing: -0.04em;
+    
+    opacity: 0.6;
+}
+
+.txt3 {
+    margin-top: 34px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 40;
+    color:rgba(1, 61, 49, 60%);
+    letter-spacing: -0.04em;
+    font-style: italic;
+    display: flex;
+
+    &::before {
+        content: '';
+        min-width: 6px;
+        min-height: 6px;
+        width: 6px;
+        height: 6px;
+        background: $color1;
+        display: block;
+        margin-right: 30px;
+        position: relative;
+        top: 5px;
+    }
+
+}
+
+.item__line {
+    margin-top: 70px;
+    height: 2px;
+    width: 100%;
+    background: rgba(1, 61, 49, 6%);
+    display: block;
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 14px;
+        height: 2px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $color1;
+    }
+
+    @media screen and (max-width: 1024px) {
+        margin-top: 40px;
+    }
+}
+
+.how__button {
+    display: flex;
+    
+    justify-content: center;
+    background: $color2;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    color: $color1;
+    text-decoration: none;
+    border-radius: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 74px;
+    margin-top: -57px;
+
+    &::before {
+        content: '';
+        min-width: 24px;
+        min-height: 24px;
+        display: block;
+        background: url("../img/how__arrow.svg") no-repeat;
+        margin-right: 20px;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    @media screen and (max-width: 1024px) {
+        font-size: 16px;
+        line-height: 18px;
+        padding: 30px;
+        border-radius: 21px;
+        margin-top: -30px;
+    }
+}

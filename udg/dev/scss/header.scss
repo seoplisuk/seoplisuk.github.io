@@ -1,7 +1,7 @@
 .header {
     padding-left: 50px;
     padding-right: 50px;
-    padding-top: 50px;
+    padding-top: 36px;
     
     position: fixed;
     z-index: 100;
@@ -14,6 +14,7 @@
         padding-left: 30px;
         padding-right: 30px;
         padding-bottom: 50px;
+        padding-top: 69px;
     }
     
 }
@@ -26,7 +27,7 @@
     display: flex;
     align-items: center;
     border-bottom: 2px solid rgba(1, 61, 49, 6%);
-    padding-bottom: 48px;
+    padding-bottom: 36px;
     display: flex;
     align-items: center;
 
@@ -42,7 +43,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 82.8%;
+    width: 83%;
 
     @media screen and (max-width: 1024px) {
         display: none;
@@ -92,10 +93,15 @@
 
 
 .logo {
-    width: 17.2%;
+    width: 17%;
 
     @media screen and (max-width: 1024px) {
         width: auto;
+
+        img {
+            width: 94.58px;
+            height: 30px;
+        }
     }
 }
 
@@ -125,6 +131,7 @@
 
 .top__buttons {
     display: flex;
+    align-items: center;
 
     @media screen and (max-width: 1024px) {
         display: none;
@@ -141,7 +148,7 @@ a.current__lang {
     font-weight: 700;
     display: flex;
     align-items: center;
-    padding: 20px 40px;
+    padding: 19.51px 39.75px;
 }
 
 .pll-parent-menu-item {
@@ -236,7 +243,7 @@ a.current__lang {
                 
                 font-size: 18px;
                 font-weight: 700;
-                letter-spacing: -4%;
+                letter-spacing: -0.04em;
                 cursor: pointer;
                 position: relative;
                 transition: .1s;
@@ -355,14 +362,15 @@ a.current__lang {
 .button3 {
     background: #fff;
     border-radius: 50px;
-    padding: 19.5px 53px;
+    width: 159px;
+    height: 66px;
     display: flex;
-    justify-content: space-between;
-    width: max-content;
+    align-items: center;
+    justify-content: center;
     color: $color1;
     border: 2px solid $color1;
     font-size: 18px;
-    letter-spacing: -2%;
+    letter-spacing: -0.02em;
     font-weight: 700;
     text-decoration: none;
     transition: 0.5s ease 0s;
@@ -409,7 +417,7 @@ a.current__lang {
                     
                     font-size: 12px;
                     font-weight: 700;
-                    letter-spacing: -4%;
+                    letter-spacing: -0.04em;
                     cursor: pointer;
                     position: relative;
                     transition: .1s;
