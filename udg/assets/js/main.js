@@ -68,6 +68,7 @@ if (document.body.clientWidth<1024){
 const swiper2 = new Swiper('.swiper2', {
 	slidesPerView: 3,
 	spaceBetween: 20,
+	
 	loop: true,
 	pagination: {
 		el: '.swiper-pagination2',
@@ -83,6 +84,7 @@ const swiper2 = new Swiper('.swiper2', {
 			
 		},
 		1024: { 
+			
 			slidesPerView: 3,
 		},
 		
