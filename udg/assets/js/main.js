@@ -91,6 +91,19 @@ const swiper2 = new Swiper('.swiper2', {
 	}
 });
 
+/* if (document.body.clientWidth<1024){
+	const swiper3 = new Swiper('.swiper3', {
+		slidesPerView: 1,
+		spaceBetween: 20,
+		centeredSlides: false,
+		loop: true,
+		pagination: {
+			el: '.swiper-pagination3',
+		},
+		
+	});
+} */
+
 const btnUp = {
 	el: document.querySelector('.btn-up'),
 	show() {

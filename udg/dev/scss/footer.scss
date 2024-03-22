@@ -152,6 +152,7 @@
     position: absolute;
     bottom: 60px;
     right: -3px;
+    z-index: 500;
 
     &::before {
         content: '';
@@ -290,6 +291,13 @@
                             height: 24px;
                             background: url(../img/arrow__right.svg);
                             display: block;
+                        }
+
+                        @media screen and (max-width: 1024px) {
+
+                            &::after {
+                                display: none;
+                            }
                         }
                     }
 
