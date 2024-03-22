@@ -221,7 +221,10 @@ $(document).ready(function(){
     });
 
 
-
+	$('input').on('input', function() {
+		$(this).prev().toggleClass('active', ($(this).val() != '' && !/e/gi.test($(this).val())));
+	  });
+	 
 
 
 
