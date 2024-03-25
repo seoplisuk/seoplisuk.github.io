@@ -1319,26 +1319,15 @@ a.current__lang {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 100px;
-  min-width: 46px;
-  min-height: 46px;
-  background: rgb(1, 61, 49);
+  min-width: 56px;
+  min-height: 56px;
+  background: url("../img/number__yellow.svg") no-repeat;
   position: relative;
-  border: 2px solid rgb(241, 255, 70);
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   bottom: -5px;
   left: -4px;
-}
-.s3__number::before {
-  content: "";
-  min-width: 15px;
-  min-height: 19px;
-  background: url(../img/number__yellow.svg) no-repeat;
-  display: block;
-  position: absolute;
-  bottom: -4px;
-  left: -6px;
 }
 @media screen and (max-width: 1024px) {
   .s3__number {
@@ -1925,11 +1914,10 @@ a.current__lang {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 100px;
-  min-width: 46px;
-  min-height: 46px;
-  background: #fff;
+  min-width: 56px;
+  min-height: 56px;
+  background: url("../img/number__grey.svg") no-repeat;
   position: relative;
-  border: 2px solid rgba(1, 61, 49, 0.1);
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -1947,16 +1935,6 @@ a.current__lang {
   .item__number {
     margin-right: 20px;
   }
-}
-.item__number::before {
-  content: "";
-  min-width: 15px;
-  min-height: 19px;
-  background: url(../img/number__grey.svg) no-repeat;
-  display: block;
-  position: absolute;
-  bottom: -5px;
-  left: -5px;
 }
 
 .item__title {

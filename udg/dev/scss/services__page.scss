@@ -104,11 +104,11 @@
     justify-content: center;
     align-items: center;
     border-radius: 100px;
-    min-width: 46px;
-    min-height: 46px;
-    background: #fff;
+    min-width: 56px;
+    min-height: 56px;
+    background: url("../img/number__grey.svg") no-repeat;
     position: relative;
-    border: 2px solid rgba(1, 61, 49, 10%);
+    
     width: max-content;
     position: absolute;
     left: -149px;
@@ -127,16 +127,7 @@
     
     
 
-    &::before {
-        content: "";
-        min-width: 15px;
-        min-height: 19px;
-        background: url(../img/number__grey.svg) no-repeat;
-        display: block;
-        position: absolute;
-        bottom: -5px;
-        left: -5px;
-    }
+    
 }
 
 .item__title {
