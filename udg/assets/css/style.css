@@ -3550,10 +3550,9 @@ a.current__lang {
 }
 
 .btn-up {
-  width: 89px;
-  height: 89px;
+  width: 99px;
+  height: 99px;
   border-radius: 100px;
-  border: 2px solid rgb(241, 255, 70);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3567,54 +3566,14 @@ a.current__lang {
   -webkit-transition: 0.6s ease 0s;
   transition: 0.6s ease 0s;
   cursor: pointer;
-  background: rgb(1, 61, 49);
+  background: url("../img/totop.svg") no-repeat;
   position: absolute;
   bottom: 60px;
   right: -3px;
   z-index: 500;
 }
-.btn-up::before {
-  content: "";
-  width: 25px;
-  height: 32px;
-  background: url(../img/up__line.svg);
-  display: block;
-  position: absolute;
-  left: -5px;
-  bottom: -3px;
-}
-.btn-up::after {
-  content: "";
-  width: 24px;
-  height: 22px;
-  -webkit-mask-image: url(../img/arrow__up.svg);
-          mask-image: url(../img/arrow__up.svg);
-  -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
-  -webkit-mask-size: contain;
-          mask-size: contain;
-  display: block;
-  background: rgb(241, 255, 70);
-  -webkit-transition: 0.6s ease 0s;
-  transition: 0.6s ease 0s;
-}
 .btn-up:hover {
-  background: rgb(241, 255, 70);
-}
-.btn-up:hover::after {
-  content: "";
-  width: 24px;
-  height: 22px;
-  -webkit-mask-image: url(../img/arrow__up.svg);
-          mask-image: url(../img/arrow__up.svg);
-  -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
-  -webkit-mask-size: contain;
-          mask-size: contain;
-  display: block;
-  background: rgb(1, 61, 49);
-  -webkit-transition: 0.6s ease 0s;
-  transition: 0.6s ease 0s;
+  background: url("../img/totop__hover.svg") no-repeat;
 }
 @media screen and (max-width: 1024px) {
   .btn-up {
