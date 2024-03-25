@@ -2187,6 +2187,25 @@ a.current__lang {
   .blog__row {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    display: none;
+  }
+}
+
+.blog__row__mobile {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .blog__row__mobile {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    display: -ms-grid;
+    display: grid;
   }
 }
 

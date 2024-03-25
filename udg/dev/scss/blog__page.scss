@@ -74,6 +74,21 @@
 
     @media screen and (max-width: 1024px) {
         grid-template-columns: 1fr;
+        display: none;
+
+    }
+}
+
+.blog__row__mobile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    display: none;
+
+    @media screen and (max-width: 1024px) {
+        grid-template-columns: 1fr;
+        display: grid;
 
     }
 }
