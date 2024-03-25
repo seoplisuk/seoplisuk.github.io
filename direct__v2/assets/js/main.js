@@ -234,34 +234,55 @@ window.addEventListener('scroll', function() {
 })
 
 
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
+
+if (document.body.clientWidth<1024){
+	const swiper = new Swiper('.swiper', {
+		// Optional parameters
+		slidesPerView: 3,
+		loop: true,
+		spaceBetween: 20,
+	
+		  navigation: {
+		  nextEl: '.swiper-button-next',
+		  prevEl: '.swiper-button-prev',
+		},
+	
+		breakpoints: {
+			320: {
+				slidesPerView: 1,
+				
+				
+			},
+			1024: { 
+				slidesPerView: 2,
+			},
+			1200: {
+				slidesPerView: 3,
+			}
+		}
+	  
+	});
+ }
+
+
+
+
+const swiper2 = new Swiper('.swiper2', {
 	slidesPerView: 3,
-    loop: true,
-    spaceBetween: 20,
-
-  
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-
+	spaceBetween: 20,
+	loop: true,
+	pagination: {
+		el: '.swiper-pagination2',
+	},
 	breakpoints: {
 		320: {
 			slidesPerView: 1,
-			
-			
 		},
-		1024: { 
-			slidesPerView: 2,
-		},
-		1200: {
+		1024: {
 			slidesPerView: 3,
-		}
+		},
 	}
-  
 });
-
 
 
 
