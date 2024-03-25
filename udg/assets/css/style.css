@@ -3540,6 +3540,7 @@ a.current__lang {
         -ms-flex-pack: center;
             justify-content: center;
     left: 0;
+    top: -237px;
   }
   .footer__img img {
     width: 178px;
