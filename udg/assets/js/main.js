@@ -35,10 +35,11 @@ if (document.body.clientWidth<1024){
 	
 
 
-const swiper2 = new Swiper('.swiper2', {
+/* const swiper2 = new Swiper('.swiper2', {
 	slidesPerView: 3,
 	spaceBetween: 20,
-	loop: true,
+	loop: false,
+	
 	pagination: {
 		el: '.swiper-pagination2',
 		clickable: true,
@@ -49,6 +50,26 @@ const swiper2 = new Swiper('.swiper2', {
 		},
 		1024: {
 			slidesPerView: 3,
+		},
+	}
+}); */
+
+const swiper3 = new Swiper('.slider', {
+	slidesPerView: 3,
+	spaceBetween: 20,
+	loop: false,
+	
+	
+	pagination: {
+		el: '.swiper-pagination2',
+		clickable: true,
+	},
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+		},
+		1024: {
+			slidesPerView: 3.7,
 		},
 	}
 });

@@ -89,7 +89,7 @@
 }
 
 .swiper2 {
-    overflow: hidden;
+    overflow-x: hidden;
 
     
 }
@@ -118,6 +118,38 @@
     width: 9px;
     height: 9px;
 }
+
+.slider {
+    overflow-x: hidden;
+    
+    .swiper-wrapper {
+        max-width: 1206px;
+        width: 1206px;
+        margin: 0 auto;
+
+        @media screen and (max-width: 1024px) {
+            max-width: inherit;
+            width: inherit;
+            margin: inherit;
+        }
+    }
+
+    .swiper-slide {
+        width: 440px;
+        max-width: 440px;
+
+        @media screen and (max-width: 1024px) {
+            width: auto;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        padding: 0 30px;
+
+    }
+}
+
+
 
 
 

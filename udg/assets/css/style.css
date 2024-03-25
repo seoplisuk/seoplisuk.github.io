@@ -1423,6 +1423,9 @@ a.current__lang {
     padding-bottom: 90px;
   }
 }
+.section4 .swiper {
+  overflow: hidden;
+}
 .section4 .swiper-wrapper {
   display: -ms-grid;
   display: grid;
@@ -1773,7 +1776,7 @@ a.current__lang {
 }
 
 .swiper2 {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .swiper-pagination2 {
@@ -1805,6 +1808,36 @@ a.current__lang {
   opacity: 1;
   width: 9px;
   height: 9px;
+}
+
+.slider {
+  overflow-x: hidden;
+}
+.slider .swiper-wrapper {
+  max-width: 1206px;
+  width: 1206px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1024px) {
+  .slider .swiper-wrapper {
+    max-width: inherit;
+    width: inherit;
+    margin: inherit;
+  }
+}
+.slider .swiper-slide {
+  width: 440px;
+  max-width: 440px;
+}
+@media screen and (max-width: 1024px) {
+  .slider .swiper-slide {
+    width: auto;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .slider {
+    padding: 0 30px;
+  }
 }
 
 .services .section {
