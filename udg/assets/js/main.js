@@ -26,6 +26,7 @@ if (document.body.clientWidth<1024){
 		loop: true,
 		pagination: {
 			el: '.swiper-pagination',
+			clickable: true,
 		},
 		
 	});
@@ -40,6 +41,7 @@ const swiper2 = new Swiper('.swiper2', {
 	loop: true,
 	pagination: {
 		el: '.swiper-pagination2',
+		clickable: true,
 	},
 	breakpoints: {
 		320: {

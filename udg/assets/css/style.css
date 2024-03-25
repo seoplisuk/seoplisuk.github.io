@@ -2452,6 +2452,9 @@ a.current__lang {
   }
 }
 
+.blog .section {
+  padding-bottom: 16px;
+}
 .blog .footer {
   margin-top: -50px;
 }
