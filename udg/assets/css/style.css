@@ -687,6 +687,9 @@ a.current__lang {
     font-size: 16px;
     line-height: 20px;
   }
+  .section__txt br {
+    display: none;
+  }
 }
 
 .section__back {
@@ -715,6 +718,12 @@ a.current__lang {
   background: #ffffff;
   margin-top: 14px;
 }
+@media screen and (max-width: 1024px) {
+  .rounded {
+    margin-top: 50px;
+  }
+}
+
 .section1 {
   background: rgb(1, 61, 49);
   border-radius: 50px 50px 0 0;
