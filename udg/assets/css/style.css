@@ -2515,6 +2515,8 @@ a.current__lang {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+  -webkit-box-shadow: 0px 30px 30px rgba(1, 61, 49, 0.4);
+          box-shadow: 0px 30px 30px rgba(1, 61, 49, 0.4);
 }
 @media screen and (max-width: 1024px) {
   .single__img {
