@@ -2833,6 +2833,9 @@ a.current__lang {
   .about__right {
     width: 100%;
   }
+  .about__right br {
+    display: none;
+  }
 }
 
 .about__txt2 {
