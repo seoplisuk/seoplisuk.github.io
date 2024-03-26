@@ -121,6 +121,7 @@
 
 .slider {
     overflow-x: hidden;
+    position: relative;
     
     .swiper-wrapper {
         max-width: 1206px;
@@ -138,6 +139,18 @@
         width: 440px;
         max-width: 440px;
 
+        &:nth-last-child(1) {
+            opacity: 0.3;
+
+            @media screen and (max-width: 1024px) {
+                opacity: 1;
+            }
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
         @media screen and (max-width: 1024px) {
             width: auto;
         }
@@ -148,6 +161,8 @@
 
     }
 }
+
+
 
 
 
