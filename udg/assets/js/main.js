@@ -70,7 +70,7 @@ const swiper3 = new Swiper('.slider', {
 			slidesPerView: 1,
 		},
 		1024: {
-			loop: true,
+			loop: false,
 			slidesPerView: 3.7,
 		},
 	}

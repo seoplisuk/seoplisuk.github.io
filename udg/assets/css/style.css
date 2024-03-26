@@ -91,10 +91,7 @@ article > * + * {
   }
 }
 
-*::-webkit-scrollbar {
-  width: 0;
-}
-
+/* *::-webkit-scrollbar { width: 0; } */
 .header {
   padding-left: 50px;
   padding-right: 50px;
