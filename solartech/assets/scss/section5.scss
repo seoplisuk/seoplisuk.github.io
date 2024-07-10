@@ -1,0 +1,258 @@
+#section5 {
+    height: 102px;
+
+    @media screen and (max-width: 1024px) {
+        height: 84px;
+    }
+}
+
+.section5 {
+    background: url(../img/section5.jpg) no-repeat center;
+    background-size: cover;
+    padding: 100px 0;
+
+    @media screen and (max-width: 1200px) {
+        padding: 84px 0;
+    }
+}
+
+.section5__row {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1200px) {
+        flex-direction: column;
+    }
+}
+
+.section5__left {
+    width: 55%;
+    color: #fff;
+
+    @media screen and (max-width: 1440px) {
+        width: 48%;
+    }
+
+    @media screen and (max-width: 1200px) {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    
+}
+
+.section5__right {
+    width: 42%;
+
+    @media screen and (max-width: 1440px) {
+        width: 48%;
+    }
+
+    @media screen and (max-width: 1200px) {
+        width: 100%;
+        
+    }
+}
+
+.form {
+    padding: 46px 67px;
+    border-radius: 30px;
+    
+    box-shadow: inset 0px 5px 30px rgba(0, 12, 74, 50%);
+    position: relative;
+    backdrop-filter: blur(4px);
+    background: rgba(168, 168, 168, 40%);
+
+
+    @media screen and (max-width: 1440px) {
+        padding: 30px 30px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        padding: 15px 15px;
+    }
+}
+
+.form__input {
+    margin-bottom: 20px;
+    input {
+        background: #d9d9d9;
+        padding: 21px 39px;
+        border-radius: 21px;
+        border: none;
+        outline: none;
+        color: #757575;
+        font-size: 24px;
+        width: 100%;
+        font-family: 'Roboto';
+
+        &::placeholder {
+            color: #757575;
+            font-size: 24px;
+            font-family: 'Roboto';
+        }
+
+        @media screen and (max-width: 1440px) {
+            padding: 15px 39px;
+        }
+
+        @media screen and (max-width: 1200px) {
+            padding: 10px 15px;
+            font-size: 18px;
+
+            &::placeholder {
+                font-size: 18px;
+            }
+        }
+    }
+
+    select {
+        background: #d9d9d9;
+        padding: 21px 39px;
+        border-radius: 21px;
+        border: none;
+        outline: none;
+        color: #757575;
+        font-size: 24px;
+        width: 100%;
+        font-family: 'Roboto';
+        
+        appearance: none;
+
+        @media screen and (max-width: 1440px) {
+            padding: 15px 39px;
+        }
+        
+    }
+
+    option {
+        width: 100px !important;
+    }
+
+    textarea {
+        height: 264px;
+        background: #d9d9d9;
+        padding: 21px 39px;
+        border-radius: 21px;
+        border: none;
+        outline: none;
+        color: #757575;
+        font-size: 24px;
+        width: 100%;
+        font-family: 'Roboto';
+
+        @media screen and (max-width: 1440px) {
+            height: 150px;
+            padding: 15px 39px;
+        }
+
+        @media screen and (max-width: 1200px) {
+            padding: 10px 15px;
+            height: 150px;
+            font-size: 18px;
+
+            &::placeholder {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.tel {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    input {
+        padding-left: 165px;
+
+        @media screen and (max-width: 1200px) {
+            padding-left: 110px;
+        }
+    }
+}
+
+.number__info {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto';
+    font-size: 24px;
+    position: absolute;
+    left: 39px;
+    
+
+    img {
+        margin-right: 24px
+    }
+
+    @media screen and (max-width: 1200px) {
+        left: 15px;
+        font-size: 18px;
+
+        img {
+            margin-right: 15px;
+        }
+    }
+}
+
+
+
+.form__txt {
+    padding: 25px;
+    font-size: 24px;
+    color: #fff;
+    backdrop-filter: blur(4px);
+    background: rgba(168, 168, 168, 40%);
+    box-shadow: inset 0px 5px 30px rgba(0, 12, 74, 50%);
+    border-radius: 30px;
+    margin-bottom: 36px;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 18px;
+    }
+}
+
+.left__txt1 {
+    margin-bottom: 45px;
+    h3 {
+        font-weight: 800;
+        font-size: 40px;
+        margin-bottom: 25px;
+
+        @media screen and (max-width: 1440px) {
+            font-size: 30px;
+        }
+
+        @media screen and (max-width: 1200px) {
+            font-size: 22px;
+        }
+    }
+
+    p {
+        font-weight: 600;
+        font-size: 24px;
+
+        @media screen and (max-width: 1200px) {
+            font-size: 18px;
+        }
+
+    }
+}
+
+.left__txt2 {
+    font-weight: 800;
+    font-size: 32px;
+
+    @media screen and (max-width: 1440px) {
+        font-size: 26px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        font-size: 18px;
+    }
+}
+
+.form__button {
+    button {
+        cursor: pointer;
+    }
+}

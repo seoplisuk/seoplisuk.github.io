@@ -1,0 +1,215 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 54%);
+    box-shadow: inset 0px 5px 30px rgba(0, 12, 74, 50%);
+    backdrop-filter: blur(4px);
+    width: 100%;
+    padding: 24px 0;
+
+    @media screen and (max-width: 1440px) {
+        padding: 15px 0;
+    }
+
+    @media screen and (max-width: 1024px) {
+        padding: 15px 0;
+    }
+}
+
+.header__row {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 1440px) {
+        padding: 0 60px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        padding: 0 20px;
+    }
+}
+
+.top-menu {
+
+    .menu {
+        display: flex;
+
+        .menu-item {
+            margin-right: 139px;
+
+            &:nth-last-child(1) {
+                margin-right: 0;
+            }
+
+            a {
+                font-size: 20px;
+                font-weight: 900;
+                color: #fff;
+                text-decoration: none;
+                transition: 0.5s ease 0s;
+
+                &::after {
+                    content: '';
+                    width: 0%;
+                    height: 2px;
+                    display: block;
+                    background: #fff;
+                    transition: 0.5s ease 0s;
+                }
+            }
+
+            &:hover {
+
+                a {
+                    &::after {
+                        width: 100%;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 1439px) {
+                margin-right: 80px;
+            }
+
+            @media screen and (max-width: 1199px) {
+                margin-right: 60px;
+            }
+        }
+    }
+}
+
+.telephone {
+    padding: 10px 27px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s ease 0s;
+    font-family: 'Rambla';
+    font-size: 20px;
+    font-weight: 700;
+    background: rgba(0, 0, 0, 54%);
+    box-shadow: inset 0px 5px 30px rgba(0, 12, 74, 50%);
+    backdrop-filter: blur(4px);
+
+    &:hover {
+        box-shadow: inset 0px 0px 0px rgba(0, 12, 74, 50%);
+        backdrop-filter: blur(0px);
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: 18px;
+        padding: 10px 15px;
+    }
+
+    @media screen and (max-width: 375px) {
+        font-size: 15px;
+        padding: 10px 10px;
+    }
+}
+
+.burger {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    justify-content: space-between;
+    display: none;
+    margin-left: 20px;
+
+    span {
+        width: 35px;
+        height: 3px;
+        background: #fff;
+        display: block;
+        transition: 0.5s ease 0s;
+        position: relative;
+
+        &:nth-last-child(1) {
+            margin-bottom: 0;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        display: flex;
+    }
+
+    
+    
+}
+
+.burger__opened {
+    justify-content: center;
+    align-items: center;
+    span {
+        position: absolute;
+        &:nth-last-child(1) {
+            transform: rotate(45deg);
+        }
+        &:nth-last-child(2) {
+            opacity: 0;
+            visibility: hidden;
+        }
+        &:nth-last-child(3) {
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+.mobile__menu {
+    position: fixed;
+    top: 82px;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    padding: 20px 20px;
+    background: rgba(0, 0, 0, 54%);
+    box-shadow: inset 0px 5px 30px rgba(0, 12, 74, 50%);
+    backdrop-filter: blur(4px);
+    transform: translate(-100%, 0);
+    transition: 0.5s ease 0s;
+
+    .top-menu {
+        .menu {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .menu-item {
+                margin-right: 0;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+}
+
+.mobile__menu__opened {
+    transform: translate(0, 0);
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo {
+    @media screen and (max-width: 375px) {
+        img {
+            width: 60px;
+            object-fit: contain;
+        }
+    }
+}
