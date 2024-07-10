@@ -49,9 +49,12 @@
 
 .product__img {
     margin-right: 70px;
+    display: flex;
+    justify-content: center;
 
     img {
         min-width: 331px;
+        object-fit: contain;
 
         @media screen and (max-width: 1600px) {
             min-width: 200px;
@@ -113,6 +116,7 @@
     font-size: 32px;
     font-weight: 700;
     color: #fff;
+    font-family: 'Rambla';
 
     @media screen and (max-width: 1024px) {
         font-size: 20px;

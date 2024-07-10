@@ -675,9 +675,17 @@ select {
 
 .product__img {
   margin-right: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .product__img img {
   min-width: 331px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media screen and (max-width: 1600px) {
   .product__img img {
@@ -766,6 +774,7 @@ select {
   font-size: 32px;
   font-weight: 700;
   color: #fff;
+  font-family: "Rambla";
 }
 @media screen and (max-width: 1024px) {
   .product__name {
@@ -1415,7 +1424,7 @@ select {
 }
 
 .link__foter {
-  margin-bottom: 55px;
+  margin-bottom: 25px;
 }
 .link__foter a {
   font-size: 20px;
