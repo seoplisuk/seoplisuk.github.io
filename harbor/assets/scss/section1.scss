@@ -1,0 +1,47 @@
+.section1 {
+    background: url('../img/section1.jpg') no-repeat center;
+    background-size: cover;
+    height: 700px;
+    overflow: hidden;
+
+    @media screen and (max-width: 1440px) {
+        height: 600px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        height: auto;
+        padding: 50px 0;
+    }
+}
+
+.section1__txt {
+    font-size: 21px;
+    line-height: 35px;
+    color: #fff;
+    margin-top: 150px;
+    font-family: 'FuturaMediumC';
+
+    @media screen and (max-width: 1024px) {
+        margin-top: 0px;
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+.section1__title {
+    font-size: 63px;
+    line-height: 105%;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'FuturaMediumC';
+    letter-spacing: 10px;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 43px;
+    }
+
+    @media screen and (max-width: 600px) {
+        font-size: 24px;
+    }
+}
