@@ -803,6 +803,11 @@ select {
   font-family: "FuturaMediumC";
   letter-spacing: 6px;
 }
+@media screen and (max-width: 1024px) {
+  .inter__content h2 {
+    font-size: 24px;
+  }
+}
 .inter__content p {
   font-size: 24px;
   line-height: 36px;
@@ -811,6 +816,11 @@ select {
   font-family: "FuturaMediumC";
   letter-spacing: 6px;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 1024px) {
+  .inter__content p {
+    font-size: 20px;
+  }
 }
 
 .button__inter {

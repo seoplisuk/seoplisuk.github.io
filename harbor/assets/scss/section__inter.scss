@@ -18,6 +18,10 @@
         margin-bottom: 35px;
         font-family: 'FuturaMediumC';
         letter-spacing: 6px;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 24px;
+        }
     }
 
     p {
@@ -28,6 +32,10 @@
         font-family: 'FuturaMediumC';
         letter-spacing: 6px;
         margin-bottom: 50px;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 20px;
+        }
     }
 }
 
