@@ -2,7 +2,7 @@
 @import 'reset';
 
 .container {
-    max-width: 1200px;
+    max-width: 1250px;
     width: 100%;
     margin: 0 auto;
     padding: 0 15px
@@ -11,6 +11,15 @@
 
 @import 'header';
 @import 'section1';
+@import 'section__numbers';
+@import 'section3';
+@import 'section__video';
+@import 'section__focus';
+@import 'section__portfolio';
+@import 'section__inter';
+@import 'section__ourteam';
+@import 'section__partners';
 @import 'page__news';
+@import 'page__team';
 
 @import 'footer';

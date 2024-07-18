@@ -1,0 +1,86 @@
+.section__focus {
+    padding: 50px 0;
+    background: #023f73;
+}
+
+.focus__title {
+    font-size: 62px;
+    color: #fff;
+    text-align: center;
+    font-family: 'FuturaMediumC';
+    letter-spacing: 10px;
+    line-height: 100%;
+    margin-bottom: 50px;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 43px;
+    }
+}
+
+.focus__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 70px;
+    grid-row-gap: 50px;
+    width: 70%;
+    margin: 0 auto;
+
+    @media screen and (max-width: 1200px) {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.focus__name {
+    font-family: 'Roboto';
+    font-size: 26px;
+    margin-bottom: 26px;
+    color: #738ba7;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.focus__block {
+    ul {
+        padding: 0;
+        margin: 0;
+        li {
+            list-style-type: none;
+            color: #75bbfa;
+            font-family: 'FuturaBookC';
+            font-size: 22px;
+            margin-bottom: 28px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 3px;
+
+            &:nth-last-child(1) {
+                margin-bottom: 0;
+            }
+
+            &::before {
+                content: '';
+                min-width: 5px;
+                min-height: 5px;
+                background: #fff;
+                border-radius: 10px;
+                display: block;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.focus__button {
+    .button__inter {
+        margin: inherit;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+}

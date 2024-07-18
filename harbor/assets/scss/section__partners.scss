@@ -1,0 +1,116 @@
+.section__partners {
+    padding-top: 90px;
+    padding-bottom: 50px;
+}
+
+.section__partners__title {
+    font-size: 45px;
+    margin-bottom: 100px;
+    font-family: 'FuturaMediumC';
+    text-align: center;
+    color: #000;
+
+    @media screen and (max-width: 600px) {
+        font-size: 28px;
+    }
+}
+
+.partners__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+
+    @media screen and (max-width: 1024px) {
+        grid-template-columns: 1fr;
+        grid-row-gap: 60px;
+    }
+}
+
+.partners__item {
+    padding: 90px 30px;
+    border-radius: 10px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    position: relative;
+    transition: 0.5s ease 0s;
+
+    &:hover {
+        background: #023f73;
+
+        .partner__txt {
+            color: #fff;
+        }
+
+        .partner__name {
+            color: #fff;
+        }
+
+        .partner__who {
+            color: #fff;
+        }
+    }
+}
+
+.partner__img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -44px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.partner__txt {
+    font-family: 'Myriad Pro';
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #77808b;
+    margin-bottom: 20px;
+}
+
+.partner__name {
+    font-size: 16px;
+    color: #283646;
+    font-family: 'FuturaMediumC';
+}
+
+.partner__who {
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: #77808b;
+    font-size: 14px;
+}
+
+
+.partners__button {
+    width: max-content;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    font-family: 'FuturaMediumC';
+    font-size: 17px;
+    text-decoration: none;
+    color: #fff;
+    background: #023f73;
+    transition: 0.5s ease 0s;
+    width: 225px;
+    height: 55px;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    img {
+        margin-left: 20px;
+    }
+
+    &:hover {
+        background: #5fa3df;
+    }
+}
