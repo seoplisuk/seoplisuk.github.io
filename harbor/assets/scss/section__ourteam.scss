@@ -1,0 +1,58 @@
+.section__ourteam {
+    padding-top: 100px;
+    padding-bottom: 65px;
+    background: #dff2ff;
+
+    @media screen and (max-width: 1024px) {
+        padding-top: 50px;
+    }
+}
+
+.our__row {
+    display: flex;
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+    }
+}
+
+.our__img {
+    margin-right: 70px;
+
+    img {
+        min-width: 306px;
+        min-height: 306px;
+        width: 306px;
+        height: 306px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        margin-right: 0;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.our__title {
+    font-family: 'FuturaMediumC';
+    font-size: 35px;
+    line-height: 100%;
+    margin-bottom: 40px;
+    color: #023f73;
+}
+
+.our__txt {
+    font-family: 'FuturaMediumC';
+    font-size: 24px;
+    line-height: 36px;
+    color: #023f73;
+}
+
+.our__button {
+    .partners__button {
+        margin: inherit;
+        margin-top: 100px;
+    }
+}
+
