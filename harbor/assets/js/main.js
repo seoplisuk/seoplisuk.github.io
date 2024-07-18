@@ -191,22 +191,24 @@ document.addEventListener('DOMContentLoaded', () => {
 		},
 	  
 	});
+
+	const playbtn = document.getElementById('playbtn');
+	const player = document.getElementById('video-player');
+	const vimeoPlayer = new Vimeo.Player(player);
+	playbtn.onclick = function() {
+	playbtn.style.display = "none";
+	vimeoPlayer.play();
+	}
+	vimeoPlayer.on('pause', function() {
+	playbtn.style.display = "flex";
+	});
+	vimeoPlayer.on('play', function() {
+	playbtn.style.display = "none";
+});
 })
 
 
-const playbtn = document.getElementById('playbtn');
-const player = document.getElementById('video-player');
-const vimeoPlayer = new Vimeo.Player(player);
-playbtn.onclick = function() {
-  playbtn.style.display = "none";
-  vimeoPlayer.play();
-}
-vimeoPlayer.on('pause', function() {
-  playbtn.style.display = "flex";
-});
-vimeoPlayer.on('play', function() {
-  playbtn.style.display = "none";
-});
+
 
 
 
