@@ -1,0 +1,156 @@
+.section__look {
+    padding-top: 100px;
+    padding-bottom: 70px;
+
+    @media screen and (max-width: 1024px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+
+.look__title {
+    font-family: 'FuturaMediumC';
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #004079;
+    @media screen and (max-width: 1024px) {
+        font-family: 'FuturaMediumC';
+        font-size: 42px;
+        text-align: center;
+        margin-bottom: 50px;
+        color: #004079;
+    }
+}
+
+.look__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
+    @media screen and (max-width: 1024px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.look__item {
+    padding: 30px;
+    background: #004079;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 325px;
+}
+
+.look__img {
+    margin-bottom: 30px;
+}
+
+.look__txt {
+    font-family: 'FuturaMediumC';
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.i__content {
+    margin-bottom: 70px;
+    p {
+        font-size: 21px;
+        line-height: 30px;
+    }
+
+    ul {
+        padding-left: 20px;
+        li {
+            font-size: 18px;
+        }
+    }
+}
+
+.i__title {
+    font-size: 32px;
+    line-height: 100%;
+    color: #004079;
+    margin-bottom: 10px;
+}
+
+.owned__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+    margin-bottom: 80px;
+
+    @media screen and (max-width: 1024px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media screen and (max-width: 1024px) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.owned__item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eaeaea;
+    padding: 15px;
+    min-height: 136px;
+}
+
+.owned__cat {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #004079;
+    background: #fff;
+    border-radius: 25px;
+    padding: 5px 10px;
+}
+
+.outs__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+    margin-bottom: 80px;
+
+    .owned__item {
+
+    }
+
+    .cat__arrow {
+        background: transparent;
+        padding: 0;
+        top: -25px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+
+        img {
+            object-fit: contain;
+            width: 38px;
+            height: 51px;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    
+}
+
+
