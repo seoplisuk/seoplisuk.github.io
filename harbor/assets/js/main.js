@@ -186,3 +186,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	
 })
+
+
+const swiper = new Swiper('.swiper', {
+	loop: true,
+	navigation: {
+	  nextEl: '.swiper-button-next',
+	  prevEl: '.swiper-button-prev',
+	},
+	});
+
+	
+
+	Fancybox.bind("[data-fancybox]", {
+
+	});
