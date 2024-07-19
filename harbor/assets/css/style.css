@@ -1304,6 +1304,13 @@ select {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* &::after {
+      content: '';
+      width: 30px;
+      height: 25px;
+      background: url('../img/arrow__bottom.png') no-repeat;
+      display: block;
+  } */
 }
 .filter select {
   outline: none;
@@ -1317,12 +1324,64 @@ select {
   text-transform: uppercase;
   font-size: 18px;
 }
-.filter::after {
-  content: "";
+.filter .select {
+  min-width: 340px;
+  width: 100%;
+}
+.filter .selectize-control.single .selectize-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: transparent;
+  border: none;
+  color: #313232;
+  font-family: "FuturaBookC";
+  text-transform: uppercase;
+  font-size: 18px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.filter .selectize-control.single .selectize-input input {
+  display: none !important;
+}
+.filter .selectize-control.single .selectize-input::after {
+  content: " ";
+  display: block;
+  position: relative;
+  background: url("../img/arrow__bottom.png") no-repeat;
   width: 30px;
   height: 25px;
-  background: url("../img/arrow__bottom.png") no-repeat;
-  display: block;
+  -webkit-transition: 0.6s ease 0s;
+  transition: 0.6s ease 0s;
+  right: 15px;
+  margin-top: 0px;
+  border-style: solid;
+  border-width: 0;
+  border-color: transparent;
+}
+.filter .dropdown-active::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.filter .selectize-dropdown-content .option {
+  color: #313232;
+  font-family: "FuturaBookC";
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.filter .selectize-dropdown-content .selected {
+  background: #02457d;
+  color: #fff;
+}
+.filter .selectize-dropdown-content .active {
+  background: #02457d;
+  color: #fff;
 }
 
 #dialog-content {

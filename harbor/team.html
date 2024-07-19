@@ -6,6 +6,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/css/selectize.default.min.css" integrity="sha512-pTaEn+6gF1IeWv3W1+7X7eM60TFu/agjgoHmYhAfLEU8Phuf6JKiiE8YmsNC0aCgQv4192s4Vai8YZ6VNM6vyQ=="
+crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="assets/css/style.css">
@@ -60,240 +62,254 @@
         <div class="container">
 
             <div class="filter">
-                <select name="" id="">
-                    <option value="">All EMPLOYEES</option>
-                    <option value="">Partners</option>
-                    <option value="">INVESTMENT TEAM</option>
-                    <option value="">BUSINESS DEVELOPMENT</option>
-                    <option value="">FINANCE AND ADMINISTRATION</option>
-                    <option value="">PORTFOLIO OPERATIONS GROUP*</option>
+                <select name="" id="filter1" class="select">
+                    <option value="it">All EMPLOYEES</option>
+                    <option value="it1">Partners</option>
+                    <option value="it2">INVESTMENT TEAM</option>
+                    <option value="it3">BUSINESS DEVELOPMENT</option>
+                    <option value="it4">FINANCE AND ADMINISTRATION</option>
+                    <option value="it5">PORTFOLIO OPERATIONS GROUP*</option>
                 </select>
+                
+
+
             </div>
 
-            <div class="team__title">Partners</div>
-            <div class="team__row">
-                <a href="" data-fancybox data-src="#dialog-content" class="team__item">
-                    <img src="assets/img/t1.png" alt="">
-                    <div class="team__name">David Block</div>
-                    <div class="team__category">PARTNER</div>
-                </a>
-                <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
-                    <img src="assets/img/t2.png" alt="">
-                    <div class="team__name">John Caple</div>
-                    <div class="team__category">PARTNER</div>
-                </a>
-                <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
-                    <img src="assets/img/t3.png" alt="">
-                    <div class="team__name">Chris Paldino</div>
-                    <div class="team__category">PARTNER</div>
-                </a>
-                <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
-                    <img src="assets/img/t4.png" alt="">
-                    <div class="team__name">Andrew Joy</div>
-                    <div class="team__category">PARTNER</div>
-                </a>
-                <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
-                    <img src="assets/img/t5.png" alt="">
-                    <div class="team__name">Russell Kreutter</div>
-                    <div class="team__category">PARTNER</div>
-                </a>
-                <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
-                    <img src="assets/img/t6.png" alt="">
-                    <div class="team__name">Lee Bryan</div>
-                    <div class="team__category">PARTNER</div>
-                </a>
+            <div id="items">
+                <div class="item it1 it">
+                    <div class="team__title">Partners</div>
+                    <div class="team__row">
+                        <a href="" data-fancybox data-src="#dialog-content" class="team__item">
+                            <img src="assets/img/t1.png" alt="">
+                            <div class="team__name">David Block</div>
+                            <div class="team__category">PARTNER</div>
+                        </a>
+                        <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
+                            <img src="assets/img/t2.png" alt="">
+                            <div class="team__name">John Caple</div>
+                            <div class="team__category">PARTNER</div>
+                        </a>
+                        <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
+                            <img src="assets/img/t3.png" alt="">
+                            <div class="team__name">Chris Paldino</div>
+                            <div class="team__category">PARTNER</div>
+                        </a>
+                        <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
+                            <img src="assets/img/t4.png" alt="">
+                            <div class="team__name">Andrew Joy</div>
+                            <div class="team__category">PARTNER</div>
+                        </a>
+                        <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
+                            <img src="assets/img/t5.png" alt="">
+                            <div class="team__name">Russell Kreutter</div>
+                            <div class="team__category">PARTNER</div>
+                        </a>
+                        <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
+                            <img src="assets/img/t6.png" alt="">
+                            <div class="team__name">Lee Bryan</div>
+                            <div class="team__category">PARTNER</div>
+                        </a>
+                    </div>
+                </div>
+                
+    
+                <div class="item it2 it">
+                    <div class="team__title">INVESTMENT TEAM </div>
+                    <div class="team__row">
+                        <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
+                            <img src="assets/img/t7.png" alt="">
+                            <div class="team__name">Suzanne (Detore) Faubel</div>
+                            <div class="team__category">VICE PRESIDENT</div>
+                        </a>
+                        <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
+                            <img src="assets/img/t8.png" alt="">
+                            <div class="team__name">Matthew Goracy</div>
+                            <div class="team__category">VICE PRESIDENT</div>
+                        </a>
+                        <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
+                            <img src="assets/img/t9.png" alt="">
+                            <div class="team__name">Benjamin Koch</div>
+                            <div class="team__category">VICE PRESIDENT</div>
+                        </a>
+                        <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
+                            <img src="assets/img/t10.png" alt="">
+                            <div class="team__name">Matthew Wash</div>
+                            <div class="team__category">VICE PRESIDENT</div>
+                        </a>
+                        <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
+                            <img src="assets/img/t11.png" alt="">
+                            <div class="team__name">Brandon Maiello</div>
+                            <div class="team__category">VICE PRESIDENT</div>
+                        </a>
+                        <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
+                            <img src="assets/img/t12.png" alt="">
+                            <div class="team__name">Dan Bui</div>
+                            <div class="team__category">Senior Associate</div>
+                        </a>
+                        <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
+                            <img src="assets/img/t13.png" alt="">
+                            <div class="team__name">Robert Solomon</div>
+                            <div class="team__category">Associate</div>
+                        </a>
+                        <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
+                            <img src="assets/img/t14.png" alt="">
+                            <div class="team__name">Kevin Anderson</div>
+                            <div class="team__category">Associate</div>
+                        </a>
+                        <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
+                            <img src="assets/img/t15.png" alt="">
+                            <div class="team__name">Alex McPhee</div>
+                            <div class="team__category">Associate</div>
+                        </a>
+                        <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
+                            <img src="assets/img/t16.png" alt="">
+                            <div class="team__name">Melissa Husted</div>
+                            <div class="team__category">Associate</div>
+                        </a>
+                        <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
+                            <img src="assets/img/t17.png" alt="">
+                            <div class="team__name">Jacob Boyer</div>
+                            <div class="team__category">Analyst</div>
+                        </a>
+                        <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
+                            <img src="assets/img/t18.png" alt="">
+                            <div class="team__name">Armondo Zapata</div>
+                            <div class="team__category">Analyst</div>
+                        </a>
+                    </div>
+                </div>
+    
+    
+                <div class="item it3 it">
+                    <div class="team__title">BUSINESS DEVELOPMENT</div>
+                    <div class="team__row">
+                        <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
+                            <img src="assets/img/t19.png" alt="">
+                            <div class="team__name">Tucker Coats</div>
+                            <div class="team__category">Vice President</div>
+                        </a>
+                        <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
+                            <img src="assets/img/t20.png" alt="">
+                            <div class="team__name">Allison Goldman</div>
+                            <div class="team__category">Vice President</div>
+                        </a>
+                        <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
+                            <img src="assets/img/t21.png" alt="">
+                            <div class="team__name">Parker Friedman</div>
+                            <div class="team__category">Associate</div>
+                        </a>
+                        <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
+                            <img src="assets/img/t22.png" alt="">
+                            <div class="team__name">Nikolija Katanic</div>
+                            <div class="team__category">Analyst</div>
+                        </a>
+                        <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
+                            <img src="assets/img/t23.png" alt="">
+                            <div class="team__name">Jorge Salazar</div>
+                            <div class="team__category">Analyst</div>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="item it4 it">  
+                    <div class="team__title">FINANCE AND ADMINISTRATION</div>
+                    <div class="team__row">
+                        <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
+                            <img src="assets/img/t24.png" alt="">
+                            <div class="team__name">Timothy Trost</div>
+                            <div class="team__category">Chief Financial Officer</div>
+                        </a>
+                        <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
+                            <img src="assets/img/t25.png" alt="">
+                            <div class="team__name">Andres Hernandez</div>
+                            <div class="team__category">Senior Accounting Manager</div>
+                        </a>
+                        <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
+                            <img src="assets/img/t26.png" alt="">
+                            <div class="team__name">Darlene Martins</div>
+                            <div class="team__category">Excutive Assistant</div>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="item it5 it">
+                    <div class="team__title">PORTFOLIO OPERATIONS GROUP*</div>
+                    <div class="team__row">
+                        <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
+                            <img src="assets/img/t27.png" alt="">
+                            <div class="team__name">Matt Jennings</div>
+                            <div class="team__category">Operating Partner</div>
+                        </a>
+                        <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
+                            <img src="assets/img/t28.png" alt="">
+                            <div class="team__name">Ryan Paskin</div>
+                            <div class="team__category">Operating Partner</div>
+                        </a>
+                        <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
+                            <img src="assets/img/t29.png" alt="">
+                            <div class="team__name">Eaman Talai</div>
+                            <div class="team__category">Operating Principal</div>
+                        </a>
+                        <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
+                            <img src="assets/img/t30.png" alt="">
+                            <div class="team__name">Kevin Smith</div>
+                            <div class="team__category">Operating Principal</div>
+                        </a>
+                        <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
+                            <img src="assets/img/t31.png" alt="">
+                            <div class="team__name">Louis Higgins</div>
+                            <div class="team__category">Operating Principal</div>
+                        </a>
+                        <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
+                            <img src="assets/img/t32.png" alt="">
+                            <div class="team__name">Vijay Joshi</div>
+                            <div class="team__category">Operating Vice President</div>
+                        </a>
+                        <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
+                            <img src="assets/img/t33.png" alt="">
+                            <div class="team__name">Steve Bello</div>
+                            <div class="team__category">Operating Senior Associate</div>
+                        </a>
+                        <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
+                            <img src="assets/img/t34.png" alt="">
+                            <div class="team__name">Ryan Haney</div>
+                            <div class="team__category">Operating Senior Associate</div>
+                        </a>
+                        <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
+                            <img src="assets/img/t35.png" alt="">
+                            <div class="team__name">Wally Gerbus</div>
+                            <div class="team__category">Operating Senior Associate</div>
+                        </a>
+                        <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
+                            <img src="assets/img/t36.png" alt="">
+                            <div class="team__name">Ann (Loudermilk) Ethington</div>
+                            <div class="team__category">Head of Talent Aquisition</div>
+                        </a>
+                        <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
+                            <img src="assets/img/t37.png" alt="">
+                            <div class="team__name">Susan Faremouth</div>
+                            <div class="team__category">Talent Aquisition Coordinator</div>
+                        </a>
+                        <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
+                            <img src="assets/img/t38.png" alt="">
+                            <div class="team__name">Jonathan Mann</div>
+                            <div class="team__category">General Counsel NER</div>
+                        </a>
+                        <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
+                            <img src="assets/img/t39.png" alt="">
+                            <div class="team__name">Said Toro</div>
+                            <div class="team__category">Chief Information Officer</div>
+                        </a>
+                        <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
+                            <img src="assets/img/t40.png" alt="">
+                            <div class="team__name">Kenneth Carr</div>
+                            <div class="team__category">Head of Safety and Manufacturing</div>
+                        </a>
+                    </div>
+                </div>
             </div>
 
-
-            <div class="team__title">INVESTMENT TEAM </div>
-            <div class="team__row">
-                <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
-                    <img src="assets/img/t7.png" alt="">
-                    <div class="team__name">Suzanne (Detore) Faubel</div>
-                    <div class="team__category">VICE PRESIDENT</div>
-                </a>
-                <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
-                    <img src="assets/img/t8.png" alt="">
-                    <div class="team__name">Matthew Goracy</div>
-                    <div class="team__category">VICE PRESIDENT</div>
-                </a>
-                <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
-                    <img src="assets/img/t9.png" alt="">
-                    <div class="team__name">Benjamin Koch</div>
-                    <div class="team__category">VICE PRESIDENT</div>
-                </a>
-                <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
-                    <img src="assets/img/t10.png" alt="">
-                    <div class="team__name">Matthew Wash</div>
-                    <div class="team__category">VICE PRESIDENT</div>
-                </a>
-                <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
-                    <img src="assets/img/t11.png" alt="">
-                    <div class="team__name">Brandon Maiello</div>
-                    <div class="team__category">VICE PRESIDENT</div>
-                </a>
-                <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
-                    <img src="assets/img/t12.png" alt="">
-                    <div class="team__name">Dan Bui</div>
-                    <div class="team__category">Senior Associate</div>
-                </a>
-                <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
-                    <img src="assets/img/t13.png" alt="">
-                    <div class="team__name">Robert Solomon</div>
-                    <div class="team__category">Associate</div>
-                </a>
-                <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
-                    <img src="assets/img/t14.png" alt="">
-                    <div class="team__name">Kevin Anderson</div>
-                    <div class="team__category">Associate</div>
-                </a>
-                <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
-                    <img src="assets/img/t15.png" alt="">
-                    <div class="team__name">Alex McPhee</div>
-                    <div class="team__category">Associate</div>
-                </a>
-                <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
-                    <img src="assets/img/t16.png" alt="">
-                    <div class="team__name">Melissa Husted</div>
-                    <div class="team__category">Associate</div>
-                </a>
-                <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
-                    <img src="assets/img/t17.png" alt="">
-                    <div class="team__name">Jacob Boyer</div>
-                    <div class="team__category">Analyst</div>
-                </a>
-                <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
-                    <img src="assets/img/t18.png" alt="">
-                    <div class="team__name">Armondo Zapata</div>
-                    <div class="team__category">Analyst</div>
-                </a>
-            </div>
-
-
-
-            <div class="team__title">BUSINESS DEVELOPMENT</div>
-            <div class="team__row">
-                <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
-                    <img src="assets/img/t19.png" alt="">
-                    <div class="team__name">Tucker Coats</div>
-                    <div class="team__category">Vice President</div>
-                </a>
-                <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
-                    <img src="assets/img/t20.png" alt="">
-                    <div class="team__name">Allison Goldman</div>
-                    <div class="team__category">Vice President</div>
-                </a>
-                <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
-                    <img src="assets/img/t21.png" alt="">
-                    <div class="team__name">Parker Friedman</div>
-                    <div class="team__category">Associate</div>
-                </a>
-                <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
-                    <img src="assets/img/t22.png" alt="">
-                    <div class="team__name">Nikolija Katanic</div>
-                    <div class="team__category">Analyst</div>
-                </a>
-                <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
-                    <img src="assets/img/t23.png" alt="">
-                    <div class="team__name">Jorge Salazar</div>
-                    <div class="team__category">Analyst</div>
-                </a>
-            </div>
-
-
-            <div class="team__title">FINANCE AND ADMINISTRATION</div>
-            <div class="team__row">
-                <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
-                    <img src="assets/img/t24.png" alt="">
-                    <div class="team__name">Timothy Trost</div>
-                    <div class="team__category">Chief Financial Officer</div>
-                </a>
-                <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
-                    <img src="assets/img/t25.png" alt="">
-                    <div class="team__name">Andres Hernandez</div>
-                    <div class="team__category">Senior Accounting Manager</div>
-                </a>
-                <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
-                    <img src="assets/img/t26.png" alt="">
-                    <div class="team__name">Darlene Martins</div>
-                    <div class="team__category">Excutive Assistant</div>
-                </a>
-            </div>
-
-
-            <div class="team__title">PORTFOLIO OPERATIONS GROUP*</div>
-            <div class="team__row">
-                <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
-                    <img src="assets/img/t27.png" alt="">
-                    <div class="team__name">Matt Jennings</div>
-                    <div class="team__category">Operating Partner</div>
-                </a>
-                <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
-                    <img src="assets/img/t28.png" alt="">
-                    <div class="team__name">Ryan Paskin</div>
-                    <div class="team__category">Operating Partner</div>
-                </a>
-                <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
-                    <img src="assets/img/t29.png" alt="">
-                    <div class="team__name">Eaman Talai</div>
-                    <div class="team__category">Operating Principal</div>
-                </a>
-                <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
-                    <img src="assets/img/t30.png" alt="">
-                    <div class="team__name">Kevin Smith</div>
-                    <div class="team__category">Operating Principal</div>
-                </a>
-                <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
-                    <img src="assets/img/t31.png" alt="">
-                    <div class="team__name">Louis Higgins</div>
-                    <div class="team__category">Operating Principal</div>
-                </a>
-                <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
-                    <img src="assets/img/t32.png" alt="">
-                    <div class="team__name">Vijay Joshi</div>
-                    <div class="team__category">Operating Vice President</div>
-                </a>
-                <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
-                    <img src="assets/img/t33.png" alt="">
-                    <div class="team__name">Steve Bello</div>
-                    <div class="team__category">Operating Senior Associate</div>
-                </a>
-                <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
-                    <img src="assets/img/t34.png" alt="">
-                    <div class="team__name">Ryan Haney</div>
-                    <div class="team__category">Operating Senior Associate</div>
-                </a>
-                <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
-                    <img src="assets/img/t35.png" alt="">
-                    <div class="team__name">Wally Gerbus</div>
-                    <div class="team__category">Operating Senior Associate</div>
-                </a>
-                <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
-                    <img src="assets/img/t36.png" alt="">
-                    <div class="team__name">Ann (Loudermilk) Ethington</div>
-                    <div class="team__category">Head of Talent Aquisition</div>
-                </a>
-                <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
-                    <img src="assets/img/t37.png" alt="">
-                    <div class="team__name">Susan Faremouth</div>
-                    <div class="team__category">Talent Aquisition Coordinator</div>
-                </a>
-                <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
-                    <img src="assets/img/t38.png" alt="">
-                    <div class="team__name">Jonathan Mann</div>
-                    <div class="team__category">General Counsel NER</div>
-                </a>
-                <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
-                    <img src="assets/img/t39.png" alt="">
-                    <div class="team__name">Said Toro</div>
-                    <div class="team__category">Chief Information Officer</div>
-                </a>
-                <a href="#" data-fancybox data-src="#dialog-content" class="team__item">
-                    <img src="assets/img/t40.png" alt="">
-                    <div class="team__name">Kenneth Carr</div>
-                    <div class="team__category">Head of Safety and Manufacturing</div>
-                </a>
-            </div>
+            
 
 
             <div class="team__title">EXECUTIVE PARTNERS</div>
@@ -450,9 +466,11 @@
         </div>
 
     </div>
-
-
     
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/js/selectize.min.js" integrity="sha512-IOebNkvA/HZjMM7MxL0NYeLYEalloZ8ckak+NDtOViP7oiYzG5vn6WVXyrJDiJPhl4yRdmNAG49iuLmhkUdVsQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
