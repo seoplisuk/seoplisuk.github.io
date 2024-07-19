@@ -1121,6 +1121,7 @@ select {
 .page__content {
   padding-top: 124px;
   padding-bottom: 70px;
+  overflow: hidden;
 }
 @media screen and (max-width: 1024px) {
   .page__content {
@@ -1291,6 +1292,11 @@ select {
   line-height: 20px;
   color: #004079;
   font-family: "FuturaMediumC";
+}
+
+.item {
+  -webkit-transition: 0.5s ease 0.5s;
+  transition: 0.5s ease 0.5s;
 }
 
 .filter {

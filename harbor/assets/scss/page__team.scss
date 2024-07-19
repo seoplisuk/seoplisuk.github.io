@@ -83,6 +83,10 @@
     font-family: 'FuturaMediumC';
 }
 
+.item {
+    transition: 0.5s ease 0.5s;
+}
+
 .filter {
     margin-bottom: 70px;
     width: max-content;
@@ -136,6 +140,7 @@
             border-style: solid;
             border-width: 0;
             border-color: transparent;
+            
             }
         
     }

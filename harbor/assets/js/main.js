@@ -272,9 +272,15 @@ filter_select_el.onchange = function() {
   var items = items_el.getElementsByClassName('item');
   for (var i = 0; i < items.length; i++) {
     if (items[i].classList.contains(this.value)) {
-      items[i].style.display = 'block';
+      items[i].style.opacity = '1',
+	  items[i].style.visibility = 'visible',
+	  items[i].style.height = '100%';
+	  
     } else {
-      items[i].style.display = 'none';
+      items[i].style.opacity = '0',
+	  items[i].style.visibility = 'hidden',
+	  items[i].style.height = '0';
+	  
     }
   }
 }
