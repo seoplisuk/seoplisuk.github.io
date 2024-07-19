@@ -1,6 +1,10 @@
 .section__partners {
     padding-top: 90px;
     padding-bottom: 50px;
+
+    @media screen and (max-width: 1024px) {
+        padding-top: 50px;
+    }
 }
 
 .section__partners__title {
@@ -52,6 +56,10 @@
         .partner__who {
             color: #fff;
         }
+    }
+
+    @media screen and (max-width: 1024px) {
+        padding: 50px 20px;
     }
 }
 
@@ -113,4 +121,6 @@
     &:hover {
         background: #5fa3df;
     }
+
+    
 }

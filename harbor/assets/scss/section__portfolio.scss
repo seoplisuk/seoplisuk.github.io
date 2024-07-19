@@ -58,6 +58,11 @@
     margin-bottom: 15px;
     font-family: 'FuturaMediumC';
     letter-spacing: 5px;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 28px;
+        line-height: 32px;
+    }
 }
 
 .port__txt {

@@ -447,6 +447,7 @@ select {
   line-height: 100%;
   position: relative;
   text-align: center;
+  min-height: 85px;
 }
 .number__txt1 .baks {
   font-size: 35px;
@@ -531,7 +532,8 @@ select {
 }
 @media screen and (max-width: 1024px) {
   .s3__item__title {
-    font-size: 44px;
+    font-size: 34px;
+    line-height: 34px;
   }
 }
 
@@ -621,7 +623,7 @@ select {
 }
 @media screen and (max-width: 1024px) {
   .focus__title {
-    font-size: 43px;
+    font-size: 34px;
   }
 }
 
@@ -771,6 +773,12 @@ select {
   margin-bottom: 15px;
   font-family: "FuturaMediumC";
   letter-spacing: 5px;
+}
+@media screen and (max-width: 1024px) {
+  .port__title {
+    font-size: 28px;
+    line-height: 32px;
+  }
 }
 
 .port__txt {
@@ -925,10 +933,20 @@ select {
   margin: inherit;
   margin-top: 100px;
 }
+@media screen and (max-width: 1024px) {
+  .our__button .partners__button {
+    margin-top: 30px;
+  }
+}
 
 .section__partners {
   padding-top: 90px;
   padding-bottom: 50px;
+}
+@media screen and (max-width: 1024px) {
+  .section__partners {
+    padding-top: 50px;
+  }
 }
 
 .section__partners__title {
@@ -989,6 +1007,11 @@ select {
 }
 .partners__item:hover .partner__who {
   color: #fff;
+}
+@media screen and (max-width: 1024px) {
+  .partners__item {
+    padding: 50px 20px;
+  }
 }
 
 .partner__img {

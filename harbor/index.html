@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>Main</title>
 </head>
 <body>
     <header>
@@ -140,7 +140,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="focus__button"><a href="#" class="button__inter">FOR INTERMEDIARIES <img src="assets/img/arrow__right__blue.png" alt=""></a></div>
+            <div class="focus__button"><a href="#" class="button__inter">Investment Criteria <img src="assets/img/arrow__right__blue.png" alt=""></a></div>
         </div>
     </section>
 
@@ -189,7 +189,7 @@
         </div>
     </section>
 
-    
+
 
 
     <section class="section__ourteam">
@@ -303,5 +303,29 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+		loop: true,
+        navigation: {
+		  nextEl: '.swiper-button-next',
+		  prevEl: '.swiper-button-prev',
+		},
+        });
+
+        const playbtn = document.getElementById('playbtn');
+        const player = document.getElementById('video-player');
+        const vimeoPlayer = new Vimeo.Player(player);
+        playbtn.onclick = function() {
+        playbtn.style.display = "none";
+        vimeoPlayer.play();
+        }
+        vimeoPlayer.on('pause', function() {
+        playbtn.style.display = "flex";
+        });
+        vimeoPlayer.on('play', function() {
+        playbtn.style.display = "none";
+        });
+    </script>
 </body>
 </html>
