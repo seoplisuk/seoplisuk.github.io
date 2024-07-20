@@ -163,7 +163,6 @@ da.init();
 /* end */
 
 
-
 document.addEventListener('DOMContentLoaded', () => {
     const body = document.querySelector('body')
     const burger = document.querySelector('.burger')
@@ -203,7 +202,7 @@ const swiper = new Swiper('.swiper', {
 	});
 
 
-	"use strict";
+
 
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -259,28 +258,39 @@ window.addEventListener("DOMContentLoaded", function () {
 });
 
 
-
-$('#filter1').selectize({ normalize: true });
-
+	
 
 
-var filter_select_el = document.getElementById('filter1');
-var items_el = document.getElementById('items');
 
-filter_select_el.onchange = function() {
-  console.log(this.value);
-  var items = items_el.getElementsByClassName('item');
-  for (var i = 0; i < items.length; i++) {
-    if (items[i].classList.contains(this.value)) {
-      items[i].style.opacity = '1',
-	  items[i].style.visibility = 'visible',
-	  items[i].style.height = '100%';
-	  
-    } else {
-      items[i].style.opacity = '0',
-	  items[i].style.visibility = 'hidden',
-	  items[i].style.height = '0';
-	  
-    }
-  }
-}
+
+
+
+
+
+
+	
+ $('.play').click(function() {
+	let video = $(this).closest('.video').find('.video-player');
+	var player = new Vimeo.Player(video);
+	player.play();
+	$(this).addClass('playing');
+}); 
+
+
+	
+  
+/* 	$('.play').click(function () {
+		let video = $(this).closest('.video').find('.video-player');
+		var player = new Vimeo.Player(video);
+	  if (video.paused) {
+		player.play();
+		$(this).addClass('playing');
+	  } else {
+		player.pause();
+		$(this).removeClass('playing');
+		
+	  }
+	}); */
+ 
+
+

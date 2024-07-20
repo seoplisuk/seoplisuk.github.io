@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="70" height="56" viewBox="0 0 70 56">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 12px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #3e3e3e;
+        text-anchor: middle;
+        font-family: Futura;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+
+      .cls-2 {
+        font-size: 57px;
+      }
+    </style>
+  </defs>
+  <g>
+    <text id="INTERNATIONAL" class="cls-1" transform="translate(34.222 54.834) scale(0.594)">INTERNATIONAL</text>
+    <g>
+      <text id="S_" data-name="S " class="cls-2" x="31.058" y="44.038">S</text>
+      <text id="e" class="cls-2" x="53.466" y="44.045">e</text>
+      <text id="S" class="cls-2" x="14.065" y="44.206">S</text>
+    </g>
+  </g>
+</svg>

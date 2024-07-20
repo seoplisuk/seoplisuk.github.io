@@ -474,6 +474,31 @@ crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <script>
+        $('#filter1').selectize({ normalize: true });
+
+        var filter_select_el = document.getElementById('filter1');
+        var items_el = document.getElementById('items');
+
+        filter_select_el.onchange = function() {
+        console.log(this.value);
+        var items = items_el.getElementsByClassName('item');
+        for (var i = 0; i < items.length; i++) {
+            if (items[i].classList.contains(this.value)) {
+            items[i].style.opacity = '1',
+            items[i].style.visibility = 'visible',
+            items[i].style.height = '100%';
+            
+            } else {
+            items[i].style.opacity = '0',
+            items[i].style.visibility = 'hidden',
+            items[i].style.height = '0';
+            
+            }
+        }
+        }
+    </script>
     
 </body>
 </html>

@@ -1,0 +1,78 @@
+.filters .selectize-control.single .selectize-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: transparent;
+  border: none;
+  color: #313232;
+  font-family: "FuturaBookC";
+  text-transform: uppercase;
+  font-size: 18px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.filters .selectize-control.single .selectize-input input {
+  display: none !important;
+}
+.filters .selectize-control.single .selectize-input::after {
+  content: " ";
+  display: block;
+  position: relative;
+  background: url("../img/arrow__bottom.png") no-repeat;
+  width: 30px;
+  height: 25px;
+  -webkit-transition: 0.6s ease 0s;
+  transition: 0.6s ease 0s;
+  right: 15px;
+  margin-top: 0px;
+  border-style: solid;
+  border-width: 0;
+  border-color: transparent;
+}
+.filters .dropdown-active::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.filters .selectize-dropdown-content {
+  max-height: 100%;
+}
+.filters .selectize-dropdown-content .option {
+  color: #313232;
+  font-family: "FuturaBookC";
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.filters .selectize-dropdown-content .selected {
+  background: #02457d;
+  color: #fff;
+}
+.filters .selectize-dropdown-content .active {
+  background: #02457d;
+  color: #fff;
+}
+
+.filters {
+  margin-bottom: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.filters .select {
+  min-width: 340px;
+  width: 100%;
+}
+
+.portfolio__single-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
