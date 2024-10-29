@@ -200,5 +200,12 @@
     <script>
         document.getElementById("defaultOpen").click();
     </script>
+    <script>
+        $('.balance__hidden').hide();
+        $('.balance__top').on("click", function(){
+            $('.balance__hidden').slideToggle();
+            $(this).toggleClass('new');
+        });
+    </script>
 </body>
 </html>

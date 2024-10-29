@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Настройки</title>
 </head>
-<body>
+<body class="login-in">
     <header class="header">
         <div class="container">
             <div class="header__row">
@@ -42,7 +42,9 @@
                 <div class="login__buttons">
                     <a href="#" class="enter">Вход</a>
                     <a href="#" class="registration">Регистрация</a>
+                    
                 </div>
+                
                 
             </div>
         </div>
@@ -188,6 +190,13 @@
             
             
             });
+    </script>
+    <script>
+        $('.balance__hidden').hide();
+        $('.balance__top').on("click", function(){
+            $('.balance__hidden').slideToggle();
+            $(this).toggleClass('new');
+        });
     </script>
 </body>
 </html>
