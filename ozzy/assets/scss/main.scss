@@ -1,0 +1,43 @@
+@import 'reset';
+@import 'fonts';
+
+.main {
+    flex: 1 0 auto;
+}
+
+
+
+
+.container {
+    max-width: 1340px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @media screen and (max-width: 1440px) {
+        max-width: 1300px;
+    }
+}
+
+section {
+    background: #191919 url('../img/wall.png')
+}
+
+
+
+@import 'header';
+
+@import 'section__slider';
+@import 'section__catalog';
+@import 'pages';
+@import 'office';
+@import 'page__settings';
+@import 'page__info';
+@import 'page__login';
+@import 'page__reviews';
+@import 'page__product';
+@import 'footer';
+
+
+
+

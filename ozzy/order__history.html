@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>История покупок</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__row">
+                
+                <div class="header__center">
+                    <div class="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="logo"><img src="assets/img/logo.svg" alt=""></div>
+                    <a href="#" class="telegram__link"><span>Ozzy_bot</span></a>
+                    <div class="top-menu" data-da=".mobile__menu, 1200">
+                        <ul class="menu">
+                            <li class="menu-item"><a href="#">Главная</a></li>
+                            <li class="menu-item"><a href="#">Товар</a></li>
+                            <li class="menu-item"><a href="#">Правила</a></li>
+                            <li class="menu-item"><a href="#">Отзывы</a></li>
+                            <li class="menu-item"><a href="#">Робота</a></li>
+                            <li class="menu-item"><a href="#">Контакты</a></li>
+                        </ul>
+                        <div class="city">
+                            <select name="" id="">
+                                <option value="">Выбор города</option>
+                                <option value="">Санкт-Петербург</option>
+                                <option value="">Москва</option>
+                                <option value="">Нижний Новгород</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="login__buttons">
+                    <a href="#" class="enter">Вход</a>
+                    <a href="#" class="registration">Регистрация</a>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile__menu"></div>
+
+
+    <div class="main">
+        <section class="pages">
+            <div class="section__back"><img src="assets/img/clouds.png" alt=""></div>
+            <div class="container">
+                <div class="balance__menu__mobile">
+                    <div class="balance__top">
+                        <div class="top-link balance"><a href="#">Баланс</a></div>
+                        <div class="top__right">
+                            <span class="cab">кабинет</span>
+                            <div class="cab__burger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="balance__hidden">
+                        <li class="balance__item order"><a href="#">Заказы</a></li>
+                        <li class="balance__item chat"><a href="#">Чат</a></li>
+                        <li class="balance__item support"><a href="#">Тех. поддержка</a></li>
+                        <li class="balance__item settings"><a href="#">Настройки</a></li>
+                        <li class="balance__item info"><a href="#">Информация</a></li>
+                    </ul>
+                </div>
+                <div class="office__row">
+                    <div class="office__left">
+                        <ul class="balance__menu">
+                            <li class="balance__item balance active"><a href="#">Баланс</a></li>
+                            <li class="balance__item order"><a href="#">Заказы</a></li>
+                            <li class="balance__item chat"><a href="#">Чат</a></li>
+                            <li class="balance__item support"><a href="#">Тех. поддержка</a></li>
+                            <li class="balance__item settings"><a href="#">Настройки</a></li>
+                            <li class="balance__item info"><a href="#">Информация</a></li>
+                        </ul>
+                    </div>
+                    <div class="office__right">
+                        <div class="office__balance">
+                            <div class="office__balance__name">Баланс:</div>
+                            <div class="balance__summ">10 000 $</div>
+                        </div>
+                        <div class="office__content">
+                            <div class="office__content__title">История покупок</div>
+
+                            <div class="tab">
+                                <button class="tablinks" id="defaultOpen" onclick="openCity(event, 't1')">Моментальные <span class="numb">2</span></button>
+                                <button class="tablinks" onclick="openCity(event, 't2')">Предзаказ <span class="numb">0</span></button>
+                                <button class="tablinks" onclick="openCity(event, 't3')">забронированные <span class="numb">1</span></button>
+                            </div>
+
+                            <div id="t1" class="tabcontent">
+                                <div class="orders__row">
+                                    <div class="order__header">
+                                        <div class="order__title">Город</div>
+                                        <div class="order__title">Район</div>
+                                        <div class="order__title">Вес</div>
+                                        <div class="order__title">Цена</div>
+                                        <div class="order__title">Тип</div>
+                                        <div class="order__title">Статус</div>
+                                    </div>
+                                    <div class="order__content">
+                                        <div class="order__txt">Санкт-Петербург</div>
+                                        <div class="order__txt">ЖК "Шуваловский" | Падик <br><span>м. Комендантский Проспект</span></div>
+                                        <div class="order__txt">1 Г</div>
+                                        <div class="order__txt">1 890 ₽</div>
+                                        <div class="order__txt">Магнит</div>
+                                        <div class="order__txt">Выполнено</div>
+                                    </div>
+                                    <div class="order__content">
+                                        <div class="order__txt">Санкт-Петербург</div>
+                                        <div class="order__txt">ЖК "Шуваловский" | Падик <br><span>м. Комендантский Проспект</span></div>
+                                        <div class="order__txt">1 Г</div>
+                                        <div class="order__txt">1 890 ₽</div>
+                                        <div class="order__txt">Магнит</div>
+                                        <div class="order__txt">Выполнено</div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                            <div id="t2" class="tabcontent">
+                                2
+                            </div>
+
+                            <div id="t3" class="tabcontent">
+                                <div class="orders__row">
+                                    <div class="order__header">
+                                        <div class="order__title">Город</div>
+                                        <div class="order__title">Район</div>
+                                        <div class="order__title">Вес</div>
+                                        <div class="order__title">Цена</div>
+                                        <div class="order__title">Тип</div>
+                                        <div class="order__title">Статус</div>
+                                    </div>
+                                    <div class="order__content">
+                                        <div class="order__txt">Санкт-Петербург</div>
+                                        <div class="order__txt">ЖК "Шуваловский" | Падик <br><span>м. Комендантский Проспект</span></div>
+                                        <div class="order__txt">1 Г</div>
+                                        <div class="order__txt">1 890 ₽</div>
+                                        <div class="order__txt">Магнит</div>
+                                        <div class="order__txt">Выполнено</div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        
+        
+    </div>
+
+    <div class="footer__section">
+        <div class="container">
+            <footer class="footer">
+            
+                <div class="footer__row">
+                    <div class="footer__left"><div class="logo"><img src="assets/img/footer__logo.svg" alt=""></div></div>
+                    <div class="footer__right">
+                        <a href="#" class="footer__telegram"><span>Ozzy_bot</span></a>
+                        <div class="footer__menu">
+                            <ul class="menu">
+                                <li class="menu-item"><a href="#">Товары</a></li>
+                                <li class="menu-item"><a href="#">Правила</a></li>
+                                <li class="menu-item"><a href="#">Отзывы</a></li>
+                                <li class="menu-item"><a href="#">Работа</a></li>
+                                <li class="menu-item"><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            
+            </footer>
+        </div>
+        
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+</html>

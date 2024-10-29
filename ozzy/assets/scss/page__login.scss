@@ -1,0 +1,29 @@
+.login__form {
+    max-width: 590px;
+    width: 100%;
+    margin: 0 auto;
+   
+    background: linear-gradient(to right, #151616 50%, rgba(0, 150, 110, 35%) 100%);
+    border-radius: 17px;
+    padding: 56px;
+    box-shadow: 0px 5px 30px rgba(0, 150, 110, 35%);
+
+    .slide__readmore {
+        width: 100%;
+        margin-top: 36px;
+    }
+
+    @media screen and (max-width: 1204px) {
+        padding: 60px 16px;
+    }
+}
+
+.code {
+    margin-bottom: 10px;
+}
+
+.register__man {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+}

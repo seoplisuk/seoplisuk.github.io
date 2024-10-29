@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Настройки</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__row">
+                
+                <div class="header__center">
+                    <div class="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="logo"><img src="assets/img/logo.svg" alt=""></div>
+                    <a href="#" class="telegram__link"><span>Ozzy_bot</span></a>
+                    <div class="top-menu" data-da=".mobile__menu, 1200">
+                        <ul class="menu">
+                            <li class="menu-item"><a href="#">Главная</a></li>
+                            <li class="menu-item"><a href="#">Товар</a></li>
+                            <li class="menu-item"><a href="#">Правила</a></li>
+                            <li class="menu-item"><a href="#">Отзывы</a></li>
+                            <li class="menu-item"><a href="#">Робота</a></li>
+                            <li class="menu-item"><a href="#">Контакты</a></li>
+                        </ul>
+                        <div class="city">
+                            <select name="" id="">
+                                <option value="">Выбор города</option>
+                                <option value="">Санкт-Петербург</option>
+                                <option value="">Москва</option>
+                                <option value="">Нижний Новгород</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="login__buttons">
+                    <a href="#" class="enter">Вход</a>
+                    <a href="#" class="registration">Регистрация</a>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile__menu"></div>
+
+
+    <div class="main">
+        <section class="pages">
+            <div class="section__back"><img src="assets/img/clouds.png" alt=""></div>
+            <div class="container">
+                <div class="balance__menu__mobile">
+                    <div class="balance__top">
+                        <div class="top-link settings"><a href="#">Настройки</a></div>
+                        <div class="top__right">
+                            <span class="cab">кабинет</span>
+                            <div class="cab__burger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="balance__hidden">
+                        <li class="balance__item order"><a href="#">Заказы</a></li>
+                        <li class="balance__item chat"><a href="#">Чат</a></li>
+                        <li class="balance__item support"><a href="#">Тех. поддержка</a></li>
+                        <li class="balance__item settings"><a href="#">Настройки</a></li>
+                        <li class="balance__item info"><a href="#">Информация</a></li>
+                    </ul>
+                </div>
+                <div class="office__row">
+                    <div class="office__left">
+                        <ul class="balance__menu">
+                            <li class="balance__item balance "><a href="#">Баланс</a></li>
+                            <li class="balance__item order"><a href="#">Заказы</a></li>
+                            <li class="balance__item chat"><a href="#">Чат</a></li>
+                            <li class="balance__item support"><a href="#">Тех. поддержка</a></li>
+                            <li class="balance__item settings active"><a href="#">Настройки</a></li>
+                            <li class="balance__item info"><a href="#">Информация</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="settings__row">
+                        <div class="settings__left">
+                            <div class="settings__left__title">Настройки</div>
+                            <div class="settings__user__block">
+                                <div class="user__logo"><img src="assets/img/user__logo.svg" alt=""></div>
+                                <div class="user__content">
+                                    <div class="user__name">Оззи озборн</div>
+                                    <div class="user__panel">
+                                        <div class="panel__left">2FA:</div>
+                                        <div class="panel__right">Отключена <a href="#">Включить</a></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                                <div class="user__photo">
+                                    <div class="user__photo__title">Выбрать фото профиля</div>
+                                    <div class="file-upload">
+                                        <label>
+                                          <input type="file" name="userfile[]" multiple id="userfile" class="w100" accept="image/*" >
+                                          <span><img src="assets/img/upload.svg" alt=""></span>
+                                        </label>
+                                        <input type="text" id="filename" class="filename" disabled placeholder="Файл не выбран">
+                                    </div>
+                                    <a href="#" class="slide__readmore">обновить фото</a>
+                                    <p>Максимальный размер - 2 МБ Максимальное разрешение 1000x1000 Минимальное разрешение 100x100 Тип файла только JPG | JPEG | PNG</p>
+                                </div>
+
+                            
+                        </div>
+                        <div class="settings__right">
+                            <div class="warning">
+                                <img src="assets/img/warning__ico.svg" alt="">
+                                <span class="warning__txt">Ошибка при загрузке логотипа: Высота изображения не должна превышать 1000 пикселей.</span>
+                            </div>
+                            <div class="password">
+                                <div class="settings__right__title">Изменить пароль</div>
+                                <form action="" class="pass">
+                                    <div class="form__input">
+                                        <label for="">Введите старый пароль</label>
+                                        <input type="text" placeholder="Старый пароль">
+                                    </div>
+                                    <div class="form__input">
+                                        <label for="">Введите новый пароль</label>
+                                        <input type="text" placeholder="Новый пароль">
+                                    </div>
+                                    <div class="form__input">
+                                        <label for="">Повторите новый пароль</label>
+                                        <input type="text" placeholder="Новый пароль еще раз">
+                                    </div>
+                                    <button class="slide__readmore">Изменить пароль</button>
+                                </form>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        
+        
+    </div>
+
+    <div class="footer__section">
+        <div class="container">
+            <footer class="footer">
+            
+                <div class="footer__row">
+                    <div class="footer__left"><div class="logo"><img src="assets/img/footer__logo.svg" alt=""></div></div>
+                    <div class="footer__right">
+                        <a href="#" class="footer__telegram"><span>Ozzy_bot</span></a>
+                        <div class="footer__menu">
+                            <ul class="menu">
+                                <li class="menu-item"><a href="#">Товары</a></li>
+                                <li class="menu-item"><a href="#">Правила</a></li>
+                                <li class="menu-item"><a href="#">Отзывы</a></li>
+                                <li class="menu-item"><a href="#">Работа</a></li>
+                                <li class="menu-item"><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            
+            </footer>
+        </div>
+        
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+          $(document).ready( function() {
+                //прикрепление файла
+                $(".file-upload input[type=file]").change(function(){
+                    var filename = $(this).val().replace(/.*\\/, "");
+                    $("#filename").val(filename);
+                });
+            
+            
+            });
+    </script>
+</body>
+</html>

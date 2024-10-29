@@ -1,0 +1,101 @@
+.main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 1024px) {
+        height: auto;
+        padding: 35px 0;
+    }
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+    }
+}
+
+.left {
+    width: 48%;
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.right {
+    width: 48%;
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.logo {
+    margin-bottom: 60px;
+    
+
+    @media screen and (max-width: 1024px) {
+        display: flex;
+    justify-content: center;
+    }
+}
+
+.title {
+    font-family: 'Gilroy-ExtraBold';
+    font-size: 65px;
+    line-height: 77px;
+    color: #1D2025;
+    margin-bottom: 28px;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 36px;
+        line-height: 45px;
+        text-align: center;
+    }
+}
+
+.contacts {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+    a {
+        
+        color: #1D2025;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        text-align: center;
+    }
+}
+
+.adress {
+    font-size: 18px;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 1024px) {
+        text-align: center;
+    }
+}
+
+.bottom {
+    font-family: 'Gilroy-ExtraBold';
+
+    @media screen and (max-width: 1024px) {
+        text-align: center;
+    }
+}
