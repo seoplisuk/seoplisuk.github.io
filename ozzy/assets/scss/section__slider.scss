@@ -537,3 +537,15 @@
         }
     }
 }
+
+.section__back {
+    animation: box 3.75s linear 2.5s infinite alternate none;
+}
+
+@keyframes box {
+
+    from {opacity: 0; }
+  
+    to {opacity: 1; }
+  
+  }

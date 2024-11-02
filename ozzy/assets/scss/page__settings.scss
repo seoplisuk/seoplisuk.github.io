@@ -7,7 +7,7 @@
     border-radius: 14px;
     padding: 30px 40px;
     display: grid;
-    grid-template-columns: 1.4fr 2fr;
+    grid-template-columns: 1.8fr 2fr;
     grid-column-gap: 11.6px;
 
     @media screen and (max-width: 1024px) {
@@ -163,6 +163,7 @@
     .slide__readmore {
         margin-top: 24px;
         width: 100%;
+        cursor: pointer;
     }
 }
 
@@ -200,8 +201,6 @@
         }
     }
 }
-
-
 
 
 

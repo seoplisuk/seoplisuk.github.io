@@ -1,0 +1,26 @@
+.contacts {
+    .pages__content {
+        max-width: auto;
+    }
+}
+
+.contacts__row {
+    display: flex;
+    position: relative;
+
+    .pages__content {
+        margin-right: 30px;
+
+        @media screen and (max-width: 600px) {
+            margin-right: 0;
+        }
+    }
+}
+
+.contact__img {
+    @media screen and (max-width: 600px) {
+        position: absolute;
+        width: 143px;
+        right: 0;
+    }
+}

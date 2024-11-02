@@ -1183,6 +1183,28 @@ section {
   }
 }
 
+.section__back {
+  -webkit-animation: box 3.75s linear 2.5s infinite alternate none;
+          animation: box 3.75s linear 2.5s infinite alternate none;
+}
+
+@-webkit-keyframes box {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes box {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .section__catalog {
   position: relative;
   border-radius: 80px;
@@ -1506,6 +1528,7 @@ section {
   color: #fff;
   letter-spacing: 2px;
   margin-bottom: 50px;
+  text-transform: uppercase;
 }
 @media screen and (max-width: 1024px) {
   .pages__title {
@@ -1558,6 +1581,10 @@ section {
 
 .office__left {
   background: rgba(21, 22, 22, 0.44);
+  -webkit-box-shadow: 0px 4px 127px rgba(0, 168, 121, 0.29);
+          box-shadow: 0px 4px 127px rgba(0, 168, 121, 0.29);
+  -webkit-backdrop-filter: blur(23.5px);
+          backdrop-filter: blur(23.5px);
   padding: 28px 0;
   border-radius: 17px;
   height: -webkit-max-content;
@@ -1573,8 +1600,8 @@ section {
 .office__right {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 3fr;
-  grid-template-columns: 1fr 3fr;
+  -ms-grid-columns: 1.2fr 3fr;
+  grid-template-columns: 1.2fr 3fr;
   background: #151616;
   border-radius: 14px;
 }
@@ -2537,8 +2564,8 @@ section {
   padding: 30px 40px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1.4fr 11.6px 2fr;
-  grid-template-columns: 1.4fr 2fr;
+  -ms-grid-columns: 1.8fr 11.6px 2fr;
+  grid-template-columns: 1.8fr 2fr;
   grid-column-gap: 11.6px;
 }
 @media screen and (max-width: 1024px) {
@@ -2731,6 +2758,7 @@ section {
 .password .slide__readmore {
   margin-top: 24px;
   width: 100%;
+  cursor: pointer;
 }
 
 .settings__right__title {
@@ -2790,8 +2818,11 @@ section {
   max-width: 590px;
   width: 100%;
   margin: 0 auto;
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #151616), to(rgba(0, 150, 110, 0.35)));
-  background: linear-gradient(to right, #151616 50%, rgba(0, 150, 110, 0.35) 100%);
+  background: linear-gradient(171.28deg, rgba(21, 22, 22, 0.44) 52.05%, rgba(22, 112, 88, 0.44) 100.06%);
+  -webkit-box-shadow: 0px 4px 127px rgba(0, 168, 121, 0.29);
+          box-shadow: 0px 4px 127px rgba(0, 168, 121, 0.29);
+  -webkit-backdrop-filter: blur(23.5px);
+          backdrop-filter: blur(23.5px);
   border-radius: 17px;
   padding: 56px;
   -webkit-box-shadow: 0px 5px 30px rgba(0, 150, 110, 0.35);
@@ -2800,6 +2831,7 @@ section {
 .login__form .slide__readmore {
   width: 100%;
   margin-top: 36px;
+  cursor: pointer;
 }
 @media screen and (max-width: 1204px) {
   .login__form {
@@ -3052,7 +3084,7 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 50px !important;
+  margin-bottom: 30px !important;
 }
 .breadcrumbs li {
   color: rgba(219, 219, 219, 0.33);
@@ -3443,6 +3475,37 @@ section {
 @media screen and (max-width: 1024px) {
   .otz__title {
     font-size: 40px;
+  }
+}
+
+.product .pages {
+  padding-top: 106px;
+}
+
+.contacts .pages__content {
+  max-width: auto;
+}
+
+.contacts__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.contacts__row .pages__content {
+  margin-right: 30px;
+}
+@media screen and (max-width: 600px) {
+  .contacts__row .pages__content {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact__img {
+    position: absolute;
+    width: 143px;
+    right: 0;
   }
 }
 
