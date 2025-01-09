@@ -93,6 +93,13 @@
     max-width: 546px;
     z-index: 1;
     position: relative;
+
+    @media screen and (max-width: 1024px) {
+        background: #00966E;
+        color: #fff;
+        width: 100%;
+        max-width: 100%;
+    }
     
     
 
@@ -119,7 +126,10 @@
     }
 
     @media screen and (max-width: 1024px) {
-        display: none;
+        position: absolute;
+        left: 0;
+        right: -135px;
+        bottom: 0px;
     }
 }
 
@@ -301,7 +311,7 @@
     color: #dbdbdb;
     font-family: 'Gilroy-Bold';
     font-size: 10px;
-    width: 104px;
+    width: 166px;
     height: 61px;
     position: absolute;
     top: 23px;
