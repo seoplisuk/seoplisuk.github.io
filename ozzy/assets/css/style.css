@@ -2866,8 +2866,10 @@ section {
   }
 }
 
-.reg {
-  padding-bottom: 0;
+@media screen and (max-width: 1024px) {
+  .reg {
+    padding-bottom: 0;
+  }
 }
 
 .reviews .pages {
