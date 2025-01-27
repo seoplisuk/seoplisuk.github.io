@@ -290,14 +290,44 @@
             left: 0;
             left: 80px;
             top: 100px;
+
+            span {
+                line-height: 100%;
+            }
         }
 
         .product__link {
             right: 0;
             right: 80px;
             bottom: 100px;
+
+            span {
+                font-family: 'Gilroy-Bold';
+                color: #00966E;
+                text-align: right;
+                line-height: 100%;
+            }
         }
         
+    }
+}
+
+.product__link {
+    
+
+    span {
+        font-family: 'Gilroy-Bold';
+        color: #00966E;
+        text-align: right;
+        line-height: 100%;
+    }
+}
+
+.product__site {
+    
+
+    span {
+        line-height: 100%;
     }
 }
 
@@ -308,9 +338,11 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #dbdbdb;
-    font-family: 'Gilroy-Bold';
-    font-size: 10px;
+    text-transform: uppercase;
+    color: #00966E;
+    font-family: 'Benzin-Bold';
+    font-size: 9px;
+    line-height: 110%;
     width: 166px;
     height: 61px;
     position: absolute;
