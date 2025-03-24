@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section1 {
+    padding: 100px 0;
+    background: #010E2E url('photo.png') no-repeat;
+}
+
+.section1__title {
+    text-align: center;
+    font-size: 60px;
+    color: #fff;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 30px;
+    }
+}
+
+.section1__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+
+    @media screen and (max-width: 1024px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (max-width: 600px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.section1__row__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(2, 49, 78, 0.72);
+    backdrop-filter: blur(21px);
+    color: #fff;
+    text-align: center;
+    padding: 20px 30px;
+}
+
+

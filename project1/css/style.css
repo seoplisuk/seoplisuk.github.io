@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    
+    color: #ffffff;
+    box-sizing: border-box;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: .4s;
+}
+ul li {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.container {
+    max-width: 1460px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    
+}
+.title-section {
+    margin-bottom: 40px;
+    font-size: 52px;
+    line-height: 64px;
+    letter-spacing: 0.6px;
+    text-align: center;
+}
+
+#header-section {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    padding: 10px 0px;
+    
+    
+    
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.nav-main {
+    margin-left: auto;
+}
+.nav-main__list {
+    display: flex;
+    gap: 20px;
+    margin-right: 72px;
+}
+.nav-main__link:hover {
+    color:#00d0ff ;
+   
+   
+}
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 14px;
+    color: #ffffff;
+    gap: 5px;
+}
+
+.email img {
+    width: 16px;
+    height: 12px;
+}
+
+.button {
+    background-color: transparent;
+    color: #BCFFFF;
+    padding: 10px 32px;
+    border: 1px solid #BCFFFF;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.button:hover {
+    background-color: #00d0ff;
+    color: #0a1a2b;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    background: url('../img/section1.jpg') no-repeat center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    padding-top: 100px;
+}
+
+/* Контентная часть */
+.content {
+    width: 48%;
+   
+   
+   
+}
+
+.hero__row {
+    display: flex
+;
+    justify-content: space-between;
+}
+
+.title-1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #3ec9e9;
+}
+
+.description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.button-1 {
+    display: inline-block;
+    background-color: #3ec9e9;
+    color: #ffffff;
+    padding: 15px 30px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button-1:hover {
+    background-color: #35b1cf;
+}
+
+/* Блок с изображением */
+.image-container {
+    width: 48%;
+}
+
+.robot-image {
+    width: 100%;
+    height: auto;
+}
+
