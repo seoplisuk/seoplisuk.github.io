@@ -1,0 +1,33 @@
+.section {
+    background: url('../img/background.webp') no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container  {
+    width: 90%;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.section__row {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+    }
+}
+
+.section__left {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.phone {
+    object-fit: contain;
+}
