@@ -9,14 +9,17 @@
       <meta content="telephone=no" name="format-detection">
       <meta name="HandheldFriendly" content="true">
       <title>10 000 ₼ + 250 FS İLK PARA YATIRMA!</title>
-      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
       <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
       <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
       <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
       
       <meta name="msapplication-TileColor" content="#da532c">
       <meta name="theme-color" content="#ffffff">
-      <link rel="stylesheet" href="css/main.css">
+      <link rel="preload" href="css/main-dist.css" as="style" onload="this.rel='stylesheet'">
+      <noscript><link rel="stylesheet" href="css/main-dist.css"></noscript>
    </head>
    <body>
       
@@ -26,7 +29,8 @@
             <img decoding="async" width="569px" height="502px" alt="t2" class="decor-items__item decor-items__2 parallax-item" src="images/decor-item-2.webp">
             <img decoding="async" width="490px" height="460px" alt="t3" class="decor-items__item decor-items__3 parallax-item" src="images/decor-item-3.webp">
             <img decoding="async" width="414px" height="263px" alt="t4" class="decor-items__item decor-items__4" src="images/decor-item-4.webp">
-            <img decoding="async" width="350px" height="729px" class="decor-items__item decor-items__phone" src="images/phone1.webp" alt="girl">
+            <div class="decor-items__item decor-items__phone"></div>
+            <img decoding="async" width="" height="" class="decor-items__item decor-items__phone" src="images/phone.webp" alt="girl">
             <div class="falling-items">
                <div class="falling-items__set">
                   <div class="falling-items__item falling-items__item--1"><img decoding="async" alt="t5" width="167px" height="179px" src="images/1.webp"></div>
@@ -143,12 +147,8 @@
             </div>
          </div>
       </div>
-      <div class="alert">
-         <div class="alert__close"></div>
-         <div class="alert__text"></div>
-      </div>
-      <script defer src="js/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
-      <script defer src="js/enterprise.js"></script>
+      
+      
       <script defer src="js/bundle.js"></script>
       <script>
          document.addEventListener('click', function(e) {
