@@ -1,0 +1,263 @@
+@charset "UTF-8";
+.container {
+  max-width: 1260px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header__row .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header__row .menu .menu-item {
+  margin-right: 20px;
+}
+.header__row .menu .menu-item:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.burger {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.burger span {
+  width: 30px;
+  height: 2px;
+  background: #000;
+  display: block;
+  margin-bottom: 4px;
+  -webkit-transition: 0.6s ease 0s;
+  transition: 0.6s ease 0s;
+}
+.burger span:nth-last-child(1) {
+  margin-bottom: 0px;
+}
+
+.burger__opened span {
+  position: absolute;
+}
+.burger__opened span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.burger__opened span:nth-child(2) {
+  opacity: 0;
+  display: none;
+}
+.burger__opened span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.mobile__menu {
+  background: #ccc;
+  -webkit-transition: 0.6s ease 0s;
+  transition: 0.6s ease 0s;
+  -webkit-transform: translate(-150%, 0);
+          transform: translate(-150%, 0);
+}
+
+.menu__opened {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.section__title {
+  text-align: center;
+  font-size: 100px;
+}
+@media screen and (max-width: 1024px) {
+  .section__title {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section__title {
+    font-size: 25px;
+  }
+}
+
+.burger {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.burger span {
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.mobile__menu {
+  display: none;
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 15px;
+  z-index: 100;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  margin-bottom: 10px;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Показати бургер на мобілках */
+@media (max-width: 768px) {
+  .burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.mobile__menu.active {
+  display: block;
+}
+
+.product-card {
+  width: 280px;
+  border-radius: 12px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+  background: #fff;
+}
+
+.product-image {
+  position: relative;
+}
+
+.product-image img {
+  width: 100%;
+  display: block;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #cc56c4;
+  color: white;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 10px;
+}
+
+.product-info {
+  padding: 16px;
+}
+
+.price {
+  color: #cc56c4;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.title {
+  color: #444;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.quantity button {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #ccc;
+  background: #f5f5f5;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.quantity input {
+  width: 32px;
+  text-align: center;
+  border: none;
+  background: transparent;
+  font-size: 16px;
+}
+
+.buy-button {
+  width: 100%;
+  background: #333;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+
+.buy-button .icon {
+  font-size: 16px;
+}

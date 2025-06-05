@@ -1,0 +1,23 @@
+
+.container {
+    max-width: 1172px;
+    margin: 0 auto;
+    padding: 0 17px;
+
+    @media screen and (max-width: 1200px) {
+        max-width: 970px;
+    }
+
+    @media screen and (max-width: 992px) {
+        max-width: 750px;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 0 15px;
+    }
+}
+
+
+@import 'reset';
+
+@import 'header';
