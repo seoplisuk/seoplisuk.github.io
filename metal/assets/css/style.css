@@ -4321,11 +4321,15 @@ input[type=number] {
   margin: 0 auto;
   overflow: hidden;
   margin-bottom: 30px;
+  min-height: 422px;
 }
 .calc__block:nth-child(1) {
   width: 56%;
   margin: 0;
   margin-bottom: 30px;
+}
+.calc__block:nth-child(1) .calc__content {
+  height: auto;
 }
 @media screen and (max-width: 1024px) {
   .calc__block:nth-child(1) {
@@ -4379,7 +4383,7 @@ input[type=number] {
 }
 
 .calc__products {
-  height: 350px;
+  height: 318px;
   overflow-y: scroll;
 }
 @media screen and (max-width: 1024px) {
