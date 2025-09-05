@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Калькулятор металопрокату</title>
+</head>
+<body class="page__about">
+
+<!-- header -->
+ <div class="back"></div>
+ <header class="header">
+    <div class="container">
+        <div class="header__row">
+            <div class="logo"><a href="/"><img src="assets/img/logo.svg" alt="Logo"></a></div>
+            <div class="catalog">
+                <div class="catalog__button">Каталог</div>
+
+                <div class="catalog__all">
+                    <ul class="menu">
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#">Металопрокат</a>
+                            <ul class="sub-menu">
+                                <!-- p1 -->
+                                <li class="menu-item menu-item-has-children">
+                                    <a href="#">Арматура</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="#">8 мм</a></li>
+                                        <li class="menu-item"><a href="#">10 мм</a></li>
+                                        <li class="menu-item"><a href="#">12 мм</a></li>
+                                        <li class="menu-item"><a href="#">14 мм</a></li>
+                                        <li class="menu-item"><a href="#">16 мм</a></li>
+                                    </ul>
+                                </li>
+                                <!-- p1 -->
+                                 <!-- p2 -->
+                                <li class="menu-item menu-item-has-children">
+                                    <a href="#">Круг</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="#">8 мм</a></li>
+                                        <li class="menu-item"><a href="#">10 мм</a></li>
+                                        <li class="menu-item"><a href="#">12 мм</a></li>
+                                        <li class="menu-item"><a href="#">14 мм</a></li>
+                                        <li class="menu-item"><a href="#">16 мм</a></li>
+                                    </ul>
+                                </li>
+                                <!-- p2 -->
+                                 <!-- p3 -->
+                                <li class="menu-item menu-item-has-children">
+                                    <a href="#">Квадрат</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="#">8 мм</a></li>
+                                        <li class="menu-item"><a href="#">10 мм</a></li>
+                                        <li class="menu-item"><a href="#">12 мм</a></li>
+                                        <li class="menu-item"><a href="#">14 мм</a></li>
+                                        <li class="menu-item"><a href="#">16 мм</a></li>
+                                    </ul>
+                                </li>
+                                <!-- p3 -->
+                                 <!-- p4 -->
+                                <li class="menu-item menu-item-has-children">
+                                    <a href="#">Смуга</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="#">8 мм</a></li>
+                                        <li class="menu-item"><a href="#">10 мм</a></li>
+                                        <li class="menu-item"><a href="#">12 мм</a></li>
+                                        <li class="menu-item"><a href="#">14 мм</a></li>
+                                        <li class="menu-item"><a href="#">16 мм</a></li>
+                                    </ul>
+                                </li>
+                                <!-- p4 -->
+                            </ul>
+                        </li>
+
+
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#">Металоконструкції</a>
+                            <ul class="sub-menu">
+                                <!-- p1 -->
+                                <li class="menu-item menu-item-has-children">
+                                    <a href="#">Виготовлення металоконструкцій</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="#">Проектування металоконструкцій</a></li>
+                                        <li class="menu-item"><a href="#">Розробка км</a></li>
+                                        <li class="menu-item"><a href="#">Розробка кмд (+креслення деталей)</a></li>
+                                        <li class="menu-item"><a href="#">Розрахунок металоконструкцій</a></li>
+                                        <li class="menu-item"><a href="#">Складання кошторисів</a></li>
+                                    </ul>
+                                </li>
+                                <!-- p1 -->
+                                 <!-- p2 -->
+                                <li class="menu-item menu-item-has-children">
+                                    <a href="#">Монтаж металоконструкцій</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="#">Проектування металоконструкцій</a></li>
+                                        <li class="menu-item"><a href="#">Розробка км</a></li>
+                                        <li class="menu-item"><a href="#">Розробка кмд (+креслення деталей)</a></li>
+                                        <li class="menu-item"><a href="#">Розрахунок металоконструкцій</a></li>
+                                        <li class="menu-item"><a href="#">Складання кошторисів</a></li>
+                                    </ul>
+                                </li>
+                                <!-- p2 -->
+                                 <!-- p3 -->
+                                <li class="menu-item menu-item-has-children">
+                                    <a href="#">Конструкції з металу</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="#">Проектування металоконструкцій</a></li>
+                                        <li class="menu-item"><a href="#">Розробка км</a></li>
+                                        <li class="menu-item"><a href="#">Розробка кмд (+креслення деталей)</a></li>
+                                        <li class="menu-item"><a href="#">Розрахунок металоконструкцій</a></li>
+                                        <li class="menu-item"><a href="#">Складання кошторисів</a></li>
+                                    </ul>
+                                </li>
+                                <!-- p3 -->
+                                 <!-- p4 -->
+                                <li class="menu-item menu-item-has-children">
+                                    <a href="#">Конструкції з алюмінію</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="#">Проектування металоконструкцій</a></li>
+                                        <li class="menu-item"><a href="#">Розробка км</a></li>
+                                        <li class="menu-item"><a href="#">Розробка кмд (+креслення деталей)</a></li>
+                                        <li class="menu-item"><a href="#">Розрахунок металоконструкцій</a></li>
+                                        <li class="menu-item"><a href="#">Складання кошторисів</a></li>
+                                    </ul>
+                                </li>
+                                <!-- p4 -->
+                            </ul>
+                        </li>
+
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#">Послуги</a>
+                            <ul class="sub-menu">
+                                <!-- p1 -->
+                                <li class="menu-item menu-item-has-children">
+                                    <a href="#">Порізка металу</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="#">Різання газом</a></li>
+                                        <li class="menu-item"><a href="#">Різання болгаркою</a></li>
+                                        <li class="menu-item"><a href="#">Різання гільйотиною</a></li>
+                                        <li class="menu-item"><a href="#">Різання на стрічкопильному верстаті</a></li>
+                                        <li class="menu-item"><a href="#">Лазерне різання з ЧПУ</a></li>
+                                    </ul>
+                                </li>
+                                <!-- p1 -->
+                                 <!-- p2 -->
+                                <li class="menu-item menu-item-has-children">
+                                    <a href="#">Гнуття листового металу</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="#">Різання газом</a></li>
+                                        <li class="menu-item"><a href="#">Різання болгаркою</a></li>
+                                        <li class="menu-item"><a href="#">Різання гільйотиною</a></li>
+                                        <li class="menu-item"><a href="#">Різання на стрічкопильному верстаті</a></li>
+                                        <li class="menu-item"><a href="#">Лазерне різання з ЧПУ</a></li>
+                                    </ul>
+                                </li>
+                                <!-- p2 -->
+                                 <!-- p3 -->
+                                <li class="menu-item menu-item-has-children">
+                                    <a href="#">Гнуття металевих елементів</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="#">Різання газом</a></li>
+                                        <li class="menu-item"><a href="#">Різання болгаркою</a></li>
+                                        <li class="menu-item"><a href="#">Різання гільйотиною</a></li>
+                                        <li class="menu-item"><a href="#">Різання на стрічкопильному верстаті</a></li>
+                                        <li class="menu-item"><a href="#">Лазерне різання з ЧПУ</a></li>
+                                    </ul>
+                                </li>
+                                <!-- p3 -->
+                                 <!-- p4 -->
+                                <li class="menu-item menu-item-has-children">
+                                    <a href="#">Механічна обробка металу</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item"><a href="#">Різання газом</a></li>
+                                        <li class="menu-item"><a href="#">Різання болгаркою</a></li>
+                                        <li class="menu-item"><a href="#">Різання гільйотиною</a></li>
+                                        <li class="menu-item"><a href="#">Різання на стрічкопильному верстаті</a></li>
+                                        <li class="menu-item"><a href="#">Лазерне різання з ЧПУ</a></li>
+                                    </ul>
+                                </li>
+                                <!-- p4 -->
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <div class="top__menu" data-da=".block__menu, 1200">
+                <ul class="menu">
+                    <li class="menu-item"><a href="#">Про компанію</a></li>
+                    <li class="menu-item"><a href="#">Оплата та доставка</a></li>
+                    <li class="menu-item"><a href="#">Відгуки</a></li>
+                    <li class="menu-item"><a href="#">Контакти</a></li>
+                    <li class="menu-item"><a href="#">Блог</a></li>
+                </ul>
+            </div>
+            
+            <div class="calculator">
+                <div class="lang">
+                    <div class="lang__active">УКР</div>
+                    <div class="lang__hidden">РУС</div>
+                </div>
+                <div class="header__socials">
+                    <a href="#" class="social__link"><img src="assets/img/ico__telegram.svg" alt=""></a>
+                    <a href="#" class="social__link"><img src="assets/img/ico__viber.svg" alt=""></a>
+                </div>
+                <a href="#" class="calculator__button">Калькулятор <br>розрахунку</a>
+                <div class="burger__button">
+                    <div class="burger__name"></div>
+                    <div class="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+ </header>
+
+ <div class="mobile__menu">
+    <div class="m__catalog">Каталог</div>
+    <div class="m__catalog__main">
+        <div class="m__sub">
+            <div class="sub__main">Металопрокат</div>
+            <div class="sub__hidden">
+                <a href="#" class="sub__link">Арматура</a>
+                <a href="#" class="sub__link">Круг</a>
+                <a href="#" class="sub__link">Квадрат</a>
+                <a href="#" class="sub__link">Смуга</a>
+                <a href="#" class="sub__link">Катанка</a>
+                <a href="#" class="sub__link">Кутник</a>
+                <a href="#" class="sub__link">Швелер</a>
+                <a href="#" class="sub__link">Балка</a>
+                <a href="#" class="sub__link">Профільна труба</a>
+                <a href="#" class="sub__link">Труба кругла</a>
+                <a href="#" class="sub__link">Лист</a>
+                <a href="#" class="sub__link">Дріт в'язальний</a>
+                <a href="#" class="sub__link">Сітка арматурна</a>
+                <a href="#" class="sub__link">Профнастил</a>
+            </div>
+        </div>
+        <div class="m__sub">
+            <div class="sub__main">Послуги</div>
+            <div class="sub__hidden">
+                <a href="#" class="sub__link">Порізка металу</a>
+                <a href="#" class="sub__link">Гнуття листового металу</a>
+                <a href="#" class="sub__link">Гнуття металевих елементів</a>
+                <a href="#" class="sub__link">Механічна обробка металу</a>
+                <a href="#" class="sub__link">Доставка продукції</a>
+            </div>
+        </div>
+        <div class="m__sub">
+            <div class="sub__main">Металоконструкції</div>
+            <div class="sub__hidden">
+                <a href="#" class="sub__link">Виготовлення металоконструкцій</a>
+                <a href="#" class="sub__link">Монтаж металоконструкцій</a>
+                <a href="#" class="sub__link">Конструкції з металу</a>
+                <a href="#" class="sub__link">Конструкції з алюмінію</a>
+                <a href="#" class="sub__link">Інші металовироби</a>
+                <a href="#" class="sub__link">Металообробка</a>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="block__menu"></div>
+
+    <div class="mobile__bottom">
+        <a href="#" class="adress">просп. Георгія Нарбута (Визволителів), 5
+            місто Київ, 02125 (Склад металопрокату)
+        </a>
+        <a href="#" class="adress">просп. Георгія Нарбута (Визволителів), 5
+            місто Київ, 02125 (Склад металопрокату)
+        </a>
+        <a href="tel:+38(044) 333-41-92" class="footer__tel">+38(044) 333-41-92</a>
+        <a href="tel:+38(067) 603-88-89" class="footer__tel">+38(067) 603-88-89</a>
+                    
+        <a href="mailto:metalwest@ukr.net" class="footer__mail">metalwest@ukr.net</a>
+
+    </div>
+
+    <div class="mobile__buttons">
+        <a href="#" class="viber">Написати у Viber</a>
+        <a href="#" class="telegram">Написати у Telegram</a>
+    </div>
+
+    <div class="mob__lang">
+        <div class="m__lang active">УКР</div>
+        <div class="lang__sep">|</div>
+        <div class="m__lang">РУС</div>
+    </div>
+
+ </div>
+
+<!-- end header -->
+
+
+<section class="first">
+    <div class="container">
+        
+        <!-- breadcrumbs -->
+         <div class="breadcrumbs">
+            <a href="/" class="bread__link"><img src="/assets/img/home.svg" alt=""></a>
+            <div class="sep"><img src="assets/img/sep.svg" alt=""></div>
+            
+            <span class="bread">Калькулятор металопрокату</span>
+         </div>
+        <!-- end breadcrumbs -->
+        <h1 class="page__title">Калькулятор металопрокату</h1> 
+         
+
+       <div class="calc">
+            <div class="calc__block">
+                <div class="calc__header">Калькулятор металопрокату</div>
+                <div class="calc__content">
+                    <div class="calc__row">
+                        <div class="calc__item">
+                            <div class="calc__name">Вибір товару</div>
+
+                            <div class="sel">
+                                <select class="select2-category" name="" id="">
+                                    <option value="0">Оберіть категорію товару</option>
+                                    <option value="1">Арматура</option>
+                                    <option value="2">Круг</option>
+                                    <option value="3">Квадрат</option>
+                                    <option value="4">Смуга</option>
+                                    <option value="5">Катанка</option>
+                                </select>
+                            </div>
+
+                            <div class="sel">
+                                <select class="select2-category2" name="" id="">
+                                    <option value="0">Оберіть специфіку товару</option>
+                                    <option value="1">ДСТУ 3760 МІРА</option>
+                                    <option value="2">ДСТУ 3760 МІРА</option>
+                                    <option value="3">ДСТУ 3760 МІРА</option>
+                                    <option value="4">ДСТУ 3760 МІРА</option>
+                                </select>
+                            </div>
+
+                            <div class="sel">
+                                <select class="select2-category3" name="" id="">
+                                    <option value="0">Оберіть назву товару</option>
+                                    <option value="1">Арматура №8</option>
+                                    <option value="2">Арматура №8</option>
+                                    <option value="3">Арматура №8</option>
+                                    <option value="4">Арматура №8</option>
+                                </select>
+                            </div>
+                            
+
+                        </div>
+                        <div class="calc__item">
+                            <div class="calc__name">Розрахунок</div>
+                            <div class="sel sel2"><input type="text" class="calc-length" placeholder="Введіть вагу (т)"> <span class="val1">метри</span></div>
+                            <div class="sel sel2"><input type="text" class="calc-weight" placeholder="Введіть довжину (м)"> <span class="val1">тонни</span></div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="calc__row2">
+                        <div class="calc__item">
+                            
+                            <div class="check">
+                                <div class="check__block">
+                                    <div class="ch">
+                                        <input type="checkbox" id="c1">
+                                        <label for="c1">Потрібна доставка</label>
+                                    </div>
+                                    <div class="ch__hidden"><input type="text" placeholder="Вкажіть адресу доставки"></div>
+                                </div>
+                                <div class="check__block">
+                                    <div class="ch">
+                                        <input type="checkbox" id="c2">
+                                        <label for="c2">Потрібна доставка</label>
+                                    </div>
+                                    <div class="ch__hidden"><input type="text" placeholder="Вкажіть адресу доставки"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calc__button">
+                        <button class="button2 add__tovar">Додати до замовлення</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="calc__block basket">
+                <div class="calc__header">Ваше замовлення</div>
+                <div class="calc__content">
+
+                    <div class="calc__none">
+                        <img src="/assets/img/basket.svg" alt="">
+                        <div class="calc__none__txt">Щоб оформити замовлення, спочатку додайте товар.</div>
+                    </div>
+                    <div class="calc__yes">
+                        <div class="calc__products"></div>
+                        <div class="basket__button"><button class="button2 zakaz">Оформити замовлення</button></div>
+                    </div>
+                    
+                    
+
+                </div>
+            </div>
+
+            <div class="calc__block basket2">
+                <div class="calc__header">Вкажіть ваші контактні дані</div>
+                <div class="calc__content">
+                    <form action="">
+                        <div class="otz__input"><input type="text" placeholder="Ваше ім’я"></div>
+                        <div class="otz__input"><input type="text" placeholder="Ваш телефон"></div>
+                        <div class="otz__input"><input type="text" placeholder="Ваш e-mail"></div>
+
+                        <div class="basket__button"><button class="button3">Відправити запит</button></div>
+                    </form>
+                    
+
+                </div>
+            </div>
+            
+       </div>
+
+       <div class="section__calc__row">
+            <div class="calc__left">
+                <div class="how__title">Як працює калькулятор</div>
+                <div class="how__txt">Сервіс «Перерахунок метри - тонни» допоможе швидко та точно визначити вагу або довжину обраного металопрокату. Достатньо вибрати товар і ввести потрібне значення — система автоматично зробить розрахунок.</div>
+                <div class="question__item">
+                    <div class="question__header">
+                        <div class="how__name">Я хочу дізнатися вагу</div>
+                        <div class="question__arrow">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="question__hidden">Я хочу дізнатися вагу</div>
+                </div>
+                <div class="question__item">
+                    <div class="question__header">
+                        <div class="how__name">Я хочу дізнатися довжину</div>
+                        <div class="question__arrow">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="question__hidden">Я хочу дізнатися вагу</div>
+                </div>
+                <div class="warning">
+                    <div class="warn__title"><img src="assets/img/icon.png" alt=""> Зверніть увагу:</div>
+                    <div class="warn__txt">Використовуйте крапку, а не кому для дробових чисел: 0.25, а не 0,25.</div>
+                </div>
+            </div>
+            <div class="calc__right">
+                <div class="consult__form">
+                    <form action="">
+                        <div class="conlust__title">Потрібна <br>консультація?</div>
+                        <div class="consult__text">Залиште заявку і наш менеджер відповість вам найближчим часом</div>
+                        <div class="consult__input"><input name="" type="text" placeholder="Ім'я*"></div>
+                        <div class="consult__input"><input name="tel2" id="phone2" type="tel" placeholder="Телефон*"></div>
+                        <div class="consult__input"><input name="tel2" type="tel" placeholder="E-mail"></div>
+                        <div class="consult__input"><input name="tel2" type="tel" placeholder="Ваше питання"></div>
+                        <div class="consult__button"><button class="button4">Відправити запит</button></div>
+                    </form>
+                </div>
+            </div>
+       </div>
+        
+       <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          if (typeof $ !== 'undefined' && $.fn.select2) {
+            $('.select2-category').select2({
+              placeholder: "Оберіть категорію товару",
+              minimumResultsForSearch: Infinity,
+              
+              minimumResultsForSearch: Infinity,
+            });
+            $('.select2-category2').select2({
+              placeholder: "Оберіть специфіку товару",
+              minimumResultsForSearch: Infinity,
+            });
+            $('.select2-category3').select2({
+              placeholder: "Оберіть назву товару",
+              minimumResultsForSearch: Infinity,
+            });
+          } else {
+            console.warn('jQuery або Select2 не завантажено');
+          }
+        });
+      </script>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- section11 -->
+ <section class="section11">
+    <div class="container">
+        <div class="section11__row">
+            <div class="section11__left">
+                <div class="map__title">Металоконструкції </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.0910225857842!2d30.59970427685088!3d50.458029686817646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfe4bce3e06d%3A0x8d265465973346e2!2z0JzQldCi0JDQmy3QktCV0KHQoiDQk9Cg0KPQnw!5e0!3m2!1suk!2sua!4v1753899388131!5m2!1suk!2sua" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="section11__right">
+                <div class="map__title">Металопрокат </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.0910225857842!2d30.59970427685088!3d50.458029686817646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfe4bce3e06d%3A0x8d265465973346e2!2z0JzQldCi0JDQmy3QktCV0KHQoiDQk9Cg0KPQnw!5e0!3m2!1suk!2sua!4v1753899388131!5m2!1suk!2sua" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+ </section>
+<!-- end section11 -->
+ 
+<!-- footer -->
+ <footer class="footer">
+    <div class="container">
+        <div class="footer__row1">
+            <div class="footer__logo"><a href="/"><img src="assets/img/logo.svg" alt="Logo"></a></div>
+            <div class="up"><img src="assets/img/up.svg" alt=""></div>
+        </div>
+        <div class="footer__row2">
+            <div class="footer__item">
+                <ul class="menu">
+                    <li class="menu-item"><a href="#">Каталог</a></li>
+                    <li class="menu-item"><a href="#">Калькулятор</a></li>
+                    <li class="menu-item"><a href="#">Про компанію</a></li>
+                    <li class="menu-item"><a href="#">Блог</a></li>
+                </ul>
+            </div>
+            <div class="footer__item">
+                <ul class="menu">
+                    <li class="menu-item"><a href="#">Оплата та доставка</a></li>
+                    <li class="menu-item"><a href="#">Контакти</a></li>
+                    <li class="menu-item"><a href="#">Відгуки</a></li>
+                </ul>
+            </div>
+            <div class="footer__item">
+                <div class="footer__top">
+                    <div class="telephones">
+                        <a href="tel:+38(044) 333-41-92" class="footer__tel">+38(044) 333-41-92</a>
+                        <a href="tel:+38(067) 603-88-89" class="footer__tel">+38(067) 603-88-89</a>
+                    </div>
+                    <a href="mailto:metalwest@ukr.net" class="footer__mail">metalwest@ukr.net</a>
+                    
+                </div>
+                <div class="footer__bottom">
+                    <div class="hours">
+                        <div class="hour__item">
+                            <div class="days">ПН-ПТ</div>
+                            <div class="times">9:00-21:00</div>
+                        </div>
+                        <div class="hour__item">
+                            <div class="days">СБ-ВС</div>
+                            <div class="times">10:00-18:00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__item">
+                <a href="#" class="adress">просп. Георгія Нарбута (Визволителів), 5
+                    місто Київ, 02125 (Склад металопрокату)
+                </a>
+                <a href="#" class="adress">просп. Георгія Нарбута (Визволителів), 5
+                    місто Київ, 02125 (Склад металопрокату)
+                </a>
+                <div class="cards">
+                    <div class="card__item"><img src="assets/img/mastercard.svg" alt=""></div>
+                    <div class="card__item"><img src="assets/img/visa.svg" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__text">2020© — Компания «Метал Вест». База металопрокату, вигідні ціни на профільні труби, будівельну арматуру, швелери, куточки і багато іншого. Купити в Києві за ціною виробника. Замовити з доставкою по Україні. Передрук будь-яких матеріалів сайту без попередньої згоди заборонена.</div>
+    </div>
+ </footer>
+<!--  end footer -->
+
+<div class="block">
+    <a href="#" class="block__link">
+        <div class="m__img"><img src="assets/img/b1.svg" alt=""></div>
+        <div class="link__text">Зателефонувати</div>
+    </a>
+    <a href="#" class="block__link">
+        <div class="m__img"><img src="assets/img/b2.svg" alt=""></div>
+        <div class="link__text">Viber</div>
+    </a>
+    <a href="#" class="block__link">
+        <div class="m__img"><img src="assets/img/b3.svg" alt=""></div>
+        <div class="link__text">Telegram</div>
+    </a>
+    <a href="#" class="block__link">
+        <div class="m__img"><img src="assets/img/b4.svg" alt=""></div>
+        <div class="link__text">Замовити дзвінок</div>
+    </a>
+</div>
+
+<div id="dialog-content" class="help__form" style="display:none;max-width:500px;">
+    <form action="">
+        <div class="conlust__title">Виникли запитання щодо товару?</div>
+        <div class="consult__text">Залиште заявку і наш менеджер відповість вам найближчим часом</div>
+        <div class="consult__input"><input name="" type="text" placeholder="Ім'я*"></div>
+        <div class="consult__input"><input name="tel2" id="phone2" type="tel" placeholder="Телефон*"></div>
+        <div class="consult__input"><input name="tel2" type="tel" placeholder="E-mail"></div>
+        <div class="consult__input"><input name="tel2" type="tel" placeholder="Ваше питання"></div>
+        <div class="consult__button"><button class="button4">Відправити запит</button></div>
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+.section1 {
+    height: calc(100vh - 100px);
+    background: url('../img/section1.webp') no-repeat;
+    background-size: cover;
+    margin-top: 100px;
+
+    @media screen and (max-width: 1024px) {
+        height: calc(100%);
+        padding: 48px 0;
+        margin-top: 72px;
+    }
+}
+
+.section1__block {
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media screen and (max-width: 1024px) {
+        height: calc(100%);
+    }
+}
+
+.section1__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.section1__left {
+    width: 48%;
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        margin-bottom: 42px;
+    }
+}
+
+.section1__right {
+    width: 48%;
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+    }
+}
+
+.section1__title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+
+    @media screen and (max-width: 1024px) {
+        font-size: 26px;
+        line-height: 130%;
+    }
+}
+
+.section1__buttons {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+
+    .button1 {
+        margin-bottom: 24px;
+
+        &:nth-last-child(1) {
+            margin-bottom: 0;
+        }
+
+        @media screen and (max-width: 1024px) {
+            margin-bottom: 16px;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        margin-top: 42px;
+    }
+}
+
+.button1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 14.5px;
+    width: 100%;
+    border-radius: 8px;
+    background: #161E4C;
+    line-height: 130%;
+    transition: 0.6s ease 0s;
+
+    @media screen and (max-width: 1024px) {
+        padding: 13.5px;
+        font-size: 18px;
+    }
+
+    &:hover {
+        background: #FFFFFF;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+        color: #161E4C;
+    }
+}
+
+.form__block {
+    background: rgba(54, 54, 54, 0.6);
+    border: 2px solid rgba(240, 241, 243, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 40px;
+
+    @media screen and (max-width: 1024px) {
+        padding-top: 18px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 24px;
+    }
+}
+
+.form1__title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 16px;
+    }
+}
+
+.form__input {
+    width: 100%;
+    margin-bottom: 25px;
+
+    @media screen and (max-width: 1024px) {
+        display: flex;
+        justify-content: center;
+    }
+
+    input {
+        padding: 16px;
+        background: #FFFFFF;
+        border: 1px solid rgba(54, 54, 54, 0.3);
+        border-radius: 8px;
+        outline: none;
+        font-size: 20px;
+        line-height: 150%;
+        color: rgba(54, 54, 54, 90%);
+        width: 100%;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 16px;
+            width: 90%;
+            
+        }
+    }
+}
+
+.form__button {
+    display: flex;
+    justify-content: center;
+}
+
+.button2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    max-width: 350px;
+    width: 100%;
+    background: #F57612;
+    border-radius: 8px;
+    padding: 10px 0;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 600;
+    transition: 0.6s ease 0s;
+    color: #fff;
+
+    @media screen and (max-width: 1024px) {
+        padding: 13px 0;
+        font-size: 16px;
+    }
+
+    &:hover {
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    &::after {
+        content: '';
+        min-width: 30px;
+        min-height: 30px;
+        background: url('../img/arrow-circle-left1.svg') no-repeat;
+        background-size: cover;
+        display: block;
+        margin-left: 12px;
+
+        @media screen and (max-width: 1024px) {
+            min-width: 23.35px;
+            min-height: 23.35px;
+            width: 23.35px;
+            height: 23.35px;
+        }
+    }
+}
+
+
+
+

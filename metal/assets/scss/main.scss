@@ -1,0 +1,59 @@
+@import 'fonts';
+
+
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0px;
+    
+
+    @media screen and (max-width: 1200px) {
+        padding: 0 15px;
+    }
+}
+
+.content__page {
+    h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 30px
+    }
+
+    p {
+        margin-bottom: 30px
+    }
+}
+
+
+
+
+
+@import 'reset';
+@import 'home';
+@import 'header';
+@import 'section1';
+@import 'section2';
+@import 'section3';
+@import 'section4';
+@import 'section5';
+@import 'section6';
+@import 'section7';
+@import 'section8';
+@import 'section9';
+@import 'section10';
+@import 'section11';
+
+@import 'page-metaloprokat';
+@import 'page-subcategory';
+@import 'page-product';
+@import 'page-single-metal';
+@import 'page-about';
+@import 'page-reviews';
+@import 'page-contacts';
+@import 'page-dostavka';
+@import 'page-blog-single';
+@import 'page-calculator';
+@import 'footer';
+
+
+

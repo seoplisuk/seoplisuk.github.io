@@ -1,0 +1,129 @@
+.section5 {
+    padding: 42px 0;
+    background: #F0F1F3;
+
+    @media screen and (max-width: 1024px) {
+        padding: 34.5px 0;
+    }
+}
+
+.block__works {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+    }
+}
+
+.swiper__works {
+    overflow: hidden;
+}
+
+.arrows {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 0;
+
+    @media screen and (max-width: 1024px) {
+        display: none;
+    }
+}
+
+.sw__left {
+    position: relative;
+    left: -50px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.sw__right {
+    position: relative;
+    right: -50px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.work__item {
+    filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.25));
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.work__img {
+    img {
+        width: 100%;
+        border-radius: 8px 8px 0 0;
+        object-fit: cover;
+        height: 300px;
+
+        @media screen and (max-width: 1024px) {
+            height: 170px;
+        }
+    }
+}
+
+.work__content {
+    background: #fff;
+    padding: 20px;
+
+    @media screen and (max-width: 1024px) {
+        padding: 12px;
+    }
+}
+
+.work__title {
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 130%;
+    color: #363636;
+    font-weight: 600;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 18px;
+    }
+}
+
+.work__text {
+    line-height: 150%;
+    text-align: center;
+    color: #363636;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 14px;
+    }
+}
+
+.sw__paginn {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    position: relative;
+    z-index: 3;
+    display: none;
+
+    @media screen and (max-width: 1024px) {
+        display: flex;
+    }
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+    border: 2px solid #363636;
+    background: transparent;
+}
+
+
+.swiper-pagination-bullet-active {
+    background: #363636;
+}

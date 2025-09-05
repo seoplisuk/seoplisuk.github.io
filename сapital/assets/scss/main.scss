@@ -1,0 +1,19 @@
+@import 'fonts';
+
+.container {
+    max-width: 1225px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    
+}
+
+
+@import 'reset';
+
+@import 'header';
+@import 'section1';
+@import 'section2';
+@import 'section3';
+@import 'section4';
+@import 'footer';

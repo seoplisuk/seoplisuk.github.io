@@ -1,0 +1,172 @@
+.section2 {
+    padding: 90px 0;
+    background: url('../img/fon2.png') no-repeat center;
+    background-size: cover;
+    position: relative;
+
+    @media screen and (max-width: 1024px) {
+        padding: 45px 0;
+    }
+}
+
+.section2__decor1 {
+    position: absolute;
+    top: -200px;
+    right: 0;
+}
+
+.section2__decor2 {
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+}
+
+.s2__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    direction: rtl;
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.s2__left {
+    color: #00C998;
+    font-family: 'MagistralC Bold';
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 1024px) {
+        margin-bottom: 20px;
+    }
+
+    &::before {
+        content: '';
+        width: 114px;
+        height: 1px;
+        background: #00C998;
+        display: block;
+        margin-left: 16px;
+    }
+}
+
+.s2__right {
+    display: flex;
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+    }
+    
+    
+}
+
+.s2__item {
+    margin-left: 50px;
+    font-size: 14px;
+
+    @media screen and (max-width: 1024px) {
+        margin-bottom: 10px;
+
+        &:nth-last-child(1) {
+            margin-bottom: 0;
+        }
+    }
+
+    span {
+        font-family: 'Druk Wide';
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    &:nth-last-child(1) {
+        margin-right: 0;
+    }
+}
+
+.invest {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 32px;
+    grid-row-gap: 32px;
+    background: rgba(18, 20, 36, 0.44);
+    border: 1px solid rgba(0, 131, 86, 0.35);
+    box-shadow: 0px 4px 127px rgba(0, 168, 121, 0.51);
+    backdrop-filter: blur(23.5px);
+    border-radius: 14px;
+    padding: 43px 38px;
+    margin-bottom: 60px;
+
+    @media screen and (max-width: 1024px) {
+        grid-template-columns: 1fr;
+        margin-bottom: 30px;
+    }
+}
+
+.invest__title {
+    font-family: 'Druk Wide';
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 42px;
+    text-align: right;
+}
+
+.ivest__item {
+    background: linear-gradient(180deg, #0D0F1F 0%, #0E2328 144.27%);
+    box-shadow: inset 0px 27px 28px #07091A;
+    border-radius: 7px;
+    padding: 20px 27px;
+    text-align: right;
+    margin-bottom: 8px;
+
+    &:nth-last-child(1) {
+        margin-bottom: 0;
+    }
+}
+
+.price {
+    font-weight: bold;
+    color: #009C6D;
+    font-size: 20px;
+}
+
+.name {
+    color: #009C6D;
+    font-size: 20px;
+}
+
+.invest__contacts {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contacts__block {
+    display: flex;
+
+    a {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        font-size: 15px;
+        color: #fff;
+        text-decoration: none;
+
+        &:nth-last-child(1) {
+            margin-right: 0;
+        }
+
+        img {
+            margin-right: 10px;
+        }
+    }
+}
+
+
+
+
+
+

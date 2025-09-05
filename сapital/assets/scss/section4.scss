@@ -1,0 +1,52 @@
+.section4 {
+    padding: 60px 0;
+    background: url('../img/fon4.png') center;
+    background-size: cover; 
+    position: relative;
+
+    @media screen and (max-width: 1024px) {
+        padding: 30px 0;
+    }
+}
+
+.section4__decor1 {
+    position: absolute;
+    top: -200px;
+    right: 0;
+}
+
+.section4__row {
+    display: flex;
+    align-items: center;
+    
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+    }
+}
+
+.section4__left {
+    margin-right: 30px;
+
+    img {
+        min-width: 428px;
+        height: 392px;
+
+        @media screen and (max-width: 1024px) {
+            min-width: auto;
+            height: auto;
+        }
+    }
+}
+
+.section4__right {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+
+.section4__button {
+    margin-right: 0;
+    width: max-content;
+}

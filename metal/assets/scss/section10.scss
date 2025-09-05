@@ -1,0 +1,148 @@
+.section10 {
+    padding: 42px 0;
+    background: #F0F1F3;
+
+    @media screen and (max-width: 1024px) {
+        padding: 34.5px 0;
+    }
+}
+
+.blog__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+        height: 480px;
+       
+        display: block;
+        overflow-x: scroll;
+    }
+}
+
+.blog__row2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+       
+    }
+}
+
+.blog__item {
+    filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.25));
+    border-radius: 8px;
+    margin-bottom: 44px;
+    width: 48%;
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+    }
+    
+    
+    
+
+   
+
+    @media screen and (max-width: 1024px) {
+        width: 100% !important;
+        margin-bottom: 24px;
+    }
+}
+
+.blog__img {
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+
+    img {
+        height: 280px;
+        object-fit: cover;
+        width: 100%;
+
+        @media screen and (max-width: 1024px) {
+            height: 200px;
+        }
+    }
+}
+
+.blog__item__content {
+    padding: 15px 30px;
+    background: #fff;
+}
+
+.blog__item__date {
+    font-size: 20px;
+    line-height: 150%;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 14px;
+        font-weight: 300;
+    }
+}
+
+.blog__item__title {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 125%;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 16px;
+        margin-bottom: 14px;
+    }
+
+}
+
+.blog__content {
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 16px;
+    }
+}
+
+.read-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.6s ease 0s;
+    background: #F57612;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 150%;
+    width: max-content;
+
+    @media screen and (max-width: 1024px) {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+
+    &:hover {
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+    }
+}
+
+
+.all__blog {
+    display: flex;
+    justify-content: center;
+    display: none;
+
+    @media screen and (max-width: 1024px) {
+        display: flex;
+    }
+}
+
+

@@ -1,0 +1,15 @@
+.footer__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 30px;
+    }
+}

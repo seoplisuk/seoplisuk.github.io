@@ -1,0 +1,119 @@
+.section6 {
+    padding: 42px 0;
+    background: #F0F1F3;
+
+    @media screen and (max-width: 1024px) {
+        padding: 34.5px 0;
+    }
+}
+
+.swiper__reviews {
+    overflow: hidden;
+}
+
+.review__item {
+    background: #FFFFFF;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 5px;
+
+    @media screen and (max-width: 1024px) {
+        padding: 20px 16px;
+    }
+}
+
+.rev__block {
+    @media screen and (max-width: 1024px) {
+        display: flex;
+        justify-content: space-between;
+    }   
+}
+
+.review__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+
+    @media screen and (max-width: 1024px) {
+        justify-content: flex-start;
+    }
+}
+
+.review__ico {
+    margin-right: 4px;
+
+    @media screen and (max-width: 1024px) {
+        img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+.review__name {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #363636;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 15px;
+    }
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 1024px) {
+        justify-content: flex-start;
+        margin-left: 25px;
+        margin-bottom: 25px;
+    }
+}
+
+.star__item {
+    margin-right: 6px;
+
+    &:nth-last-child(1) {
+        margin-right: 0;
+    }
+}
+
+.review__content {
+    text-align: center;
+    font-size: 16px;
+    line-height: 150%;
+    color: #363636;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+}
+
+.review__date {
+    text-align: right;
+    color: #363636;
+    font-size: 14px;
+    font-weight: 300;
+
+    @media screen and (max-width: 1024px) {
+        display: none;
+    }
+}
+
+
+.rev__right {
+    .review__date {
+        display: none;
+
+        @media screen and (max-width: 1024px) {
+            display: block;
+        }
+    }
+}

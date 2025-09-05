@@ -1,0 +1,10 @@
+.section4 {
+  padding: 60px 0;
+  background: url("../img/fon4.png") center;
+  background-size: cover;
+}
+@media screen and (max-width: 1024px) {
+  .section4 {
+    padding: 30px 0;
+  }
+}
