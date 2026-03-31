@@ -1,0 +1,94 @@
+.section5 {
+    margin-top: 49px;
+}
+
+.s5__row {
+    display: flex;
+    justify-content: space-between;
+    background: #CD050A;
+    border-radius: 32px;
+    padding: 32px;
+    padding-left: 68px;
+    padding-right: 68px;
+    position: relative;
+
+    @media screen and (max-width: 1024px) {
+        padding: 32px;
+        padding-bottom: 0;
+        flex-direction: column;
+
+        background: #CD050A url(../img/mans.png) no-repeat center bottom;
+        padding-bottom: 250px;
+
+    }
+    
+    
+}
+
+.s5__left {
+    
+    width: 40%;
+
+    @media screen and (max-width: 1024px) {
+        display: none;
+    }
+}
+
+.s5__img {
+    position: absolute;
+        bottom: 0;
+        left: 68px;
+    
+
+    img {
+        
+        width: 483px;
+        height: 214px;
+    }
+
+    
+}
+
+.s5__right {
+    width: 56%;
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+    }
+}
+
+.s5__title {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    color: #fff;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 22px;
+        text-align: center;
+    }
+}
+
+.s5__text {
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 8px;
+
+    @media screen and (max-width: 1024px) {
+        text-align: center;
+    }
+}
+
+.s5__button {
+    @media screen and (max-width: 1024px) {
+        display: flex;
+        justify-content: center;
+
+        .button2 {
+            max-width: 294px;
+            width: 294px;
+            justify-content: space-between;
+        }
+    }
+}

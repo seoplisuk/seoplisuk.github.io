@@ -1,0 +1,109 @@
+.section6 {
+    margin-top: 49px;
+}
+
+.swiper2 {
+    .swiper-slide {
+        .item {
+            .slide__gal {
+                height: 227px;
+                margin-bottom: 16px;
+                
+                display: flex;
+
+                img {
+                    border-radius: 32px;
+                    width: 100%;
+                    object-fit: cover;
+                }
+
+                &:nth-child(2) {
+                    height: 347px;
+                }
+            }
+
+            
+        }
+
+        &:nth-child(even) {
+                .slide__gal {
+                    height: 347px;
+                    margin-bottom: 16px;
+                    
+                    display: flex;
+
+                    img {
+                        border-radius: 32px;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+
+                    &:nth-child(2) {
+                        height: 227px;
+                    }
+                }
+            }
+    }
+}
+
+.slide__gal {
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 30%) url('../img/lupa.svg') no-repeat center center;
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 0.6s ease 0s;
+        border-radius: 32px;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    &:hover {
+        &::before {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+
+.swiper2 {
+    @media screen and (max-width: 1024px) {
+        display: none;
+    }
+}
+
+.swiper3 {
+    display: none;
+    overflow: hidden;
+    border-radius: 32px;
+
+    @media screen and (max-width: 1024px) {
+        display: block;
+    }
+
+    .slide__gal {
+        height: 100%;
+        img {
+            height: 370px;
+            width: 100%;
+            border-radius: 32px;
+            object-fit: cover;
+        }
+    }
+
+    .item {
+        border-radius: 32px;
+    }
+
+    .swiper-slide {
+        border-radius: 32px;
+    }
+}
+

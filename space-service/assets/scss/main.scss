@@ -1,0 +1,45 @@
+@import 'fonts'; 
+
+
+
+
+
+
+
+.container {
+    max-width: 1376px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    
+
+    @media screen and (max-width: 1400px) {
+        max-width: 1200px;
+        padding: 0 32px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        max-width: 100%;
+        padding: 0 16px;
+    }
+}
+
+
+@import 'header'; 
+@import 'section1'; 
+@import 'section2'; 
+@import 'section3'; 
+@import 'section4';
+@import 'section5';
+@import 'section6';
+@import 'section7';
+@import 'section8';
+@import 'section9';
+@import 'section10';
+@import 'footer';
+
+@import 'reset';
+
+
+
+
