@@ -124,9 +124,34 @@
     }
 
     img {
-        height: 357px;
+        height: 100%;
         border-radius: 32px;
         width: 100%;
         object-fit: cover;
+    }
+}
+
+#dialog-content {
+    .form {
+        padding: 16px;
+    }
+}
+
+
+.fancybox__backdrop {
+    background: #000000B2;
+}
+
+.f-button {
+    color: #fff;
+    opacity: 1 !important;
+    top: 32px !important;
+    right: 32px !important;
+
+    @media screen and (max-width: 1024px) {
+        background: transparent;
+        color: #000;
+        top: 21px !important;
+    right: 21px !important;
     }
 }

@@ -99,9 +99,13 @@
 .header-fixed .header__row {
   -webkit-transition: 0.6s ease 0s;
   transition: 0.6s ease 0s;
-  background: #000;
-  border-radius: 32px;
   padding: 16px;
+}
+.header-fixed .top__menu {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(16px);
+  border-radius: 100px;
+  padding: 15.5px 20px;
 }
 
 .header__row {
@@ -128,6 +132,7 @@
 
 .top__menu {
   margin-right: 65px;
+  padding: 15.5px 20px;
 }
 @media screen and (max-width: 1200px) {
   .top__menu {
@@ -179,7 +184,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: rgba(0, 0, 0, 0.3019607843);
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(16px);
   border-radius: 32px;
   padding: 16px;
 }
@@ -1584,6 +1590,11 @@
   }
 }
 
+.b__st {
+  position: sticky;
+  top: 110px;
+}
+
 .s7__title {
   font-size: 31px;
   font-weight: 800;
@@ -1612,10 +1623,11 @@
 
 .question__item {
   border-radius: 32px;
-  padding: 16px;
+  padding: 0px 16px;
   -webkit-transition: 0.6s ease 0s;
   transition: 0.6s ease 0s;
   cursor: pointer;
+  margin-bottom: 16px;
 }
 
 .question__header {
@@ -1698,6 +1710,7 @@
 
 .active2 {
   background: #F0F0F0;
+  padding: 16px;
 }
 .active2 .question__arrow {
   -webkit-transform: rotate(180deg);
@@ -1729,6 +1742,7 @@
 
 .section8 {
   margin-top: 49px;
+  overflow: hidden;
 }
 
 .s8__txt1 {
@@ -1824,10 +1838,6 @@
   display: block;
 }
 
-.swiper5 {
-  overflow: hidden;
-}
-
 .s8__button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1881,8 +1891,15 @@
   border-radius: 32px;
   overflow: hidden;
 }
+.s9__map img {
+  border-radius: 24px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
 @media screen and (max-width: 1024px) {
-  .s9__map iframe {
+  .s9__map img {
     height: 320px;
   }
 }
@@ -1998,12 +2015,14 @@
   font-weight: 800;
   font-size: 24px;
   text-transform: uppercase;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
+  color: #000;
 }
 
 .form__txt {
   font-size: 12px;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
+  color: #000;
 }
 
 .form__input {
@@ -2014,11 +2033,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 8px;
+  margin-bottom: 19px;
 }
 .form__input label {
   font-size: 12px;
   margin-bottom: 8px;
+  color: #000;
 }
 .form__input input {
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -2038,6 +2058,40 @@
           justify-content: space-between;
   border: none;
   outline: none;
+}
+
+.input__tel {
+  width: 100%;
+  position: relative;
+}
+.input__tel input {
+  width: 100%;
+  padding-left: 120px;
+}
+
+.tel__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #000;
+  border-radius: 100px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 10px 16px;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
+
+.input__tel__txt {
+  font-size: 12px;
+  color: #fff;
+  margin-right: 8px;
+  margin-left: 8px;
 }
 
 .section10 {
@@ -2320,11 +2374,34 @@
   }
 }
 .p__right img {
-  height: 357px;
+  height: 100%;
   border-radius: 32px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+#dialog-content .form {
+  padding: 16px;
+}
+
+.fancybox__backdrop {
+  background: rgba(0, 0, 0, 0.6980392157);
+}
+
+.f-button {
+  color: #fff;
+  opacity: 1 !important;
+  top: 32px !important;
+  right: 32px !important;
+}
+@media screen and (max-width: 1024px) {
+  .f-button {
+    background: transparent;
+    color: #000;
+    top: 21px !important;
+    right: 21px !important;
+  }
 }
 
 /* Указываем box sizing */

@@ -302,7 +302,7 @@ const swiper3 = new Swiper('.swiper3', {
 
   const swiper5 = new Swiper('.swiper5', {
   
-	  loop: true,
+	  loop: false,
 	  spaceBetween: 24,
 	  slidesPerView: 4.5,
     centeredSlides: false,
