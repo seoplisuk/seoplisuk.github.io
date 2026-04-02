@@ -42,6 +42,10 @@
         right: -50px;
     }
 
+    @media screen and (max-width: 1200px) {
+        right: -90px;
+    }
+
     @media screen and (max-width: 1024px) {
         display: none;
     }
@@ -116,6 +120,11 @@
     display: flex;
     align-items: center;
     margin-bottom: 16px;
+
+    .c__item__txt {
+        color: #fff;
+    }
+
 
     @media screen and (max-width: 1024px) {
         justify-content: center;
