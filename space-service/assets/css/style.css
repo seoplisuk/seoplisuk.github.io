@@ -1901,7 +1901,13 @@
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 16px;
   position: relative;
-  overflow: hidden;
+  height: 421px;
+}
+@media screen and (max-width: 1400px) {
+  .s9__left {
+    height: auto;
+    overflow: hidden;
+  }
 }
 @media screen and (max-width: 1024px) {
   .s9__left {
@@ -1921,6 +1927,15 @@
 @media screen and (max-width: 1400px) {
   .s9__img {
     right: -50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .s9__img img {
+    width: 80%;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -1940,6 +1955,7 @@
 }
 .s9__map img {
   border-radius: 24px;
+  max-height: 384px;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1968,7 +1984,7 @@
 .s9__text1 {
   font-size: 14px;
   color: #fff;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 @media screen and (max-width: 1024px) {
   .s9__text1 {
