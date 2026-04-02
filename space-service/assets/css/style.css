@@ -2241,8 +2241,14 @@
   background: #252525;
   border-radius: 32px 32px 0 0;
   padding-top: 32px;
-  padding-right: 32px;
-  padding-left: 32px;
+  padding-right: 134px;
+  padding-left: 134px;
+}
+@media screen and (max-width: 1400px) {
+  .footer__block {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
 }
 @media screen and (max-width: 1024px) {
   .footer__block {
