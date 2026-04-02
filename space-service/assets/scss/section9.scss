@@ -21,11 +21,29 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 16px;
+    position: relative;
+    overflow: hidden;
+    
 
     @media screen and (max-width: 1024px) {
         grid-template-columns: 1fr;
         grid-row-gap: 32px;
         padding: 16px;
+        height: auto;
+    }
+}
+
+.s9__img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    @media screen and (max-width: 1400px) {
+        right: -50px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        display: none;
     }
 }
 
@@ -57,6 +75,7 @@
 .s9__text1 {
     font-size: 14px;
     color: #fff;
+    margin-bottom: 100px;
 
     @media screen and (max-width: 1024px) {
         text-align: center;
