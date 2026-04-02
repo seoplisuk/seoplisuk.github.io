@@ -38,12 +38,21 @@
     position: absolute;
         bottom: 0;
         left: 68px;
+
+        @media screen and (max-width: 1400px) {
+            left: 10px;
+        }
     
 
     img {
         
         width: 483px;
         height: 214px;
+
+        @media screen and (max-width: 1200px) {
+            width: 80%;
+            height: auto;
+        }
     }
 
     

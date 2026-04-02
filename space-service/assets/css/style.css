@@ -134,7 +134,7 @@
   margin-right: 65px;
   padding: 15.5px 20px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   .top__menu {
     margin-right: 16px;
   }
@@ -1389,9 +1389,20 @@
   bottom: 0;
   left: 68px;
 }
+@media screen and (max-width: 1400px) {
+  .s5__img {
+    left: 10px;
+  }
+}
 .s5__img img {
   width: 483px;
   height: 214px;
+}
+@media screen and (max-width: 1200px) {
+  .s5__img img {
+    width: 80%;
+    height: auto;
+  }
 }
 
 .s5__right {
