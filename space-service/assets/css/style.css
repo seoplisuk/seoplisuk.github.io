@@ -922,6 +922,12 @@
   min-height: 460px;
   position: relative;
 }
+@media screen and (max-width: 1400px) {
+  .item1 {
+    padding: 24px;
+    min-height: 400px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .item1 {
     min-height: 370px;
@@ -1028,6 +1034,11 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media screen and (max-width: 1400px) {
+  .item2 {
+    padding: 24px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .item2 {
     min-height: 370px;
@@ -1043,6 +1054,11 @@
   font-size: 26px;
   text-transform: uppercase;
   color: #fff;
+}
+@media screen and (max-width: 1400px) {
+  .s2__item__txt3 {
+    font-size: 19px;
+  }
 }
 
 .item3 {
@@ -1096,7 +1112,7 @@
 }
 @media screen and (max-width: 1400px) {
   .item4 .it:nth-child(2) {
-    padding-bottom: 55px;
+    padding-bottom: 85px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -1151,6 +1167,11 @@
 .s2__item__txt4 {
   font-weight: bold;
 }
+@media screen and (max-width: 1400px) {
+  .s2__item__txt4 {
+    font-size: 14px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .s2__item__txt4 {
     font-size: 14px;
@@ -1159,6 +1180,11 @@
 
 .s2__item__bottom {
   font-size: 14px;
+}
+@media screen and (max-width: 1400px) {
+  .s2__item__bottom {
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 1024px) {
   .s2__item__bottom {
