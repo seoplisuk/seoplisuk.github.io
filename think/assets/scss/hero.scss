@@ -1,0 +1,270 @@
+.hero {
+    position: relative;
+    padding-top: 204.28px;
+    padding-bottom: 140px;
+    overflow-y: hidden;
+    background: #fff url(../img/white.svg) center;
+    background-size: cover;
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    @media screen and (max-width: 1024px) {
+        padding-top: 130px;
+        padding-bottom: 60px;
+    }
+
+    @media screen and (max-width: 429px) {
+        padding-top: 110px;
+    }
+}
+
+.hero__decor1 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+
+    @media screen and (max-width: 1024px) {
+        width: 40%;
+    }
+}
+
+.hero__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+    }
+}
+
+.hero__left {
+    width: 52%;
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+.hero__right {
+    width: 44%;
+    position: relative;
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+    }
+}
+
+.hero__decor2 {
+    position: absolute;
+    left: -50px;
+    bottom: -50px;
+    z-index: 0;
+}
+
+.video__block {
+    position: relative;
+    z-index: 1;
+}
+
+
+.hero__text1 {
+    font-size: 18px;
+    line-height: 27px;
+    color: #6B6B6B;
+    font-style: italic;
+    position: relative;
+    padding-left: 16px;
+    margin-bottom: 20px;
+
+    &::before {
+        content: '';
+        width: 3px;
+        height: 100%;
+        display: block;
+        background: #F2C94C;
+        position: absolute;
+        margin-right: 16px;
+        left: 0;
+    }
+
+    @media screen and (max-width: 1024px) {
+        font-size: 15px;
+        line-height: 130%;
+    }
+
+    @media screen and (max-width: 429px) {
+        font-size: 13px;
+        padding-left: 8px;
+    }
+}
+
+.hero__title {
+    font-family: 'Unbounded';
+    font-size: 65.95px;
+    font-weight: 800;
+    line-height: 80.24px;
+    letter-spacing: -0.02em;
+    margin-bottom: 40px;
+
+    span {
+        background: #0D0D0D;
+        color: #F2C94C;
+        padding: 0 10px;
+    }
+
+    @media screen and (max-width: 1400px) {
+        font-size: 55px;
+        line-height: 75px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        font-size: 40px;
+        line-height: 130%;
+    }
+
+    @media screen and (max-width: 429px) {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+.hero__button {
+    margin-bottom: 10px;
+}
+
+.button2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 44px;
+    width: max-content;
+    background: #F2C94C;
+    text-decoration: none;
+    color: #0D0D0D;
+    font-weight: 800;
+    font-size: 17px;
+    transition: 0.6s ease 0s;
+    border-radius: 4px;
+
+    &:hover {
+        opacity: 0.6;
+    }
+
+    @media screen and (max-width: 600px) {
+        padding: 15px 15px;
+        width: 100%;
+    }
+
+    @media screen and (max-width: 429px) {
+        font-size: 14px;
+    }
+}
+
+
+.hero__bottom__txt {
+    color: #6B6B6B;
+    font-size: 14px;
+    font-weight: 600;
+
+    span {
+        color: #0D0D0D;
+    }
+}
+
+
+.video__img {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .video__back {
+        border-radius: 16px;
+        height: 355px;
+        width: 100%;
+        object-fit: cover;
+
+        @media screen and (max-width: 1024px) {
+            
+        }
+    }
+}
+
+.video__play {
+    position: absolute;
+    transition: 0.6s ease 0s;
+
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
+.video__content {
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+}
+
+.video__title {
+    color: #fff;
+    font-family: 'Unbounded';
+    font-size: 15px;
+    letter-spacing: -0.03em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.video__txt {
+    font-size: 13px;
+    color: #FFFFFF80;
+    line-height: 19.5px;
+}
+
+.video__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+
+    @media screen and (max-width: 1024px) {
+        grid-column-gap: 0x;
+    }
+
+}
+
+.video__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.video__item-title {
+    font-weight: 800;
+    font-family: 'Unbounded';
+    letter-spacing: 0.05em;
+    font-size: 18px;
+    text-align: center;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 14px;
+    }
+
+    @media screen and (max-width: 429px) {
+        font-size: 11px;
+    }
+}
+
+.video__item-txt {
+    font-size: 13px;
+    color: #6B6B6B;
+    text-align: center;
+}

@@ -1,0 +1,162 @@
+.section7 {
+    padding: 90px 0;
+    overflow-y: hidden;
+    position: relative;
+    background: #F7F6F3 url('../img/white.svg') center;
+    background-size: cover;
+
+    .s2__title {
+        color: #0D0D0D;
+    }
+
+    .s2__txt {
+        color: #6B6B6B;
+    }
+
+    .s2__txt2 {
+        color: #6B6B6B;
+    }
+
+    .s2__header {
+        margin-bottom: 35px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        padding: 30px 0;
+    }
+}
+
+
+.slide {
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 29px;
+    padding-bottom: 60px;
+}
+
+.slide__header {
+    background: #F7F6F3;
+    border: 1px solid #E2E0D9;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    padding: 7px 13px;
+    margin-bottom: 18px;
+    font-weight: bold;
+    font-size: 12px;
+    color: #6B6B6B;
+    width: max-content;
+}
+
+.sl1 {
+    font-weight: bold;
+    font-size: 12px;
+    color: #6B6B6B;
+}
+
+.sl__arrow {
+    margin: 0 8px;
+}
+
+.sl2 {
+    color: #1B3A6B;
+    margin-right: 8px;
+}
+
+
+.slide__content {
+    font-size: 14px;
+    line-height: 21px;
+    color: #0D0D0D99;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+.slide__bottom {
+    display: flex;
+    align-items: center;
+}
+
+.slide__logo {
+    width: 36px;
+    height: 36px;
+    background: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    margin-right: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Syne';
+    color: #6B6B6B;
+}
+
+.author {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.geo {
+    font-size: 12px;
+    color: #6B6B6B;
+}
+
+.slider__arrows {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sw__button {
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 37px;
+    height: 37px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: 0.6s ease 0s;
+    margin-right: 14px;
+
+    &:nth-last-child(1) {
+        margin-right: 0;
+    }
+
+    &:hover {
+        background: #F2C94C;
+    }
+
+}
+
+.swiper-pagination1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.swiper-pagination-bullet {
+    width: 12.74px;
+    height: 12.74px;
+    background: #DADADA;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background: #F2C94C;
+}
+
+.section7__txt {
+    text-align: center;
+    font-size: 13px;
+    color: #6B6B6B;
+    font-style: italic;
+    margin-top: 35px;
+}
+
+
+
+

@@ -1,0 +1,161 @@
+.section5 {
+    padding: 90px 0;
+    overflow-y: hidden;
+    position: relative;
+    background: #0D0D0D url('../img/black.svg') center;
+    background-size: cover;
+
+    .s2__txt {
+        color: #F2C94C;
+    }
+
+    @media screen and (max-width: 1024px) {
+        padding: 30px 0;
+    }
+}
+
+
+.s5__left__block {
+    margin-bottom: 50px;
+
+    @media screen and (max-width: 1024px) {
+        margin-bottom: 30px;
+    }
+
+    &:nth-last-child(1) {
+        margin-bottom: 0;
+    }
+}
+
+.s5__left__item {
+    margin-bottom: 20px;
+    display: flex;
+
+    &:nth-last-child(1) {
+        margin-bottom: 0;
+    }
+}
+
+.s5__left-img {
+    margin-right: 20px;
+    img {
+        min-width: 52px;
+        min-height: 52px;
+    }
+}
+
+.s5__left-title {
+    font-size: 15px;
+    color: #FFFFFF70;
+    margin-bottom: 5px;
+}
+
+.s5__left-txt {
+    font-weight: 500;
+    font-size: 15px;
+    color: #FFFFFFA8;
+}
+
+
+.yes {
+    .s5__left-title {
+        color: #F2C94C;
+    }
+}
+
+
+.s5__left__last {
+    background: rgba(242, 201, 76, 0.11);
+    font-size: 15px;
+    color: #FFFFFF8C;
+    
+    position: relative;
+    padding: 20px 0;
+    padding-left: 25px;
+
+    &::before {
+        content: '';
+        width: 1.5px;
+        height: 100%;
+        background: #F2C94CA8;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+
+.s5__right {
+    background: #171717;
+    border-radius: 10px;
+    border: none;
+}
+
+.s5__right__title {
+    font-weight: bold;
+    font-size: 12px;
+    color: #F2C94C;
+    letter-spacing: 0.02em;
+    margin-bottom: 20px;
+}
+
+.s5__right-item {
+    margin-bottom: 26px;
+    display: flex;
+
+    &:nth-last-child(1) {
+        margin-bottom: 0;
+    }
+}
+
+.s5__item-number {
+    font-weight: 700;
+    font-size: 13px;
+    color: #F2C94CA8;
+    min-width: 17px;
+    margin-right: 14px;
+}
+
+.s5__item__title {
+    font-family: 'Unbounded';
+    font-weight: 500;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.s5__item__txt {
+    font-size: 13px;
+    color: #FFFFFF73;
+}
+
+
+.s5__block1 {
+    background: rgba(242, 201, 76, 0.11);
+    border: 1px solid rgba(242, 201, 76, 0.12);
+    border-radius: 6px;
+    margin-top: 30px;
+    padding: 12px 15px;
+    padding-left: 30px;
+    color: #FFFFFF73;
+    font-size: 13px;
+
+    span {
+        font-weight: 700;
+        color: #F2C94C;
+    }
+}
+
+
+.s5__block__last {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #FFFFFF1C;
+    font-weight: 500;
+    font-size: 15px;
+    color: #F2C94C;
+}
+
+
+

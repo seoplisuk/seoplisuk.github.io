@@ -1,0 +1,58 @@
+@import 'fonts'; 
+
+
+
+
+
+
+
+.container {
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0px;
+    
+
+    @media screen and (max-width: 1400px) {
+        max-width: 1200px;
+        padding: 0 35px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@import 'reset';
+
+
+@import 'header';
+
+@import 'hero';
+@import 'section2';
+@import 'section3';
+@import 'section4';
+@import 'section5';
+@import 'section6';
+@import 'promo';
+@import 'section7';
+@import 'section8';
+@import 'section9';
+@import 'section10';
+@import 'section11';
+
+@import 'footer';
+
+
+
